@@ -1,10 +1,10 @@
 import { CertificateProps } from 'utils/developerStory';
 import googleImg from '/public/images/certificates/google.png';
-import microsoftImg from '/public/images/certificates/microsoft.png';
+import microsoftImg from '/public/images/certificates/Microsoft.png';
 import hackerrankImg from '/public/images/certificates/hackerrank.png';
 import ibmImg from '/public/images/certificates/ibm.png';
 import postmanImg from '/public/images/certificates/postman.png';
-import goldmansachsImg from '/public/images/certificates/goldmansachs.png';
+import goldmansachsImg from '/public/images/certificates/Goldmansachs.png';
 
 
 export const allCertificates: { [key: string]: CertificateProps } = {
