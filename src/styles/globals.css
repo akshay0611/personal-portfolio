@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply bg-black text-white scroll-smooth font-montserrat;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Testing elements:- */
+/* *:active {
+	outline: .1px solid oldlace!important;
+} */
+
+@layer components {
+	/* Every section container of Home Route */
+	.home-section {
+		@apply min-h-screen min-w-full py-16 md:py-28 px-3 sm:px-6 md:px-10 lg:px-20;
+	}
+
+	.max-section-width {
+		@apply max-w-6xl mx-auto;
+	}
+
+	.flex-center {
+		@apply flex justify-center items-center;
+	}
+
+	.flex-col-center {
+		@apply flex justify-center items-center flex-col;
+	}
+
+	/* Primary Button */
+	.primary-button {
+		@apply relative block overflow-hidden px-4 py-2 bg-transparent hover:text-white border-1 border-solid border-blue-800 cursor-pointer active:bg-blue-900 delay-300;
+	}
+
+	.primary-button span {
+		@apply absolute block w-0 h-0 rounded-full bg-blue-800;
+		transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+
+	.primary-button:hover span {
+		width: 225%;
+		height: 562.5px;
+	}
+
+	/* Text Background Animation */
+	.animate-text-bg {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		transition: all 0.2s linear;
+		line-height: 1;
+		margin-bottom: -0.15em;
+		z-index: 5;
+	}
+
+	.animate-text-bg::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: translateX(-101%);
+		transition: all 0.2s linear;
+		z-index: -1;
+	}
+
+	.animate-text-bg:hover:before {
+		transform: translateX(0);
+	}
+
+	.line-clamp-4 {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
+	}
+
+	/* Heading 1 */
+	.h1 {
+		@apply text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block;
+	}
+
+	.h2 {
+		@apply text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 inline-block;
+	}
+
+	/* React Markdown for Developer Story Description */
+	.story-description-react-markdown {
+		@apply text-xs md:text-sm font-light bg-zinc-900 p-3 rounded-md;
+	}
+
+	.story-description-react-markdown h1 {
+		@apply text-base md:text-lg font-bold mb-2;
+	}
+
+	.story-description-react-markdown h2 {
+		@apply text-sm md:text-base font-bold mb-1;
+	}
+
+	.story-description-react-markdown h3 {
+		@apply font-bold mb-1;
+	}
+
+	.story-description-react-markdown p {
+		@apply mb-2;
+	}
+
+	.story-description-react-markdown strong {
+		@apply font-medium;
+	}
+
+	.story-description-react-markdown a {
+		@apply text-blue-400 hover:underline;
+	}
+
+	.story-description-react-markdown code {
+		@apply bg-gray-600 bg-opacity-50 px-1 rounded-sm py-0.5 box-content;
+	}
+
+	.story-description-react-markdown pre {
+		@apply bg-gray-700 bg-opacity-50 rounded-sm py-1 px-2 whitespace-pre-wrap;
+	}
+
+	.story-description-react-markdown pre code {
+		@apply bg-transparent px-0 pt-0 rounded-none;
+	}
+
+	.story-description-react-markdown blockquote {
+		@apply text-lg mb-2 border-l-2 border-gray-500 pl-2 ml-1;
+	}
+
+	.story-description-react-markdown ul {
+		@apply mb-1 list-disc;
+	}
+
+	.story-description-react-markdown ol {
+		@apply mb-1 list-decimal;
+	}
+
+	.story-description-react-markdown li {
+		@apply ml-4 md:ml-5;
+	}
+
+	.story-description-react-markdown img {
+		width: fit-content;
+	}
+
+	/* About React Markdown */
+	.about-react-markdown {
+		@apply font-light leading-loose tracking-wide mb-2 text-sm lg:text-base;
+	}
+
+	.about-react-markdown strong {
+		@apply font-bold;
+	}
+
+	.about-react-markdown a {
+		@apply text-blue-400 hover:underline italic;
+	}
+}

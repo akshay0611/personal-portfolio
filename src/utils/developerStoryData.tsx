@@ -1,0 +1,108 @@
+import { allCertificates } from './constants/Certificate';
+import { allEducation } from './constants/Education';
+import { allExperiences } from './constants/Experiences';
+import { allOthers } from './constants/Others';
+import { allProjects } from './constants/Projects';
+import {
+	AchievementProps,
+	CertificateProps,
+	EducationProps,
+	ExperienceProps,
+	OtherProps,
+	ProjectProps,
+	STORY_TYPES,
+} from './developerStory';
+
+export interface singleDeveloperStoryDataProps {
+	id: string;
+	storyType: STORY_TYPES; 
+	data:
+		| EducationProps
+		| AchievementProps
+		| CertificateProps
+		| ExperienceProps
+		| OtherProps
+		| ProjectProps;
+}
+
+export interface DeveloperStoryDataProps
+	extends Array<singleDeveloperStoryDataProps> {}
+
+export const developerStoryData: DeveloperStoryDataProps = [
+	{
+		id: 'exp-octanet',
+		storyType: 'experience',
+		data: allExperiences.octanet,
+	},
+
+	{
+		id: 'exp-prodigyInfoTech',
+		storyType: 'experience',
+		data: allExperiences.prodigyInfoTech,
+	},
+	
+	{
+		id: 'edu-selfTaught',
+		storyType: 'education',
+		data: allEducation.selfTaught,
+	},
+
+	{
+		id: 'edu-holyfaith',
+		storyType: 'education',
+		data: allEducation.holyfaith,
+	},
+	{
+		id: 'edu-asianSchool',
+		storyType: 'education',
+		data: allEducation.asianSchool,
+	},
+
+	{
+		id: 'project-ai-text-summarizer',
+		storyType: 'project',
+		data: allProjects.aiTextSummarizer,
+	},	
+		
+	{
+		id: 'cert-microsoftAdvertisingCert',
+		storyType: 'certificate',
+		data: allCertificates.microsoftAdvertisingCert,
+	},	
+	{
+		id: 'cert-digitalMarketingFundamentalsCert',
+		storyType: 'certificate',
+		data: allCertificates.digitalMarketingFundamentalsCert,
+	},	
+	{
+		id: 'cert-sqlBasicCert',
+		storyType: 'certificate',
+		data: allCertificates.sqlBasicCert,
+	},
+	{
+		id: 'cert-enterpriseDesignThinkingCert',
+		storyType: 'certificate',
+		data: allCertificates.enterpriseDesignThinkingCert,
+	},
+	{
+		id: 'cert-cybersecurityfoundationCert',
+		storyType: 'certificate',
+		data: allCertificates.cybersecurityfoundationCert,
+	},
+	{
+		id: 'cert-artificialIntelligenceFundamentalsCert',
+		storyType: 'certificate',
+		data: allCertificates.artificialIntelligenceFundamentalsCert,
+	},
+	{
+		id: 'cert-postmanAPIFundamentalsCert',
+		storyType: 'certificate',
+		data: allCertificates.postmanAPIFundamentalsCert,
+	},
+	{
+		id: 'cert-goldmanSachsJobSimulationCert',
+		storyType: 'certificate',
+		data: allCertificates.goldmanSachsJobSimulationCert,
+	  },
+
+];
