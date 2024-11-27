@@ -4,7 +4,7 @@ export type RecommendationsType = {
 	relation: string;
 	date: string;
 	message: string;
-};
+}; 
 
 export const recommendations: RecommendationsType[] = [
 	{

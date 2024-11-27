@@ -83,37 +83,11 @@ function Testimonials() {
 											<p className='text-sm font-semibold'>
 												{recommendation.name}
 											</p>
-											{recommendation.linkedin && (
-												<Link
-													href={
-														recommendation.linkedin
-													}
-													legacyBehavior
-												>
-													<a>
-														<AiFillLinkedin />
-													</a>
-												</Link>
-											)}
+											
 										</div>
 										<p className='text-xs text-gray-400'>
 											{recommendation.designation}
-											{recommendation.company &&
-												recommendation.companyURL && (
-													<Link
-														href={
-															recommendation.companyURL
-														}
-														legacyBehavior
-													>
-														<a>
-															{' - '}
-															{
-																recommendation.company
-															}
-														</a>
-													</Link>
-												)}
+											
 										</p>
 										<p className='text-sm mt-1'>
 											{recommendation.date} -{' '}
