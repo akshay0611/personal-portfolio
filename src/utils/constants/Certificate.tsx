@@ -4,7 +4,7 @@ import microsoftImg from '/public/images/certificates/Microsoft.png';
 import hackerrankImg from '/public/images/certificates/hackerrank.png';
 import ibmImg from '/public/images/certificates/ibm.png';
 import postmanImg from '/public/images/certificates/postman.png';
-import goldmansachsImg from '/public/images/certificates/Goldmansachs.png';
+import goldmansachsImg from '/public/images/certificates/GoldmanSachs.png';
 
 
 export const allCertificates: { [key: string]: CertificateProps } = {
