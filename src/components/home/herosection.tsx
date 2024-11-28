@@ -77,7 +77,7 @@ export default function HeroSection() {
 					</div>
 					<div className='flex gap-2 item-center justify-center sm:justify-start text-sm sm:text-base'>
 						{/* <Button variant='primary' className='whitespace-nowrap'>
-							<Link href='https://resume.nimish-jain.com'>
+							<Link href=''>
 								View Resume
 							</Link>
 						</Button> */}
