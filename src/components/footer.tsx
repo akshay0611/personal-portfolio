@@ -1,6 +1,3 @@
-import { Switch } from '@headlessui/react';
-import React, { useState } from 'react';
-import { GiNothingToSay } from 'react-icons/gi';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import Lottie from 'lottie-react';
 import ConnectionAnimation from '../assets/lottie/social-media-network.json';
@@ -8,30 +5,17 @@ import { allSocials } from 'utils/constants/Socials';
 import SkillBadge from './common/SkillBadge';
 
 export default function Footer() {
-  const [anonymous, setAnonymous] = useState(false);
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
-    const message = form.getElementsByTagName('textarea')[0].value;
-    const name = form.getElementsByTagName('input')[0].value;
-    const email = form.getElementsByTagName('input')[1].value;
-    form.getElementsByTagName('button')[1].disabled = true;
-    fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify(
-        anonymous ? { message } : { name, email, message }
-      ),
-    })
-      .then((res) => {
-        form.reset();
-        form.getElementsByTagName('button')[1].disabled = false;
-        alert('Message sent successfully!');
-      })
-      .catch((err) => {
-        form.getElementsByTagName('button')[1].disabled = false;
-        alert('Error sending message!');
-      });
+    form.getElementsByTagName('button')[0].disabled = true;
+
+    // Simply reset the form and show success alert
+    form.reset();
+    form.getElementsByTagName('button')[0].disabled = false;
+    alert('Message sent successfully!');
   };
+
   return (
     <footer
       className='contact bg-dark-gray min-w-full pb-5 pt-16 md:pt-32 px-3 sm:px-6 md:px-10 lg:px-20'
@@ -49,7 +33,6 @@ export default function Footer() {
             <h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
               Say hi!
             </h1>
-            <GiNothingToSay className='absolute top-0 -right-7 text-2xl' />
           </div>
           <ul className='flex flex-wrap items-start justify-center md:justify-start mb-5 gap-3'>
             {allSocials.map((skill, index) => (
@@ -71,33 +54,6 @@ export default function Footer() {
             {/* Hidden field to specify the form name (optional but recommended) */}
             <input type="hidden" name="form-name" value="contactForm" />
             
-            <div className='flex gap-2 items-center'>
-              <label
-                htmlFor='stay-anonymous'
-                onClick={() => setAnonymous(!anonymous)}
-              >
-                Stay anonymous?
-              </label>
-              <Switch
-                checked={anonymous}
-                onChange={setAnonymous}
-                className={`${
-                  anonymous ? 'bg-blue-600' : 'bg-blue-400'
-                } relative inline-flex h-6 w-11 items-center rounded-full`}
-                id='stay-anonymous'
-              >
-                <span className='sr-only'>
-                  Enable notifications
-                </span>
-                <span
-                  className={`${
-                    anonymous
-                      ? 'translate-x-6'
-                      : 'translate-x-1'
-                  } inline-block h-4 w-4 transform rounded-full bg-white transition`}
-                />
-              </Switch>
-            </div>
             <div className='flex flex-col'>
               <label
                 htmlFor='name'
@@ -112,7 +68,6 @@ export default function Footer() {
                 name="name" // Add name for form submission
                 className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
                 maxLength={100}
-                disabled={anonymous}
                 required
               />
             </div>
@@ -131,7 +86,6 @@ export default function Footer() {
                 name="email" // Add name for form submission
                 className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
                 maxLength={100}
-                disabled={anonymous}
                 required
               />
             </div>
