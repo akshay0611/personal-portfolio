@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-	siteUrl: "https://nimish-jain.com",
+	siteUrl: "https://connectwithakshay.netlify.app/",
 	changefreq: 'daily',
 	exclude: ['/api/*'],
 	generateRobotsTxt: true,

@@ -17,7 +17,7 @@ export default function story() {
 				/>
 				<meta
 					name='author'
-					content='Akshay Kumar | https://nimish-jain.com'
+					content='Akshay Kumar | https://connectwithakshay.netlify.app/'
 				/>
 			</Head>
 			<Story />

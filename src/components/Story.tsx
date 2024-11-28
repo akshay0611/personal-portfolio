@@ -20,8 +20,8 @@ export default function Story() {
 	const copyUrl = async (e: React.MouseEvent<HTMLAnchorElement>) => {
 		if (navigator['share']) {
 			await navigator.share({
-				title: "Nimish's Developer Story",
-				text: "Checkout Nimish's Developer Story",
+				title: "Akshay's Developer Story",
+				text: "Checkout Akshay's Developer Story",
 				url: window.location.href,
 			});
 		} else if (navigator.clipboard) {

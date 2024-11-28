@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
-	const BASE_URL = process.env.BASE_URL || 'https://nimish-jain.com';
+	const BASE_URL = process.env.BASE_URL || 'https://connectwithakshay.netlify.app/';
 
 	return (
 		<Html>

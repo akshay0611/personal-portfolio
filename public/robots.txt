@@ -7,7 +7,7 @@ User-agent: *
 Disallow: /api
 
 # Host
-Host: https://nimish-jain.com
+Host: https://connectwithakshay.netlify.app/
 
 # Sitemaps
-Sitemap: https://nimish-jain.com/sitemap.xml
+Sitemap: https://connectwithakshay.netlify.app/sitemap.xml
