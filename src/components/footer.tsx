@@ -5,16 +5,18 @@ import { allSocials } from 'utils/constants/Socials';
 import SkillBadge from './common/SkillBadge';
 
 export default function Footer() {
-  const submitForm = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    form.getElementsByTagName('button')[0].disabled = true;
-
-    // Simply reset the form and show success alert
-    form.reset();
-    form.getElementsByTagName('button')[0].disabled = false;
-    alert('Message sent successfully!');
-  };
+	const submitForm = (e: React.FormEvent) => {
+		e.preventDefault();
+		console.log('Form submitted');  // Add a log here to see if the function is called.
+		const form = e.target as HTMLFormElement;
+		form.getElementsByTagName('button')[0].disabled = true;
+	  
+		// Simply reset the form and show success alert
+		form.reset();
+		form.getElementsByTagName('button')[0].disabled = false;
+		alert('Message sent successfully!');
+	  };
+	  
 
   return (
     <footer
