@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
-import nimishNoBg from '/public/images/nimish-nobg.png';
+import nimishNoBg from '/public/images/akshay.png';
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 export default function HeroSection() {

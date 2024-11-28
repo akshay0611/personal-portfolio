@@ -13,7 +13,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as LinkScroll } from 'react-scroll';
 import { SocialUrls } from 'utils/constants/urls';
 import { navbarData } from './navbar';
-import nimishNoBg from '/public/images/nimish-nobg.png';
+import nimishNoBg from '/public/images/akshay.png';
 
 export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 	const [display, setDisplay] = useState(false);
