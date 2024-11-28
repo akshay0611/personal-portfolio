@@ -1,41 +1,41 @@
-![GitHub](https://img.shields.io/github/license/nimishjn/portfolio-2022?style=for-the-badge)
-![Website](https://img.shields.io/website?down_color=red&down_message=Down&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Fnimish-jain.com)
-![GitHub issues](https://img.shields.io/github/issues-raw/nimishjn/portfolio-2022?style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/nimishjn/portfolio-2022?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/akshay0611/personal-portfolio?style=for-the-badge)  
+![Website](https://img.shields.io/website?down_color=red&down_message=Down&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Fconnectwithakshay.netlify.app)  
+![GitHub issues](https://img.shields.io/github/issues-raw/akshay0611/personal-portfolio?style=for-the-badge)  
+![GitHub Repo stars](https://img.shields.io/github/stars/akshay0611/personal-portfolio?style=for-the-badge)
 
-# Portfolio Website
-A portfolio website to showcase my projects, skills, and research works.
+# Personal Portfolio Website
 
-![Banner](https://github.com/nimishjn/portfolio-2022/assets/63140632/caed1a75-5789-473b-bab0-59fc9251eb12)
+A portfolio website to showcase my projects, skills, certifications, and achievements.  
 
+![Banner](public/images/banner.png)
 
 ## 👨‍💻 Tech Stack
-- [NextJs](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [React Markdown](https://www.npmjs.com/package/react-markdown)
-- [Headless UI](https://headlessui.com/)
+
+- [Next.js](https://nextjs.org/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [React Markdown](https://www.npmjs.com/package/react-markdown)  
+- [Headless UI](https://headlessui.com/)  
 
 ## 💡 Features
 
-#### Home Page
-- Consists hero, about, skills, projects, research, recommendations and contact sections.
-- Implemented a working contact form using [Mailjet API](https://www.mailjet.com/).
-- Made use of [lottie animations](https://lottiefiles.com/) for efficient loading of SVGs.
+### **Home Page**
+- A sleek design featuring sections like hero, about, skills, projects, certifications, and contact.  
+- Integrated working contact form with [Mailjet API](https://www.mailjet.com/).  
+- [Lottie animations](https://lottiefiles.com/) used for efficient SVG rendering.  
 
-#### Developer Story [[View](https://nimish-jain.com/story)]
-- This feature was originally offered by [StackOverFlow](https://stackoverflow.com/users/story/join).
-- This allows you to showcase your achievements, certificates, education, experience, projects, and research works. Feel free to add more categories.
-- All the descriptions are rendered using [react-markdown](https://www.npmjs.com/package/react-markdown).
-- Option to add featured tag to stories.
+### **Developer Story** [[View Here](https://connectwithakshay.netlify.app/story)]  
+- Highlight achievements, certifications, education, and experience in a structured way.  
+- Descriptions rendered using [React Markdown](https://www.npmjs.com/package/react-markdown).  
+- Option to tag specific stories as “featured.”  
 
-#### Other Features
-- **Dynamic SEO** for Twitter, Facebook, and Open Graph using [next-sitemap](https://www.npmjs.com/package/next-sitemap).
-- Custom 404 - Page Not Found page.
-- Lazy image loading for better **User Experience**.
-- The website is hosted on [Vercel](https://vercel.com/).
+### **Other Features**
+- Dynamic SEO for enhanced visibility on social platforms (Twitter, Facebook, Open Graph).  
+- Custom 404 - Page Not Found.  
+- Lazy image loading for optimized performance.  
+- Hosted on [Netlify](https://www.netlify.com/).  
 
-## 💻 Contributors
-<a href="https://github.com/nimishjn/portfolio-2022/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nimishjn/portfolio-2022" />
-</a>
+## 💻 Contributors  
+<a href="https://github.com/akshay0611/personal-portfolio/graphs/contributors">  
+  <img src="https://contrib.rocks/image?repo=akshay0611/personal-portfolio" />  
+</a>  
