@@ -98,7 +98,7 @@ export const navbarData = [
 	},
 	{
 		title: 'Resume',
-		to: 'https://resume.nimish-jain.com',
+		to: '',
 		external: true,
 	},
 	{

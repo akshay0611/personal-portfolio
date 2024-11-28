@@ -13,7 +13,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as LinkScroll } from 'react-scroll';
 import { SocialUrls } from 'utils/constants/urls';
 import { navbarData } from './navbar';
-import nimishNoBg from '/public/images/akshay.png';
+import akshay from '/public/images/akshay.png';
 
 export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 	const [display, setDisplay] = useState(false);
@@ -65,7 +65,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							className='rounded-full'
 							height={500}
 							width={500}
-							src={nimishNoBg}
+							src={akshay}
 							alt='Akshay Kumar'
 							loading='lazy'
 							placeholder='blur'

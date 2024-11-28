@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
-import nimishNoBg from '/public/images/akshay.png';
+import akshay from '/public/images/akshay.png';
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 export default function HeroSection() {
@@ -100,7 +100,7 @@ export default function HeroSection() {
 						className='rounded-full'
 						height={1000}
 						width={1000}
-						src={nimishNoBg}
+						src={akshay}
 						alt='Akshay Kumar'
 						loading='lazy'
 						placeholder='blur'
