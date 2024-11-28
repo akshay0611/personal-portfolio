@@ -47,6 +47,11 @@ import {
 	FaClock,
 	FaPlug,
 	FaPaperPlane,
+	FaProjectDiagram,
+    FaSearchPlus,
+    FaWindowRestore,
+    FaExchangeAlt,
+	FaHandshake 
 
 
 
@@ -669,6 +674,32 @@ export const allSkills: skillInterface[] = [
 	id: 'skill_enterpriseintegration',
 	category: ['design thinking'],
   },
+
+  {
+	name: 'Enterprise Innovation',
+	icon: <FaLightbulb height='1em' />,
+	bgcolor: '#4caf50',
+	link: 'https://en.wikipedia.org/wiki/Innovation',
+	id: 'skill_enterpriseinnovation',
+	category: ['design thinking'],
+},
+{
+	name: 'Facilitation',
+	icon: <FaHandshake height='1em' />,
+	bgcolor: '#ff9800',
+	link: 'https://en.wikipedia.org/wiki/Facilitation_(business)',
+	id: 'skill_facilitation',
+	category: ['design thinking'],
+},
+{
+	name: 'Scalable Solutions',
+	icon: <FaProjectDiagram height='1em' />,
+	bgcolor: '#673ab7',
+	link: 'https://en.wikipedia.org/wiki/Scalability',
+	id: 'skill_scalablesolutions',
+	category: ['design thinking'],
+},
+
   
   // SQL
 {
@@ -715,6 +746,51 @@ export const allSkills: skillInterface[] = [
 	id: 'skill_datamanipulation',
 	category: ['sql'],
   },
+
+  {
+	name: 'Advanced Joins',
+	icon: <FaProjectDiagram height='1em' />, // Represents merging/joining data
+	bgcolor: '#ff9800',
+	link: 'https://www.sqlshack.com/sql-joins/',
+	id: 'skill_advancedjoins',
+	category: ['sql'],
+},
+
+{
+	name: 'Subqueries',
+	icon: <FaSearchPlus height='1em' />, // Represents returning data within another query
+	bgcolor: '#4caf50',
+	link: 'https://en.wikipedia.org/wiki/Subquery',
+	id: 'skill_subqueries',
+	category: ['sql'],
+},
+
+{
+	name: 'Window Functions',
+	icon: <FaWindowRestore  height='1em' />, // Represents window/frame operations
+	bgcolor: '#673ab7',
+	link: 'https://mode.com/sql-tutorial/sql-window-functions/',
+	id: 'skill_windowfunctions',
+	category: ['sql'],
+},
+
+{
+	name: 'Query Optimization',
+	icon: <FaChartLine  height='1em' />, // Represents performance improvement
+	bgcolor: '#e91e63',
+	link: 'https://www.sqlshack.com/sql-query-optimization-techniques/',
+	id: 'skill_queryoptimization',
+	category: ['sql'],
+},
+
+{
+	name: 'Data Transformation',
+	icon: <FaExchangeAlt height='1em' />, // Represents transforming data in databases
+	bgcolor: '#00bcd4',
+	link: 'https://en.wikipedia.org/wiki/Data_transformation',
+	id: 'skill_datatransformation',
+	category: ['sql'],
+},
 
 //   Goldman Sachs
 {

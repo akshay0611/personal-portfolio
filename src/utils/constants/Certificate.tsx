@@ -88,6 +88,40 @@ Completing this certification is a crucial step in strengthening my technical ex
 		],
 		orgName: 'Hacker Rank',
 	},
+
+	sqlIntermediateCert: {
+		fromDate: 'Oct 2024',
+		toDate: 'Oct 2024',
+		title: 'SQL Intermediate',
+		url: 'https://www.hackerrank.com/certificates/56f79e273415', 
+		imageURL: hackerrankImg,
+		description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates/refs/heads/main/Hacker%20Rank-%20SQL%20Intermediate.png)
+	
+The **SQL Intermediate** certification from HackerRank expanded upon my foundational SQL knowledge by introducing advanced database concepts and complex query-writing techniques. This certification validated my ability to handle sophisticated database operations and optimize queries for better performance.
+	
+### Key Learning Objectives:
+- **Advanced Joins:** Mastering concepts like FULL OUTER JOIN, SELF JOIN, and CROSS JOIN for diverse data relationship scenarios.
+- **Subqueries:** Writing nested queries to derive complex insights and structure reusable SQL statements.
+- **Window Functions:** Leveraging analytical functions such as ROW_NUMBER, RANK, and PARTITION BY to perform advanced calculations across data subsets.
+- **Query Optimization:** Understanding indexes, execution plans, and other techniques to improve query performance.
+- **Data Transformation:** Applying CASE statements, conditional expressions, and advanced aggregate functions for data manipulation.
+	
+This certification strengthened my proficiency in writing complex SQL queries and equipped me with the skills to tackle real-world database challenges effectively. These advanced SQL capabilities play a critical role in building scalable and efficient backend systems and performing in-depth data analytics.
+	
+Completing this certification is a significant milestone in enhancing my technical expertise and advancing my full-stack development projects with robust database integration.
+	`,
+		skills: [
+			'skill_sql',
+			'skill_advancedjoins',
+			'skill_subqueries',
+			'skill_windowfunctions',
+			'skill_queryoptimization',
+			'skill_datatransformation'
+		],
+		orgName: 'Hacker Rank',
+	},
+
 	enterpriseDesignThinkingCert: {
 		fromDate: 'Oct 2024',
 		toDate: 'Oct 2024',
@@ -115,6 +149,35 @@ By integrating these skills into my development and business projects, I ensure 
         skills: ['skill_designthinking', 'skill_collaborativeproblem-solving', 'skill_user-centereddesign', 'skill_prototyping', 'skill_innovation', 'skill_enterpriseintegration'],
 		orgName: 'IBM',
 	},
+
+	enterpriseDesignThinkingCoCreatorCert: {
+		fromDate: 'Oct 2024',
+		toDate: 'Oct 2024',
+		title: 'Enterprise Design Thinking Co-Creator',
+		url: 'https://www.credly.com/go/RT9XBoVB', 
+		imageURL: ibmImg,
+		description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates/refs/heads/main/IBM-%20Enterprise%20Design%20Thinking-Co%20Creator%20Badge.jpg)
+
+The **Enterprise Design Thinking Co-Creator** certification from IBM advanced my knowledge and application of design thinking principles, focusing on co-creation and deeper collaboration in complex projects.
+
+### Key Objectives and Learning Outcomes:
+- **Advanced Design Thinking:** Building on foundational principles to facilitate co-creation sessions and workshops for impactful solutions.
+- **Facilitating Collaboration:** Enabling teams to effectively brainstorm, ideate, and converge on innovative ideas in enterprise settings.
+- **Prototyping at Scale:** Designing prototypes for large-scale applications, ensuring alignment with business strategies and user needs.
+- **Driving Innovation:** Guiding stakeholders and teams through the design thinking process to drive innovative projects across various domains.
+
+This certification empowered me to:
+- Lead co-creation sessions with diverse stakeholders.
+- Deliver scalable and user-focused solutions.
+- Innovate within complex systems, integrating design thinking with enterprise strategies.
+
+The skills gained from this certification allow me to elevate my professional contributions, ensuring that innovation is both user-centric and business-aligned. It has further enriched my ability to facilitate design thinking in collaborative and enterprise contexts.
+`,
+        skills: ['skill_designthinking', 'skill_collaboration', 'skill_prototyping', 'skill_enterpriseinnovation', 'skill_facilitation', 'skill_scalablesolutions'],
+		orgName: 'IBM',
+	},
+
 	cybersecurityfoundationCert: {
 		fromDate: 'Oct 2024',
 		toDate: 'Oct 2024',

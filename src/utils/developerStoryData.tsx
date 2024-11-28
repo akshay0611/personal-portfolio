@@ -80,9 +80,19 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allCertificates.sqlBasicCert,
 	},
 	{
+		id: 'cert-sqlIntermediateCert',
+		storyType: 'certificate',
+		data: allCertificates.sqlIntermediateCert,
+	},
+	{
 		id: 'cert-enterpriseDesignThinkingCert',
 		storyType: 'certificate',
 		data: allCertificates.enterpriseDesignThinkingCert,
+	},
+	{
+		id: 'cert-enterpriseDesignThinkingCoCreatorCert',
+		storyType: 'certificate',
+		data: allCertificates.enterpriseDesignThinkingCoCreatorCert,
 	},
 	{
 		id: 'cert-cybersecurityfoundationCert',
