@@ -178,6 +178,34 @@ The skills gained from this certification allow me to elevate my professional co
 		orgName: 'IBM',
 	},
 
+
+	enterpriseDesignThinkingTeamEssentialsForAICert: {
+		fromDate: 'Oct 2024',
+		toDate: 'Oct 2024',
+		title: 'Enterprise Design Thinking - Team Essentials for AI',
+		url: 'https://www.credly.com/go/oHfQNS8l', 
+		imageURL: ibmImg,
+		description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates/refs/heads/main/IBM-Enterprise%20Design%20Thinking%20-%20Team%20Essentials%20for%20AI.jpg)
+
+The **Enterprise Design Thinking - Team Essentials for AI** certification from IBM introduced a comprehensive framework for designing AI systems collaboratively, with a strong emphasis on responsible AI and user-centered design.
+
+### Key Objectives and Learning Outcomes:
+- **Responsible AI Design:** Understanding the ethical considerations and principles required for designing AI systems that prioritize user safety and fairness.
+- **Team Alignment:** Learning to align multidisciplinary teams around a shared intent to build effective AI solutions.
+- **Working with Data:** Developing skills to work with data sources effectively while ensuring data integrity and ethical use.
+- **Building AI Solutions:** Gaining hands-on experience with frameworks and tools to start building AI solutions from concept to prototype.
+
+This certification empowered me to:
+- Design AI systems with a focus on user needs and ethical principles.
+- Collaborate effectively with teams in AI-focused projects.
+- Align stakeholders around responsible AI practices.
+
+The skills and insights from this certification strengthen my ability to innovate in AI projects, ensuring a balance between technological advancements and human-centric principles.
+`,
+        skills: ['skill_responsibleAI', 'skill_teamalignment', 'skill_dataintegrity', 'skill_prototyping', 'skill_aidesign', 'skill_collaboration'],
+		orgName: 'IBM',
+	},	
 	cybersecurityfoundationCert: {
 		fromDate: 'Oct 2024',
 		toDate: 'Oct 2024',

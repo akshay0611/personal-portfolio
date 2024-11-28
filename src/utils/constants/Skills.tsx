@@ -51,7 +51,8 @@ import {
     FaSearchPlus,
     FaWindowRestore,
     FaExchangeAlt,
-	FaHandshake 
+	FaHandshake,
+	FaBalanceScale  
 
 
 
@@ -697,6 +698,38 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#673ab7',
 	link: 'https://en.wikipedia.org/wiki/Scalability',
 	id: 'skill_scalablesolutions',
+	category: ['design thinking'],
+},
+{
+	name: 'Responsible AI',
+	icon: <FaBalanceScale height='1em' />,
+	bgcolor: '#ff5722',
+	link: 'https://en.wikipedia.org/wiki/Artificial_intelligence_ethics',
+	id: 'skill_responsibleAI',
+	category: ['design thinking'],
+},
+{
+	name: 'Team Alignment',
+	icon: <FaUsers height='1em' />,
+	bgcolor: '#009688',
+	link: 'https://en.wikipedia.org/wiki/Teamwork',
+	id: 'skill_teamalignment',
+	category: ['design thinking'],
+},
+{
+	name: 'Data Integrity',
+	icon: <FaDatabase height='1em' />,
+	bgcolor: '#3f51b5',
+	link: 'https://en.wikipedia.org/wiki/Data_integrity',
+	id: 'skill_dataintegrity',
+	category: ['design thinking'],
+},
+{
+	name: 'AI Design',
+	icon: <FaRobot height='1em' />,
+	bgcolor: '#4caf50',
+	link: 'https://en.wikipedia.org/wiki/Artificial_intelligence',
+	id: 'skill_aidesign',
 	category: ['design thinking'],
 },
 

@@ -95,6 +95,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allCertificates.enterpriseDesignThinkingCoCreatorCert,
 	},
 	{
+		id: 'cert-enterpriseDesignThinkingTeamEssentialsForAICert',
+		storyType: 'certificate',
+		data: allCertificates.enterpriseDesignThinkingTeamEssentialsForAICert,
+	},
+	{
 		id: 'cert-cybersecurityfoundationCert',
 		storyType: 'certificate',
 		data: allCertificates.cybersecurityfoundationCert,
