@@ -21,7 +21,7 @@ A portfolio website to showcase my projects, skills, certifications, and achieve
 
 ### **Home Page**
 - A sleek design featuring sections like hero, about, skills, projects, certifications, and contact.  
-- Integrated working contact form with [Mailjet API](https://www.mailjet.com/).  
+- Integrated working contact form with [Netlify Forms](https://www.netlify.com/platform/core/forms/), using email notifications.  
 - [Lottie animations](https://lottiefiles.com/) used for efficient SVG rendering.  
 
 ### **Developer Story** [[View Here](https://connectwithakshay.netlify.app/story)]  
