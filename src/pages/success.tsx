@@ -6,7 +6,7 @@ export default function Success() {
     <>
       {/* SEO Metadata */}
       <Head>
-        <title>Success | Your Project Name</title>
+        <title>Success | Akshay Kumar</title>
         <meta name="description" content="Thank you for your submission. We'll get back to you soon." />
       </Head>
 
