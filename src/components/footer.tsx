@@ -47,72 +47,64 @@ export default function Footer() {
             <hr className='w-full border-dashed' />
           </div>
           <form
-            onSubmit={submitForm}
-            className='flex flex-col gap-3'
-            name="contactForm" // Add a name for the form (optional)
-            method="POST" // Required for Netlify form submission
-            data-netlify="true" // Enable Netlify form handling
-          >
-            {/* Hidden field to specify the form name (optional but recommended) */}
-            <input type="hidden" name="form-name" value="contactForm" />
-            
-            <div className='flex flex-col'>
-              <label
-                htmlFor='name'
-                className='text-xs text-gray-400'
-              >
-                Name<span className='text-red-600'> *</span>
-              </label>
-              <input
-                type='text'
-                placeholder='Enter your name'
-                id='contact-name'
-                name="name" // Add name for form submission
-                className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
-                maxLength={100}
-                required
-              />
-            </div>
-            <div className='flex flex-col'>
-              <label
-                htmlFor='email'
-                className='text-xs text-gray-400'
-              >
-                Email
-                <span className='text-red-600'> *</span>
-              </label>
-              <input
-                type='email'
-                placeholder='Enter your email'
-                id='contact-email'
-                name="email" // Add name for form submission
-                className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
-                maxLength={100}
-                required
-              />
-            </div>
-            <div className='flex flex-col'>
-              <label
-                htmlFor='message'
-                className='text-xs text-gray-400'
-              >
-                Message
-                <span className='text-red-600'> *</span>
-              </label>
-              <textarea
-                placeholder='Feel free to write anything. Feedbacks and advices are highly appreciated!'
-                id='contact-message'
-                name="message" // Add name for form submission
-                className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent border'
-                maxLength={1000}
-                rows={5}
-                required
-              />
-            </div>
-            <button className='bg-gray-200 hover:bg-white text-black rounded-sm py-1 px-2 flex items-center justify-center gap-1 disabled:opacity-30'>
-              Send <RiSendPlaneFill />
-            </button>
-          </form>
+  name="contactForm"
+  method="POST"
+  data-netlify="true"
+  className="flex flex-col gap-3"
+>
+  {/* Hidden field to specify the form name */}
+  <input type="hidden" name="form-name" value="contactForm" />
+  
+  <div className="flex flex-col">
+    <label htmlFor="name" className="text-xs text-gray-400">
+      Name<span className="text-red-600"> *</span>
+    </label>
+    <input
+      type="text"
+      placeholder="Enter your name"
+      id="contact-name"
+      name="name"
+      className="bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30"
+      maxLength={100}
+      required
+    />
+  </div>
+
+  <div className="flex flex-col">
+    <label htmlFor="email" className="text-xs text-gray-400">
+      Email<span className="text-red-600"> *</span>
+    </label>
+    <input
+      type="email"
+      placeholder="Enter your email"
+      id="contact-email"
+      name="email"
+      className="bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30"
+      maxLength={100}
+      required
+    />
+  </div>
+
+  <div className="flex flex-col">
+    <label htmlFor="message" className="text-xs text-gray-400">
+      Message<span className="text-red-600"> *</span>
+    </label>
+    <textarea
+      placeholder="Feel free to write anything. Feedbacks and advices are highly appreciated!"
+      id="contact-message"
+      name="message"
+      className="bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent border"
+      maxLength={1000}
+      rows={5}
+      required
+    />
+  </div>
+
+  <button className="bg-gray-200 hover:bg-white text-black rounded-sm py-1 px-2 flex items-center justify-center gap-1 disabled:opacity-30">
+    Send <RiSendPlaneFill />
+  </button>
+</form>
+
         </div>
       </div>
       <div className='max-section-width flex justify-center items-center gap-2 pt-4 mt-10 border-t border-gray-700'>
