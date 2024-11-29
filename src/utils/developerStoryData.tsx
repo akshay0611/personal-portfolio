@@ -63,6 +63,12 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		storyType: 'project',
 		data: allProjects.aiTextSummarizer,
 	},	
+
+	{
+		id: 'project-portfolio-website',
+		storyType: 'project',
+		data: allProjects.portfolioWebsite,
+	},
 		
 	{
 		id: 'cert-microsoftAdvertisingCert',

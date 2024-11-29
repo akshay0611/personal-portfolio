@@ -1,5 +1,6 @@
 import { ProjectProps } from 'utils/developerStory';
 import postmanImg from '/public/images/project/postman.png';
+import portfolioImg from '/public/images/project/portfolio-logo.jpg';
 export const allProjects: { [key: string]: ProjectProps } = {
 	
 
@@ -32,6 +33,39 @@ This project showcases my skills in working with APIs and delivering user-friend
 		repoUrl: 'https://github.com/akshay0611/AI-Text-Summarizer',
 		viewUrl: 'https://replit.com/@AkshayKumar189/AI-Text-Summarizer-App',
 		techStack: ['skill_nodejs', 'skill_postmantoolusage'],
+	},
+
+	portfolioWebsite: {
+		fromDate: 'Nov 2024',
+		toDate: 'Nov 2024',
+		projectName: 'Personal Portfolio Website',
+		orgName: 'Personal Project',
+		imageURL: portfolioImg, 
+		featured: true,
+		description: `
+A dynamic, responsive, and visually appealing portfolio website to showcase my skills, projects, and achievements.
+
+![](https://raw.githubusercontent.com/akshay0611/personal-portfolio/refs/heads/main/public/images/banner.png) 
+
+### Features and Highlights:
+- Fully responsive design optimized for both desktop and mobile views.  
+- Sections for **Projects**, **Skills**, **Certifications**, **Experience**, and **Testimonials**.  
+- Integrated **Netlify Forms** for seamless handling of contact form submissions.  
+- Dynamic **SEO optimization** to enhance visibility on search engines and social platforms.  
+- Hosted on **Netlify** with fast performance and effortless deployment.
+
+### Tools & Technologies:
+- **Next.js**: Used for building a fast and scalable React-based website.
+- **TypeScript**: Ensured type safety and maintainability in the codebase.
+- **TailwindCSS**: Provided a sleek and responsive design with minimal effort.
+- **Netlify**: Managed hosting, deployment, and form submissions.
+- **React Markdown**: Allowed dynamic rendering of markdown content for developer stories.
+
+This project represents my ability to design and develop modern, user-centric websites while ensuring optimal performance and maintainability.
+		`,
+		repoUrl: 'https://github.com/akshay0611/personal-portfolio', 
+		viewUrl: 'https://connectwithakshay.netlify.app', 
+		techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_typescript'],
 	},
 	
 };
