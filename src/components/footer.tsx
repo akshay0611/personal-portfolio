@@ -48,6 +48,7 @@ export default function Footer() {
           </div>
           <form
   name="contactForm"
+  action="/success"
   method="POST"
   data-netlify="true"
   className="flex flex-col gap-3"
