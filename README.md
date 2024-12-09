@@ -3,7 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/akshay0611/personal-portfolio?style=for-the-badge)  
 ![GitHub Repo stars](https://img.shields.io/github/stars/akshay0611/personal-portfolio?style=for-the-badge)
 
-# Personal Portfolio Website
+# Personal Portfolio Website  
 
 A portfolio website to showcase my projects, skills, certifications, and achievements.  
 
