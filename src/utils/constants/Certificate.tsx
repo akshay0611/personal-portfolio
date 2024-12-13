@@ -308,4 +308,28 @@ This certification demonstrates proficiency in governance analysis, password sec
 		],
 		orgName: 'Goldman Sachs',
 	},
+
+	generativeAIEducatorsCert: {
+		fromDate: 'Dec 2024',
+		toDate: 'Dec 2024',
+		title: 'Generative AI for Educators',
+		url: 'https://skillshop.exceedlms.com/student/award/oHHarUaCrBp8BQirvXqba7GV',
+		imageURL: googleImg, 
+		description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates/refs/heads/main/Generative%20AI%20for%20Educators%20Certificate%20_%20Google.jpg)
+
+In December 2024, I earned the *Generative AI for Educators* certification, a program offered by Google to introduce educators to the potential of generative AI in enhancing teaching practices. This course provided practical insights into leveraging AI tools like Gemini and ChatGPT to save time, personalize instruction, and enrich classroom experiences.
+
+Throughout this course, I learned to:
+
+- **Identify Generative AI Applications:** Explore how generative AI can assist in professional practice by creating new content such as text, images, or other media.  
+- **Write Effective AI Prompts:** Develop and evaluate conversational prompts for AI tools to achieve desired outcomes.  
+- **Create Classroom Resources:** Utilize generative AI to design instructional materials, update lessons, and manage administrative tasks.  
+
+By the end of the program, I gained proven strategies to integrate AI tools into educational settings effectively. This certification has equipped me with the skills to harness AI for streamlining tasks, personalizing learning experiences, and fostering creativity in educational environments.
+    `,
+    skills: ['skill_aiApplications', 'skill_aiPrompting', 'skill_classroomResourceCreation'],
+    orgName: 'Google',
+},
+
 };

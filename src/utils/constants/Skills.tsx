@@ -52,7 +52,9 @@ import {
     FaWindowRestore,
     FaExchangeAlt,
 	FaHandshake,
-	FaBalanceScale  
+	FaBalanceScale,
+	FaKeyboard,
+	FaChalkboardTeacher  
 
 
 
@@ -907,6 +909,33 @@ export const allSkills: skillInterface[] = [
 	id: 'skill_apidevelopmenttesting',
 	category: ['api'],
   },
+
+  {
+    name: 'Generative AI Applications',
+    icon: <FaBrain height='1em' />, // Replace with an appropriate icon
+    bgcolor: '#2196f3',
+    link: 'https://en.wikipedia.org/wiki/Generative_adversarial_network',
+    id: 'skill_aiApplications',
+    category: ['ai'],
+},
+
+{
+    name: 'AI Prompting',
+    icon: <FaKeyboard height='1em' />, // Replace with an appropriate icon
+    bgcolor: '#673ab7',
+    link: 'https://en.wikipedia.org/wiki/Prompt_engineering',
+    id: 'skill_aiPrompting',
+    category: ['ai'],
+},
+
+{
+    name: 'Classroom Resource Creation',
+    icon: <FaChalkboardTeacher height='1em' />, // Replace with an appropriate icon
+    bgcolor: '#ff9800',
+    link: 'https://en.wikipedia.org/wiki/Educational_technology',
+    id: 'skill_classroomResourceCreation',
+    category: ['education'],
+},
   
   
 

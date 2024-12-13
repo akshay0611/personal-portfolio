@@ -126,4 +126,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allCertificates.goldmanSachsJobSimulationCert,
 	  },
 
+	{
+		id: 'cert-generativeAIEducatorsCert',
+		storyType: 'certificate',
+		data: allCertificates.generativeAIEducatorsCert,
+	}
+	
+
 ];
