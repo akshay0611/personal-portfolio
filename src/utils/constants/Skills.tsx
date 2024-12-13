@@ -86,22 +86,23 @@ import NivoLogo from '../../assets/icons/nivo-logo.svg';
 import { BsBootstrap, BsPieChart } from 'react-icons/bs';
 
 export const Categories = [
-	{ id: 'language', name: 'Programming Language' },
+	{ id: 'ai_data_science', name: 'AI and Data Science Skills' }, 
+	{ id: 'cybersecurity', name: 'Cybersecurity Skills' },
 	{ id: 'frontend', name: 'Frontend Development' },
 	{ id: 'backend', name: 'Backend Development' },
+	{ id: 'language', name: 'Programming Language' },
 	{ id: 'framework', name: 'Framework' },
 	{ id: 'database', name: 'Database System' }, 
-	{ id: 'software', name: 'Software' },
-	// { id: 'tool', name: 'Development Tool' },
-	{ id: 'os', name: 'Operating System' },
-	// { id: 'design', name: 'Design Tool' },
+	{ id: 'digital_marketing', name: 'Digital Marketing Skills' },
 	{ id: 'hosting', name: 'Hosting Platform' },
+	{ id: 'software', name: 'Software' },
 	{ id: 'editor', name: 'Code Editor' },
-	// { id: 'ide', name: 'IDE' },
-	{ id: 'scripting', name: 'Scripting Language' },
 	{ id: 'library', name: 'Software Library' },
-	// { id: 'misc', name: 'Miscellaneous' },
+	{ id: 'scripting', name: 'Scripting Language' },
+	{ id: 'os', name: 'Operating System' },
+	{ id: 'design thinking', name: 'Design Thinking' }
 ];
+  
 
 const CategoriesId = Categories.map((e) => e.id);
 
@@ -467,7 +468,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#4CAF50',
 		link: 'https://www.google.com/search?q=SEO+guide',
 		id: 'skill_seo',
-		category: ['marketing'], 
+		category: ['digital_marketing'],
 	},
 
 	{
@@ -476,7 +477,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#1877F2',
 		link: 'https://www.facebook.com/business/learn/social-media-marketing',
 		id: 'skill_smm',
-		category: ['marketing'], 
+		category: ['digital_marketing'],
 	},
 
 	{
@@ -485,7 +486,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#FF7F50',
 		link: 'https://blog.hubspot.com/marketing/content-marketing',
 		id: 'skill_contentmarketing',
-		category: ['marketing'], 
+		category: ['digital_marketing'],
 	},
 
 	{
@@ -494,7 +495,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#1E90FF',
 		link: 'https://mailchimp.com/email-marketing/',
 		id: 'skill_emailmarketing',
-		category: ['marketing'], 
+		category: ['digital_marketing'],
 	},
 
 	{
@@ -503,7 +504,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#FFB400',
 		link: 'https://analytics.google.com/analytics/web/',
 		id: 'skill_webanalytics',
-		category: ['marketing'], 
+		category: ['digital_marketing'],
 	},
 	{
 		name: 'Search Advertising',
@@ -511,7 +512,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#0052CC', // Blue - Trusted and professional advertising
 		link: 'https://www.microsoft.com/en-us/advertising/',
 		id: 'skill_searchadvertising',
-		category: ['marketing'], 
+		category: ['digital_marketing'],
 },
 {
 	name: 'Campaign Optimization',
@@ -519,7 +520,7 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#FF5722', // Vibrant Orange - Targeted success
 	link: 'https://www.microsoft.com/en-us/advertising/',
 	id: 'skill_campaignoptimization',
-	category: ['marketing'], 
+	category: ['digital_marketing'],
 },
 
 {
@@ -528,7 +529,7 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#FFC107', // Yellow - Insights and growth
 	link: 'https://www.microsoft.com/en-us/advertising/',
 	id: 'skill_performanceanalysis',
-	category: ['marketing'], 
+	category: ['digital_marketing'],
 },
 
 {
@@ -537,17 +538,17 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#8BC34A', // Green - Precision and targeting
 	link: 'https://www.microsoft.com/en-us/advertising/',
 	id: 'skill_targetingstrategies',
-	category: ['marketing'], 
+	category: ['digital_marketing'],
 },
 
-// Artifical Intelligence 
+// AI and Data Science Skills
 {
 	name: 'Artificial Intelligence',
 	icon: <FaBrain height='1em' />,
 	bgcolor: '#6a1b9a',
 	link: 'https://en.wikipedia.org/wiki/Artificial_intelligence',
 	id: 'skill_ai',
-	category: ['artificial intelligence'],
+	category: ['ai_data_science'],
 },
 
 {
@@ -556,7 +557,7 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#0288d1',
 	link: 'https://en.wikipedia.org/wiki/Machine_learning',
 	id: 'skill_machinelearning',
-	category: ['artificial intelligence'],
+	category: ['ai_data_science'],
 },
 
 {
@@ -565,7 +566,7 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#ff9800',
 	link: 'https://en.wikipedia.org/wiki/Data_science',
 	id: 'skill_datascience',
-	category: ['artificial intelligence'],
+	category: ['ai_data_science'],
 },
 
 {
@@ -574,7 +575,7 @@ export const allSkills: skillInterface[] = [
 	bgcolor: '#4caf50',
 	link: 'https://en.wikipedia.org/wiki/Artificial_neural_network',
 	id: 'skill_neuralnetworks',
-	category: ['artificial intelligence'],
+	category: ['ai_data_science'],
 },
 
 // Cybersecurity
