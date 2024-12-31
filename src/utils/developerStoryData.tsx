@@ -65,6 +65,13 @@ export const developerStoryData: DeveloperStoryDataProps = [
 	},	
 
 	{
+		id: 'project-finpulse',
+		storyType: 'project',
+		data: allProjects.finPulse,
+    },
+
+
+	{
 		id: 'project-portfolio-website',
 		storyType: 'project',
 		data: allProjects.portfolioWebsite,

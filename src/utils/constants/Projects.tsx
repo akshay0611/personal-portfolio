@@ -1,6 +1,7 @@
 import { ProjectProps } from 'utils/developerStory';
 import postmanImg from '/public/images/project/postman.png';
 import portfolioImg from '/public/images/project/portfolio-logo.jpg';
+import  finPulseImg from '/public/images/project/finpulse.png';
 export const allProjects: { [key: string]: ProjectProps } = {
 	
 
@@ -67,5 +68,37 @@ This project represents my ability to design and develop modern, user-centric we
 		viewUrl: 'https://connectwithakshay.netlify.app', 
 		techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_typescript'],
 	},
+
+	finPulse: {
+		fromDate: 'Dec 2024',
+		toDate: 'Dec 2024',
+		projectName: 'FinPulse',
+		orgName: 'Personal Project',
+		imageURL: finPulseImg,
+		featured: true,
+		description: `
+FinPulse is a MERN-stack web application delivering the latest financial news, government schemes, investment ideas, blogs, and interactive tools.
+
+### Features and Highlights:
+- Fetches real-time news, blogs, and government schemes via MongoDB Atlas.
+- Includes financial calculators (SIP, SWP, EMI) and quizzes to enhance financial literacy.
+- Offers courses and investment ideas tailored to users' needs.
+- Responsive, user-friendly design with multi-language support via Google Translate.
+
+### Tools & Technologies:
+- **Frontend:** React, TypeScript, Tailwind CSS, Vite.
+- **Backend:** Node.js, Express.
+- **Database:** MongoDB Atlas.
+- **Routing:** React Router.
+- **API Integration:** Fetch API.
+
+This project showcases my full-stack development expertise and commitment to building user-centric, scalable web applications.
+		`,
+		repoUrl: 'https://github.com/akshay0611/FinPulse',
+		viewUrl: 'https://fin-pulse.vercel.app/',
+		techStack: ['skill_reactjs', 'skill_typescript', 'skill_tailwindcss', 'skill_nodejs', 'skill_expressjs', 'skill_mongodb'],
+},
+
+
 	
 };
