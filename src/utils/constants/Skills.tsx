@@ -54,7 +54,8 @@ import {
 	FaHandshake,
 	FaBalanceScale,
 	FaKeyboard,
-	FaChalkboardTeacher  
+	FaChalkboardTeacher,
+	FaTools   
 
 
 
@@ -919,6 +920,32 @@ export const allSkills: skillInterface[] = [
     id: 'skill_aiApplications',
     category: ['ai'],
 },
+
+{
+    name: 'Generative AI',
+    icon: <FaBrain height='1em' />, // Replace with an appropriate icon
+    bgcolor: '#ff9800',
+    link: 'https://en.wikipedia.org/wiki/Generative_AI',
+    id: 'skill_generativeAI',
+    category: ['ai'],
+},
+{
+    name: 'AI Integration',
+    icon: <FaNetworkWired height='1em' />, // Replace with an appropriate icon
+    bgcolor: '#03a9f4',
+    link: 'https://en.wikipedia.org/wiki/Artificial_intelligence',
+    id: 'skill_aiIntegration',
+    category: ['ai', 'integration'],
+},
+{
+    name: 'Productivity Tools',
+    icon: <FaTools height='1em' />, // Replace with an appropriate icon
+    bgcolor: '#4caf50',
+    link: 'https://en.wikipedia.org/wiki/Productivity_software',
+    id: 'skill_productivityTools',
+    category: ['tools', 'productivity'],
+},
+
 
 {
     name: 'AI Prompting',

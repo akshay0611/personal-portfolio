@@ -5,7 +5,7 @@ import hackerrankImg from '/public/images/certificates/hackerrank.png';
 import ibmImg from '/public/images/certificates/ibm.png';
 import postmanImg from '/public/images/certificates/postman.png';
 import goldmansachsImg from '/public/images/certificates/GoldmanSachs.png';
-
+import piecesImg from '/public/images/certificates/Pieces.jpeg';
 
 export const allCertificates: { [key: string]: CertificateProps } = {
 	digitalMarketingFundamentalsCert: {
@@ -331,5 +331,29 @@ By the end of the program, I gained proven strategies to integrate AI tools into
     skills: ['skill_aiApplications', 'skill_aiPrompting', 'skill_classroomResourceCreation'],
     orgName: 'Google',
 },
+
+genAI101PiecesCert: {
+    fromDate: 'Dec 2024',
+    toDate: 'Dec 2024',
+    title: 'GenAI 101 with Pieces',
+    url: 'https://api.badgr.io/public/assertions/MFEkMPPaTYGOc3di-LsWnA',
+    imageURL: piecesImg,
+    description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates-Badges/refs/heads/main/GenAI%20101%20with%20Pieces%20Certificate.png)
+
+In December 2024, I earned the *GenAI 101 with Pieces* certification, which focuses on integrating Generative AI into development workflows. This workshop provided hands-on experience with **Pieces for Developers**, emphasizing productivity and automation through AI-powered tools.
+
+Throughout this course, I gained expertise in:
+
+- **Understanding Generative AI Basics:** Learned about generative AI models like GPT and their applications in software development.
+- **Integrating Pieces for Developers:** Explored how to use Pieces to streamline coding workflows with features like snippet generation and contextual code recommendations.
+- **Building AI-Powered Applications:** Completed a capstone project demonstrating the integration of generative AI into real-world development tasks.
+
+This certification highlights my ability to leverage modern AI tools for enhancing development efficiency, solving complex problems, and driving innovation in software solutions.
+    `,
+    skills: ['skill_generativeAI', 'skill_aiIntegration', 'skill_productivityTools'],
+    orgName: 'Pieces for Developers',
+},
+
 
 };

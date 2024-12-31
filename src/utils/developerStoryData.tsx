@@ -137,7 +137,14 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'cert-generativeAIEducatorsCert',
 		storyType: 'certificate',
 		data: allCertificates.generativeAIEducatorsCert,
+	},
+
+	{
+		id: 'cert-genAI101PiecesCert',
+		storyType: 'certificate',
+		data: allCertificates.genAI101PiecesCert,
 	}
+	
 	
 
 ];
