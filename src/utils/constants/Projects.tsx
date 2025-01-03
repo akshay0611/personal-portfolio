@@ -2,6 +2,8 @@ import { ProjectProps } from 'utils/developerStory';
 import postmanImg from '/public/images/project/postman.png';
 import portfolioImg from '/public/images/project/portfolio-logo.jpg';
 import  finPulseImg from '/public/images/project/finpulse.png';
+import imprintWordsImg from '/public/images/project/imprintwords.png';
+
 export const allProjects: { [key: string]: ProjectProps } = {
 	
 
@@ -100,5 +102,32 @@ This project showcases my full-stack development expertise and commitment to bui
 },
 
 
-	
+imprintWords: {
+	fromDate: 'Jan 2025',
+	toDate: 'Jan 2025',
+	projectName: 'ImprintWords',
+	orgName: 'Personal Project',
+	imageURL: imprintWordsImg, 
+	featured: true,
+	description: `
+ImprintWords is a user-friendly web application for creating customized text designs on visually appealing backgrounds. It's perfect for crafting social media posts, personalized messages, or inspirational posters. 💬🎨
+
+### Features and Highlights:
+- **Customizable Text:** Edit text content, font style, size, color, and alignment.
+- **Predefined Background Templates:** Choose from a variety of options or upload your own images.
+- **Live Preview:** See real-time changes as you design.
+- **Export Designs:** Download your creations in high quality for sharing or printing.
+
+### Tools & Technologies:
+- **Frontend:** React ⚛️, Tailwind CSS 🎨
+- **Build Tool:** Vite ⚡
+- **Hosting:** Vercel 🚀
+
+This project demonstrates my expertise in building interactive and user-friendly web applications that prioritize creativity and customization.
+	`,
+	repoUrl: 'https://github.com/akshay0611/ImprintWords',
+	viewUrl: 'https://imprint-words.vercel.app/',
+	techStack: ['skill_reactjs', 'skill_tailwindcss', 'skill_vite', 'skill_vercel'],
+},
+
 };

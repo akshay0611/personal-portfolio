@@ -70,6 +70,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allProjects.finPulse,
     },
 
+	{
+		id: 'project-imprintwords',
+		storyType: 'project',
+		data: allProjects.imprintWords,
+    },
 
 	{
 		id: 'project-portfolio-website',
