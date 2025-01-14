@@ -77,6 +77,12 @@ export const developerStoryData: DeveloperStoryDataProps = [
     },
 
 	{
+		id: 'project-healwell',
+		storyType: 'project',
+		data: allProjects.healWell,
+    },
+
+	{
 		id: 'project-portfolio-website',
 		storyType: 'project',
 		data: allProjects.portfolioWebsite,

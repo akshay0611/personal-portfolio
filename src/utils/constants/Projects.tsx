@@ -2,7 +2,7 @@ import { ProjectProps } from 'utils/developerStory';
 import postmanImg from '/public/images/project/postman.png';
 import portfolioImg from '/public/images/project/portfolio-logo.jpg';
 import  finPulseImg from '/public/images/project/finpulse.png';
-
+import  healwellImg from '/public/images/project/healwell.png';
 
 export const allProjects: { [key: string]: ProjectProps } = {
 	
@@ -128,6 +128,40 @@ This project demonstrates my expertise in building interactive and user-friendly
 	repoUrl: 'https://github.com/akshay0611/ImprintWords',
 	viewUrl: 'https://imprint-words.vercel.app/',
 	techStack: ['skill_reactjs', 'skill_tailwindcss', 'skill_vite', 'skill_vercel'],
+},
+
+healWell: {
+	fromDate: 'Jan 2025',
+	toDate: 'Jan 2025',
+	projectName: 'HealWell',
+	orgName: 'Personal Project',
+	imageURL: healwellImg,
+	featured: true,
+	description: `
+HealWell 🏥 is a hospital management platform designed to enhance healthcare services, providing an efficient user experience for patients and staff alike. Tailored for hospitals in New Delhi, it streamlines processes such as appointment management, blog creation, and staff scheduling.
+
+### Features and Highlights:
+- **User-Friendly Interface:** Simplified navigation with dedicated pages for About, Careers, Doctors, Partners, Services, Testimonials, and Volunteers.
+- **Admin Panel:** Manage hospital data like appointments, blogs, and doctor schedules with an intuitive admin interface.
+- **Responsive Design:** Optimized for desktops, tablets, and smartphones, with a modern look powered by Tailwind CSS.
+- **API Endpoints:** Easily integrate and manage core features such as appointments, blogs, partners, and volunteers.
+- **Dynamic Content:** Customizable blog pages with unique styles for each post.
+- **Email Integration:** Automated email notifications for appointment confirmations via Gmail’s secure OAuth2 authentication.
+
+### Tools & Technologies:
+- **Frontend & Backend Framework:** Next.js ⚛️
+- **Styling:** Tailwind CSS 🌈, ShadCN 🎨
+- **UI Components:** Lucide React Icons & custom UI components 🖼️
+- **Backend:** Node.js 🖥️ (via Next.js API routes)
+- **Database:** MongoDB 🗄️
+- **Deployment:** Vercel 🚀
+- **Email Service:** Gmail integration using OAuth2 📧
+
+This project exemplifies my expertise in building full-stack applications with a focus on healthcare solutions and efficient user interfaces.
+	`,
+	repoUrl: 'https://github.com/akshay0611/HealWell',
+	viewUrl: 'https://heal-well-brown.vercel.app/',
+	techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_shadcn', 'skill_nodejs', 'skill_mongodb', 'skill_vercel'],
 },
 
 };
