@@ -3,6 +3,7 @@ import postmanImg from '/public/images/project/postman.png';
 import portfolioImg from '/public/images/project/portfolio-logo.jpg';
 import  finPulseImg from '/public/images/project/finpulse.png';
 import  healwellImg from '/public/images/project/healwell.png';
+import  imprintwordsImg from '/public/images/project/imprintwords.png';
 
 export const allProjects: { [key: string]: ProjectProps } = {
 	
@@ -107,7 +108,7 @@ imprintWords: {
 	toDate: 'Jan 2025',
 	projectName: 'ImprintWords',
 	orgName: 'Personal Project',
-	imageURL: finPulseImg,
+	imageURL: imprintwordsImg,
 	featured: true,
 	description: `
 ImprintWords is a user-friendly web application for creating customized text designs on visually appealing backgrounds. It's perfect for crafting social media posts, personalized messages, or inspirational posters. 💬🎨
