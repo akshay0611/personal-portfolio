@@ -141,6 +141,8 @@ healWell: {
 	description: `
 HealWell 🏥 is a hospital management platform designed to enhance healthcare services, providing an efficient user experience for patients and staff alike. Tailored for hospitals in New Delhi, it streamlines processes such as appointment management, blog creation, and staff scheduling.
 
+![](https://raw.githubusercontent.com/akshay0611/HealWell/main/public/images/Healwell.png) 
+
 ### Features and Highlights:
 - **User-Friendly Interface:** Simplified navigation with dedicated pages for About, Careers, Doctors, Partners, Services, Testimonials, and Volunteers.
 - **Admin Panel:** Manage hospital data like appointments, blogs, and doctor schedules with an intuitive admin interface.
