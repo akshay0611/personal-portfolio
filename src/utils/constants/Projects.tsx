@@ -82,6 +82,8 @@ This project represents my ability to design and develop modern, user-centric we
 		description: `
 FinPulse is a MERN-stack web application delivering the latest financial news, government schemes, investment ideas, blogs, and interactive tools.
 
+![](https://raw.githubusercontent.com/akshay0611/FinPulse/main/frontend/src/assets/Finpulsebanner.png) 
+
 ### Features and Highlights:
 - Fetches real-time news, blogs, and government schemes via MongoDB Atlas.
 - Includes financial calculators (SIP, SWP, EMI) and quizzes to enhance financial literacy.
