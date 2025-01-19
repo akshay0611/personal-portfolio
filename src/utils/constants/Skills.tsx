@@ -55,7 +55,8 @@ import {
 	FaBalanceScale,
 	FaKeyboard,
 	FaChalkboardTeacher,
-	FaTools   
+	FaTools,
+	FaSitemap   
 
 
 
@@ -964,6 +965,40 @@ export const allSkills: skillInterface[] = [
     id: 'skill_classroomResourceCreation',
     category: ['education'],
 },
+
+{
+	'name': 'Graph Databases',
+	'icon': <FaDatabase height='1em' />,
+	'bgcolor': '#4caf50',
+	'link': 'https://en.wikipedia.org/wiki/Graph_database',
+	'id': 'skill_graphDatabases',
+	'category': ['data management', 'database']
+},
+{
+	'name': 'Neo4j',
+	'icon': <FaDatabase height='1em' />,
+	'bgcolor': '#009688',
+	'link': 'https://neo4j.com/',
+	'id': 'skill_Neo4j',
+	'category': ['graph databases', 'technology']
+},
+{
+	'name': 'Data Modeling',
+	'icon': <FaCogs height='1em' />,
+	'bgcolor': '#2196f3',
+	'link': 'https://en.wikipedia.org/wiki/Data_modeling',
+	'id': 'skill_dataModeling',
+	'category': ['data management', 'software development']
+},
+{
+	'name': 'Graph Technology',
+	'icon': <FaSitemap height='1em' />,
+	'bgcolor': '#673ab7',
+	'link': 'https://en.wikipedia.org/wiki/Graph_theory',
+	'id': 'skill_GraphTechnology',
+	'category': ['technology', 'graph theory']
+}
+
   
   
 

@@ -6,6 +6,7 @@ import ibmImg from '/public/images/certificates/ibm.png';
 import postmanImg from '/public/images/certificates/postman.png';
 import goldmansachsImg from '/public/images/certificates/GoldmanSachs.png';
 import piecesImg from '/public/images/certificates/Pieces.jpeg';
+import neo4jImg from '/public/images/certificates/neo4j.png';
 
 export const allCertificates: { [key: string]: CertificateProps } = {
 	digitalMarketingFundamentalsCert: {
@@ -354,6 +355,31 @@ This certification highlights my ability to leverage modern AI tools for enhanci
     skills: ['skill_generativeAI', 'skill_aiIntegration', 'skill_productivityTools'],
     orgName: 'Pieces for Developers',
 },
+
+neo4jCertification: {
+    fromDate: 'Jan 2025',
+    toDate: 'Jan 2025',
+    title: 'Neo4j Certified Professional',
+    url: 'https://graphacademy.neo4j.com/c/09fedcdf-2948-40b4-9842-ca37f14477da/',
+    imageURL: neo4jImg,
+    description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates-Badges/982c16dfcaa97b0c256f50e5b70f55479b38be7f/Neo4j%20Certified%20Professional.png)
+
+In January 2025, I earned the *Neo4j Certified Professional* certification, which focuses on the use of graph databases and their applications in modern technologies. This certification demonstrated my ability to work with Neo4j and utilize graph databases for real-world problem solving.
+
+Throughout this certification, I gained expertise in:
+
+- **Graph Database Fundamentals:** Learned the core concepts of graph databases, including nodes, relationships, and properties.
+- **Modeling Data with Graphs:** Explored techniques for building efficient and scalable graph models using Neo4j.
+- **Graph Query Language (Cypher):** Gained proficiency in writing and optimizing Cypher queries to interact with graph data.
+- **Applications in AI and Data Analytics:** Understood how to leverage graph technology in powering Generative AI and solving complex data-related challenges.
+
+This certification highlights my ability to utilize graph databases to enhance data modeling, increase efficiency, and drive innovation in software solutions.
+    `,
+    skills: ['skill_graphDatabases', 'skill_Neo4j', 'skill_dataModeling', 'skill_GraphTechnology'],
+    orgName: 'Neo4j'
+}
+
 
 
 };

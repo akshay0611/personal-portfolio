@@ -154,7 +154,14 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'cert-genAI101PiecesCert',
 		storyType: 'certificate',
 		data: allCertificates.genAI101PiecesCert,
+	},
+
+	{
+		"id": "cert-neo4jCertifiedProfessional",
+		"storyType": "certificate",
+		"data": allCertificates.neo4jCertification
 	}
+	
 	
 	
 
