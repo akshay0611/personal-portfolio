@@ -115,6 +115,8 @@ imprintWords: {
 	description: `
 ImprintWords is a user-friendly web application for creating customized text designs on visually appealing backgrounds. It's perfect for crafting social media posts, personalized messages, or inspirational posters. 💬🎨
 
+![](https://raw.githubusercontent.com/akshay0611/ImprintWords/main/src/assets/Imprintwords.png) 
+
 ### Features and Highlights:
 - **Customizable Text:** Edit text content, font style, size, color, and alignment.
 - **Predefined Background Templates:** Choose from a variety of options or upload your own images.
