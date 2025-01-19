@@ -378,7 +378,32 @@ This certification highlights my ability to utilize graph databases to enhance d
     `,
     skills: ['skill_graphDatabases', 'skill_Neo4j', 'skill_dataModeling', 'skill_GraphTechnology'],
     orgName: 'Neo4j'
+},
+
+googleCloudFundamentalsBadge: {
+    fromDate: 'Jan 2025',
+    toDate: 'Jan 2025',
+    title: 'Google Cloud Fundamentals: Core Infrastructure',
+    url: 'https://www.cloudskillsboost.google/public_profiles/1ff52521-128f-4b6a-9d95-37b45edc35cf/badges/13473351',
+    imageURL: googleImg,
+    description: `
+![](https://raw.githubusercontent.com/akshay0611/My-Certificates-Badges/refs/heads/main/Google%20Cloud-%20Fundamentals.png)
+
+In January 2025, I earned the *Google Cloud Fundamentals: Core Infrastructure* badge, which focuses on the foundational concepts and services provided by Google Cloud. This badge demonstrates my ability to leverage Google Cloud for scalable infrastructure solutions and develop cloud-based applications.
+
+Throughout this certification, I gained expertise in:
+
+- **Google Cloud Platform (GCP) Fundamentals:** Learned about the core services and infrastructure of Google Cloud, including Compute Engine, Cloud Storage, and Networking.
+- **Cloud Architecture and Design:** Explored how to design cloud-based solutions using GCP resources and best practices.
+- **Managing Cloud Resources:** Gained proficiency in managing GCP resources, including IAM, Cloud Console, and monitoring tools.
+- **Security and Compliance:** Understood how to ensure security, compliance, and scalability while working with Google Cloud infrastructure.
+
+This badge highlights my ability to apply Google Cloud technologies to build, manage, and optimize cloud infrastructure solutions for businesses and applications.
+    `,
+    skills: ['skill_GoogleCloud', 'skill_cloudArchitecture', 'skill_cloudSecurity', 'skill_cloudComputing'],
+    orgName: 'Google Cloud'
 }
+
 
 
 

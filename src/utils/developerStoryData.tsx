@@ -160,7 +160,14 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		"id": "cert-neo4jCertifiedProfessional",
 		"storyType": "certificate",
 		"data": allCertificates.neo4jCertification
+	},
+
+	{
+		"id": "cert-googleCloudFundamentalsCoreInfrastructure",
+		"storyType": "certificate",
+		"data": allCertificates.googleCloudFundamentalsBadge
 	}
+	
 	
 	
 	

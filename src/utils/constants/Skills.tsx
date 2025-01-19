@@ -56,7 +56,9 @@ import {
 	FaKeyboard,
 	FaChalkboardTeacher,
 	FaTools,
-	FaSitemap   
+	FaSitemap,
+	FaCloud,
+	FaCloudversify   
 
 
 
@@ -997,14 +999,43 @@ export const allSkills: skillInterface[] = [
 	'link': 'https://en.wikipedia.org/wiki/Graph_theory',
 	'id': 'skill_GraphTechnology',
 	'category': ['technology', 'graph theory']
+},
+
+{
+	'name': 'Google Cloud',
+	'icon': <FaCloud height='1em' />,
+	'bgcolor': '#4285F4',
+	'link': 'https://en.wikipedia.org/wiki/Google_Cloud',
+	'id': 'skill_GoogleCloud',
+	'category': ['cloud computing', 'technology']
+},
+{
+	'name': 'Cloud Architecture',
+	'icon': <FaBuilding height='1em' />,
+	'bgcolor': '#34A853',
+	'link': 'https://en.wikipedia.org/wiki/Cloud_computing',
+	'id': 'skill_cloudArchitecture',
+	'category': ['cloud computing', 'architecture']
+},
+{
+	'name': 'Cloud Security',
+	'icon': <FaShieldAlt height='1em' />,
+	'bgcolor': '#FBBC05',
+	'link': 'https://en.wikipedia.org/wiki/Cloud_computing_security',
+	'id': 'skill_cloudSecurity',
+	'category': ['cloud computing', 'security']
+},
+{
+	'name': 'Cloud Computing',
+	'icon': <FaCloudversify height='1em' />,
+	'bgcolor': '#EA4335',
+	'link': 'https://en.wikipedia.org/wiki/Cloud_computing',
+	'id': 'skill_cloudComputing',
+	'category': ['cloud computing', 'technology']
 }
 
   
   
-
-
-
-
 
 
 ];
