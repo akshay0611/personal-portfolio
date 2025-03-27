@@ -4,6 +4,7 @@ import portfolioImg from '/public/images/project/portfolio-logo.jpg';
 import  finPulseImg from '/public/images/project/finpulse.png';
 import  healwellImg from '/public/images/project/healwell.png';
 import  imprintwordsImg from '/public/images/project/imprintwords.png';
+import  tanjoreCoffeeImg from '/public/images/project/tanjorecoffee.png';
 
 export const allProjects: { [key: string]: ProjectProps } = {
 	
@@ -169,6 +170,44 @@ This project exemplifies my expertise in building full-stack applications with a
 	repoUrl: 'https://github.com/akshay0611/HealWell',
 	viewUrl: 'https://heal-well-brown.vercel.app/',
 	techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_shadcn', 'skill_nodejs', 'skill_mongodb', 'skill_vercel'],
+},
+
+tanjoreDegreeCoffee: {
+	fromDate: 'Mar 2025',
+	toDate: 'Mar 2025',
+	projectName: 'Tanjore Degree Coffee',
+	orgName: 'Personal Project',
+	imageURL: tanjoreCoffeeImg,
+	featured: true,
+	description: `
+Tanjore Degree Coffee ☕ is a modern **e-commerce platform** that brings the authentic taste of **South Indian coffee** and snacks to customers worldwide. With a legacy dating back to 1942, this project focuses on providing a seamless browsing and ordering experience.
+
+![](https://raw.githubusercontent.com/akshay0611/Tanjore-Degree-Coffee/main/public/images/tanjore-coffee.png)  
+
+### Features and Highlights:
+- **Menu Browsing:** Explore traditional South Indian coffee varieties and snacks. 🍵  
+- **User Authentication:** Secure login for a personalized user experience. 🔒  
+- **Dashboard:** View recent orders, loyalty points, saved addresses, and favorites. 📊  
+- **Seamless Ordering:** Easy checkout flow for quick and hassle-free purchases. 🛒  
+- **Responsive Design:** Fully optimized for both desktop and mobile users. 📱💻  
+- **WhatsApp Support:** Integrated customer support via WhatsApp. 📞  
+- **Email Notifications:** Order confirmations and updates via Resend email service. ✉️  
+
+### Tools & Technologies:
+- **Frontend Framework:** Next.js ⚛️  
+- **Language:** TypeScript 📜  
+- **Database & Authentication:** Supabase 🗄️  
+- **Styling:** Tailwind CSS 🎨  
+- **UI Components:** ShadCN 🧩  
+- **Icons:** Lucide React 🖼️  
+- **Linting & Code Quality:** ESLint ✅  
+- **Deployment:** Vercel 🚀  
+
+This project showcases my expertise in **full-stack e-commerce solutions**, focusing on performance, scalability, and modern UI/UX principles.
+	`,
+	repoUrl: 'https://github.com/akshay0611/tanjore-degree-coffee',
+	viewUrl: 'https://tanjore-degree-coffee.vercel.app/',
+	techStack: ['skill_nextjs', 'skill_typescript', 'skill_supabase', 'skill_tailwindcss', 'skill_shadcn', 'skill_vercel'],
 },
 
 };

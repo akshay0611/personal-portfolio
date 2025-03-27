@@ -91,6 +91,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		storyType: 'project',
 		data: allProjects.healWell,
     },
+	{
+		id: 'project-tanjoreDegreeCoffee',
+		storyType: 'project',
+		data: allProjects.tanjoreDegreeCoffee,
+	},	
 
 	{
 		id: 'project-portfolio-website',
