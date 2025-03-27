@@ -2,6 +2,7 @@ import { ExperienceProps } from 'utils/developerStory';
 import prodigyinfotechImg from '/public/images/experience/prodigyinfotech.jpeg';
 import octanetImg from '/public/images/experience/octanet.jpeg';
 import shadowfoxImg from '/public/images/experience/shadowfox.png';
+import aicteImg from '/public/images/experience/aicte.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	octanet: {
@@ -25,7 +26,7 @@ This internship reinforced my expertise in web development and provided a valuab
 
 
 `,
-		featured: true,
+		featured: false,
 	},
 	
 	
@@ -50,12 +51,12 @@ This internship strengthened my foundation in data science techniques and equipp
 
 
 `,
-		featured: true,
+		featured: false,
 	},
 
 	shadowFox: {
 		fromDate: 'Feb 2025',
-		toDate: 'Feb 2025',
+		toDate: 'March 2025',
 		positionHeld: 'Web Development Intern',
 		orgName: 'ShadowFox',
 		orgLocation: 'Remote (Work From Home)',
@@ -72,6 +73,29 @@ During my internship at ShadowFox, I worked on multiple web development projects
 - **Collaboration & Code Review:** Engaged in team discussions, code reviews, and followed best practices to maintain clean and maintainable code.
 
 This internship allowed me to strengthen my web development skills, gain hands-on experience with **Next.js**, and understand the best practices for building scalable and high-performance web applications.
+`,
+		featured: true,
+	},
+
+	cyberSecurityIntern: {
+		fromDate: 'Jan 2025',
+		toDate: 'Feb 2025',
+		positionHeld: 'Cyber Security Intern',
+		orgName: 'AICTE & IBM SkillsBuild',
+		orgLocation: 'Remote (Work From Home)',
+		url: 'https://skillsbuild.org/', 
+		imageURL: aicteImg,  
+		description: `
+I was selected for a **Cyber Security Internship** under the **IBM SkillsBuild Program**, in collaboration with **Edunet Foundation & AICTE**. This internship provided hands-on cybersecurity training, real-world applications, and exposure to industry best practices.
+
+- **Cybersecurity Project Development:** Designed and implemented an innovative cybersecurity project, incorporating **data security** and **secure communication principles**.
+- **Core Security Concepts:** Mastered key areas such as **network security, cryptography, and risk management** through IBM’s specialized learning modules.
+- **Masterclasses & Industry Insights:** Participated in **expert-led masterclasses**, gaining in-depth knowledge of modern cybersecurity threats and **mitigation strategies**.
+- **Technical Training & Certification:** Completed extensive coursework on the **IBM SkillsBuild** platform, refining my skills in **cyber defense, ethical hacking, and risk assessment**.
+- **Presentation & Recognition:** Delivered a **project presentation**, showcasing my problem-solving and implementation skills, earning recognition for my contributions.
+- **Certified in Cybersecurity:** Successfully completed the program and received **certification from IBM SkillsBuild, AICTE, and Edunet Foundation**, validating my proficiency in cybersecurity.
+
+This internship deepened my understanding of cybersecurity principles and provided me with **practical experience in securing digital systems and mitigating cyber threats**.
 `,
 		featured: true,
 	},
