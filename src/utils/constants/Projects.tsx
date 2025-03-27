@@ -5,7 +5,7 @@ import  finPulseImg from '/public/images/project/finpulse.png';
 import  healwellImg from '/public/images/project/healwell.png';
 import  imprintwordsImg from '/public/images/project/imprintwords.png';
 import  tanjoreCoffeeImg from '/public/images/project/tanjorecoffee.png';
-
+import  finTrackImg from '/public/images/project/fintrack.png';
 export const allProjects: { [key: string]: ProjectProps } = {
 	
 
@@ -209,5 +209,40 @@ This project showcases my expertise in **full-stack e-commerce solutions**, focu
 	viewUrl: 'https://tanjore-degree-coffee.vercel.app/',
 	techStack: ['skill_nextjs', 'skill_typescript', 'skill_supabase', 'skill_tailwindcss', 'skill_shadcn', 'skill_vercel'],
 },
+
+finTrack: {
+	fromDate: 'Mar 2025',
+	toDate: 'Mar 2025',
+	projectName: 'FinTrack',
+	orgName: 'Personal Project',
+	imageURL: finTrackImg,
+	featured: true,
+	description: `
+FinTrack 📊💰 is a modern and feature-rich personal finance dashboard designed to help users track and manage their financial health efficiently. Built with **Next.js, Tailwind CSS, and TypeScript**, it provides an intuitive interface for monitoring income, expenses, investments, and subscriptions in one place.
+
+![](https://raw.githubusercontent.com/akshay0611/fintrack/main/fintrack.png)  
+
+### Features and Highlights:
+- **Dynamic Dashboard:** Get real-time insights into financial health with interactive charts and key performance metrics.
+- **Income & Expense Tracking:** Easily log and categorize transactions to understand cash flow trends.
+- **Investment & Subscription Monitoring:** Keep track of assets, stock holdings, and recurring bills.
+- **Responsive & Modern UI:** Built with **Tailwind CSS**, ensuring a sleek, mobile-friendly experience.
+- **Supabase Integration:** Secure and real-time data management for seamless finance tracking.
+- **Smooth Animations:** Enhanced user experience with **Framer Motion** for intuitive transitions and interactions.
+
+### Tools & Technologies:
+- **Frontend:** Next.js ⚛️, TypeScript 📜
+- **Styling:** Tailwind CSS 🎨, ShadCN 🧑‍🎨
+- **Database & Backend:** Supabase 🗄️
+- **Animations:** Framer Motion 🎥
+- **Deployment:** Vercel 🚀
+
+This project showcases my ability to build intuitive and scalable full-stack applications with a focus on **financial technology solutions**.
+	`,
+	repoUrl: 'https://github.com/akshay0611/fintrack',
+	viewUrl: 'https://fintrack-9kbj.vercel.app/',
+	techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_shadcn', 'skill_typescript', 'skill_supabase', 'skill_framer_motion', 'skill_vercel'],
+},
+
 
 };

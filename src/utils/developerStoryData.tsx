@@ -95,7 +95,12 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'project-tanjoreDegreeCoffee',
 		storyType: 'project',
 		data: allProjects.tanjoreDegreeCoffee,
-	},	
+	},
+	{
+		id: 'project-finTrack',
+		storyType: 'project',
+		data: allProjects.finTrack,
+	},		
 
 	{
 		id: 'project-portfolio-website',
