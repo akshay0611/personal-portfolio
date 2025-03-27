@@ -1,6 +1,7 @@
 import { ExperienceProps } from 'utils/developerStory';
 import prodigyinfotechImg from '/public/images/experience/prodigyinfotech.jpeg';
 import octanetImg from '/public/images/experience/octanet.jpeg';
+import shadowfoxImg from '/public/images/experience/shadowfox.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	octanet: {
@@ -51,4 +52,28 @@ This internship strengthened my foundation in data science techniques and equipp
 `,
 		featured: true,
 	},
+
+	shadowFox: {
+		fromDate: 'Feb 2025',
+		toDate: 'Feb 2025',
+		positionHeld: 'Web Development Intern',
+		orgName: 'ShadowFox',
+		orgLocation: 'Remote (Work From Home)',
+		url: 'https://www.shadowfox.in/', 
+		imageURL: shadowfoxImg,  
+		description: `
+During my internship at ShadowFox, I worked on multiple web development projects that enhanced my technical proficiency in front-end and full-stack development.
+
+- **Personal Portfolio Development:** Built a fully responsive and visually appealing portfolio website, showcasing my skills, projects, and experiences.
+- **Team-based Web Application:** Developed an interactive website with dynamic components, ensuring smooth navigation and user engagement.
+- **Tech Stack Utilization:** Worked with **Next.js, Tailwind CSS, ShadCN**, and modern web technologies to build optimized and scalable applications.
+- **Performance Optimization:** Implemented **Server-Side Rendering (SSR)** and **Incremental Static Regeneration (ISR)** to enhance performance and improve load times.
+- **User Experience Enhancement:** Focused on creating **modern UI/UX** designs with **smooth animations, structured layouts, and intuitive interactions**.
+- **Collaboration & Code Review:** Engaged in team discussions, code reviews, and followed best practices to maintain clean and maintainable code.
+
+This internship allowed me to strengthen my web development skills, gain hands-on experience with **Next.js**, and understand the best practices for building scalable and high-performance web applications.
+`,
+		featured: true,
+	},
+
 };

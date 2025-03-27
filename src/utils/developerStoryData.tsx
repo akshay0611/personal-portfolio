@@ -40,7 +40,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		storyType: 'experience',
 		data: allExperiences.prodigyInfoTech,
 	},
-	
+	{
+		id: 'exp-shadowFox',
+		storyType: 'experience',
+		data: allExperiences.shadowFox,
+    },	
 	{
 		id: 'edu-selfTaught',
 		storyType: 'education',
