@@ -83,7 +83,18 @@ function Testimonials() {
 											<p className='text-sm font-semibold'>
 												{recommendation.name}
 											</p>
-											
+											{recommendation.linkedinUrl && (
+												<Link href={recommendation.linkedinUrl} passHref legacyBehavior>
+													<a
+														target='_blank'
+														rel='noopener noreferrer'
+														className='ml-1 text-blue-700 hover:text-blue-900'
+														title={`View ${recommendation.name}'s LinkedIn`}
+													>
+														<AiFillLinkedin className='inline-block text-lg align-middle' />
+													</a>
+												</Link>
+											)}
 										</div>
 										<p className='text-xs text-gray-400'>
 											{recommendation.designation}
