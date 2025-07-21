@@ -509,14 +509,14 @@ export const allSkills: skillInterface[] = [
 		link: 'https://analytics.google.com/analytics/web/',
 		id: 'skill_webanalytics',
 		category: ['digital_marketing'],
-	},
-	{
-		name: 'Search Advertising',
-		icon: <FaSearchDollar height='1em' />,
-		bgcolor: '#0052CC', // Blue - Trusted and professional advertising
-		link: 'https://www.microsoft.com/en-us/advertising/',
-		id: 'skill_searchadvertising',
-		category: ['digital_marketing'],
+},
+{
+	name: 'Search Advertising',
+	icon: <FaSearchDollar height='1em' />,
+	bgcolor: '#0052CC', // Blue - Trusted and professional advertising
+	link: 'https://www.microsoft.com/en-us/advertising/',
+	id: 'skill_searchadvertising',
+	category: ['digital_marketing'],
 },
 {
 	name: 'Campaign Optimization',
@@ -1032,6 +1032,30 @@ export const allSkills: skillInterface[] = [
 	'link': 'https://en.wikipedia.org/wiki/Cloud_computing',
 	'id': 'skill_cloudComputing',
 	'category': ['cloud computing', 'technology']
+},
+{
+	name: 'Oracle',
+	icon: <FaDatabase height='1em' />,
+	bgcolor: '#F80000',
+	link: 'https://www.oracle.com/',
+	id: 'skill_oracle',
+	category: ['database', 'technology'],
+},
+{
+	name: 'Data Platform',
+	icon: <FaDatabase height='1em' />,
+	bgcolor: '#00758F',
+	link: 'https://en.wikipedia.org/wiki/Data_platform',
+	id: 'skill_dataPlatform',
+	category: ['database', 'technology'],
+},
+{
+	name: 'Foundations',
+	icon: <FaBuilding height='1em' />,
+	bgcolor: '#FFA500',
+	link: 'https://en.wikipedia.org/wiki/Foundation_(engineering)',
+	id: 'skill_foundations',
+	category: ['technology'],
 }
 
   

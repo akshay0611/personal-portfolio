@@ -186,7 +186,13 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		"id": "cert-googleCloudFundamentalsCoreInfrastructure",
 		"storyType": "certificate",
 		"data": allCertificates.googleCloudFundamentalsBadge
-	}
+	},
+
+	{
+		id: 'cert-oracleCertifiedFoundationsAssociate',
+		storyType: 'certificate',
+		data: allCertificates.oracleCertifiedFoundationsAssociate,
+	},
 	
 	
 	

@@ -7,6 +7,7 @@ import postmanImg from '/public/images/certificates/postman.png';
 import goldmansachsImg from '/public/images/certificates/GoldmanSachs.png';
 import piecesImg from '/public/images/certificates/Pieces.jpeg';
 import neo4jImg from '/public/images/certificates/neo4j.png';
+import oracleImg from '/public/images/certificates/oracle.png';
 
 export const allCertificates: { [key: string]: CertificateProps } = {
 	digitalMarketingFundamentalsCert: {
@@ -402,9 +403,29 @@ This badge highlights my ability to apply Google Cloud technologies to build, ma
     `,
     skills: ['skill_GoogleCloud', 'skill_cloudArchitecture', 'skill_cloudSecurity', 'skill_cloudComputing'],
     orgName: 'Google Cloud'
-}
+},
 
+oracleCertifiedFoundationsAssociate: {
+    fromDate: 'July 2025',
+    toDate: 'July 2025',
+    title: 'Oracle Certified Foundations Associate',
+    url: '',
+    imageURL: oracleImg,
+    description: `
+![](https://github.com/akshay0611/My-Certificates-Badges/blob/main/Oracle%20-%20Foundations%20Associate.png?raw=true)
 
+In July 2025, I earned the *Oracle Certified Foundations Associate* certification, which focuses on foundational concepts and best practices in Oracle Data Platform technologies. This certification demonstrates my ability to work with Oracle's data solutions and apply core principles in real-world scenarios.
 
+Throughout this certification, I gained expertise in:
 
+- **Oracle Data Platform Fundamentals:** Developed a strong understanding of Oracle's cloud and on-premises data solutions, including architecture, deployment, and management.
+- **Cloud Technologies:** Explored the integration of Oracle's data services with modern cloud infrastructure, focusing on scalability, security, and performance.
+- **Data Management Best Practices:** Learned to implement best practices for data storage, retrieval, and governance using Oracle technologies.
+- **Foundational IT Skills:** Strengthened my knowledge of essential IT concepts, including networking, security, and database administration, as they relate to Oracle environments.
+
+This certification highlights my commitment to continuous learning and my ability to leverage Oracle's technologies for building robust, scalable, and secure data solutions.
+    `,
+    skills: ['skill_oracle', 'skill_dataPlatform', 'skill_cloud', 'skill_foundations'],
+    orgName: 'Oracle University',
+},
 };
