@@ -4,7 +4,7 @@ export default function Document() {
 	const BASE_URL = process.env.BASE_URL || 'https://connectwithakshay.netlify.app/';
 
 	return (
-		<Html>
+		<Html lang="en">
 			<Head>
 				{/* Favicon */}
 				<link
@@ -29,46 +29,53 @@ export default function Document() {
 				{/* SEO - Facebook */}
 				<meta property='og:url' content={`${BASE_URL}`} />
 				<meta property='og:type' content='website' />
+				<meta property='og:locale' content='en_US' />
 				<meta
 					property='og:title'
-					content='Akshay Kumar | Portfolio Website'
+					content='Akshay Kumar - Full Stack Developer | ReactJs, NodeJs, Python Expert'
 				/>
 				<meta
 					property='og:description'
-					content='A Full-Stack Developer | A Data Analytics Researcher'
+					content='Akshay Kumar Full Stack Developer with 3+ years experience. Specializing in ReactJs, NodeJs, Python, MongoDB, Cybersecurity & AI. Available for freelance projects.'
 				/>
-				<meta property='og:image' content={`${BASE_URL}/banner.png`} />
+				<meta property='og:image' content={`${BASE_URL}banner.png`} />
+				<meta property='og:image:width' content='1200' />
+				<meta property='og:image:height' content='630' />
+				<meta property='og:image:alt' content='Akshay Kumar Full Stack Developer Portfolio' />
 
 				{/* SEO - Twitter */}
-				<meta property='twitter:card' content='summary_large_image' />
-				<meta property='twitter:url' content={`${BASE_URL}`} />
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:url' content={`${BASE_URL}`} />
 				<meta
-					property='twitter:title'
-					content='Akshay Kumar | Portfolio Website'
+					name='twitter:title'
+					content='Akshay Kumar - Full Stack Developer | ReactJs, NodeJs, Python Expert'
 				/>
 				<meta
-					property='twitter:description'
-					content='A Full-Stack Developer | A Data Analytics Researcher'
+					name='twitter:description'
+					content='Akshay Kumar Full Stack Developer with 3+ years experience. Specializing in ReactJs, NodeJs, Python, MongoDB, Cybersecurity & AI.'
 				/>
 				<meta
-					property='twitter:image'
-					content={`${BASE_URL}/banner.png`}
+					name='twitter:image'
+					content={`${BASE_URL}banner.png`}
 				/>
+				<meta name='twitter:image:alt' content='Akshay Kumar Full Stack Developer Portfolio' />
 
 				{/* SEO - Google */}
 				<meta
 					name='description'
-					content='A Full-Stack Developer | A Data Analytics Researcher'
+					content='Akshay Kumar - Full Stack Developer with 3+ years experience in ReactJs, NodeJs, Python, MongoDB. Specializing in web development, cybersecurity, and AI solutions.'
 				/>
 				<meta
 					name='keywords'
-					content='Akshay Kumar, Portfolio, Developer, Full-Stack Development'
+					content='Akshay Kumar Full Stack Developer, Akshay Kumar Developer, Full Stack Developer, ReactJs Developer, NodeJs Developer, Python Developer, MongoDB Developer, Web Developer, Freelance Developer, Cybersecurity, AI Developer, Akshay Kumar Portfolio'
 				/>
 				<meta name='author' content='Akshay Kumar' />
+				<meta name='robots' content='index, follow' />
 				<meta
 					name='google-site-verification'
 					content='uRZkXHIazXTX9eH4QWrLphASnJxdBabuvsaqaKXU-kg'
 				/>
+				<link rel='canonical' href={BASE_URL} />
 
 				{/* Loading Fonts - League Spartan and Montserrat */}
 				<link rel='preconnect' href='https://fonts.googleapis.com' />

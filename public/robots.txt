@@ -1,13 +1,11 @@
-# *
+# robots.txt for Akshay Kumar - Full Stack Developer Portfolio
 User-agent: *
 Allow: /
-
-# *
-User-agent: *
-Disallow: /api
-
-# Host
-Host: https://connectwithakshay.netlify.app/
+Disallow: /api/
 
 # Sitemaps
 Sitemap: https://connectwithakshay.netlify.app/sitemap.xml
+Sitemap: https://connectwithakshay.netlify.app/sitemap-0.xml
+
+# Crawl-delay
+Crawl-delay: 10

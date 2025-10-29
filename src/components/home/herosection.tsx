@@ -24,17 +24,20 @@ export default function HeroSection() {
 				{/* Left */}
 				<div>
 					<div className='text-center sm:text-left'>
-						<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block whitespace-nowrap'>
-							Hi, I am{' '}
-							<span className='animate-text-bg before:bg-white hover:text-black'>
-								Akshay 
+						<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5'>
+							<span className='inline-block whitespace-nowrap'>
+								Hi, I am{' '}
+								<span className='animate-text-bg before:bg-white hover:text-black'>
+									Akshay Kumar
+								</span>
+							</span>
+							<br />
+							<span className='text-2xl md:text-3xl lg:text-4xl font-semibold'>
+								Full Stack Developer
 							</span>
 						</h1>
-						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-1'>
-							A Full-Stack Developer
-						</h2>
 						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-5'>
-						    A Machine Learning and AI Enthusiast
+						    Machine Learning and AI Enthusiast | ReactJs, NodeJs, Python Expert
 						</h2>
 					</div>
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
@@ -101,7 +104,7 @@ export default function HeroSection() {
 						height={1000}
 						width={1000}
 						src={akshay}
-						alt='Akshay Kumar'
+						alt='Akshay Kumar Full Stack Developer - ReactJs, NodeJs, Python Expert'
 						loading='lazy'
 						placeholder='blur'
 					/>

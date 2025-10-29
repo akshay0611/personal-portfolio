@@ -8,6 +8,7 @@ import Skills from 'components/Skills';
 import Projects from 'components/home/projects';
 import Footer from 'components/footer';
 import Testimonials from 'components/home/testimonials';
+import StructuredData from 'components/common/StructuredData';
 
 const Home: NextPage = () => {
 	if (typeof window !== 'undefined') {
@@ -19,12 +20,13 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Akshay Kumar | Home</title>
+				<title>Akshay Kumar - Full Stack Developer | ReactJs, NodeJs, Python Expert</title>
 				<meta
 					name='description'
-					content='A Full-Stack Developer | A Data Analytics Researcher'
+					content='Akshay Kumar is a Full Stack Developer with 3+ years experience in ReactJs, NodeJs, Python, and MongoDB. Specializing in web development, cybersecurity, and AI solutions. Available for freelance projects.'
 				/>
 			</Head>
+			<StructuredData />
 			<main className='min-h-screen min-w-full'>
 				<HeroSection />
 				<Navbar />

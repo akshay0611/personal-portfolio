@@ -6,18 +6,18 @@ export default function story() {
 	return (
 		<>
 			<Head>
-				<title>Akshay Kumar | Developer Story</title>
+				<title>Akshay Kumar Full Stack Developer - Journey, Experience & Achievements</title>
 				<meta
 					name='description'
-					content='From "Hello World" to deploying production code, the developer journey is a never-ending quest for knowledge, efficiency, and innovation.'
+					content='Discover Akshay Kumar Full Stack Developer journey - 3+ years of experience in ReactJs, NodeJs, Python. Explore certifications, achievements, education, and professional experience in web development.'
 				/>
 				<meta
 					name='keywords'
-					content='developer story, developer journey, developer story Akshay Kumar, Akshay Kumar developer story, Akshay Kumar dev'
+					content='Akshay Kumar Full Stack Developer, Akshay Kumar experience, Akshay Kumar certifications, Akshay Kumar achievements, developer story, Full Stack Developer journey, ReactJs developer experience, NodeJs developer experience'
 				/>
 				<meta
 					name='author'
-					content='Akshay Kumar | https://connectwithakshay.netlify.app/'
+					content='Akshay Kumar'
 				/>
 			</Head>
 			<Story />
