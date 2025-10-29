@@ -1,5 +1,5 @@
 import React from 'react';
-import Lottie from 'lottie-react';
+import Lottie from 'components/common/LottieWrapper';
 import AboutMeAnimation from 'assets/lottie/about-me.json';
 import Wave from 'react-wavify';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';

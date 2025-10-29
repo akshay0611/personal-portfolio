@@ -1,5 +1,5 @@
 import { RiSendPlaneFill } from 'react-icons/ri';
-import Lottie from 'lottie-react';
+import Lottie from 'components/common/LottieWrapper';
 import ConnectionAnimation from '../assets/lottie/social-media-network.json';
 import { allSocials } from 'utils/constants/Socials';
 import SkillBadge from './common/SkillBadge';

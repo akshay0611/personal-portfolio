@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Lottie from 'lottie-react';
+import Lottie from 'components/common/LottieWrapper';
 import ResearchAnimation from '../../assets/lottie/recommendation.json';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { MdFormatQuote } from 'react-icons/md';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Lottie from 'lottie-react';
+import Lottie from 'components/common/LottieWrapper';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
 import { Categories, allSkills } from 'utils/constants/Skills';
 import SkillBadge from 'components/common/SkillBadge';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Lottie from 'lottie-react';
+import Lottie from 'components/common/LottieWrapper';
 import PageNotFoundAnimation from '../assets/lottie/404-dino.json';
 import Button from 'components/common/Button';
 import Link from 'next/link';

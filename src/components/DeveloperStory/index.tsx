@@ -6,7 +6,7 @@ import {
 } from 'utils/developerStory';
 import { DeveloperStoryDataProps } from 'utils/developerStoryData';
 import { StoryItem } from './StoryItem';
-import Lottie from 'lottie-react';
+import Lottie from 'components/common/LottieWrapper';
 import NoResultAnimation from '../../assets/lottie/no-results.json';
 
 interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
