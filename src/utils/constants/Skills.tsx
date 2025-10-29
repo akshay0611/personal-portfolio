@@ -131,14 +131,14 @@ export const allSkills: skillInterface[] = [
 	// 	id: 'skill_c',
 	// 	category: ['language'],
 	// },
-	{
-		name: 'C++',
-		icon: <CppIcon height='1em' />,
-		bgcolor: '#af0443',
-		link: 'https://devdocs.io/cpp/',
-		id: 'skill_cpp',
-		category: ['language'],
-	},
+	// {
+	// 	name: 'C++',
+	// 	icon: <CppIcon height='1em' />,
+	// 	bgcolor: '#af0443',
+	// 	link: 'https://devdocs.io/cpp/',
+	// 	id: 'skill_cpp',
+	// 	category: ['language'],
+	// },
 	// {
 	// 	name: 'Java',
 	// 	icon: <FaJava />,

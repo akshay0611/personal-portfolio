@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { GoRepo } from 'react-icons/go';
+import { FaGithub } from "react-icons/fa";
 import { Link as LinkScroll } from 'react-scroll';
 import NavbarDropdown from './sidebar';
 
@@ -82,7 +82,7 @@ export default function Navbar() {
 						className='hidden md:block'
 						title='Repository URL'
 					>
-						<GoRepo />
+						<FaGithub />
 					</a>
 				</Link>
 			</div>
