@@ -3,8 +3,34 @@ import prodigyinfotechImg from '/public/images/experience/prodigyinfotech.jpeg';
 import octanetImg from '/public/images/experience/octanet.jpeg';
 import shadowfoxImg from '/public/images/experience/shadowfox.png';
 import aicteImg from '/public/images/experience/aicte.png';
+// TODO: Add ClinIQ logo image at /public/images/experience/cliniq.png
+import cliniqImg from '/public/images/experience/cliniq.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	cliniq: {
+		fromDate: 'Oct 2025',
+		toDate: 'Oct 2025',
+		positionHeld: 'Project Administrator',
+		orgName: 'ClinIQ - Hacktoberfest 2025',
+		orgLocation: 'Open Source Project',
+		url: 'https://github.com/akshay0611/ClinIQ', // Update with actual repo URL
+		imageURL: cliniqImg,
+		description: `
+As **Project Administrator** for the **ClinIQ** project during **Hacktoberfest 2025**, I led an open-source healthcare management platform, coordinating contributions from developers worldwide.
+
+- **Project Leadership:** Managed the entire project lifecycle, from planning to deployment, ensuring smooth collaboration among contributors.
+- **Code Review & Quality Assurance:** Conducted thorough code reviews, testing, and validation to maintain high code quality and ensure seamless integration of new features.
+- **Contributor Guidance:** Provided clear documentation, guidance, and constructive feedback to contributors, fostering a welcoming and productive open-source environment.
+- **Issue Management:** Created, assigned, and tracked GitHub issues, ensuring contributors had well-defined tasks aligned with project goals.
+- **Community Building:** Facilitated communication through pull request reviews, building a collaborative developer community.
+- **Technical Implementation:** Contributed to core features, bug fixes, and platform improvements while maintaining project standards and best practices.
+- **Hacktoberfest Success:** Successfully coordinated multiple pull requests, merged quality contributions, and helped contributors complete their Hacktoberfest challenges.
+
+This experience strengthened my **leadership, project management, and open-source collaboration skills**, while demonstrating my ability to guide teams and maintain high-quality codebases in a distributed environment.
+`,
+		featured: true,
+	},
+
 	octanet: {
 		fromDate: 'Dec 2024',
 		toDate: 'Jan 2025',
@@ -28,8 +54,8 @@ This internship reinforced my expertise in web development and provided a valuab
 `,
 		featured: false,
 	},
-	
-	
+
+
 	prodigyInfoTech: {
 		fromDate: 'Nov 2024',
 		toDate: 'Dec 2024',
@@ -60,8 +86,8 @@ This internship strengthened my foundation in data science techniques and equipp
 		positionHeld: 'Web Development Intern',
 		orgName: 'ShadowFox',
 		orgLocation: 'Remote (Work From Home)',
-		url: 'https://www.shadowfox.in/', 
-		imageURL: shadowfoxImg,  
+		url: 'https://www.shadowfox.in/',
+		imageURL: shadowfoxImg,
 		description: `
 During my internship at ShadowFox, I worked on multiple web development projects that enhanced my technical proficiency in front-end and full-stack development.
 
@@ -83,8 +109,8 @@ This internship allowed me to strengthen my web development skills, gain hands-o
 		positionHeld: 'Cyber Security Intern',
 		orgName: 'AICTE & IBM SkillsBuild',
 		orgLocation: 'Remote (Work From Home)',
-		url: 'https://skillsbuild.org/', 
-		imageURL: aicteImg,  
+		url: 'https://skillsbuild.org/',
+		imageURL: aicteImg,
 		description: `
 I was selected for a **Cyber Security Internship** under the **IBM SkillsBuild Program**, in collaboration with **Edunet Foundation & AICTE**. This internship provided hands-on cybersecurity training, real-world applications, and exposure to industry best practices.
 

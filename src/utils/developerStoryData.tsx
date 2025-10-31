@@ -30,6 +30,12 @@ export interface DeveloperStoryDataProps
 
 export const developerStoryData: DeveloperStoryDataProps = [
 	{
+		id: 'exp-cliniq',
+		storyType: 'experience',
+		data: allExperiences.cliniq,
+	},
+
+	{
 		id: 'exp-octanet',
 		storyType: 'experience',
 		data: allExperiences.octanet,
