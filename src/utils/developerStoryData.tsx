@@ -36,6 +36,12 @@ export const developerStoryData: DeveloperStoryDataProps = [
 	},
 
 	{
+		id: 'exp-gssoc',
+		storyType: 'experience',
+		data: allExperiences.gssoc,
+	},
+
+	{
 		id: 'exp-octanet',
 		storyType: 'experience',
 		data: allExperiences.octanet,

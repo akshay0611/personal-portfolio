@@ -5,8 +5,46 @@ import shadowfoxImg from '/public/images/experience/shadowfox.png';
 import aicteImg from '/public/images/experience/aicte.png';
 // TODO: Add ClinIQ logo image at /public/images/experience/cliniq.png
 import cliniqImg from '/public/images/experience/cliniq.png';
+// TODO: Add GSSoC logo image at /public/images/experience/gssoc.png
+import gssocImg from '/public/images/experience/gssoc.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	gssoc: {
+		fromDate: 'July 2025',
+		toDate: 'Oct 2025',
+		positionHeld: 'Open Source Contributor - Ranked #2 / 3,424',
+		orgName: 'GirlScript Summer of Code (GSSoC)',
+		orgLocation: 'Open Source Program',
+		url: 'https://gssoc.girlscript.tech/',
+		imageURL: gssocImg,
+		description: `
+Achieved **Rank #2 out of 3,424 contributors** in **GirlScript Summer of Code (GSSoC)**, one of India's largest open-source programs. This experience demonstrated exceptional contribution quality, consistency, and technical expertise across multiple projects.
+
+### Key Achievements:
+- 🏆 **Ranked #2 / 3,424 Contributors** - Top 0.06% performance
+- ✅ **238 Pull Requests Merged** - Demonstrating consistent, high-quality contributions
+- 🎯 **2,014 Total Points** - Earned through impactful code contributions
+- 🏅 **Innovator Badge** - Awarded for exceptional innovation and contribution quality
+
+### Contributions & Impact:
+- **Multi-Project Contributions:** Contributed to diverse open-source projects spanning web development, full-stack applications, and developer tools.
+- **Code Quality Excellence:** Maintained high standards with 238 successful PR merges, showcasing thorough testing and clean code practices.
+- **Problem Solving:** Tackled complex issues, implemented new features, and fixed critical bugs across multiple repositories.
+- **Technical Versatility:** Worked with various tech stacks including ReactJs, NodeJs, Python, and modern web frameworks.
+- **Community Collaboration:** Engaged with maintainers and fellow contributors, providing code reviews and constructive feedback.
+- **Documentation & Best Practices:** Improved project documentation, wrote comprehensive commit messages, and followed open-source contribution guidelines.
+
+### Skills Demonstrated:
+- **Consistency:** Maintained high contribution velocity throughout the 3-month program
+- **Adaptability:** Quickly learned new codebases and technologies
+- **Communication:** Effectively collaborated with project maintainers globally
+- **Quality Focus:** High merge rate indicating well-tested, production-ready code
+
+This experience solidified my expertise in **open-source collaboration, full-stack development, and large-scale project contributions**, while ranking among the top contributors in a highly competitive program.
+`,
+		featured: true,
+	},
+
 	cliniq: {
 		fromDate: 'Oct 2025',
 		toDate: 'Oct 2025',
@@ -100,7 +138,7 @@ During my internship at ShadowFox, I worked on multiple web development projects
 
 This internship allowed me to strengthen my web development skills, gain hands-on experience with **Next.js**, and understand the best practices for building scalable and high-performance web applications.
 `,
-		featured: true,
+		featured: false,
 	},
 
 	cyberSecurityIntern: {
