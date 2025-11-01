@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='max-section-width flex justify-center items-center gap-2 pt-4 mt-10 border-t border-gray-700'>
-        © 2024 All rights reserved. Akshay Kumar.
+        © 2025 All rights reserved. Akshay Kumar.
       </div>
     </footer>
   );

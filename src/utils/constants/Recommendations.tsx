@@ -17,6 +17,14 @@ export const recommendations: RecommendationsType[] = [
 		linkedinUrl: "https://www.linkedin.com/in/848deepak/"
 	},
 	{
+		name: 'Sagnik Chakraborty',
+		designation: "BTech I.T. '26 | Quantum Science and Dimensions Enthusiast",
+		relation: 'Sagnik was Akshay’s mentor',
+		date: 'October 31, 2025',
+		message: 'I had the pleasure of mentoring Akshay during GSSoC25 and Hacktoberfest 2025, where he consistently demonstrated strong ownership and remarkable productivity. He contributed to multiple repositories, regularly raising issues and submitting well-structured PRs that improved overall functionality and polish. His ability to quickly understand requirements, iterate on feedback, and deliver reliable solutions made him a valuable collaborator, and I’m confident he will continue to excel in future technical pursuits.',
+		linkedinUrl: 'https://www.linkedin.com/in/eccentricexplorer/'
+	},
+	{
 		name: 'Sonam Verma',
 		designation: 'Digital Marketing Specialist',
 		relation: 'Collaborated with Akshay on integrating software and marketing solutions',
