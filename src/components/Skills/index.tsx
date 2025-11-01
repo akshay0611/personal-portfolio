@@ -16,6 +16,8 @@ const AllCategories = [
 export default function Skills() {
 	const [allSkillsFiltered, setAllSkillsFiltered] = useState(allSkills);
 	const [selectedCategory, setSelectedCategory] = useState(AllCategories[0]);
+	const [showAll, setShowAll] = useState(false);
+	const INITIAL_DISPLAY_COUNT = 12; // Adjust this number as needed
 
 	useEffect(() => {
 		if (selectedCategory.id === 'all') {
@@ -30,7 +32,13 @@ export default function Skills() {
 				)
 			);
 		}
+		// Reset showAll when category changes
+		setShowAll(false);
 	}, [selectedCategory]);
+
+	const displayedSkills = showAll
+		? allSkillsFiltered
+		: allSkillsFiltered.slice(0, INITIAL_DISPLAY_COUNT);
 
 	return (
 		<section className='home-section bg-dark-gray flex-center' id='skills'>
@@ -52,7 +60,7 @@ export default function Skills() {
 							selectedCategory={selectedCategory}
 							setSelectedCategory={setSelectedCategory}
 						/>
-						{allSkillsFiltered.map((skill, index) => (
+						{displayedSkills.map((skill, index) => (
 							<SkillBadge
 								skill={skill}
 								index={index}
@@ -60,6 +68,16 @@ export default function Skills() {
 							/>
 						))}
 					</ul>
+					{allSkillsFiltered.length > INITIAL_DISPLAY_COUNT && (
+						<button
+							onClick={() => setShowAll(!showAll)}
+							className='mt-4 px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl'
+						>
+							{showAll
+								? 'Show Less'
+								: `Show ${allSkillsFiltered.length - INITIAL_DISPLAY_COUNT} More`}
+						</button>
+					)}
 				</div>
 				<div className='mr-10 hidden lg:block'>
 					<Lottie
