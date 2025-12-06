@@ -10,6 +10,7 @@ import GitHubActivity from 'components/home/github-activity';
 import Footer from 'components/footer';
 import Testimonials from 'components/home/testimonials';
 import StructuredData from 'components/common/StructuredData';
+import BackToTop from 'components/common/BackToTop';
 
 const Home: NextPage = () => {
 	if (typeof window !== 'undefined') {
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
 				<GitHubActivity />
 				<Testimonials />
 			</main>
+			<BackToTop />
 			<Footer />
 		</>
 	);
