@@ -30,11 +30,11 @@ function Testimonials() {
 
 	return (
 		<section className='home-section relative' id='testimonials'>
-			<div className='max-section-width h-full flex gap-4 items-center justify-center'>
+			<div className='max-section-width h-full flex flex-col lg:flex-row gap-8 items-center justify-center'>
 				<div className='mr-10 hidden md:block px-6'>
 					<Lottie
 						animationData={ResearchAnimation}
-						className='max-w-xl -mx-20'
+						className='max-w-xl mx-auto'
 					/>
 				</div>
 				<div className='lg:w-1/2 text-left'>
@@ -69,7 +69,7 @@ function Testimonials() {
 										'em',
 									]}
 									skipHtml
-									className='about-react-markdown flex flex-col items-start gap-2 max-h-60 overflow-y-auto pl-7'
+									className='about-react-markdown flex flex-col items-start gap-2 max-h-[50vh] overflow-y-auto pl-7'
 								>
 									{recommendation.message}
 								</ReactMarkdown>
@@ -98,7 +98,7 @@ function Testimonials() {
 										</div>
 										<p className='text-xs text-gray-400'>
 											{recommendation.designation}
-											
+
 										</p>
 										<p className='text-sm mt-1'>
 											{recommendation.date} -{' '}
@@ -120,11 +120,10 @@ function Testimonials() {
 							<button
 								key={index}
 								onClick={() => handleIndexRecommendation(index)}
-								className={`w-5 h-5 rounded-full flex items-center justify-center border p-3 text-sm ${
-									index === showIndex
-										? 'bg-blue-800 border-blue-800'
-										: 'bg-transparent border-transparent'
-								}`}
+								className={`w-5 h-5 rounded-full flex items-center justify-center border p-3 text-sm ${index === showIndex
+									? 'bg-blue-800 border-blue-800'
+									: 'bg-transparent border-transparent'
+									}`}
 							>
 								{index + 1}
 							</button>

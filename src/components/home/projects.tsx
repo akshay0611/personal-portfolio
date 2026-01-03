@@ -8,7 +8,12 @@ export default function Projects() {
 	const [position, setPosition] = useState('left');
 
 	useEffect(() => {
-		setPosition(window.innerWidth < 700 ? 'left' : 'alternate');
+		const updatePosition = () => {
+			setPosition(window.innerWidth < 700 ? 'left' : 'alternate');
+		};
+		updatePosition();
+		window.addEventListener('resize', updatePosition);
+		return () => window.removeEventListener('resize', updatePosition);
 	}, []);
 
 	return (

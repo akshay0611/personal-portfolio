@@ -17,10 +17,10 @@ import { AiOutlineDoubleLeft } from 'react-icons/ai';
 export default function HeroSection() {
 	return (
 		<section
-			className='home-section relative flex-center max-h-screen'
+			className='home-section relative flex-center min-h-[100dvh] py-20'
 			id='herosection'
 		>
-			<div className='max-section-width flex flex-col-reverse sm:flex-row gap-5 sm:gap-1 items-center justify-center'>
+			<div className='max-section-width flex flex-col-reverse sm:flex-row gap-8 sm:gap-1 items-center justify-center'>
 				{/* Left */}
 				<div>
 					<div className='text-center sm:text-left'>

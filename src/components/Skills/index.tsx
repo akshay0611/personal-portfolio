@@ -16,8 +16,17 @@ const AllCategories = [
 export default function Skills() {
 	const [allSkillsFiltered, setAllSkillsFiltered] = useState(allSkills);
 	const [selectedCategory, setSelectedCategory] = useState(AllCategories[0]);
+	const [displayCount, setDisplayCount] = useState(12);
 	const [showAll, setShowAll] = useState(false);
-	const INITIAL_DISPLAY_COUNT = 12; // Adjust this number as needed
+
+	useEffect(() => {
+		const updateDisplayCount = () => {
+			setDisplayCount(window.innerWidth < 640 ? 8 : 12);
+		};
+		updateDisplayCount();
+		window.addEventListener('resize', updateDisplayCount);
+		return () => window.removeEventListener('resize', updateDisplayCount);
+	}, []);
 
 	useEffect(() => {
 		if (selectedCategory.id === 'all') {
@@ -38,7 +47,7 @@ export default function Skills() {
 
 	const displayedSkills = showAll
 		? allSkillsFiltered
-		: allSkillsFiltered.slice(0, INITIAL_DISPLAY_COUNT);
+		: allSkillsFiltered.slice(0, displayCount);
 
 	return (
 		<section className='home-section bg-dark-gray flex-center' id='skills'>
@@ -68,14 +77,14 @@ export default function Skills() {
 							/>
 						))}
 					</ul>
-					{allSkillsFiltered.length > INITIAL_DISPLAY_COUNT && (
+					{allSkillsFiltered.length > displayCount && (
 						<button
 							onClick={() => setShowAll(!showAll)}
 							className='mt-4 px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl'
 						>
 							{showAll
 								? 'Show Less'
-								: `Show ${allSkillsFiltered.length - INITIAL_DISPLAY_COUNT} More`}
+								: `Show ${allSkillsFiltered.length - displayCount} More`}
 						</button>
 					)}
 				</div>
