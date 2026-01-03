@@ -63,7 +63,7 @@ export default function Story() {
 						Developer Story
 					</h1>
 					<p className='text-white/50 text-xs md:text-base -mt-4 mb-8 md:-mt-6 font-light max-w-2xl'>
-						Explore my complete professional timeline, from open-source contributions to academic milestones.
+						3+ years of building production systems, leading open-source projects, and shipping software that scales.
 					</p>
 					<DeveloperStoryFilter
 						setFilteredStoryData={setFilteredStoryData}
