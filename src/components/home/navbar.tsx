@@ -97,10 +97,6 @@ export const navbarData = [
 		route: true,
 	},
 	{
-		title: 'GitHub',
-		to: 'github',
-	},
-	{
 		title: 'Resume',
 		to: '',
 		external: true,

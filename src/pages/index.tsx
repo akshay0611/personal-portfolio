@@ -6,7 +6,6 @@ import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
 import Skills from 'components/Skills';
 import Projects from 'components/home/projects';
-import GitHubActivity from 'components/home/github-activity';
 import Footer from 'components/footer';
 import Testimonials from 'components/home/testimonials';
 import StructuredData from 'components/common/StructuredData';
@@ -35,7 +34,6 @@ const Home: NextPage = () => {
 				<About />
 				<Skills />
 				<Projects />
-				<GitHubActivity />
 				<Testimonials />
 			</main>
 			<BackToTop />

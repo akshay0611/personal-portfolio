@@ -17,21 +17,28 @@ export const recommendations: RecommendationsType[] = [
 		linkedinUrl: "https://www.linkedin.com/in/848deepak/"
 	},
 	{
+		name: 'Tannu Singh',
+		designation: 'BCA student | Full stack developer with AI | Intern @ In Code Scalar',
+		relation: 'Tannu reported directly to Akshay',
+		date: 'December 28, 2025',
+		message: 'I am currently working as an intern at AltQ under the mentorship of Akshay Kumar, and it has been a strong learning experience. Akshay provides clear technical direction and ensures interns work on real-world, production-oriented tasks. His guidance has helped me improve my problem-solving approach, code quality, and understanding of scalable system design.\n\nWhat stands out is his leadership style—he encourages independent thinking while giving precise, actionable feedback focused on long-term maintainability and engineering best practices.\n\nI highly recommend Akshay as a tech leader and mentor who genuinely invests in building strong, capable developers.',
+		linkedinUrl: 'https://www.linkedin.com/in/tannu-singh-0333ba332/'
+	},
+	{
+		name: 'Akhil Sharma (Nitesh)',
+		designation: 'Frontend Developer → Full Stack MERN Developer | React.js | Node.js | MongoDB',
+		relation: 'Akhil reported directly to Akshay',
+		date: 'December 26, 2025',
+		message: 'I had the opportunity to work with Akshay Kumar at Codeunia while contributing as a developer on one of our products, Learunia, and the experience significantly shaped my approach to development.\n\nAkshay played a key role in guiding the technical direction of the product and was deeply involved in both architecture decisions and day-to-day coding discussions. He ensured that the codebase remained clean, scalable, and aligned with real-world production standards, which helped me understand how professional products are actually built and maintained.\n\nWhat I value most about working with Akshay is his ability to mentor while staying hands-on. He reviewed code thoughtfully, explained design decisions clearly, and encouraged best practices rather than quick fixes. His guidance helped me improve my problem-solving skills and write more structured, maintainable code.\n\nAkshay is a dependable technical leader who leads by example, and I highly recommend him as a software developer and team lead who genuinely invests in the growth of his team and the quality of the product.',
+		linkedinUrl: 'https://www.linkedin.com/in/akhilkumar4464/'
+	},
+	{
 		name: 'Sagnik Chakraborty',
 		designation: "BTech I.T. '26 | Quantum Science and Dimensions Enthusiast",
 		relation: 'Sagnik was Akshay’s mentor',
 		date: 'October 31, 2025',
 		message: 'I had the pleasure of mentoring Akshay during GSSoC25 and Hacktoberfest 2025, where he consistently demonstrated strong ownership and remarkable productivity. He contributed to multiple repositories, regularly raising issues and submitting well-structured PRs that improved overall functionality and polish. His ability to quickly understand requirements, iterate on feedback, and deliver reliable solutions made him a valuable collaborator, and I’m confident he will continue to excel in future technical pursuits.',
 		linkedinUrl: 'https://www.linkedin.com/in/eccentricexplorer/'
-	},
-	{
-		name: 'Sonam Verma',
-		designation: 'Digital Marketing Specialist',
-		relation: 'Collaborated with Akshay on integrating software and marketing solutions',
-		date: 'Oct 2024',
-		message:
-			'I have had the pleasure of collaborating with Akshay on several projects that involved integrating digital marketing tools with web development. His technical knowledge and understanding of digital marketing needs made him a critical contributor to our initiatives. Akshay is highly skilled in both backend and frontend development and always ensures that his solutions are well-optimized for performance and user engagement. His professionalism and dedication to his craft set him apart.',
-		linkedinUrl: "https://www.linkedin.com/in/sonam-verma/"
 	},
 	{
 		name: 'Nikhar Vohra',
