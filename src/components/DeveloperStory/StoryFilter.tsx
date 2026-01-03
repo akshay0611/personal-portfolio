@@ -76,23 +76,25 @@ export const DeveloperStoryFilter = ({
 		>
 			<p className='text-sm md:text-base'>Filter: </p>
 			<div className='flex items-center justify-center md:justify-start gap-1 flex-wrap'>
-				<RadioGroup.Option value='featured'>
-					{({ checked }) => (
-						<span
-							className={
-								(checked
-									? 'bg-blue-800'
-									: 'bg-black') +
-								' flex items-center justify-center gap-2 px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border'
-							}
-						>
-							featured
-							<span className='bg-white text-black text-sm px-2 rounded-lg'>
-								{developerStoryData.filter(sd => sd.data.featured).length}
+				{developerStoryData.filter((sd) => sd.data.featured).length > 0 && (
+					<RadioGroup.Option value='featured'>
+						{({ checked }) => (
+							<span
+								className={
+									(checked
+										? 'bg-blue-800'
+										: 'bg-black') +
+									' flex items-center justify-center gap-2 px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border'
+								}
+							>
+								featured
+								<span className='bg-white text-black text-sm px-2 rounded-lg'>
+									{developerStoryData.filter((sd) => sd.data.featured).length}
+								</span>
 							</span>
-						</span>
-					)}
-				</RadioGroup.Option>
+						)}
+					</RadioGroup.Option>
+				)}
 				<RadioGroup.Option value='all'>
 					{({ checked }) => (
 						<span
@@ -111,6 +113,12 @@ export const DeveloperStoryFilter = ({
 					)}
 				</RadioGroup.Option>
 				{Object.keys(storyTypes).map((key, index) => {
+					const count = developerStoryData.filter(
+						(sd) => sd.storyType === key
+					).length;
+
+					if (count === 0) return null;
+
 					return (
 						<RadioGroup.Option value={key} key={index}>
 							{({ checked }) => (
@@ -128,11 +136,7 @@ export const DeveloperStoryFilter = ({
 										].title
 									}
 									<span className='bg-white text-black text-sm px-2 rounded-lg'>
-										{
-											developerStoryData.filter(
-												(sd) => sd.storyType === key
-											).length
-										}
+										{count}
 									</span>
 								</span>
 							)}

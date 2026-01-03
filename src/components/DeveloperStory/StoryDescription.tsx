@@ -13,9 +13,16 @@ export default function StoryDescription({
 	...props
 }: StoryDescriptionProps) {
 	const [readMoreExpanded, setReadMoreExpanded] = useState(false);
+	const [isOverflowing, setIsOverflowing] = useState(false);
 	const descElement = React.useRef<HTMLDivElement>(null);
 
 	const height = descElement.current?.scrollHeight;
+
+	React.useEffect(() => {
+		if (descElement.current) {
+			setIsOverflowing(descElement.current.scrollHeight > 176);
+		}
+	}, [children]);
 
 	// If showReadMore is false, just render the content without truncation
 	if (!showReadMore) {
@@ -100,20 +107,22 @@ export default function StoryDescription({
 					</ReactMarkdown>
 				</div>
 			</div>
-			{(height || 0) > 176 && readMoreExpanded ? (
-				<span
-					className='flex-center gap-1 text-sm text-center w-full cursor-pointer text-gray-300'
-					onClick={() => setReadMoreExpanded(false)}
-				>
-					Read Less <MdOutlineExpandLess />
-				</span>
-			) : (
-				<span
-					className='absolute bottom-0 flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
-					onClick={() => setReadMoreExpanded(true)}
-				>
-					Read More <MdOutlineExpandMore />
-				</span>
+			{isOverflowing && (
+				readMoreExpanded ? (
+					<span
+						className='flex-center gap-1 text-sm text-center w-full cursor-pointer text-gray-300'
+						onClick={() => setReadMoreExpanded(false)}
+					>
+						Read Less <MdOutlineExpandLess />
+					</span>
+				) : (
+					<span
+						className='absolute bottom-0 flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
+						onClick={() => setReadMoreExpanded(true)}
+					>
+						Read More <MdOutlineExpandMore />
+					</span>
+				)
 			)}
 		</div>
 	);
