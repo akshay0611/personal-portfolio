@@ -22,7 +22,7 @@ export default function SkillBadge({ skill, index }: SkillProps) {
 				}}
 				className='flex items-center rounded-xs py-0.5 md:py-1 px-1.5 md:px-2 gap-1 min-w-fit cursor-pointer hover:scale-110 transition ease-linear text-gray-200 text-sm md:text-base bg-black'
 			>
-				{skill.icon}
+				<div style={{ color: skill.bgcolor }}>{skill.icon}</div>
 				<li className='list-none'>{skill.name}</li>
 			</a>
 		</Link>

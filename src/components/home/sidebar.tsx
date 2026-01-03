@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
 	FaEnvelope,
 	FaGithub,
@@ -34,6 +34,17 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 		}
 	};
 
+	useEffect(() => {
+		if (display) {
+			document.body.classList.add('sidebar-open');
+		} else {
+			document.body.classList.remove('sidebar-open');
+		}
+		return () => {
+			document.body.classList.remove('sidebar-open');
+		};
+	}, [display]);
+
 	return (
 		<>
 			<GiHamburgerMenu
@@ -53,119 +64,147 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 				id='sidebar-backdrop'
 				onClick={onBackdropClose}
 			>
-				<div className='ml-auto p-5 w-60 h-full flex flex-col items-center bg-gray-900'>
-					{/* Cancel Icon on top-right */}
-					<FaTimes
-						className='transition text-xl cursor-pointer self-start'
-						onClick={onClose}
-					/>
-					{/* Logo */}
-					<div className='w-3/4 sm:w-fit'>
-						<Image
-							className='rounded-full'
-							height={500}
-							width={500}
-							src={akshay}
-							alt='Akshay Kumar'
-							unoptimized={true}
-							placeholder='blur'
+				<div className='ml-auto w-72 h-full flex flex-col bg-dark-gray border-l border-white/10 shadow-2xl overflow-y-auto px-6 py-8'>
+					{/* Close Icon on top-right */}
+					<div className='flex justify-end mb-6'>
+						<FaTimes
+							className='transition text-2xl cursor-pointer text-white/60 hover:text-white hover:rotate-90 duration-300'
+							onClick={onClose}
 						/>
 					</div>
-					<LinkScroll
-						spy={true}
-						smooth={true}
-						offset={-32}
-						duration={200}
-						to='herosection'
-						onSetActive={onClose}
-					>
-						<h1 className='text-xl font-bold mb-2 cursor-pointer'>
-							Akshay Kumar
-						</h1>
-					</LinkScroll>
-					{/* Social Links */}
-					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl'>
-						<Link passHref legacyBehavior href={SocialUrls.github}>
-							<a
-								target='_blank'
-								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
-							>
-								<FaGithub />
-							</a>
-						</Link>
-						<Link
-							passHref
-							legacyBehavior
-							href={SocialUrls.linkedin}
+
+					{/* Profile Section */}
+					<div className='flex flex-col items-center mb-10'>
+						<div className='w-28 h-28 mb-4 relative rounded-full p-1 border-2 border-white/10'>
+							<Image
+								className='rounded-full'
+								height={500}
+								width={500}
+								src={akshay}
+								alt='Akshay Kumar'
+								unoptimized={true}
+								placeholder='blur'
+							/>
+						</div>
+						<LinkScroll
+							spy={true}
+							smooth={true}
+							offset={-32}
+							duration={200}
+							to='herosection'
+							onSetActive={onClose}
+							className='cursor-pointer group'
 						>
-							<a
-								target='_blank'
-								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
-							>
-								<FaLinkedinIn />
-							</a>
-						</Link>
-						<Link passHref legacyBehavior href={SocialUrls.email}>
-							<a
-								target='_blank'
-								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
-							>
-								<FaEnvelope />
-							</a>
-						</Link>
-						<Link
-							passHref
-							legacyBehavior
-							href={SocialUrls.hackerrank}
-						>
-							<a
-								target='_blank'
-								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
-							>
-								<FaHackerrank />
-							</a>
-						</Link>
+							<h1 className='text-2xl font-bold text-white group-hover:text-yellow-300 transition-colors uppercase tracking-tight'>
+								Akshay Kumar
+							</h1>
+							<div className='h-0.5 w-0 group-hover:w-full bg-yellow-300 transition-all duration-300 mt-1'></div>
+						</LinkScroll>
 					</div>
+
 					{/* Navbar Links */}
-					{navbarData.map((e, i) => {
-						if (e.route || e.external) {
-							return (
-								<Link
-									key={i}
-									href={e.to}
-									passHref
-									legacyBehavior
-								>
-									<a
-										target={e.external ? '_blank' : '_self'}
-										rel='noopener noreferrer'
-										className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
-										title='Repository URL'
+					<nav className='flex flex-col gap-2 mb-10'>
+						{navbarData.map((e, i) => {
+							const commonClasses =
+								'text-xs tracking-[0.2em] font-medium py-3 px-4 rounded-lg flex items-center transition-all duration-200 uppercase hover:bg-white/5';
+							if (e.route || e.external) {
+								return (
+									<Link
+										key={i}
+										href={e.to}
+										passHref
+										legacyBehavior
 									>
-										{e.title}
-									</a>
-								</Link>
+										<a
+											target={
+												e.external ? '_blank' : '_self'
+											}
+											rel='noopener noreferrer'
+											className={`${commonClasses} text-white/70 hover:text-white`}
+										>
+											{e.title}
+										</a>
+									</Link>
+								);
+							}
+							return (
+								<LinkScroll
+									activeClass='!text-yellow-300 bg-white/5 border-l-2 border-yellow-300'
+									className={`${commonClasses} cursor-pointer text-white/70 hover:text-white`}
+									spy={true}
+									smooth={true}
+									offset={-32}
+									duration={200}
+									to={e.to}
+									key={i}
+									onClick={onClose}
+								>
+									<span>{e.title}</span>
+								</LinkScroll>
 							);
-						}
-						return (
-							<LinkScroll
-								activeClass='text-yellow-300'
-								className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
-								spy={true}
-								smooth={true}
-								offset={-32}
-								duration={200}
-								to={e.to}
-								key={i}
+						})}
+					</nav>
+
+					{/* Social Links Footer */}
+					<div className='mt-auto pt-8 border-t border-white/10'>
+						<p className='text-[10px] uppercase tracking-widest text-white/40 mb-4 text-center'>
+							Connect with me
+						</p>
+						<div className='flex gap-4 justify-center text-xl'>
+							<Link
+								passHref
+								legacyBehavior
+								href={SocialUrls.github}
 							>
-								<span>{e.title}</span>
-							</LinkScroll>
-						);
-					})}
+								<a
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-white hover:scale-125 transition-all duration-200'
+								>
+									<FaGithub />
+								</a>
+							</Link>
+							<Link
+								passHref
+								legacyBehavior
+								href={SocialUrls.linkedin}
+							>
+								<a
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-[#0077b5] hover:scale-125 transition-all duration-200'
+								>
+									<FaLinkedinIn />
+								</a>
+							</Link>
+							<Link
+								passHref
+								legacyBehavior
+								href={SocialUrls.email}
+							>
+								<a
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-[#ea4335] hover:scale-125 transition-all duration-200'
+								>
+									<FaEnvelope />
+								</a>
+							</Link>
+							<Link
+								passHref
+								legacyBehavior
+								href={SocialUrls.hackerrank}
+							>
+								<a
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-[#2ec866] hover:scale-125 transition-all duration-200'
+								>
+									<FaHackerrank />
+								</a>
+							</Link>
+						</div>
+					</div>
 				</div>
 			</Transition>
 		</>

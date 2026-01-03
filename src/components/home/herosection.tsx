@@ -45,7 +45,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
+								className='p-2 text-white hover:bg-white/10 hover:scale-125 rounded-full transition-all duration-150'
 							>
 								<FaGithub />
 							</a>
@@ -54,7 +54,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
+								className='p-2 text-[#0077b5] hover:bg-[#0077b5]/10 hover:scale-125 rounded-full transition-all duration-150'
 							>
 								<FaLinkedinIn />
 							</a>
@@ -63,7 +63,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
+								className='p-2 text-[#ea4335] hover:bg-[#ea4335]/10 hover:scale-125 rounded-full transition-all duration-150'
 							>
 								<FaEnvelope />
 							</a>
@@ -72,7 +72,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
+								className='p-2 text-[#2ec866] hover:bg-[#2ec866]/10 hover:scale-125 rounded-full transition-all duration-150'
 							>
 								<FaHackerrank />
 							</a>

@@ -23,9 +23,23 @@ const BackToTop = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
+        const handleVisibilityAndSidebar = () => {
+            const isSidebarOpen = document.body.classList.contains('sidebar-open');
+            if (window.scrollY > 300 && !isSidebarOpen) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleVisibilityAndSidebar);
+        // Also listen for mutations to the body class list
+        const observer = new MutationObserver(handleVisibilityAndSidebar);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
         return () => {
-            window.removeEventListener('scroll', toggleVisibility);
+            window.removeEventListener('scroll', handleVisibilityAndSidebar);
+            observer.disconnect();
         };
     }, []);
 

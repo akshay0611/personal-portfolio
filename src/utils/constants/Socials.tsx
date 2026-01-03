@@ -4,7 +4,7 @@ import { SocialUrls } from './urls';
 
 export const allSocials = [
 	{
-		name: 'akshay0611',
+		name: 'LinkedIn',
 		icon: <FaLinkedin />,
 		bgcolor: '#0077b5',
 		link: SocialUrls.linkedin,
@@ -12,17 +12,17 @@ export const allSocials = [
 	{
 		name: 'Email',
 		icon: <FaEnvelope />,
-		bgcolor: 'white',
+		bgcolor: '#ea4335',
 		link: SocialUrls.email,
 	},
 	{
-		name: 'akshay0605',
+		name: 'Discord',
 		icon: <FaDiscord />,
-		bgcolor: 'rgb(88, 101, 242)',
+		bgcolor: '#5865f2',
 		link: SocialUrls.discord,
 	},
 	{
-		name: 'aksh0605',
+		name: 'Twitter',
 		icon: <FaTwitter />,
 		bgcolor: '#1DA1F2',
 		link: SocialUrls.twitter,
