@@ -4,18 +4,18 @@ const StructuredData = () => {
 	const personSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'Person',
+		'@id': 'https://connectwithakshay.netlify.app/#person',
 		name: 'Akshay Kumar',
 		jobTitle: 'Full Stack Developer',
 		description:
 			'Full Stack Developer with 3+ years of experience specializing in ReactJs, NodeJs, Python, MongoDB, Cybersecurity, and AI',
 		url: 'https://connectwithakshay.netlify.app',
-		image: 'https://connectwithakshay.netlify.app/banner.png',
 		sameAs: [
-			// TODO: Update these with your actual social media URLs
-			'https://github.com/akshay0611',
+			'https://codeunia.com/blog/author/akshay-kumar',
+			'https://edulinkup.dev/blog/author/akshay-kumar',
 			'https://www.linkedin.com/in/akshaykumar0611/',
+			'https://github.com/akshay0611',
 			'https://x.com/Aksh0605',
-			// 'https://dev.to/your-devto-username',
 		],
 		knowsAbout: [
 			'Full Stack Development',
@@ -31,14 +31,18 @@ const StructuredData = () => {
 			'Machine Learning',
 			'Data Analytics',
 		],
-		alumniOf: {
-			'@type': 'Organization',
-			name: 'Your University', // TODO: Update with your actual university name
-		},
-		worksFor: {
-			'@type': 'Organization',
-			name: 'Freelance',
-		},
+		worksFor: [
+			{
+				'@type': 'Organization',
+				name: 'Codeunia',
+				url: 'https://codeunia.com',
+			},
+			{
+				'@type': 'Organization',
+				name: 'EduLinkUp',
+				url: 'https://edulinkup.dev',
+			},
+		],
 	};
 
 	const websiteSchema = {

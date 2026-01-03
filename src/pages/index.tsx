@@ -21,11 +21,12 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Akshay Kumar - Full Stack Developer | ReactJs, NodeJs, Python Expert</title>
+				<title>Akshay Kumar | Full Stack Developer | Scalable Web Solutions</title>
 				<meta
 					name='description'
-					content='Akshay Kumar is a Full Stack Developer with 3+ years experience in ReactJs, NodeJs, Python, and MongoDB. Specializing in web development, cybersecurity, and AI solutions. Available for freelance projects.'
+					content='Akshay Kumar is a Full Stack Developer specializing in ReactJs, NodeJs, Python, and MongoDB. This is the central hub for his professional identity across Codeunia, EduLinkUp, and more.'
 				/>
+				<link rel='canonical' href='https://connectwithakshay.netlify.app' />
 			</Head>
 			<StructuredData />
 			<main className='min-h-screen min-w-full'>
