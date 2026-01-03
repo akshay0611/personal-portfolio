@@ -1,13 +1,13 @@
 import { CertificateProps } from 'utils/developerStory';
-import googleImg from '/public/images/certificates/google.png';
-import microsoftImg from '/public/images/certificates/Microsoft.png';
-import hackerrankImg from '/public/images/certificates/hackerrank.png';
-import ibmImg from '/public/images/certificates/ibm.png';
-import postmanImg from '/public/images/certificates/postman.png';
-import goldmansachsImg from '/public/images/certificates/GoldmanSachs.png';
-import piecesImg from '/public/images/certificates/Pieces.jpeg';
-import neo4jImg from '/public/images/certificates/neo4j.png';
-import oracleImg from '/public/images/certificates/oracle.png';
+import googleImg from '../../../public/images/certificates/google.png';
+import microsoftImg from '../../../public/images/certificates/Microsoft.png';
+import hackerrankImg from '../../../public/images/certificates/hackerrank.png';
+import ibmImg from '../../../public/images/certificates/ibm.png';
+import postmanImg from '../../../public/images/certificates/postman.png';
+import goldmansachsImg from '../../../public/images/certificates/GoldmanSachs.png';
+import piecesImg from '../../../public/images/certificates/Pieces.jpeg';
+import neo4jImg from '../../../public/images/certificates/neo4j.png';
+import oracleImg from '../../../public/images/certificates/oracle.png';
 
 export const allCertificates: { [key: string]: CertificateProps } = {
 	digitalMarketingFundamentalsCert: {

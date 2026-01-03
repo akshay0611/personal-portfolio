@@ -1,11 +1,11 @@
 import { ProjectProps } from 'utils/developerStory';
-import postmanImg from '/public/images/project/postman.png';
-import portfolioImg from '/public/images/project/portfolio-logo.jpg';
-import finPulseImg from '/public/images/project/finpulse.png';
-import healwellImg from '/public/images/project/healwell.png';
-import imprintwordsImg from '/public/images/project/imprintwords.png';
-import tanjoreCoffeeImg from '/public/images/project/tanjorecoffee.png';
-import finTrackImg from '/public/images/project/fintrack.png';
+import postmanImg from '../../../public/images/project/postman.png';
+import portfolioImg from '../../../public/images/project/portfolio-logo.jpg';
+import finPulseImg from '../../../public/images/project/finpulse.png';
+import healwellImg from '../../../public/images/project/healwell.png';
+import imprintwordsImg from '../../../public/images/project/imprintwords.png';
+import tanjoreCoffeeImg from '../../../public/images/project/tanjorecoffee.png';
+import finTrackImg from '../../../public/images/project/fintrack.png';
 export const allProjects: { [key: string]: ProjectProps } = {
 
 

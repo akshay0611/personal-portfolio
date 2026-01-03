@@ -1,12 +1,12 @@
 import { ExperienceProps } from 'utils/developerStory';
-import prodigyinfotechImg from '/public/images/experience/prodigyinfotech.jpeg';
-import octanetImg from '/public/images/experience/octanet.jpeg';
-import shadowfoxImg from '/public/images/experience/shadowfox.png';
-import aicteImg from '/public/images/experience/aicte.png';
+import prodigyinfotechImg from '../../../public/images/experience/prodigyinfotech.jpeg';
+import octanetImg from '../../../public/images/experience/octanet.jpeg';
+import shadowfoxImg from '../../../public/images/experience/shadowfox.png';
+import aicteImg from '../../../public/images/experience/aicte.png';
 // TODO: Add ClinIQ logo image at /public/images/experience/cliniq.png
-import cliniqImg from '/public/images/experience/cliniq.png';
+import cliniqImg from '../../../public/images/experience/cliniq.png';
 // TODO: Add GSSoC logo image at /public/images/experience/gssoc.png
-import gssocImg from '/public/images/experience/gssoc.png';
+import gssocImg from '../../../public/images/experience/gssoc.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	gssoc: {

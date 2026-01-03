@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
-import akshay from '/public/images/akshay1.png';
+import akshay from '../../../public/images/akshay1.png';
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 export default function HeroSection() {

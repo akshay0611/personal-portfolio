@@ -1,8 +1,8 @@
 import { EducationProps } from 'utils/developerStory';
-import asianImg from '/public/images/education/asian-logo.png';
-import dpsrkpImg from '/public/images/education/dpsrkp-logo.jpeg';
-import vitImg from '/public/images/education/vit-logo.jpeg';
-import selftaughtImg from '/public/images/education/selftaught.jpg';
+import asianImg from '../../../public/images/education/asian-logo.png';
+import dpsrkpImg from '../../../public/images/education/dpsrkp-logo.jpeg';
+import vitImg from '../../../public/images/education/vit-logo.jpeg';
+import selftaughtImg from '../../../public/images/education/selftaught.jpg';
 
 export const allEducation: { [key: string]: EducationProps } = {
 	asianSchool: {
