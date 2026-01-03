@@ -25,20 +25,18 @@ export default function HeroSection() {
 				<div>
 					<div className='text-center sm:text-left'>
 						<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5'>
-							<span className='inline-block whitespace-nowrap'>
-								Hi, I am{' '}
-								<span className='animate-text-bg before:bg-white hover:text-black'>
-									Akshay Kumar
-								</span>
-							</span>
+							Akshay Kumar
 							<br />
-							<span className='text-2xl md:text-3xl lg:text-4xl font-semibold'>
-								Full Stack Developer
+							<span className='text-2xl md:text-3xl lg:text-4xl font-semibold opacity-90'>
+								Full-Stack Developer building AI & cloud-driven products
 							</span>
 						</h1>
-						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-5'>
-							Machine Learning and AI Enthusiast | ReactJs, NodeJs, Python Expert
+						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-3 sm:mb-4 md:mb-6 max-w-2xl'>
+							I design and ship scalable, production-grade web applications with a focus on performance, maintainability, and long-term impact.
 						</h2>
+						<div className='text-xs md:text-sm tracking-widest text-white/50 uppercase mb-5 sm:mb-6'>
+							MERN · Next.js · AI integrations · Google Cloud
+						</div>
 					</div>
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
 						<Link passHref href={SocialUrls.github} legacyBehavior>
@@ -104,7 +102,7 @@ export default function HeroSection() {
 						height={1000}
 						width={1000}
 						src={akshay}
-						alt='Akshay Kumar Full Stack Developer - ReactJs, NodeJs, Python Expert'
+						alt='Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products | Google Cloud Innovator'
 						loading='eager'
 						priority={true}
 						unoptimized={true}

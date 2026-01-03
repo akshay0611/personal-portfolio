@@ -21,10 +21,10 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Akshay Kumar | Full Stack Developer | Scalable Web Solutions</title>
+				<title>Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products</title>
 				<meta
 					name='description'
-					content='Akshay Kumar is a Full Stack Developer specializing in ReactJs, NodeJs, Python, and MongoDB. This is the central hub for his professional identity across Codeunia, EduLinkUp, and more.'
+					content='Full Stack Developer focused on building scalable AI & Cloud-driven products. Recognition by Google for Developers for clean, maintainable, and high-performance code.'
 				/>
 				<link rel='canonical' href='https://connectwithakshay.netlify.app' />
 			</Head>

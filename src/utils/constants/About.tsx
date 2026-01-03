@@ -1,11 +1,11 @@
 export const aboutContent = `
-I am a passionate developer with over three years of experience in **Full-Stack Development**.
-I specialize in building dynamic, scalable web applications using technologies like **ReactJs**, **NodeJs**, **Python**, and **MongoDB**.
-I believe in creating intuitive, user-friendly solutions that solve real-world problems and deliver measurable impact.
-Whether it's designing sleek user interfaces or developing complex back-end systems, I have the skills to handle the entire development cycle.
-Along with my technical expertise, I have a strong interest in **Cybersecurity** and **AI**, ensuring that the applications I build are not only functional but also secure.
-Beyond coding, I'm passionate about staying ahead of industry trends and continuously learning new tools and frameworks to improve my craft.
-In my downtime, you can find me reading about emerging tech, solving coding challenges, or playing basketball.
+I’m a **Full-Stack Developer** focused on building **scalable, AI- and cloud-driven web products** that solve real-world problems.
 
-Currently, I am working as a **freelance Full Stack Developer**, collaborating on exciting projects in areas like web development, machine learning, and digital marketing. If you’re looking to collaborate, or if you have an idea you'd like to bring to life, feel free to **[get in touch](#contact)**.
+I work across the full lifecycle of an application — from clean, responsive frontends to robust backend systems and cloud-ready architectures. My approach prioritizes **performance, maintainability, and long-term scalability** over quick demos or short-lived prototypes.
+
+My core stack includes **MERN and Next.js**, with hands-on experience integrating **AI/ML capabilities and automation** into real products. I also work extensively with **Google Cloud**, building cloud-native solutions designed for production environments.
+
+I’ve been featured by **Google for Developers** for advocating clean, readable, and maintainable code — because good software is built for teams, not just machines.
+
+Beyond writing code, I collaborate with teams, mentor developers, and focus on building systems that create **measurable impact**.
 `;

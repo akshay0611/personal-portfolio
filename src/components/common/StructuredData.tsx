@@ -8,7 +8,7 @@ const StructuredData = () => {
 		name: 'Akshay Kumar',
 		jobTitle: 'Full Stack Developer',
 		description:
-			'Full Stack Developer with 3+ years of experience specializing in ReactJs, NodeJs, Python, MongoDB, Cybersecurity, and AI',
+			'Full Stack Developer recognized by Google for Developers. Expertise in building scalable AI & Cloud-driven products with a focus on maintainability and high-performance architectures.',
 		url: 'https://connectwithakshay.netlify.app',
 		sameAs: [
 			'https://codeunia.com/blog/author/akshay-kumar',
@@ -19,17 +19,18 @@ const StructuredData = () => {
 		],
 		knowsAbout: [
 			'Full Stack Development',
+			'MERN Stack',
+			'Next.js',
+			'AI-driven products',
+			'Cloud-native development',
+			'Google Cloud',
 			'ReactJs',
 			'NodeJs',
 			'Python',
 			'MongoDB',
-			'JavaScript',
-			'TypeScript',
-			'Web Development',
 			'Cybersecurity',
 			'Artificial Intelligence',
 			'Machine Learning',
-			'Data Analytics',
 		],
 		worksFor: [
 			{
