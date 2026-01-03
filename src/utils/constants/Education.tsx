@@ -27,7 +27,7 @@ During this time, I developed a keen interest in technology, particularly in sof
 		toDate: '2020',
 		orgName: 'Holy Faith Senior Secondary School',
 		orgLocation: 'Muzaffarpur, India',
-		
+
 		url: '',
 		description: `
 I completed my Intermediate education (11th and 12th grades) at Holy Faith Senior Secondary School, Muzaffarpur. During this time, I gained a strong foundation in subjects crucial for further academic and professional pursuits.
@@ -52,11 +52,11 @@ This period also sparked my interest in technology and programming, motivating m
 		description: `
 I am a developer passionate about technology, programming, and solving real-world problems. My journey began in 2020 when I took the initiative to independently explore and learn various fields of Information Technology, building a strong foundation through hands-on projects and continuous learning.
 
-### Learning Highlights
+### Technical Competencies
 - Completed multiple online courses, including certifications in **Web Development**, **Machine Learning**, and **API Integration**.
 - Developed technical expertise in **Data Structures**, **Algorithms**, and **Software Development** through practical applications.
 		
-### Key Topics Studied
+### Core Engineering Foundations
 - Data Structures and Algorithms
 - Object-Oriented Programming
 - Database Management Systems
