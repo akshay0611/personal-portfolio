@@ -105,7 +105,9 @@ export default function HeroSection() {
 						width={1000}
 						src={akshay}
 						alt='Akshay Kumar Full Stack Developer - ReactJs, NodeJs, Python Expert'
-						loading='lazy'
+						loading='eager'
+						priority={true}
+						unoptimized={true}
 						placeholder='blur'
 					/>
 					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-[#00000020] to-black'></div>
