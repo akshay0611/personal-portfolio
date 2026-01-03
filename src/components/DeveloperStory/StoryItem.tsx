@@ -25,6 +25,7 @@ interface StoryItemProps extends React.HTMLAttributes<HTMLDivElement> {
 	index: number;
 	muted?: boolean;
 	showReadMore?: boolean;
+	showFeatured?: boolean;
 	data:
 	| AchievementProps
 	| CertificateProps
@@ -40,6 +41,7 @@ interface StoryContentPropsInterface {
 	storyType: STORY_TYPES;
 	muted?: boolean;
 	showReadMore?: boolean;
+	showFeatured?: boolean;
 	// TODO: Remove 'any' and create fresh interface for 'data' below
 	data: any;
 }
@@ -52,6 +54,7 @@ export const StoryItem = ({
 	index,
 	muted = false,
 	showReadMore = true,
+	showFeatured = true,
 	data,
 	...props
 }: StoryItemProps) => {
@@ -73,6 +76,7 @@ export const StoryItem = ({
 		data: data,
 		muted: muted,
 		showReadMore: showReadMore,
+		showFeatured: showFeatured,
 	};
 
 	switch (position) {

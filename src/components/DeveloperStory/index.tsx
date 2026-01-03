@@ -15,6 +15,7 @@ interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
 	developerStoryData: DeveloperStoryDataProps;
 	muted?: boolean;
 	showReadMore?: boolean;
+	showFeatured?: boolean;
 }
 
 export default function DeveloperStory({
@@ -23,6 +24,7 @@ export default function DeveloperStory({
 	developerStoryData,
 	muted = false,
 	showReadMore = true,
+	showFeatured = true,
 	...props
 }: DeveloperStoryProps) {
 	const [limitToValue, setLimitToValue] = useState(limitTo);
@@ -54,6 +56,7 @@ export default function DeveloperStory({
 							key={index}
 							muted={muted}
 							showReadMore={showReadMore}
+							showFeatured={showFeatured}
 						/>
 					))}
 			</div>

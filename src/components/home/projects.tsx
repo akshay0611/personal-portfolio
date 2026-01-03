@@ -23,6 +23,7 @@ export default function Projects() {
 					position='alternate'
 					muted={true}
 					showReadMore={false}
+					showFeatured={false}
 				/>
 
 				<div className='w-full flex justify-center mt-12'>

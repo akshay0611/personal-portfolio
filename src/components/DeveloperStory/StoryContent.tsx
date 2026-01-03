@@ -26,7 +26,8 @@ export default function StoryContent({
 	arrowLeft,
 	data,
 	showReadMore = true,
-}: StoryContentTypeProps & { showReadMore?: boolean }) {
+	showFeatured = true,
+}: StoryContentTypeProps & { showReadMore?: boolean; showFeatured?: boolean }) {
 	const renderDates = data.fromDate || data.toDate;
 	const renderToDate = data.toDate && data.toDate !== data.fromDate;
 	return (
@@ -37,7 +38,7 @@ export default function StoryContent({
 			{arrowLeft && (
 				<StoryComponent.Arrow className='h-4 text-white absolute top-7 -left-2.5 border-2 border-transparent box-border rotate-180' />
 			)}
-			{data.featured && (
+			{showFeatured && data.featured && (
 				<div className='absolute top-2 right-2 text-gray-300 gap-0.5 text-sm flex-center'>
 					<AiFillStar />
 					<p className='text-xs'>Featured</p>
