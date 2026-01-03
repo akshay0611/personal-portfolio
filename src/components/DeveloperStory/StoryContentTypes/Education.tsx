@@ -9,8 +9,9 @@ export default function Education({
 	imageURL,
 	description,
 	url,
+	showReadMore = true,
 	...props
-}: EducationProps) {
+}: EducationProps & { showReadMore?: boolean }) {
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
@@ -22,7 +23,7 @@ export default function Education({
 					</h4>
 				</div>
 			</StoryComponent.HeaderWrapper>
-			{description && <StoryDescription>{description}</StoryDescription>}
+			{description && <StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>}
 			<StoryComponent.Button url={url}>View</StoryComponent.Button>
 		</>
 	);

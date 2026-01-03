@@ -14,6 +14,7 @@ interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
 	limitTo?: number;
 	developerStoryData: DeveloperStoryDataProps;
 	muted?: boolean;
+	showReadMore?: boolean;
 }
 
 export default function DeveloperStory({
@@ -21,6 +22,7 @@ export default function DeveloperStory({
 	limitTo,
 	developerStoryData,
 	muted = false,
+	showReadMore = true,
 	...props
 }: DeveloperStoryProps) {
 	const [limitToValue, setLimitToValue] = useState(limitTo);
@@ -51,6 +53,7 @@ export default function DeveloperStory({
 							lastIndex={index === developerStoryData.length - 1}
 							key={index}
 							muted={muted}
+							showReadMore={showReadMore}
 						/>
 					))}
 			</div>

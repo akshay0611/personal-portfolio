@@ -12,8 +12,9 @@ export default function Other({
 	description,
 	url,
 	techStack = [],
+	showReadMore = true,
 	...props
-}: OtherProps) {
+}: OtherProps & { showReadMore?: boolean }) {
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
@@ -40,7 +41,7 @@ export default function Other({
 					</ul>
 				</div>
 			)}
-			{description && <StoryDescription>{description}</StoryDescription>}
+			{description && <StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>}
 			<StoryComponent.Button url={url}>View</StoryComponent.Button>
 		</>
 	);

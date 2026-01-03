@@ -11,8 +11,9 @@ export default function Experience({
 	description,
 	url,
 	ctaLabel = 'View',
+	showReadMore = true,
 	...props
-}: ExperienceProps) {
+}: ExperienceProps & { showReadMore?: boolean }) {
 	return (
 		<div className='flex flex-col gap-6'>
 			<StoryComponent.HeaderWrapper>
@@ -33,7 +34,7 @@ export default function Experience({
 
 			{description && (
 				<div className='story-description-container'>
-					<StoryDescription>{description}</StoryDescription>
+					<StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>
 				</div>
 			)}
 

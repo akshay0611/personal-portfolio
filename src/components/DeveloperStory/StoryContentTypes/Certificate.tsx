@@ -12,8 +12,9 @@ export default function Certificate({
 	skills = [],
 	url,
 	orgName,
+	showReadMore = true,
 	...props
-}: CertificateProps) {
+}: CertificateProps & { showReadMore?: boolean }) {
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
@@ -38,7 +39,7 @@ export default function Certificate({
 					</ul>
 				</div>
 			)}
-			{description && <StoryDescription>{description}</StoryDescription>}
+			{description && <StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>}
 			<StoryComponent.Button url={url}>View</StoryComponent.Button>
 		</>
 	);

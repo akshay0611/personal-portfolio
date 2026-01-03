@@ -9,8 +9,9 @@ export default function Achievement({
 	imageURL,
 	description,
 	url,
+	showReadMore = true,
 	...props
-}: AchievementProps) {
+}: AchievementProps & { showReadMore?: boolean }) {
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
@@ -24,7 +25,7 @@ export default function Achievement({
 					)}
 				</div>
 			</StoryComponent.HeaderWrapper>
-			{description && <StoryDescription>{description}</StoryDescription>}
+			{description && <StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>}
 			<StoryComponent.Button url={url}>View</StoryComponent.Button>
 		</>
 	);

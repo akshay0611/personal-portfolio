@@ -13,8 +13,9 @@ export default function Project({
 	repoUrl,
 	viewUrl,
 	techStack = [],
+	showReadMore = true,
 	...props
-}: ProjectProps) {
+}: ProjectProps & { showReadMore?: boolean }) {
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
@@ -41,7 +42,7 @@ export default function Project({
 					</ul>
 				</div>
 			)}
-			<StoryDescription>{description}</StoryDescription>
+			<StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>
 			<div className='flex gap-2'>
 				<StoryComponent.Button url={repoUrl}>
 					Code

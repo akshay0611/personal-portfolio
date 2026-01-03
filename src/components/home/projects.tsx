@@ -22,6 +22,7 @@ export default function Projects() {
 					developerStoryData={featuredStory}
 					position='alternate'
 					muted={true}
+					showReadMore={false}
 				/>
 
 				<div className='w-full flex justify-center mt-12'>

@@ -25,7 +25,8 @@ export default function StoryContent({
 	arrowRight,
 	arrowLeft,
 	data,
-}: StoryContentTypeProps) {
+	showReadMore = true,
+}: StoryContentTypeProps & { showReadMore?: boolean }) {
 	const renderDates = data.fromDate || data.toDate;
 	const renderToDate = data.toDate && data.toDate !== data.fromDate;
 	return (
@@ -63,21 +64,21 @@ export default function StoryContent({
 			</div>
 			<div className='flex flex-col gap-3 items-start w-full transition-all duration-200'>
 				{storyType === 'education' && (
-					<Education {...(data as EducationProps)} />
+					<Education {...(data as EducationProps)} showReadMore={showReadMore} />
 				)}
 				{storyType === 'experience' && (
-					<Experience {...(data as ExperienceProps)} />
+					<Experience {...(data as ExperienceProps)} showReadMore={showReadMore} />
 				)}
 				{storyType === 'project' && (
-					<Project {...(data as ProjectProps)} />
+					<Project {...(data as ProjectProps)} showReadMore={showReadMore} />
 				)}
 				{storyType === 'certificate' && (
-					<Certificate {...(data as CertificateProps)} />
+					<Certificate {...(data as CertificateProps)} showReadMore={showReadMore} />
 				)}
 				{storyType === 'achievement' && (
-					<Achievement {...(data as AchievementProps)} />
+					<Achievement {...(data as AchievementProps)} showReadMore={showReadMore} />
 				)}
-				{storyType === 'other' && <Other {...(data as OtherProps)} />}
+				{storyType === 'other' && <Other {...(data as OtherProps)} showReadMore={showReadMore} />}
 			</div>
 		</div>
 	);

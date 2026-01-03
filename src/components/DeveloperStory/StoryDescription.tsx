@@ -1,20 +1,63 @@
 import React, { useState } from 'react';
 import { MdOutlineExpandLess, MdOutlineExpandMore } from 'react-icons/md';
 import ReactMarkdown from 'react-markdown';
-import StoryComponent from './StoryComponent';
 
 interface StoryDescriptionProps extends React.HTMLAttributes<HTMLDivElement> {
 	children: string;
+	showReadMore?: boolean;
 }
 
 export default function StoryDescription({
 	children,
+	showReadMore = true,
 	...props
 }: StoryDescriptionProps) {
 	const [readMoreExpanded, setReadMoreExpanded] = useState(false);
 	const descElement = React.useRef<HTMLDivElement>(null);
 
 	const height = descElement.current?.scrollHeight;
+
+	// If showReadMore is false, just render the content without truncation
+	if (!showReadMore) {
+		return (
+			<div className='relative'>
+				<div>
+					<ReactMarkdown
+						components={{
+							h4: 'h3',
+							h5: 'h3',
+							h6: 'h3',
+						}}
+						allowedElements={[
+							'h1',
+							'h2',
+							'h3',
+							'h4',
+							'h5',
+							'h6',
+							'p',
+							'ul',
+							'ol',
+							'li',
+							'blockquote',
+							'pre',
+							'code',
+							'a',
+							'img',
+							'b',
+							'i',
+							'strong',
+						]}
+						linkTarget='_blank'
+						skipHtml
+						className='story-description-react-markdown'
+					>
+						{children}
+					</ReactMarkdown>
+				</div>
+			</div>
+		);
+	}
 
 	return (
 		<div className='relative'>
