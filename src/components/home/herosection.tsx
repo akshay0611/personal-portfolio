@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
-import akshay from '/public/images/akshay.png';
+import akshay from '/public/images/akshay1.png';
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 export default function HeroSection() {
@@ -37,7 +37,7 @@ export default function HeroSection() {
 							</span>
 						</h1>
 						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-5'>
-						    Machine Learning and AI Enthusiast | ReactJs, NodeJs, Python Expert
+							Machine Learning and AI Enthusiast | ReactJs, NodeJs, Python Expert
 						</h2>
 					</div>
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
