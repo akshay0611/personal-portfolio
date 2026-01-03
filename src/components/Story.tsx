@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import Footer from 'components/footer';
-import { developerStoryData } from 'utils/developerStoryData';
+import { fullStory } from 'data/story/all';
 import { DeveloperStoryFilter } from './DeveloperStory/StoryFilter';
 import { AiFillHome, AiOutlineLink } from 'react-icons/ai';
 
 export default function Story() {
 	const [position, setPosition] = useState('left');
-	const [filteredStoryData, setFilteredStoryData] =
-		useState(developerStoryData);
+	const [filteredStoryData, setFilteredStoryData] = useState(
+		fullStory.filter((story) => story.data.featured)
+	);
 
 	// Orientation of the developer story
 	useEffect(() => {
@@ -41,7 +42,7 @@ export default function Story() {
 				<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
 					<div className='sticky flex gap-2 top-2 md:top-4 text-white z-50'>
 						<Link href='/' legacyBehavior>
-							<a className='flex items-center gap-1 border-2 borde-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
+							<a className='flex items-center gap-1 border-2 border-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
 								<AiFillHome className='text-base md:text-xl' />
 								<p className='text-sm md:text-base mt-0.5'>
 									Home
@@ -50,7 +51,7 @@ export default function Story() {
 						</Link>
 						<a
 							onClick={copyUrl}
-							className='flex transition items-center gap-1 border-2 borde-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm cursor-pointer'
+							className='flex transition items-center gap-1 border-2 border-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm cursor-pointer'
 						>
 							<AiOutlineLink className='text-base md:text-xl' />
 							<p className='text-sm md:text-base mt-0.5'>
@@ -61,20 +62,12 @@ export default function Story() {
 					<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
 						Developer Story
 					</h1>
-					<p className='text-gray-500 text-2xs md:text-sm -mt-4 mb-5 md:-mt-7'>
-						Things you cannot find on{' '}
-						<Link
-							passHref
-							href='https://stackoverflow.com/users/story/join'
-							legacyBehavior
-						>
-							<a target='_blank'>StackOverFlow</a>
-						</Link>{' '}
-						anymore :(
+					<p className='text-white/50 text-xs md:text-base -mt-4 mb-8 md:-mt-6 font-light max-w-2xl'>
+						Explore my complete professional timeline, from open-source contributions to academic milestones.
 					</p>
 					<DeveloperStoryFilter
 						setFilteredStoryData={setFilteredStoryData}
-						developerStoryData={developerStoryData}
+						developerStoryData={fullStory}
 					/>
 					<DeveloperStory
 						developerStoryData={filteredStoryData.sort((a, b) => {
@@ -107,6 +100,7 @@ export default function Story() {
 							return 0;
 						})}
 						position={position as any}
+						muted={false}
 					/>
 				</div>
 			</section>

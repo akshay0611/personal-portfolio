@@ -23,19 +23,21 @@ interface StoryItemProps extends React.HTMLAttributes<HTMLDivElement> {
 	lastIndex?: boolean;
 	storyType?: STORY_TYPES;
 	index: number;
+	muted?: boolean;
 	data:
-		| AchievementProps
-		| CertificateProps
-		| EducationProps
-		| ExperienceProps
-		| OtherProps
-		| ProjectProps;
+	| AchievementProps
+	| CertificateProps
+	| EducationProps
+	| ExperienceProps
+	| OtherProps
+	| ProjectProps;
 }
 
 interface StoryContentPropsInterface {
 	arrowRight: boolean;
 	arrowLeft: boolean;
 	storyType: STORY_TYPES;
+	muted?: boolean;
 	// TODO: Remove 'any' and create fresh interface for 'data' below
 	data: any;
 }
@@ -46,6 +48,7 @@ export const StoryItem = ({
 	lastIndex = false,
 	storyType = DEFAULT_STORY_TYPE,
 	index,
+	muted = false,
 	data,
 	...props
 }: StoryItemProps) => {
@@ -53,6 +56,7 @@ export const StoryItem = ({
 		firstIndex: firstIndex,
 		lastIndex: lastIndex,
 		storyType: storyType,
+		muted: muted,
 	};
 
 	const StoryContentProps: StoryContentPropsInterface = {
@@ -64,6 +68,7 @@ export const StoryItem = ({
 			(position === 'alternate' && index % 2 !== 0),
 		storyType: storyType,
 		data: data,
+		muted: muted,
 	};
 
 	switch (position) {

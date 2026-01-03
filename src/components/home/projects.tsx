@@ -1,59 +1,39 @@
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Wave from 'react-wavify';
-import { developerStoryData } from 'utils/developerStoryData';
+import { featuredStory } from 'data/story/featured';
 
 export default function Projects() {
-	const [position, setPosition] = useState('left');
-
-	useEffect(() => {
-		const updatePosition = () => {
-			setPosition(window.innerWidth < 700 ? 'left' : 'alternate');
-		};
-		updatePosition();
-		window.addEventListener('resize', updatePosition);
-		return () => window.removeEventListener('resize', updatePosition);
-	}, []);
-
 	return (
 		<section
 			className='home-section bg-dark-gray relative'
 			id='developerstory'
 		>
 			<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
-				<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
+				<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray text-center md:text-left'>
 					Developer Story
 				</h1>
-				<p className='text-gray-500 text-2xs md:text-sm -mt-4 mb-5 md:-mt-7'>
-					Things you cannot find on{' '}
-					<Link
-						passHref
-						href='https://stackoverflow.com/users/story/join'
-						legacyBehavior
-					>
-						<a target='_blank'>StackOverFlow</a>
-					</Link>{' '}
-					anymore :(
+				<p className='text-white/50 text-xs md:text-base -mt-4 mb-10 md:-mt-6 font-light max-w-2xl text-center md:text-left'>
+					A timeline of growth, ownership, and real-world impact.
 				</p>
+
 				<DeveloperStory
-					developerStoryData={developerStoryData.filter(
-						(e) => e.data.featured
-					)}
-					position={position as any}
-					limitTo={3}
+					developerStoryData={featuredStory}
+					position='alternate'
+					muted={true}
 				/>
-				<hr
-					className={
-						(position === 'alternate'
-							? 'self-center'
-							: 'self-start') +
-						' bg-transparent border-dashed border-l-1 border-t-0 border-white h-8 -mt-2 -mb-2 mx-3'
-					}
-				/>
-				<button className='text-lg md:border-dashed self-center border-1 border-white px-3 py-1 bg-blue-900 text-white hover:bg-transparent transition-colors duration-200'>
-					<Link href='/story'>View all</Link>
-				</button>
+
+				<div className='w-full flex justify-center mt-12'>
+					<Link href='/story' legacyBehavior>
+						<a className='flex items-center gap-2 text-white/70 hover:text-white transition-colors group'>
+							<span className='text-sm md:text-base border-b border-white/20 group-hover:border-white transition-all pb-0.5'>
+								View full timeline
+							</span>
+							<span className='text-lg transform group-hover:translate-x-1 transition-transform'>→</span>
+						</a>
+					</Link>
+				</div>
 			</div>
 			<Wave
 				fill='black'

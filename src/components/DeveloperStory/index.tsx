@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import {
 	DEFAULT_POSITION_TYPES,
+	DeveloperStoryDataProps,
 	POSITION_TYPES,
 	STORY_TYPES,
 } from 'utils/developerStory';
-import { DeveloperStoryDataProps } from 'utils/developerStoryData';
 import { StoryItem } from './StoryItem';
 import Lottie from 'components/common/LottieWrapper';
 import NoResultAnimation from '../../assets/lottie/no-results.json';
@@ -13,12 +13,14 @@ interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
 	position?: POSITION_TYPES;
 	limitTo?: number;
 	developerStoryData: DeveloperStoryDataProps;
+	muted?: boolean;
 }
 
 export default function DeveloperStory({
 	position = DEFAULT_POSITION_TYPES,
 	limitTo,
 	developerStoryData,
+	muted = false,
 	...props
 }: DeveloperStoryProps) {
 	const [limitToValue, setLimitToValue] = useState(limitTo);
@@ -48,6 +50,7 @@ export default function DeveloperStory({
 							firstIndex={index === 0}
 							lastIndex={index === developerStoryData.length - 1}
 							key={index}
+							muted={muted}
 						/>
 					))}
 			</div>

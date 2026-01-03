@@ -103,6 +103,7 @@ export interface ExperienceProps {
 	description: string;
 	url?: string;
 	skills?: string[];
+	ctaLabel?: string;
 }
 
 export interface OtherProps {
@@ -133,44 +134,59 @@ export interface ProjectProps {
 // Interface for StoryContentTypes
 export type StoryContentTypeProps =
 	| {
-			storyType: 'achievement';
-			arrowRight?: boolean;
-			arrowLeft?: boolean;
-			randomClassName?: string;
-			data: AchievementProps;
-	  }
+		storyType: 'achievement';
+		arrowRight?: boolean;
+		arrowLeft?: boolean;
+		randomClassName?: string;
+		data: AchievementProps;
+	}
 	| {
-			storyType: 'certificate';
-			arrowRight?: boolean;
-			arrowLeft?: boolean;
-			randomClassName?: string;
-			data: CertificateProps;
-	  }
+		storyType: 'certificate';
+		arrowRight?: boolean;
+		arrowLeft?: boolean;
+		randomClassName?: string;
+		data: CertificateProps;
+	}
 	| {
-			storyType: 'education';
-			arrowRight?: boolean;
-			arrowLeft?: boolean;
-			randomClassName?: string;
-			data: EducationProps;
-	  }
+		storyType: 'education';
+		arrowRight?: boolean;
+		arrowLeft?: boolean;
+		randomClassName?: string;
+		data: EducationProps;
+	}
 	| {
-			storyType: 'experience';
-			arrowRight?: boolean;
-			arrowLeft?: boolean;
-			randomClassName?: string;
-			data: ExperienceProps;
-	  }
+		storyType: 'experience';
+		arrowRight?: boolean;
+		arrowLeft?: boolean;
+		randomClassName?: string;
+		data: ExperienceProps;
+	}
 	| {
-			storyType: 'other';
-			arrowRight?: boolean;
-			arrowLeft?: boolean;
-			randomClassName?: string;
-			data: OtherProps;
-	  }
+		storyType: 'other';
+		arrowRight?: boolean;
+		arrowLeft?: boolean;
+		randomClassName?: string;
+		data: OtherProps;
+	}
 	| {
-			storyType: 'project';
-			arrowRight?: boolean;
-			arrowLeft?: boolean;
-			randomClassName?: string;
-			data: ProjectProps;
-	  };
+		storyType: 'project';
+		arrowRight?: boolean;
+		arrowLeft?: boolean;
+		randomClassName?: string;
+		data: ProjectProps;
+	};
+
+export interface singleDeveloperStoryDataProps {
+	id: string;
+	storyType: STORY_TYPES;
+	data:
+	| EducationProps
+	| AchievementProps
+	| CertificateProps
+	| ExperienceProps
+	| OtherProps
+	| ProjectProps;
+}
+
+export interface DeveloperStoryDataProps
+	extends Array<singleDeveloperStoryDataProps> { }

@@ -18,7 +18,6 @@ export default function StoryDescription({
 
 	return (
 		<div className='relative'>
-			<StoryComponent.Subheader>Description</StoryComponent.Subheader>
 			<div
 				style={{ maxHeight: readMoreExpanded ? height : '11rem' }}
 				className='overflow-hidden transition-all duration-200'

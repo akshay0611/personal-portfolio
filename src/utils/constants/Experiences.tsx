@@ -12,35 +12,17 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	gssoc: {
 		fromDate: 'July 2025',
 		toDate: 'Oct 2025',
-		positionHeld: 'Open Source Contributor - Ranked #2 / 3,424',
+		positionHeld: 'Ranked #2 among 3,424 contributors (GSSoC 2025)',
 		orgName: 'GirlScript Summer of Code (GSSoC)',
 		orgLocation: 'Open Source Program',
 		url: 'https://gssoc.girlscript.tech/',
 		imageURL: gssocImg,
+		ctaLabel: 'View impact',
 		description: `
-Achieved **Rank #2 out of 3,424 contributors** in **GirlScript Summer of Code (GSSoC)**, one of India's largest open-source programs. This experience demonstrated exceptional contribution quality, consistency, and technical expertise across multiple projects.
-
-### Key Achievements:
-- 🏆 **Ranked #2 / 3,424 Contributors** - Top 0.06% performance
-- ✅ **238 Pull Requests Merged** - Demonstrating consistent, high-quality contributions
-- 🎯 **2,014 Total Points** - Earned through impactful code contributions
-- 🏅 **Innovator Badge** - Awarded for exceptional innovation and contribution quality
-
-### Contributions & Impact:
-- **Multi-Project Contributions:** Contributed to diverse open-source projects spanning web development, full-stack applications, and developer tools.
-- **Code Quality Excellence:** Maintained high standards with 238 successful PR merges, showcasing thorough testing and clean code practices.
-- **Problem Solving:** Tackled complex issues, implemented new features, and fixed critical bugs across multiple repositories.
-- **Technical Versatility:** Worked with various tech stacks including ReactJs, NodeJs, Python, and modern web frameworks.
-- **Community Collaboration:** Engaged with maintainers and fellow contributors, providing code reviews and constructive feedback.
-- **Documentation & Best Practices:** Improved project documentation, wrote comprehensive commit messages, and followed open-source contribution guidelines.
-
-### Skills Demonstrated:
-- **Consistency:** Maintained high contribution velocity throughout the 3-month program
-- **Adaptability:** Quickly learned new codebases and technologies
-- **Communication:** Effectively collaborated with project maintainers globally
-- **Quality Focus:** High merge rate indicating well-tested, production-ready code
-
-This experience solidified my expertise in **open-source collaboration, full-stack development, and large-scale project contributions**, while ranking among the top contributors in a highly competitive program.
+Open-source contributor working across multiple production repositories.
+- **Top 0.06% Perfomance**: Ranked #2 out of 3,424 global contributors.
+- **High-Velocity Delivery**: Merged 238 Pull Requests across diverse tech stacks.
+- **Technical Impact**: Earned 2,014 points through complex bug fixes and feature implementations.
 `,
 		featured: true,
 	},
@@ -48,23 +30,17 @@ This experience solidified my expertise in **open-source collaboration, full-sta
 	cliniq: {
 		fromDate: 'Oct 2025',
 		toDate: 'Oct 2025',
-		positionHeld: 'Project Administrator',
+		positionHeld: 'Led and maintained an open-source healthcare platform (Hacktoberfest)',
 		orgName: 'ClinIQ - Hacktoberfest 2025',
 		orgLocation: 'Open Source Project',
-		url: 'https://github.com/akshay0611/ClinIQ', // Update with actual repo URL
+		url: 'https://github.com/akshay0611/ClinIQ',
 		imageURL: cliniqImg,
+		ctaLabel: 'See contributions',
 		description: `
-As **Project Administrator** for the **ClinIQ** project during **Hacktoberfest 2025**, I led an open-source healthcare management platform, coordinating contributions from developers worldwide.
-
-- **Project Leadership:** Managed the entire project lifecycle, from planning to deployment, ensuring smooth collaboration among contributors.
-- **Code Review & Quality Assurance:** Conducted thorough code reviews, testing, and validation to maintain high code quality and ensure seamless integration of new features.
-- **Contributor Guidance:** Provided clear documentation, guidance, and constructive feedback to contributors, fostering a welcoming and productive open-source environment.
-- **Issue Management:** Created, assigned, and tracked GitHub issues, ensuring contributors had well-defined tasks aligned with project goals.
-- **Community Building:** Facilitated communication through pull request reviews, building a collaborative developer community.
-- **Technical Implementation:** Contributed to core features, bug fixes, and platform improvements while maintaining project standards and best practices.
-- **Hacktoberfest Success:** Successfully coordinated multiple pull requests, merged quality contributions, and helped contributors complete their Hacktoberfest challenges.
-
-This experience strengthened my **leadership, project management, and open-source collaboration skills**, while demonstrating my ability to guide teams and maintain high-quality codebases in a distributed environment.
+Project Administrator managing a distributed team of developers.
+- **Repository Stewardship**: Led the end-to-end lifecycle of a healthcare management platform.
+- **Code Governance**: Conducted thorough reviews and CI/CD validation for all global contributions.
+- **Community Mentorship**: Guided contributors through documentation and constructive feedback loops.
 `,
 		featured: true,
 	},
@@ -144,22 +120,17 @@ This internship allowed me to strengthen my web development skills, gain hands-o
 	cyberSecurityIntern: {
 		fromDate: 'Jan 2025',
 		toDate: 'Feb 2025',
-		positionHeld: 'Cyber Security Intern',
+		positionHeld: 'Built security-focused systems under IBM SkillsBuild',
 		orgName: 'AICTE & IBM SkillsBuild',
 		orgLocation: 'Remote (Work From Home)',
 		url: 'https://skillsbuild.org/',
 		imageURL: aicteImg,
+		ctaLabel: 'Read details',
 		description: `
-I was selected for a **Cyber Security Internship** under the **IBM SkillsBuild Program**, in collaboration with **Edunet Foundation & AICTE**. This internship provided hands-on cybersecurity training, real-world applications, and exposure to industry best practices.
-
-- **Cybersecurity Project Development:** Designed and implemented an innovative cybersecurity project, incorporating **data security** and **secure communication principles**.
-- **Core Security Concepts:** Mastered key areas such as **network security, cryptography, and risk management** through IBM’s specialized learning modules.
-- **Masterclasses & Industry Insights:** Participated in **expert-led masterclasses**, gaining in-depth knowledge of modern cybersecurity threats and **mitigation strategies**.
-- **Technical Training & Certification:** Completed extensive coursework on the **IBM SkillsBuild** platform, refining my skills in **cyber defense, ethical hacking, and risk assessment**.
-- **Presentation & Recognition:** Delivered a **project presentation**, showcasing my problem-solving and implementation skills, earning recognition for my contributions.
-- **Certified in Cybersecurity:** Successfully completed the program and received **certification from IBM SkillsBuild, AICTE, and Edunet Foundation**, validating my proficiency in cybersecurity.
-
-This internship deepened my understanding of cybersecurity principles and provided me with **practical experience in securing digital systems and mitigating cyber threats**.
+Cybersecurity intern focusing on secure digital systems and threat mitigation.
+- **Secure Architecture**: Designed and implemented data security and secure communication principles.
+- **Risk Mitigation**: Conducted risk assessments and ethical hacking simulations across IBM modules.
+- **Industry Validation**: Recognized for project implementation by IBM SkillsBuild and AICTE.
 `,
 		featured: true,
 	},

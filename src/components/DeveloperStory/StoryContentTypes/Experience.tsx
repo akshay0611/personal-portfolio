@@ -10,24 +10,36 @@ export default function Experience({
 	imageURL,
 	description,
 	url,
+	ctaLabel = 'View',
 	...props
 }: ExperienceProps) {
 	return (
-		<>
+		<div className='flex flex-col gap-6'>
 			<StoryComponent.HeaderWrapper>
 				<StoryComponent.SquareLogo imageURL={imageURL} />
 				<div className='flex flex-col'>
-					<h3 className='w-full font-semibold text-xl'>
+					<h3 className='w-full font-bold text-lg md:text-xl text-white leading-snug'>
 						{positionHeld}
 					</h3>
-					<h4 className='w-full font-medium text-sm'>{orgName}</h4>
-					<h4 className='w-full font-normal text-xs text-gray-200'>
-						{orgLocation}
-					</h4>
+					<div className='flex flex-col md:flex-row md:items-center gap-1 md:gap-3 mt-1'>
+						<h4 className='font-medium text-xs md:text-sm text-white/70'>{orgName}</h4>
+						<span className='hidden md:block text-white/30'>•</span>
+						<h4 className='font-normal text-xs text-white/50 italic'>
+							{orgLocation}
+						</h4>
+					</div>
 				</div>
 			</StoryComponent.HeaderWrapper>
-			{description && <StoryDescription>{description}</StoryDescription>}
-			<StoryComponent.Button url={url}>View</StoryComponent.Button>
-		</>
+
+			{description && (
+				<div className='story-description-container'>
+					<StoryDescription>{description}</StoryDescription>
+				</div>
+			)}
+
+			<div className='flex justify-start'>
+				<StoryComponent.Button url={url}>{ctaLabel}</StoryComponent.Button>
+			</div>
+		</div>
 	);
 }
