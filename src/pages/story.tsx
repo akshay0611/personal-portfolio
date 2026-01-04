@@ -9,11 +9,11 @@ export default function story() {
 				<title>Akshay Kumar Full Stack Developer - 3+ Years of Building Production Systems</title>
 				<meta
 					name='description'
-					content='Explore Akshay Kumar Full Stack Developer journey - 3+ years building production applications with React, Node.js, Next.js, and Python. Open-source maintainer, contributor ranked #2/3424 globally, and certified in AI/Cloud technologies.'
+					content='Follow my journey as Lead Developer at EduLinkUp and Web Development Lead at Codeunia. 3+ years building production systems, ranked #2/3424 globally in GSSoC, and recognized by Google for Developers.'
 				/>
 				<meta
 					name='keywords'
-					content='Akshay Kumar Full Stack Developer, Akshay Kumar experience, Akshay Kumar certifications, Akshay Kumar achievements, developer story, Full Stack Developer journey, ReactJs developer experience, NodeJs developer experience, open source contributor'
+					content='Akshay Kumar Lead Developer, EduLinkUp Lead Developer, Codeunia Web Dev Lead, Akshay Kumar experience, developer story, Full Stack Developer journey, ReactJs developer, NodeJs developer, open source contributor'
 				/>
 				<meta
 					name='author'

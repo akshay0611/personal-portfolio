@@ -36,7 +36,7 @@ export default function Document() {
 				/>
 				<meta
 					property='og:description'
-					content='Akshay Kumar Full Stack Developer with 3+ years experience. Specializing in ReactJs, NodeJs, Python, MongoDB, Cybersecurity & AI. Available for freelance projects.'
+					content='Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Full Stack Developer with 3+ years experience specializing in ReactJs, NodeJs, Python, AI, and Cloud products.'
 				/>
 				<meta property='og:image' content={`${BASE_URL}banner.png`} />
 				<meta property='og:image:width' content='1200' />
@@ -52,7 +52,7 @@ export default function Document() {
 				/>
 				<meta
 					name='twitter:description'
-					content='Akshay Kumar Full Stack Developer with 3+ years experience. Specializing in ReactJs, NodeJs, Python, MongoDB, Cybersecurity & AI.'
+					content='Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Specializing in ReactJs, NodeJs, Python, MongoDB, and scaling production-grade AI & Cloud products.'
 				/>
 				<meta
 					name='twitter:image'
@@ -63,11 +63,11 @@ export default function Document() {
 				{/* SEO - Google */}
 				<meta
 					name='description'
-					content='Akshay Kumar - Full Stack Developer with 3+ years experience in ReactJs, NodeJs, Python, MongoDB. Specializing in web development, cybersecurity, and AI solutions.'
+					content='Akshay Kumar - Lead Developer at EduLinkUp and Web Development Lead at Codeunia. 3+ years experience building scalable web applications, AI solutions, and cloud-native systems.'
 				/>
 				<meta
 					name='keywords'
-					content='Akshay Kumar Full Stack Developer, Akshay Kumar Developer, Full Stack Developer, ReactJs Developer, NodeJs Developer, Python Developer, MongoDB Developer, Web Developer, Freelance Developer, Cybersecurity, AI Developer, Akshay Kumar Portfolio'
+					content='Akshay Kumar, EduLinkUp Lead Developer, Codeunia Web Dev Lead, Full Stack Developer, ReactJs Developer, NodeJs Developer, Python Developer, AI Developer, Cloud Developer, Akshay Kumar Portfolio'
 				/>
 				<meta name='author' content='Akshay Kumar' />
 				<meta name='robots' content='index, follow' />
