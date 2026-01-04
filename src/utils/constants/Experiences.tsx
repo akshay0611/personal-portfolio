@@ -3,12 +3,49 @@ import prodigyinfotechImg from '../../../public/images/experience/prodigyinfotec
 import octanetImg from '../../../public/images/experience/octanet.jpeg';
 import shadowfoxImg from '../../../public/images/experience/shadowfox.png';
 import aicteImg from '../../../public/images/experience/aicte.png';
-// TODO: Add ClinIQ logo image at /public/images/experience/cliniq.png
 import cliniqImg from '../../../public/images/experience/cliniq.png';
-// TODO: Add GSSoC logo image at /public/images/experience/gssoc.png
 import gssocImg from '../../../public/images/experience/gssoc.png';
+import codeuniaImg from '../../../public/images/experience/codeunia.png';
+import edulinkupImg from '../../../public/images/experience/edulinkup.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	edulinkup: {
+		fromDate: 'Nov 2025',
+		toDate: 'Present',
+		positionHeld: 'Lead Developer',
+		orgName: 'EduLinkUp',
+		orgLocation: 'Remote',
+		url: 'https://edulinkup.dev',
+		imageURL: edulinkupImg,
+		ctaLabel: 'Visit platform',
+		description: `
+Architecting and scaling the core EduLinkUp platform capabilities with a focus on reliability, performance, and real-world user workflows.
+- **Technical Ownership**: Owning the technical roadmap for high-impact features, translating user requirements into scalable, production-ready systems.
+- **Architectural Stewardship**: Driving code quality through standardized development workflows, rigorous code reviews, and performance-first design principles.
+- **System Governance**: Leading deployment and release workflows for production-grade systems, with emphasis on security, SEO visibility, and platform credibility.
+`,
+		featured: true,
+	},
+
+	codeunia: {
+		fromDate: 'May 2025',
+		toDate: 'Present',
+		positionHeld: 'Web Development Lead',
+		orgName: 'Codeunia',
+		orgLocation: 'Community-led',
+		imageURL: codeuniaImg,
+		url: 'https://codeunia.com',
+		ctaLabel: 'View community',
+		description: `
+Leading web engineering initiatives at Codeunia with a focus on scalable architecture, code quality, and real-world delivery.
+- **Engineering Leadership**: Architecting and maintaining production-ready web platforms using the MERN stack and Next.js.
+- **Team Enablement**: Mentoring developers and interns, setting coding standards, and enforcing best practices through structured code reviews.
+- **Delivery Execution**: Translating product and business requirements into clean, scalable technical solutions while ensuring performance, security, and long-term maintainability.
+`,
+		featured: true,
+	},
+
+
 	gssoc: {
 		fromDate: 'July 2025',
 		toDate: 'Oct 2025',
