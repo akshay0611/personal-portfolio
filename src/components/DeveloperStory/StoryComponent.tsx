@@ -19,6 +19,8 @@ function SquareLogo({ imageURL }: StorySquareLogoProps) {
 						width={200}
 						objectFit='cover'
 						placeholder='blur'
+						loader={({ src }) => src}
+						unoptimized={true}
 					/>
 				</div>
 			)}
