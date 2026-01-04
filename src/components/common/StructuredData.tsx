@@ -8,7 +8,7 @@ const StructuredData = () => {
 		name: 'Akshay Kumar',
 		jobTitle: 'Full Stack Developer',
 		description:
-			'Lead Developer at EduLinkUp and Web Development Lead at Codeunia. Full Stack Developer recognized by Google for Developers, specializing in scalable AI & Cloud-driven products.',
+			'Lead Developer at EduLinkUp and Web Development Lead at Codeunia. Full Stack Developer recognized by Google for Developers, specializing in building scalable AI and production-ready systems.',
 		url: 'https://connectwithakshay.netlify.app',
 		sameAs: [
 			'https://codeunia.com/blog/author/akshay-kumar',
@@ -35,50 +35,32 @@ const StructuredData = () => {
 		worksFor: [
 			{
 				'@type': 'Organization',
-				name: 'Codeunia',
-				url: 'https://codeunia.com',
-			},
-			{
-				'@type': 'Organization',
 				name: 'EduLinkUp',
 				url: 'https://edulinkup.dev',
 			},
+			{
+				'@type': 'Organization',
+				name: 'Codeunia',
+				url: 'https://codeunia.com',
+			},
+		],
+		award: [
+			'Ranked #2 out of 3,424 global contributors in GSSoC 2025',
+			'Google Cloud Fundamentals Recognition',
 		],
 	};
 
 	const websiteSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'WebSite',
-		name: 'Akshay Kumar - Full Stack Developer Portfolio',
+		name: 'Akshay Kumar | Full Stack Developer',
 		url: 'https://connectwithakshay.netlify.app',
 		description:
-			'Portfolio website of Akshay Kumar, a Full Stack Developer specializing in ReactJs, NodeJs, Python, and MongoDB',
+			"Explore the professional portfolio of Akshay Kumar, a Full Stack Developer specializing in building scalable systems and AI-driven products.",
 		author: {
 			'@type': 'Person',
 			name: 'Akshay Kumar',
 		},
-	};
-
-	const professionalServiceSchema = {
-		'@context': 'https://schema.org',
-		'@type': 'ProfessionalService',
-		name: 'Akshay Kumar - Full Stack Development Services',
-		description:
-			'Professional full stack development services including web application development, API development, database design, and consulting',
-		provider: {
-			'@type': 'Person',
-			name: 'Akshay Kumar',
-			jobTitle: 'Full Stack Developer',
-		},
-		areaServed: 'Worldwide',
-		serviceType: [
-			'Full Stack Development',
-			'Web Application Development',
-			'API Development',
-			'Database Design',
-			'Frontend Development',
-			'Backend Development',
-		],
 	};
 
 	return (
@@ -90,12 +72,6 @@ const StructuredData = () => {
 			<script
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-			/>
-			<script
-				type='application/ld+json'
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify(professionalServiceSchema),
-				}}
 			/>
 		</Head>
 	);
