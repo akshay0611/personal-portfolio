@@ -27,6 +27,20 @@ const Home: NextPage = () => {
 					content='Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Full Stack Developer focused on building scalable AI & Cloud-driven products. Recognition by Google for Developers for engineering excellence.'
 				/>
 				<link rel='canonical' href='https://connectwithakshay.netlify.app' />
+
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://connectwithakshay.netlify.app/" />
+				<meta property="og:title" content="Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products" />
+				<meta property="og:description" content="Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products." />
+				<meta property="og:image" content="https://connectwithakshay.netlify.app/images/banner.png" />
+
+				{/* Twitter */}
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content="https://connectwithakshay.netlify.app/" />
+				<meta property="twitter:title" content="Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products" />
+				<meta property="twitter:description" content="Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products." />
+				<meta property="twitter:image" content="https://connectwithakshay.netlify.app/images/banner.png" />
 			</Head>
 			<StructuredData />
 			<main className='min-h-screen min-w-full'>

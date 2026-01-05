@@ -19,6 +19,7 @@ export default function story() {
 					name='author'
 					content='Akshay Kumar'
 				/>
+				<link rel='canonical' href='https://connectwithakshay.netlify.app/story' />
 			</Head>
 			<Story />
 		</>
