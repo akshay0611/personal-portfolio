@@ -8,11 +8,3 @@ export const SocialUrls = {
 	freeCodeCamp: 'https://www.freecodecamp.org/akshay0611',
 	discord: 'https://discordapp.com/users/akshay0605',
 };
-
-export const ResearchProfiles = {
-	googleScholar: 'https://scholar.google.com',
-	researchGate: 'https://www.researchgate.net',
-	orcid: 'https://orcid.org',
-	publons: 'https://publons.com',
-	sciProfiles: 'https://www.sciprofiles.com',
-  };  
