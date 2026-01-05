@@ -84,6 +84,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								alt='Akshay Kumar'
 								unoptimized={true}
 								placeholder='blur'
+								loader={({ src }) => src}
 							/>
 						</div>
 						<LinkScroll

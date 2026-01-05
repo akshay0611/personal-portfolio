@@ -231,4 +231,27 @@ html {
 		@apply ring-1 ring-white/30;
 		transform: scale(1.2);
 	}
+
+	/* Marquee Classes */
+	.marquee-container {
+		@apply overflow-hidden whitespace-nowrap relative w-full bg-zinc-900/50 py-6 border-y border-zinc-800/50 my-12;
+	}
+
+	.marquee-content {
+		@apply flex gap-16 items-center w-max;
+		animation: marquee 60s linear infinite;
+	}
+
+	.marquee-content:hover {
+		animation-play-state: paused;
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
 }

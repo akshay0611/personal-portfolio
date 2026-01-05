@@ -107,6 +107,7 @@ export default function HeroSection() {
 						priority={true}
 						unoptimized={true}
 						placeholder='blur'
+						loader={({ src }) => src}
 					/>
 					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-[#00000020] to-black'></div>
 				</div>
