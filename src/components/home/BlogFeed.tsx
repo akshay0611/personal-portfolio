@@ -98,9 +98,9 @@ const BlogFeed = () => {
                 >
                     <p className="text-zinc-500 text-xs tracking-wider uppercase">
                         Follow the engineering journey on
-                        <a href="https://linkedin.com/in/akshay0611" className="text-white hover:text-blue-500 transition-colors mx-2 font-bold underline decoration-blue-500/30 underline-offset-8">LINKEDIN</a>
+                        <a href="https://www.linkedin.com/in/akshaykumar0611/" className="text-white hover:text-blue-500 transition-colors mx-2 font-bold underline decoration-blue-500/30 underline-offset-8">LINKEDIN</a>
                         &
-                        <a href="https://twitter.com/akshay_0611" className="text-white hover:text-blue-500 transition-colors mx-2 font-bold underline decoration-blue-500/30 underline-offset-8">TWITTER</a>
+                        <a href="https://x.com/Aksh0605" className="text-white hover:text-blue-500 transition-colors mx-2 font-bold underline decoration-blue-500/30 underline-offset-8">TWITTER</a>
                     </p>
                 </motion.div>
             </div>
