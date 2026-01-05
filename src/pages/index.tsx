@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 import HeroSection from 'components/home/herosection';
 import ImpactMetrics from 'components/home/ImpactMetrics';
@@ -15,12 +16,16 @@ import StructuredData from 'components/common/StructuredData';
 import BackToTop from 'components/common/BackToTop';
 
 const Home: NextPage = () => {
-	if (typeof window !== 'undefined') {
-		window.addEventListener('resize', () => {
+	useEffect(() => {
+		const handleResize = () => {
 			let vh = window.innerHeight * 0.01;
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
-		});
-	}
+		};
+		window.addEventListener('resize', handleResize);
+		handleResize();
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
+
 	return (
 		<>
 			<Head>
@@ -46,11 +51,9 @@ const Home: NextPage = () => {
 				<meta property="twitter:image" content="https://connectwithakshay.netlify.app/images/banner.png" />
 			</Head>
 			<StructuredData />
-			<main className='min-h-screen min-w-full'>
+			<main className='min-h-screen min-w-full bg-black'>
 				<HeroSection />
-				<div className="-mt-12 md:-mt-16 relative z-10">
-					<ImpactMetrics />
-				</div>
+				<ImpactMetrics />
 				<CertificationBar />
 				<Navbar />
 				<About />
