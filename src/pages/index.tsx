@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import HeroSection from 'components/home/herosection';
+import CertificationBar from 'components/home/CertificationBar';
 import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
 import Skills from 'components/Skills';
@@ -45,6 +46,7 @@ const Home: NextPage = () => {
 			<StructuredData />
 			<main className='min-h-screen min-w-full'>
 				<HeroSection />
+				<CertificationBar />
 				<Navbar />
 				<About />
 				<Skills />
