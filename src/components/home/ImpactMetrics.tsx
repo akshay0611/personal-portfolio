@@ -39,9 +39,9 @@ const ImpactMetrics = () => {
                             key={index}
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
-                            initial={{ opacity: 0, y: 10 }}
+                            initial={{ opacity: 1, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.4, delay: index * 0.1 }}
                             className={`relative flex flex-col items-center sm:items-start pl-0 lg:pl-8 
                                 ${index !== 3 ? 'lg:border-r lg:border-zinc-800/60' : ''} 

@@ -39,9 +39,9 @@ const BlogFeed = () => {
                             href={article.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 1, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: index * 0.15 }}
                             whileHover={{ y: -10 }}
                             className="group relative flex flex-col bg-zinc-900/40 border border-zinc-800/80 p-6 rounded-2xl hover:border-blue-500/30 transition-all duration-300 overflow-hidden"
