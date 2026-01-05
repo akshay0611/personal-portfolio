@@ -8,13 +8,28 @@ const BlogFeed = () => {
         <section className="home-section" id="blog">
             <div className="max-section-width">
                 <div className="flex flex-col mb-10 md:mb-16">
-                    <span className="text-blue-500 font-bold uppercase tracking-[0.3em] text-xs mb-3">
+                    <motion.span
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="text-blue-500 font-bold uppercase tracking-[0.3em] text-xs mb-3"
+                    >
                         Engineering Insights
-                    </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-3xl md:text-5xl font-bold text-white tracking-tight"
+                    >
                         Latest Technical Writings
-                    </h2>
-                    <div className="h-1.5 w-20 bg-blue-600 mt-6 rounded-full" />
+                    </motion.h2>
+                    <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: 80 }}
+                        viewport={{ once: true }}
+                        className="h-1.5 bg-blue-600 mt-6 rounded-full"
+                    />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -24,51 +39,53 @@ const BlogFeed = () => {
                             href={article.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.15 }}
                             whileHover={{ y: -10 }}
-                            className="group relative flex flex-col bg-zinc-900/50 border border-zinc-800 p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300"
+                            className="group relative flex flex-col bg-zinc-900/40 border border-zinc-800/80 p-6 rounded-2xl hover:border-blue-500/30 transition-all duration-300 overflow-hidden"
                         >
-                            {/* Card Background Glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
+                            {/* Platform Accent Strip (Idea #1) */}
+                            <div className={`absolute left-0 top-0 h-full w-1.5 transition-all duration-300 ${article.platform === 'Codeunia' ? 'bg-[#7C3AED]/50 group-hover:bg-[#7C3AED]' : 'bg-[#C89D52]/50 group-hover:bg-[#C89D52]'
+                                }`} />
 
-                            <div className="flex justify-between items-start mb-6">
-                                <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${article.platform === 'Codeunia' ? 'bg-orange-500/10 text-orange-500' : 'bg-blue-500/10 text-blue-500'
+                            <div className="flex justify-between items-start mb-6 pl-2">
+                                <span className={`px-2.5 py-1 rounded text-[9px] font-bold uppercase tracking-widest font-mono ${article.platform === 'Codeunia' ? 'bg-[#7C3AED]/10 text-[#7C3AED]' : 'bg-[#C89D52]/10 text-[#C89D52]'
                                     }`}>
                                     {article.platform}
                                 </span>
-                                <div className="flex items-center gap-1.5 text-zinc-500 text-xs">
-                                    <AiOutlineClockCircle />
-                                    {article.readTime}
+
+                                {/* System Readout Metadata (Idea #3) */}
+                                <div className="flex items-center gap-1.5 text-zinc-600 text-[10px] font-mono">
+                                    <span className="opacity-50">[</span>
+                                    <AiOutlineClockCircle className="text-zinc-500" />
+                                    <span className="group-hover:text-zinc-400 transition-colors">{article.readTime.toUpperCase()}</span>
+                                    <span className="opacity-50">]</span>
                                 </div>
                             </div>
 
-                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
-                                {article.title}
-                            </h3>
+                            <div className="pl-2">
+                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2 leading-tight">
+                                    {article.title}
+                                </h3>
 
-                            <p className="text-zinc-500 text-sm mb-8 line-clamp-3 leading-relaxed">
-                                {article.description}
-                            </p>
+                                <p className="text-zinc-500 text-sm mb-8 line-clamp-3 leading-relaxed group-hover:text-zinc-400 transition-colors">
+                                    {article.description}
+                                </p>
+                            </div>
 
-                            <div className="mt-auto flex items-center justify-between">
-                                <span className="text-zinc-600 text-[10px] font-medium uppercase tracking-widest">
-                                    {article.date}
+                            <div className="mt-auto flex items-center justify-between pl-2">
+                                <span className="text-zinc-700 text-[9px] font-bold uppercase tracking-widest font-mono group-hover:text-zinc-500 transition-colors">
+                                    {`// ${article.date}`}
                                 </span>
-                                <div className="flex items-center gap-2 text-blue-500 font-bold text-sm group-hover:translate-x-1 transition-transform">
-                                    Read Article <AiOutlineArrowRight />
+                                <div className="flex items-center gap-2 text-blue-500 font-bold text-xs group-hover:translate-x-1 transition-all">
+                                    READ ARTICLE <AiOutlineArrowRight />
                                 </div>
                             </div>
 
-                            {/* Decorative line on hover */}
-                            <motion.div
-                                className="absolute bottom-0 left-0 h-1 bg-blue-600 rounded-b-2xl"
-                                initial={{ width: 0 }}
-                                whileHover={{ width: '100%' }}
-                                transition={{ duration: 0.3 }}
-                            />
+                            {/* Card Background Glow */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                         </motion.a>
                     ))}
                 </div>
@@ -76,13 +93,14 @@ const BlogFeed = () => {
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    className="mt-16 text-center"
+                    viewport={{ once: true }}
+                    className="mt-20 pt-10 border-t border-zinc-900/50 text-center"
                 >
-                    <p className="text-zinc-500 text-sm">
-                        Interested in more? Follow my engineering updates on
-                        <a href="#" className="text-white hover:text-blue-500 transition-colors mx-1 underline underline-offset-4">LinkedIn</a>
-                        and
-                        <a href="#" className="text-white hover:text-blue-500 transition-colors mx-1 underline underline-offset-4">Twitter</a>.
+                    <p className="text-zinc-500 text-xs tracking-wider uppercase">
+                        Follow the engineering journey on
+                        <a href="https://linkedin.com/in/akshay0611" className="text-white hover:text-blue-500 transition-colors mx-2 font-bold underline decoration-blue-500/30 underline-offset-8">LINKEDIN</a>
+                        &
+                        <a href="https://twitter.com/akshay_0611" className="text-white hover:text-blue-500 transition-colors mx-2 font-bold underline decoration-blue-500/30 underline-offset-8">TWITTER</a>
                     </p>
                 </motion.div>
             </div>
