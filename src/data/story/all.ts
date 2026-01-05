@@ -2,9 +2,25 @@ import { allCertificates } from '../../utils/constants/Certificate';
 import { allEducation } from '../../utils/constants/Education';
 import { allExperiences } from '../../utils/constants/Experiences';
 import { allProjects } from '../../utils/constants/Projects';
+import { Achievements } from '../../utils/constants/Achievements';
 import { DeveloperStoryDataProps } from '../../utils/developerStory';
 
 export const fullStory: DeveloperStoryDataProps = [
+    {
+        id: 'ach-gssocRank',
+        storyType: 'achievement',
+        data: Achievements.gssocRank,
+    },
+    {
+        id: 'ach-hacktoberfestLead',
+        storyType: 'achievement',
+        data: Achievements.hacktoberfestLead,
+    },
+    {
+        id: 'ach-googleRecognition',
+        storyType: 'achievement',
+        data: Achievements.googleRecognition,
+    },
     {
         id: 'exp-edulinkup',
         storyType: 'experience',

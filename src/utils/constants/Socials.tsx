@@ -1,4 +1,4 @@
-import { FaDiscord, FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { SocialUrls } from './urls';
 
@@ -8,6 +8,12 @@ export const allSocials = [
 		icon: <FaLinkedin />,
 		bgcolor: '#0077b5',
 		link: SocialUrls.linkedin,
+	},
+	{
+		name: 'GitHub',
+		icon: <FaGithub />,
+		bgcolor: '#333',
+		link: SocialUrls.github,
 	},
 	{
 		name: 'Email',
