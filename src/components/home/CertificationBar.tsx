@@ -39,7 +39,10 @@ const CertificationBar = () => {
         <>
             <div className='overflow-x-hidden w-full relative pt-16 -mt-16 bg-transparent pointer-events-none'>
                 <div className='marquee-container !overflow-visible !bg-zinc-900/50 pointer-events-auto'>
-                    <div className='marquee-content !overflow-visible'>
+                    <div
+                        className='marquee-content !overflow-visible'
+                        style={{ animationPlayState: isOpen ? 'paused' : 'running' }}
+                    >
                         {marqueeItems.map((cert, index) => {
                             const count = Object.values(allCertificates).filter(c => c.orgName === cert.orgName).length;
                             return (
