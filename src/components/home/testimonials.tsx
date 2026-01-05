@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Lottie from 'components/common/LottieWrapper';
-import ResearchAnimation from '../../assets/lottie/recommendation.json';
+import RecommendationAnimation from '../../assets/lottie/recommendation.json';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { MdFormatQuote } from 'react-icons/md';
 import { recommendations } from 'utils/constants/Recommendations';
@@ -33,7 +33,7 @@ function Testimonials() {
 			<div className='max-section-width h-full flex flex-col lg:flex-row gap-8 items-center justify-center'>
 				<div className='mr-10 hidden md:block px-6'>
 					<Lottie
-						animationData={ResearchAnimation}
+						animationData={RecommendationAnimation}
 						className='max-w-xl mx-auto'
 					/>
 				</div>
