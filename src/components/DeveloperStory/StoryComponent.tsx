@@ -78,7 +78,7 @@ interface HeaderWrapperProps {
 
 const HeaderWrapper = ({ children }: HeaderWrapperProps) => {
 	return (
-		<div className='flex items-center justify-start gap-1.5 md:gap-2'>
+		<div className='flex items-start md:items-center justify-start gap-1.5 md:gap-2'>
 			{children}
 		</div>
 	);
