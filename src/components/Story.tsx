@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import Footer from 'components/footer';
@@ -7,15 +7,10 @@ import { DeveloperStoryFilter } from './DeveloperStory/StoryFilter';
 import { AiFillHome, AiOutlineLink } from 'react-icons/ai';
 
 export default function Story() {
-	const [position, setPosition] = useState('left');
 	const [filteredStoryData, setFilteredStoryData] = useState(
 		fullStory.filter((story) => story.data.featured)
 	);
 
-	// Orientation of the developer story
-	useEffect(() => {
-		setPosition(window.innerWidth < 500 ? 'left' : 'alternate');
-	}, []);
 
 	// This feature is not available for Mobile Devices with http protocol
 	const copyUrl = async (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -36,11 +31,11 @@ export default function Story() {
 	return (
 		<>
 			<section
-				className='home-section min-h-fit bg-dark-gray relative'
+				className='home-section min-h-fit bg-dark-gray relative px-4 sm:px-6 md:px-10 lg:px-20'
 				id='developerstory'
 			>
-				<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
-					<div className='sticky flex gap-2 top-2 md:top-4 text-white z-50'>
+				<div className='max-section-width flex flex-col items-stretch md:items-start gap-2'>
+					<div className='sticky flex gap-2 top-2 md:top-4 text-white z-50 w-full md:w-fit justify-between md:justify-start'>
 						<Link href='/' legacyBehavior>
 							<a className='flex items-center gap-1 border-2 border-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
 								<AiFillHome className='text-base md:text-xl' />
@@ -99,7 +94,7 @@ export default function Story() {
 
 							return 0;
 						})}
-						position={position as any}
+						position='alternate'
 						muted={false}
 					/>
 				</div>

@@ -28,18 +28,33 @@ export default function DeveloperStory({
 	...props
 }: DeveloperStoryProps) {
 	const [limitToValue, setLimitToValue] = useState(limitTo);
+	const [activePosition, setActivePosition] = useState<POSITION_TYPES>(position);
+
+	React.useEffect(() => {
+		const handleResize = () => {
+			if (window.innerWidth < 768) {
+				setActivePosition('left');
+			} else {
+				setActivePosition(position);
+			}
+		};
+		handleResize();
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	}, [position]);
+
 	const outerClass = {
-		left: 'grid-cols-[minmax(20px,25px)_1fr]',
-		right: 'grid-cols-[1fr_minmax(20px,25px)]',
-		alternate: 'grid-cols-[1fr_minmax(20px,25px)_1fr]',
-		'left-with-blank': 'grid-cols-[1fr_minmax(20px,25px)_1fr]',
-		'right-with-blank': 'grid-cols-[1fr_minmax(20px,25px)_1fr]',
+		left: 'grid-cols-[25px_1fr]',
+		right: 'grid-cols-[1fr_25px]',
+		alternate: 'grid-cols-[1fr_25px_1fr]',
+		'left-with-blank': 'grid-cols-[1fr_25px_1fr]',
+		'right-with-blank': 'grid-cols-[1fr_25px_1fr]',
 	};
 	return (
 		<>
 			<div
 				className={
-					outerClass[position || DEFAULT_POSITION_TYPES] +
+					outerClass[activePosition || DEFAULT_POSITION_TYPES] +
 					' grid w-full'
 				}
 			>
@@ -48,7 +63,7 @@ export default function DeveloperStory({
 					.map((storyItem, index) => (
 						<StoryItem
 							data={storyItem.data}
-							position={position}
+							position={activePosition}
 							storyType={storyItem.storyType as STORY_TYPES}
 							index={index}
 							firstIndex={index === 0}

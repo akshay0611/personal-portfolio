@@ -44,26 +44,26 @@ export default function StoryContent({
 					<p className='text-xs'>Featured</p>
 				</div>
 			)}
-			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-1 px-2 -top-[1px] -left-[1px] rounded-br-sm rounded-tl-sm border border-white'>
-				<p className='font-medium'>
+			<div className='flex self-start text-xs flex-wrap gap-1 items-center absolute bg-white text-black py-1 px-2 -top-[1px] -left-[1px] rounded-br-sm rounded-tl-sm border border-white max-w-full'>
+				<p className='font-medium shrink-0'>
 					{storyTypes[storyType as keyof typeof storyTypes].title}
 				</p>
 				{renderDates && (
 					<>
-						<BsDot />
-						<div className='flex items-center self-start gap-1'>
-							<p className='font-normal'>{data.fromDate}</p>
+						<BsDot className='shrink-0' />
+						<div className='flex items-center self-start gap-1 flex-wrap'>
+							<p className='font-normal whitespace-nowrap'>{data.fromDate}</p>
 							{renderToDate && (
 								<>
-									<BsArrowRight className='text-2xs' />
-									<p className='font-normal'>{data.toDate}</p>
+									<BsArrowRight className='text-2xs shrink-0' />
+									<p className='font-normal whitespace-nowrap'>{data.toDate}</p>
 								</>
 							)}
 						</div>
 					</>
 				)}
 			</div>
-			<div className='flex flex-col gap-3 items-start w-full transition-all duration-200'>
+			<div className='flex flex-col gap-3 items-stretch w-full transition-all duration-200'>
 				{storyType === 'education' && (
 					<Education {...(data as EducationProps)} showReadMore={showReadMore} />
 				)}

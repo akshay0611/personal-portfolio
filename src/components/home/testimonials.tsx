@@ -69,14 +69,14 @@ function Testimonials() {
 										'em',
 									]}
 									skipHtml
-									className='about-react-markdown flex flex-col items-start gap-2 max-h-[50vh] overflow-y-auto pl-7'
+									className='about-react-markdown flex flex-col items-start gap-2 max-h-[50vh] overflow-y-auto'
 								>
 									{recommendation.message}
 								</ReactMarkdown>
 								{/* Top left quote */}
 								<MdFormatQuote className='absolute -top-2 -left-1 rotate-180 text-3xl opacity-60' />
 							</div>
-							<div className='flex items-center justify-between mt-5 pl-7'>
+							<div className='flex items-center justify-between mt-5'>
 								<div className='flex items-center gap-2'>
 									<div className='flex flex-col'>
 										<div className='flex gap-1 items-center'>
@@ -112,7 +112,7 @@ function Testimonials() {
 					<div className='w-full flex items-center justify-center gap-2 mt-5'>
 						<button
 							onClick={handlePreviousRecommendation}
-							className='w-5 h-5 rounded-full flex items-center justify-center border border-white p-3 text-sm bg-white text-black'
+							className='w-8 h-8 rounded-full flex items-center justify-center border border-white p-3 text-sm bg-white text-black'
 						>
 							<AiOutlineLeft className='flex-shrink-0' />
 						</button>
@@ -120,7 +120,7 @@ function Testimonials() {
 							<button
 								key={index}
 								onClick={() => handleIndexRecommendation(index)}
-								className={`w-5 h-5 rounded-full flex items-center justify-center border p-3 text-sm ${index === showIndex
+								className={`w-8 h-8 rounded-full flex items-center justify-center border p-3 text-sm ${index === showIndex
 									? 'bg-blue-800 border-blue-800'
 									: 'bg-transparent border-transparent'
 									}`}
@@ -130,7 +130,7 @@ function Testimonials() {
 						))}
 						<button
 							onClick={handleNextRecommendation}
-							className='w-5 h-5 rounded-full flex items-center justify-center border border-white p-3 text-sm bg-white text-black'
+							className='w-8 h-8 rounded-full flex items-center justify-center border border-white p-3 text-sm bg-white text-black'
 						>
 							<AiOutlineRight className='flex-shrink-0' />
 						</button>
