@@ -3,13 +3,17 @@ import Lottie from 'components/common/LottieWrapper';
 import ConnectionAnimation from '../assets/lottie/social-media-network.json';
 import { allSocials } from 'utils/constants/Socials';
 import SkillBadge from './common/SkillBadge';
+import { trackContactFormSubmit } from 'utils/analytics';
 
 export default function Footer() {
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted');  // Add a log here to see if the function is called.
+    console.log('Form submitted');
     const form = e.target as HTMLFormElement;
     form.getElementsByTagName('button')[0].disabled = true;
+
+    // Track form submission
+    trackContactFormSubmit();
 
     // Simply reset the form and show success alert
     form.reset();
