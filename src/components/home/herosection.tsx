@@ -12,6 +12,7 @@ import {
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
 import akshay from '../../../public/images/akshay1.png';
+import googleImg from '../../../public/images/experience/google.png';
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 export default function HeroSection() {
@@ -34,8 +35,28 @@ export default function HeroSection() {
 						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-3 sm:mb-4 md:mb-6 max-w-2xl'>
 							I design and ship scalable, production-grade web applications with a focus on performance, maintainability, and long-term impact.
 						</h2>
-						<div className='text-xs md:text-sm tracking-widest text-white/50 uppercase mb-5 sm:mb-6'>
+						<div className='text-xs md:text-sm tracking-widest text-white/50 uppercase mb-3'>
 							MERN · Next.js · AI integrations · Google Cloud
+						</div>
+						<div className='flex items-center gap-2 mb-5 sm:mb-6 justify-center sm:justify-start'>
+							<div className='group flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-full text-xs border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl'>
+								<div className='relative'>
+									<Image 
+										src={googleImg} 
+										alt="Google" 
+										width={18} 
+										height={18} 
+										className="rounded-sm group-hover:scale-110 transition-transform duration-300" 
+										loader={({ src }) => src}
+										unoptimized={true}
+									/>
+									<div className='absolute inset-0 bg-gradient-to-br from-transparent to-black/10 rounded-sm'></div>
+								</div>
+								<span className='text-white/90 font-medium tracking-wide group-hover:text-white transition-colors duration-300'>
+									Featured by Google for Developers
+								</span>
+								<div className='w-1 h-1 bg-green-400 rounded-full animate-pulse'></div>
+							</div>
 						</div>
 					</div>
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
