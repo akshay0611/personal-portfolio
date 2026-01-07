@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	useEffect(() => {
 		const handleRouteChange = (url: string) => {
-			if (typeof window !== 'undefined' && window.gtag) {
+			if (typeof window !== 'undefined' && window.gtag && GA_TRACKING_ID) {
 				window.gtag('config', GA_TRACKING_ID, {
 					page_path: url,
 				});
