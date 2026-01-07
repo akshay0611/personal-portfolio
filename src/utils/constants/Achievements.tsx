@@ -44,5 +44,6 @@ Lead and maintained ClinIQ, an open-source healthcare platform.
         description: `
 Featured for advocating clean, readable, and maintainable code and building impactful community-driven tools.
 `,
+url: 'https://www.linkedin.com/posts/googledevelopers_akshay-kumar-says-readable-and-maintainable-activity-7374638383354187776-_x4n',
     }
 };
