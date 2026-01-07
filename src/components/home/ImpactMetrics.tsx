@@ -1,26 +1,15 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useSpring, useTransform } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { impactMetrics } from 'utils/constants/Metrics';
 
 const Counter = ({ value, suffix, isHovered, brandColor }: { value: number; suffix: string; isHovered: boolean; brandColor: string }) => {
-    const ref = useRef(null);
-    const inView = useInView(ref, { once: true });
-    const spring = useSpring(0, { stiffness: 40, damping: 20 });
-    const display = useTransform(spring, (current) => Math.floor(current));
-
-    useEffect(() => {
-        if (inView) {
-            spring.set(value);
-        }
-    }, [inView, value, spring]);
-
     return (
-        <span ref={ref} className="font-sans text-3xl md:text-4xl font-black tracking-tight flex items-baseline">
+        <span className="font-sans text-3xl md:text-4xl font-black tracking-tight flex items-baseline">
             <motion.span
                 animate={{ color: isHovered ? brandColor : '#ffffff', textShadow: isHovered ? `0 0 20px ${brandColor}40` : 'none' }}
                 transition={{ duration: 0.3 }}
             >
-                {display}
+                {value}
             </motion.span>
             <span className="text-zinc-500 font-bold ml-0.5">{suffix}</span>
         </span>
