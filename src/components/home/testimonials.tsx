@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Lottie from 'components/common/LottieWrapper';
 import RecommendationAnimation from '../../assets/lottie/recommendation.json';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { MdFormatQuote } from 'react-icons/md';
 import { recommendations } from 'utils/constants/Recommendations';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
@@ -73,8 +72,6 @@ function Testimonials() {
 								>
 									{recommendation.message}
 								</ReactMarkdown>
-								{/* Top left quote */}
-								<MdFormatQuote className='absolute -top-2 -left-1 rotate-180 text-3xl opacity-60' />
 							</div>
 							<div className='flex items-center justify-between mt-5'>
 								<div className='flex items-center gap-2'>
