@@ -22,6 +22,11 @@ export const fullStory: DeveloperStoryDataProps = [
         data: Achievements.googleRecognition,
     },
     {
+        id: 'exp-openSourceConnect',
+        storyType: 'experience',
+        data: allExperiences.openSourceConnect,
+    },
+    {
         id: 'exp-edulinkup',
         storyType: 'experience',
         data: allExperiences.edulinkup,

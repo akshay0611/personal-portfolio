@@ -6,9 +6,28 @@ import aicteImg from '../../../public/images/experience/aicte.png';
 import cliniqImg from '../../../public/images/experience/cliniq.png';
 import gssocImg from '../../../public/images/experience/gssoc.png';
 import codeuniaImg from '../../../public/images/experience/codeunia.png';
+import openSourceConnectImg from '../../../public/images/experience/opensourceconnect.jpeg';
 import edulinkupImg from '../../../public/images/experience/edulinkup.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	openSourceConnect: {
+		fromDate: 'Jan 2026',
+		toDate: 'Present',
+		positionHeld: 'State Lead – Bihar',
+		orgName: 'Open Source Connect',
+		orgLocation: 'Remote',
+		url: 'https://www.osconnect.org/',
+		imageURL: openSourceConnectImg,
+		ctaLabel: 'View community',
+		description: `
+Spearheading open-source initiatives and community growth across Bihar as a regional leader.
+- **Ecosystem Development**: Cultivating a thriving local open-source ecosystem by nurturing developer communities and fostering collaboration.
+- **Strategic Coordination**: Bridging the gap between regional contributors and the global Open Source Connect network to drive impactful participation.
+- **Community Advocacy**: Promoting open-source adoption and knowledge sharing through mentorship, events, and strategic partnerships.
+`,
+		featured: true,
+	},
+
 	edulinkup: {
 		fromDate: 'Nov 2025',
 		toDate: 'Present',
