@@ -7,7 +7,14 @@
 </head>
 <body>
     <!-- This file is used by Netlify to detect forms in Next.js v5+ runtime -->
-    <form name="contactForm" data-netlify="true" hidden>
+    <form
+        name="contactForm"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        hidden
+    >
+        <input type="hidden" name="form-name" value="contactForm" />
+        <input type="hidden" name="bot-field" />
         <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message"></textarea>

@@ -68,10 +68,13 @@ export default function Footer() {
             onSubmit={submitForm}
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/success"
             className="flex flex-col gap-3"
           >
             {/* Hidden field to specify the form name */}
             <input type="hidden" name="form-name" value="contactForm" />
+            <input type="hidden" name="bot-field" />
 
             <div className="flex flex-col">
               <label htmlFor="name" className="text-xs text-gray-400">
