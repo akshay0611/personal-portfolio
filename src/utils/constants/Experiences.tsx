@@ -8,6 +8,7 @@ import gssocImg from '../../../public/images/experience/gssoc.png';
 import codeuniaImg from '../../../public/images/experience/codeunia.png';
 import openSourceConnectImg from '../../../public/images/experience/opensourceconnect.jpeg';
 import edulinkupImg from '../../../public/images/experience/edulinkup.png';
+import apertreImg from '../../../public/images/experience/apertre.webp';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	openSourceConnect: {
@@ -26,6 +27,23 @@ Spearheading open-source initiatives and community growth across Bihar as a regi
 - **Community Advocacy**: Promoting open-source adoption and knowledge sharing through mentorship, events, and strategic partnerships.
 `,
 		featured: true,
+	},
+
+	apertreRiveto: {
+		fromDate: 'Feb 2026',
+		toDate: 'Present',
+		positionHeld: 'Mentor, Apertre 3.0',
+		orgName: 'Apertre 3.0 — Resourcio',
+		orgLocation: 'Open Source Program',
+		imageURL: apertreImg,
+		url: 'https://github.com/Nsanjayboruds/RIVETO',
+		ctaLabel: 'View repository',
+		description: `
+Selected as a mentor for an open-source project under Resourcio's Apertre 3.0 program (project: Riveto).
+- **Mentorship & Guidance**: Guiding contributors on architecture, code quality, and best practices.
+- **Review & Planning**: Reviewing pull requests and helping scope/plan features for Riveto.
+`,
+		featured: false,
 	},
 
 	edulinkup: {

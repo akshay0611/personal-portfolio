@@ -5,6 +5,7 @@ const nextConfig = {
 	swcMinify: true,
 	images: {
 		loader: 'custom',
+		loaderFile: './imageLoader.js',
 	},
 	webpack(config) {
 		config.module.rules.push({

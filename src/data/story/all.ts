@@ -27,6 +27,11 @@ export const fullStory: DeveloperStoryDataProps = [
         data: allExperiences.openSourceConnect,
     },
     {
+        id: 'exp-apertreRiveto',
+        storyType: 'experience',
+        data: allExperiences.apertreRiveto,
+    },
+    {
         id: 'exp-edulinkup',
         storyType: 'experience',
         data: allExperiences.edulinkup,
