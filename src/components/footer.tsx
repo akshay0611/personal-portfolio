@@ -19,7 +19,10 @@ export default function Footer() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString(),
+      body: new URLSearchParams({
+        "form-name": "contactForm",
+        ...Object.fromEntries(formData)
+      } as any).toString(),
     })
       .then(() => {
         form.reset();
