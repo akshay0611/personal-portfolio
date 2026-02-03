@@ -8,17 +8,27 @@ import { trackContactFormSubmit } from 'utils/analytics';
 export default function Footer() {
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted');
     const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
     form.getElementsByTagName('button')[0].disabled = true;
 
     // Track form submission
     trackContactFormSubmit();
 
-    // Simply reset the form and show success alert
-    form.reset();
-    form.getElementsByTagName('button')[0].disabled = false;
-    alert('Message sent successfully!');
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    })
+      .then(() => {
+        form.reset();
+        alert('Message sent successfully!');
+      })
+      .catch((error) => alert(error))
+      .finally(() => {
+        form.getElementsByTagName('button')[0].disabled = false;
+      });
   };
 
 
@@ -52,7 +62,7 @@ export default function Footer() {
           </div>
           <form
             name="contactForm"
-            action="/success"
+            onSubmit={submitForm}
             method="POST"
             data-netlify="true"
             className="flex flex-col gap-3"
