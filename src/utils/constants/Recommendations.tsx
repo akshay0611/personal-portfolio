@@ -57,4 +57,12 @@ export const recommendations: RecommendationsType[] = [
 			'It was a pleasure collaborating with Akshay during Hacktoberfest 2025 on the ClinIQ project. As the project administrator, Akshay provided clear guidance and valuable feedback on my contributions. I was particularly impressed with his thorough review process and testing, which ensured smooth integration of new features. His commitment to improving the platform and supportive communication made him an excellent person to work with. I highly recommend Akshay as an effective project lead and knowledgeable developer.',
 		linkedinUrl: "https://www.linkedin.com/in/md-nayaj-mondal/"
 	},
+	{
+		name: 'Aditya Patra',
+		designation: 'Open Source Contributor | Apertre 3.0',
+		relation: 'Aditya reported to Akshay directly',
+		date: 'February 12, 2026',
+		message: 'Akshay Kumar is a strong mentor who reviews pull requests thoroughly rather than simply approving them. His high standards in backend architecture, documentation, and code quality push developers to think deeper about every line of code they write.\n\nUnder his mentorship on the Riveto (Aperture 3.0) project, I learned to approach PR reviews with discipline and attention to structure, scalability, and clarity. His detailed feedback and technical discussions significantly improved my understanding of backend systems and development workflows.\n\nWorking with him elevated my coding standards and helped me grow into a more confident and capable developer.',
+		linkedinUrl: 'https://www.linkedin.com/in/aditya-patra-4971a5228/'
+	},
 ];
