@@ -65,4 +65,12 @@ export const recommendations: RecommendationsType[] = [
 		message: 'Akshay Kumar is a strong mentor who reviews pull requests thoroughly rather than simply approving them. His high standards in backend architecture, documentation, and code quality push developers to think deeper about every line of code they write.\n\nUnder his mentorship on the Riveto (Aperture 3.0) project, I learned to approach PR reviews with discipline and attention to structure, scalability, and clarity. His detailed feedback and technical discussions significantly improved my understanding of backend systems and development workflows.\n\nWorking with him elevated my coding standards and helped me grow into a more confident and capable developer.',
 		linkedinUrl: 'https://www.linkedin.com/in/aditya-patra-4971a5228/'
 	},
+	{
+		name: 'Lalitya Dodla',
+		designation: 'BTech CSE @VITC| Project Management Lead @Genesis| Karate | Guinness Record Holder (Dance) | National Olympiads & Essay Winner |',
+		relation: 'Lalitya reported to Akshay directly',
+		date: 'March 2, 2026',
+		message: 'Akshay was a very enthusiastic and supportive mentor throughout Apertre 3.0. His guidance and immediate feedbacks were so helpful for learning the user perspective and avoid tunnel visions. Constant support throughout the coding period and apt responses made the entire program very professional and expert guided.',
+		linkedinUrl: 'https://www.linkedin.com/in/lalitya-dodla-078aa5367/'
+	},
 ];
