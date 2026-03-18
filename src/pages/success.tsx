@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Success() {
   return (
@@ -13,9 +14,11 @@ export default function Success() {
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-50">
         {/* Branding Logo */}
         <div className="mb-4">
-          <img
-            src="/favicon.ico" // Replace with your logo path
+          <Image
+            src="/favicon.ico"
             alt="Your Logo"
+            width={128}
+            height={128}
             className="h-32 w-32"
           />
         </div>

@@ -90,16 +90,15 @@ export default function Navbar() {
 	);
 }
 
-export const navbarData = [
+export const navbarData: { title: string; to: string; route?: boolean; external?: boolean }[] = [
 	{
 		title: 'Developer Story',
 		to: 'story',
 		route: true,
 	},
 	{
-		title: 'Resume',
-		to: '',
-		external: true,
+		title: 'Experience',
+		to: 'experience',
 	},
 	{
 		title: 'Contact me',

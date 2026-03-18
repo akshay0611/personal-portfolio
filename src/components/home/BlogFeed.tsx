@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { curatedArticles } from 'utils/constants/Articles';
 import { AiOutlineArrowRight, AiOutlineClockCircle } from 'react-icons/ai';
 
@@ -67,10 +68,14 @@ const BlogFeed = () => {
                             {/* Card Image */}
                             {article.image && (
                                 <div className="aspect-video w-full overflow-hidden relative bg-zinc-950">
-                                    <img 
+                                    <Image 
                                         src={article.image} 
                                         alt={article.title}
+                                        width={800}
+                                        height={450}
                                         className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                                        unoptimized={true}
+                                        loader={({ src }: { src: string }) => src}
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-40 pointer-events-none" />
                                 </div>

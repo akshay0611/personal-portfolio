@@ -21,10 +21,8 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		imageURL: openSourceConnectImg,
 		ctaLabel: 'View community',
 		description: `
-Spearheading open-source initiatives and community growth across Bihar as a regional leader.
-- **Ecosystem Development**: Cultivating a thriving local open-source ecosystem by nurturing developer communities and fostering collaboration.
-- **Strategic Coordination**: Bridging the gap between regional contributors and the global Open Source Connect network to drive impactful participation.
-- **Community Advocacy**: Promoting open-source adoption and knowledge sharing through mentorship, events, and strategic partnerships.
+- **Community Growth**: Onboarded 100+ developers and contributors to the Bihar open-source ecosystem, expanding regional participation in the global Open Source Connect network.
+- **Regional Advocacy**: Championing open-source culture across Bihar by connecting developers to real-world contribution opportunities and long-term career pathways.
 `,
 		featured: true,
 	},
@@ -56,7 +54,6 @@ Selected as a mentor for an open-source project under Resourcio's Apertre 3.0 pr
 		imageURL: edulinkupImg,
 		ctaLabel: 'Visit platform',
 		description: `
-Architecting and scaling the core EduLinkUp platform capabilities with a focus on reliability, performance, and real-world user workflows.
 - **Technical Ownership**: Owning the technical roadmap for high-impact features, translating user requirements into scalable, production-ready systems.
 - **Architectural Stewardship**: Driving code quality through standardized development workflows, rigorous code reviews, and performance-first design principles.
 - **System Governance**: Leading deployment and release workflows for production-grade systems, with emphasis on security, SEO visibility, and platform credibility.
@@ -74,10 +71,8 @@ Architecting and scaling the core EduLinkUp platform capabilities with a focus o
 		url: 'https://codeunia.com',
 		ctaLabel: 'View community',
 		description: `
-Leading web engineering initiatives at Codeunia with a focus on scalable architecture, code quality, and real-world delivery.
 - **Engineering Leadership**: Architecting and maintaining production-ready web platforms using the MERN stack and Next.js.
-- **Team Enablement**: Mentoring developers and interns, setting coding standards, and enforcing best practices through structured code reviews.
-- **Delivery Execution**: Translating product and business requirements into clean, scalable technical solutions while ensuring performance, security, and long-term maintainability.
+- **Team Leadership**: Mentoring developers and interns, setting coding standards, and enforcing best practices through structured code reviews.
 `,
 		featured: true,
 	},
@@ -93,8 +88,7 @@ Leading web engineering initiatives at Codeunia with a focus on scalable archite
 		imageURL: gssocImg,
 		ctaLabel: 'View impact',
 		description: `
-Open-source contributor working across multiple production repositories.
-- **Top 0.06% Perfomance**: Ranked #2 out of 3,424 global contributors.
+- **Top 0.06% Performance**: Ranked #2 out of 3,424 global contributors.
 - **High-Velocity Delivery**: Merged 238 Pull Requests across diverse tech stacks.
 - **Technical Impact**: Earned 2,014 points through complex bug fixes and feature implementations.
 `,
@@ -111,10 +105,8 @@ Open-source contributor working across multiple production repositories.
 		imageURL: cliniqImg,
 		ctaLabel: 'See contributions',
 		description: `
-Project Administrator managing a distributed team of developers.
 - **Repository Stewardship**: Led the end-to-end lifecycle of a healthcare management platform.
 - **Code Governance**: Conducted thorough reviews and CI/CD validation for all global contributions.
-- **Community Mentorship**: Guided contributors through documentation and constructive feedback loops.
 `,
 		featured: true,
 	},
@@ -128,11 +120,8 @@ Project Administrator managing a distributed team of developers.
 		url: 'https://octanet.in/',
 		imageURL: octanetImg,
 		description: `
-Delivered responsive web applications with optimized performance during an intensive development program.
-
 - **End-to-End Delivery**: Built and deployed web applications from scratch, focusing on responsive design and cross-browser compatibility.
 - **Performance Optimization**: Implemented code-splitting and lazy loading strategies to improve initial load times.
-- **Remote Collaboration**: Coordinated with distributed team members through async communication and structured code reviews.
 - **Production Deployment**: Delivered scalable, user-friendly solutions ready for real-world usage.
 `,
 		featured: false,
@@ -148,10 +137,7 @@ Delivered responsive web applications with optimized performance during an inten
 		url: 'https://prodigyinfotech.dev/',
 		imageURL: prodigyinfotechImg,
 		description: `
-Built data pipelines and machine learning workflows for real-world inference applications.
-
 - **Data Pipeline Development**: Designed and implemented preprocessing pipelines to transform raw datasets into ML-ready formats.
-- **Exploratory Analysis**: Conducted comprehensive EDA to identify patterns, trends, and anomalies across structured and unstructured data.
 - **Visualization Dashboards**: Created stakeholder-facing dashboards using Matplotlib, Seaborn, and Tableau for data-driven decision making.
 - **Model Integration**: Prepared data workflows supporting production ML model deployment and inference.
 `,
@@ -167,10 +153,7 @@ Built data pipelines and machine learning workflows for real-world inference app
 		url: 'https://www.shadowfox.in/',
 		imageURL: shadowfoxImg,
 		description: `
-Architected and delivered full-stack web applications using modern frameworks and performance-first design principles.
-
 - **Next.js Architecture**: Implemented SSR and ISR patterns for optimal performance and SEO.
-- **Component Library Integration**: Built UI systems with ShadCN and Tailwind CSS for consistent, scalable design.
 - **Performance Engineering**: Optimized Core Web Vitals through code-splitting, lazy loading, and image optimization.
 - **Code Quality**: Established review practices and maintained clean, documented codebases across projects.
 `,
@@ -187,10 +170,8 @@ Architected and delivered full-stack web applications using modern frameworks an
 		imageURL: aicteImg,
 		ctaLabel: 'Read details',
 		description: `
-Cybersecurity intern focusing on secure digital systems and threat mitigation.
 - **Secure Architecture**: Designed and implemented data security and secure communication principles.
 - **Risk Mitigation**: Conducted risk assessments and ethical hacking simulations across IBM modules.
-- **Industry Validation**: Recognized for project implementation by IBM SkillsBuild and AICTE.
 `,
 		featured: true,
 	},

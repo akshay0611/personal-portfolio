@@ -7,6 +7,8 @@ import ImpactMetrics from 'components/home/ImpactMetrics';
 import CertificationBar from 'components/home/CertificationBar';
 import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
+import Experiences from 'components/home/experiences';
+import GitHubActivity from 'components/home/GitHubActivity';
 import Skills from 'components/Skills';
 import Projects from 'components/home/projects';
 import BlogFeed from 'components/home/BlogFeed';
@@ -14,6 +16,7 @@ import Footer from 'components/footer';
 import Testimonials from 'components/home/testimonials';
 import StructuredData from 'components/common/StructuredData';
 import BackToTop from 'components/common/BackToTop';
+import ProgressBar from 'components/common/ProgressBar';
 
 const Home: NextPage = () => {
 	useEffect(() => {
@@ -51,14 +54,16 @@ const Home: NextPage = () => {
 				<meta property="twitter:image" content="https://connectwithakshay.netlify.app/images/banner.png" />
 			</Head>
 			<StructuredData />
+			<ProgressBar />
 			<main className='min-h-screen min-w-full bg-black'>
 				<HeroSection />
 				<ImpactMetrics />
 				<CertificationBar />
 				<Navbar />
 				<About />
+				<Experiences />
+				<GitHubActivity />
 				<Skills />
-				<Projects />
 				<BlogFeed />
 				<Testimonials />
 			</main>
