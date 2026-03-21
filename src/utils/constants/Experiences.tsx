@@ -10,7 +10,24 @@ import openSourceConnectImg from '../../../public/images/experience/opensourceco
 import edulinkupImg from '../../../public/images/experience/edulinkup.png';
 import apertreImg from '../../../public/images/experience/apertre.webp';
 
+import altqImg from '../../../public/images/experience/altqlogo.png';
+
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	altq: {
+		fromDate: 'Sept 2025',
+		toDate: 'Jan 2026',
+		positionHeld: 'Chief Technology Officer',
+		orgName: 'AltQ',
+		orgLocation: 'Remote',
+		imageURL: altqImg,
+		ctaLabel: 'View project',
+		description: `
+- **Technical Strategy**: Built and led the complete technical foundation from 0 to production in 5 months, delivering a scalable booking and queue management platform.
+- **Product Delivery**: Shipped **15+ production features** within 5 months, maintaining a structured release cycle aligned with business goals.
+- **Reliability & Uptime**: Maintained **99.5% platform uptime** across the booking and queue management system, ensuring reliability for salon operators.
+`,
+		featured: true,
+	},
 	openSourceConnect: {
 		fromDate: 'Jan 2026',
 		toDate: 'Present',
@@ -54,9 +71,10 @@ Selected as a mentor for an open-source project under Resourcio's Apertre 3.0 pr
 		imageURL: edulinkupImg,
 		ctaLabel: 'Visit platform',
 		description: `
-- **Technical Ownership**: Owning the technical roadmap for high-impact features, translating user requirements into scalable, production-ready systems.
-- **Architectural Stewardship**: Driving code quality through standardized development workflows, rigorous code reviews, and performance-first design principles.
-- **System Governance**: Leading deployment and release workflows for production-grade systems, with emphasis on security, SEO visibility, and platform credibility.
+- **Technical Ownership**: Architected and built the full platform on Next.js and Google Cloud, serving **2,700+ monthly active users** across **100+ countries**.
+- **Performance at Scale**: Scaled the platform to handle **300+ new signups** in a single month while maintaining production-grade reliability.
+- **Operations & Mentorship**: Built an internship selection system processing **150+ applications** with a **76% acceptance rate**, onboarding **100+ interns**.
+- **System Governance**: Leading deployment and release workflows via Google Cloud Run with auto-scaling infrastructure handling consistent global traffic.
 `,
 		featured: true,
 	},
@@ -71,8 +89,9 @@ Selected as a mentor for an open-source project under Resourcio's Apertre 3.0 pr
 		url: 'https://codeunia.com',
 		ctaLabel: 'View community',
 		description: `
-- **Engineering Leadership**: Architecting and maintaining production-ready web platforms using the MERN stack and Next.js.
-- **Team Leadership**: Mentoring developers and interns, setting coding standards, and enforcing best practices through structured code reviews.
+- **Engineering Leadership**: Architected and maintained community platforms serving **3,000+ active developers** globally with **5,000+ monthly visitors** and **64k+ monthly requests**.
+- **Team Mentorship**: Led and mentored **29 interns**, each delivering a production-ready project, resulting in **29 projects shipped** under technical guidance.
+- **Community Impact**: Hosted **10+ events** with a **95% success rate**, managing **590MB+ monthly bandwidth** via Cloudflare.
 `,
 		featured: true,
 	},

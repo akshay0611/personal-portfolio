@@ -12,6 +12,22 @@ export interface MetricProps {
 
 export const impactMetrics: MetricProps[] = [
     {
+        value: 39,
+        suffix: "+",
+        label: "Developers Led",
+        subtext: "Mentored 29+ interns & leads",
+        icon: FaUsers,
+        color: "#7C3AED" // Violet
+    },
+    {
+        value: 5700,
+        suffix: "+",
+        label: "Monthly Active Users",
+        subtext: "Across EduLinkUp & Codeunia",
+        icon: FaRocket,
+        color: "#10B981" // Emerald
+    },
+    {
         value: 2,
         suffix: "",
         label: "Global Rank",
@@ -20,27 +36,11 @@ export const impactMetrics: MetricProps[] = [
         color: "#C89D52" // Gold
     },
     {
-        value: 10,
-        suffix: "+",
-        label: "Developers Led",
-        subtext: "Technical Team Mentorship",
-        icon: FaUsers,
-        color: "#7C3AED" // Violet
-    },
-    {
-        value: 3,
-        suffix: "",
-        label: "Prod Products",
-        subtext: "From Concept to Scale",
-        icon: FaRocket,
-        color: "#7C3AED" // Violet
-    },
-    {
         value: 4176,
         suffix: "+",
         label: "Contributions",
         subtext: "Active GitHub Presence",
         icon: FaGithub,
-        color: "#10B981" // Emerald
+        color: "#7C3AED" // Violet
     }
 ];

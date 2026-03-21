@@ -7,5 +7,5 @@ My core stack includes **MERN and Next.js**, with hands-on experience integratin
 
 I’ve been featured by **Google for Developers** for advocating clean, readable, and maintainable code — because good software is built for teams, not just machines.
 
-Beyond writing code, I collaborate with teams, mentor developers, and focus on building systems that create **measurable impact**.
+Beyond building, I’ve scaled products to serve **5,700+ monthly active users** globally and led a technical team of **39+ developers and interns**, setting high standards for engineering excellence and measurable impact.
 `;
