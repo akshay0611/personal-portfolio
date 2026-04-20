@@ -1,6 +1,6 @@
 export interface ArticleProps {
     title: string;
-    platform: 'Codeunia' | 'EduLinkUp';
+    platform: 'Codeunia' | 'EduLinkUp' | 'Dev.to' | 'Personal';
     date: string;
     readTime: string;
     url: string;
@@ -9,6 +9,15 @@ export interface ArticleProps {
 }
 
 export const curatedArticles: ArticleProps[] = [
+    {
+        title: "How I Ranked 2 Out of 25,000+ GSSoC 2025 Contributors: My Open Source Journey",
+        platform: "EduLinkUp",
+        date: "April 2026",
+        readTime: "8 min read",
+        url: "https://www.edulinkup.dev/blog/how-i-ranked-2-out-of-25000-gssoc-2025-contributors",
+        description: "How I secured Rank #2 with 2,014 points in GSSoC 2025 - my strategy, projects, and lessons for open-source beginners.",
+        image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Flch4s8d7zsfn3sy39t87.png"
+    },
     {
         title: "Run Claude Code for Free Using Ollama (No API Bill, No Compromise)",
         platform: "EduLinkUp",
