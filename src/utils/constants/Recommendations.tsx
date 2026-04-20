@@ -73,4 +73,12 @@ export const recommendations: RecommendationsType[] = [
 		message: 'Akshay was a very enthusiastic and supportive mentor throughout Apertre 3.0. His guidance and immediate feedbacks were so helpful for learning the user perspective and avoid tunnel visions. Constant support throughout the coding period and apt responses made the entire program very professional and expert guided.',
 		linkedinUrl: 'https://www.linkedin.com/in/lalitya-dodla-078aa5367/'
 	},
+	{
+		name: 'ABHIJIT SATYAKI',
+		designation: 'Ex Research Intern at @HIT | Fullstack Developer | AI/ML Enthusiast | IT’26 Student at @JGEC',
+		relation: 'Worked with Akshay on the same team',
+		date: 'April 19, 2026',
+		message: "I've had the opportunity to work closely with Akshay as part of the core team at EduLinkUp, where he serves as the Lead Developer while I contribute as a Developer and Testing Engineer.\n\nAkshay is a highly skilled Full Stack Developer with a strong understanding of both frontend and backend technologies. He consistently builds clean, efficient, and scalable solutions, ensuring smooth integration across the entire application. His ability to manage end to end development with a focus on performance and reliability makes him a crucial part of the project.\n\nIn his role as Lead Developer, he plays a key part in guiding development decisions and maintaining code quality across the project. He is approachable, open to discussions, and always willing to support team members when needed. His collaborative mindset and problem solving approach make working with him both effective and enjoyable.\n\nIt has been a great experience working alongside Akshay, and I would highly recommend him as a dependable Full Stack Developer and a strong technical contributor to any team.",
+		linkedinUrl: 'https://www.linkedin.com/in/abhijit-satyaki/'
+	},
 ];
