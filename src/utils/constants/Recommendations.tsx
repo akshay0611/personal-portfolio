@@ -75,11 +75,11 @@ export const recommendations: RecommendationsType[] = [
 	},
 	{
 		name: 'ABHIJIT SATYAKI',
-		designation: 'Ex Research Intern at @HIT | Fullstack Developer | AI/ML Enthusiast | IT’26 Student at @JGEC',
+		designation: 'Developer & Testing Engineer @EduLinkUp | Ex Research Intern at @HIT',
 		relation: 'Worked with Akshay on the same team',
 		date: 'April 19, 2026',
 		message: "I've had the opportunity to work closely with Akshay as part of the core team at EduLinkUp, where he serves as the Lead Developer while I contribute as a Developer and Testing Engineer.\n\nAkshay is a highly skilled Full Stack Developer with a strong understanding of both frontend and backend technologies. He consistently builds clean, efficient, and scalable solutions, ensuring smooth integration across the entire application. His ability to manage end to end development with a focus on performance and reliability makes him a crucial part of the project.\n\nIn his role as Lead Developer, he plays a key part in guiding development decisions and maintaining code quality across the project. He is approachable, open to discussions, and always willing to support team members when needed. His collaborative mindset and problem solving approach make working with him both effective and enjoyable.\n\nIt has been a great experience working alongside Akshay, and I would highly recommend him as a dependable Full Stack Developer and a strong technical contributor to any team.",
-		linkedinUrl: 'https://www.linkedin.com/in/abhijit-satyaki/'
+		linkedinUrl: 'https://www.linkedin.com/in/abhijitsatyaki'
 	},
 	{
 		name: 'Abhishek Yadav',
@@ -99,7 +99,7 @@ export const recommendations: RecommendationsType[] = [
 	},
 	{
 		name: 'Vedika Bisht',
-		designation: 'Backend Developer @Tensorik',
+		designation: 'Frontend Developer @Tensorik',
 		relation: 'Akshay was senior to Vedika but didn’t manage Vedika directly',
 		date: 'April 28, 2026',
 		message: 'At Tensorik, working with Akshay has been a hands-on experience in building real frontend systems that go beyond just UI.\n\nAs a frontend developer, I’ve observed his approach to engineering, where he emphasizes structure, performance, and consistency across the application. Whether it’s component architecture, state management, or backend integration, there’s always a strong focus on writing clean and maintainable code.\n\nOne of the most impressive aspects is the speed of execution. Features move from idea to production quickly, with continuous feedback and improvements.\n\nTensorik focuses on delivering robust, user-facing systems that perform at scale, and Akshay ensures those standards are consistently maintained.\n\nIt’s an environment where frontend developers are encouraged to think beyond UI and grow into product engineers.',
