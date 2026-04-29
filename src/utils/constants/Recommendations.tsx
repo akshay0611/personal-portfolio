@@ -81,4 +81,28 @@ export const recommendations: RecommendationsType[] = [
 		message: "I've had the opportunity to work closely with Akshay as part of the core team at EduLinkUp, where he serves as the Lead Developer while I contribute as a Developer and Testing Engineer.\n\nAkshay is a highly skilled Full Stack Developer with a strong understanding of both frontend and backend technologies. He consistently builds clean, efficient, and scalable solutions, ensuring smooth integration across the entire application. His ability to manage end to end development with a focus on performance and reliability makes him a crucial part of the project.\n\nIn his role as Lead Developer, he plays a key part in guiding development decisions and maintaining code quality across the project. He is approachable, open to discussions, and always willing to support team members when needed. His collaborative mindset and problem solving approach make working with him both effective and enjoyable.\n\nIt has been a great experience working alongside Akshay, and I would highly recommend him as a dependable Full Stack Developer and a strong technical contributor to any team.",
 		linkedinUrl: 'https://www.linkedin.com/in/abhijit-satyaki/'
 	},
+	{
+		name: 'Abhishek Yadav',
+		designation: 'Backend Developer @Tensorik',
+		relation: 'Abhishek reported to Akshay directly',
+		date: 'April 29, 2026',
+		message: 'I’ve had the opportunity to work closely with Akshay at Tensorik, and what stands out most is his ability to combine strong technical thinking with consistent execution.\n\nAs a developer, he focuses on building practical, scalable solutions whether it’s structuring backend systems or ensuring smooth delivery across the stack. His approach is straightforward: solving real problems without unnecessary complexity.\n\nWhat I value most is his bias for action. He moves things forward efficiently while keeping the work aligned with actual product needs.\n\nAkshay brings ownership, clarity, and reliability to the team, making him someone you can depend on to take ideas from concept to execution.',
+		linkedinUrl: 'https://www.linkedin.com/in/desirarman'
+	},
+	{
+		name: 'Abdullah Ahmed',
+		designation: 'Backend Developer @Tensorik',
+		relation: 'Akshay was senior to Abdullah but didn’t manage Abdullah directly',
+		date: 'April 28, 2026',
+		message: 'Working under Akshay at Tensorik has been a highly practical and growth-driven experience.\n\nHe brings strong clarity to backend architecture-whether it’s designing APIs, structuring databases, or enforcing clean coding practices. What truly stands out is that he doesn’t just review code; he ensures you understand why something is designed a certain way.\n\nA key part of my learning was understanding how to choose the right technology for the right problem. For example, I gained insight into why we used Supabase in certain cases instead of something like Mongoose, and how to evaluate backend tools based on scalability, performance, and project needs.\n\nThere’s a strong emphasis on building production-ready systems. The features we worked on weren’t just prototypes-they were deployed, used by real users, and continuously improved based on feedback.\n\nBeyond backend development, Akshay also encouraged me to expand my perspective into design and frontend. This helped me better understand how different parts of a system connect, and how decisions in one area impact the overall product.\n\nTensorik’s ecosystem reflects this mindset-lean, scalable, and built with long-term thinking.\n\nAkshay creates an environment where developers are pushed to think beyond tasks and truly understand systems.',
+		linkedinUrl: 'https://www.linkedin.com/in/abdullah-ahmed-8a6852250'
+	},
+	{
+		name: 'Vedika Bisht',
+		designation: 'Backend Developer @Tensorik',
+		relation: 'Akshay was senior to Vedika but didn’t manage Vedika directly',
+		date: 'April 28, 2026',
+		message: 'At Tensorik, working with Akshay has been a hands-on experience in building real frontend systems that go beyond just UI.\n\nAs a frontend developer, I’ve observed his approach to engineering, where he emphasizes structure, performance, and consistency across the application. Whether it’s component architecture, state management, or backend integration, there’s always a strong focus on writing clean and maintainable code.\n\nOne of the most impressive aspects is the speed of execution. Features move from idea to production quickly, with continuous feedback and improvements.\n\nTensorik focuses on delivering robust, user-facing systems that perform at scale, and Akshay ensures those standards are consistently maintained.\n\nIt’s an environment where frontend developers are encouraged to think beyond UI and grow into product engineers.',
+		linkedinUrl: 'https://www.linkedin.com/in/vedika-bisht'
+	},
 ];
