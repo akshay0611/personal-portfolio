@@ -19,54 +19,51 @@ import { trackSocialClick } from 'utils/analytics';
 export default function HeroSection() {
 	return (
 		<section
-			className='home-section relative flex-center min-h-[100dvh] py-20'
+			className='home-section relative flex-center min-h-[100dvh] py-16 md:py-20'
 			id='herosection'
 		>
-			<div className='max-section-width flex flex-col-reverse sm:flex-row gap-8 sm:gap-1 items-center justify-center'>
+			<div className='max-section-width flex flex-col-reverse md:flex-row gap-10 md:gap-8 items-center justify-between w-full'>
 				{/* Left */}
-				<div>
-					<div className='text-center sm:text-left'>
-						<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5'>
+				<div className='w-full md:w-[52%]'>
+					<div className='text-center md:text-left'>
+						<h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-4'>
 							Akshay Kumar
-							<br />
-							<span className='text-2xl md:text-3xl lg:text-4xl font-semibold opacity-90'>
-								Full-Stack Developer building AI & cloud-driven products
-							</span>
 						</h1>
-						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-3 sm:mb-4 md:mb-6 max-w-2xl'>
-							I design and ship scalable, production-grade web applications with a focus on performance, maintainability, and long-term impact.
+						<h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-white/90 leading-tight max-w-2xl'>
+								Full-Stack Developer building AI & cloud-driven products
 						</h2>
-						<div className='text-xs md:text-sm tracking-widest text-white/50 uppercase mb-3'>
+						<p className='text-base md:text-lg text-white/70 leading-relaxed mt-6 mb-6 max-w-2xl'>
+							I design and ship scalable, production-grade web applications with a focus on performance, maintainability, and long-term impact.
+						</p>
+						<div className='text-xs md:text-sm tracking-[0.18em] text-white/45 uppercase mb-5'>
 							MERN · Next.js · AI integrations · Google Cloud
 						</div>
-						<div className='flex items-center gap-2 mb-5 sm:mb-6 justify-center sm:justify-start'>
-							<div className='group flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-full text-xs border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl'>
-								<div className='relative'>
+						<div className='flex items-center gap-2 mb-7 justify-center md:justify-start'>
+							<div className='flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs border border-white/15 bg-white/[0.03]'>
+								<div className='relative shrink-0'>
 									<Image 
 										src={googleImg} 
 										alt="Google" 
-										width={18} 
-										height={18} 
-										className="rounded-sm group-hover:scale-110 transition-transform duration-300" 
+										width={16} 
+										height={16} 
+										className="rounded-sm" 
 										loader={({ src }) => src}
 										unoptimized={true}
 									/>
-									<div className='absolute inset-0 bg-gradient-to-br from-transparent to-black/10 rounded-sm'></div>
 								</div>
-								<span className='text-white/90 font-medium tracking-wide group-hover:text-white transition-colors duration-300'>
+								<span className='text-white/85 tracking-wide'>
 									Featured by Google for Developers
 								</span>
-								<div className='w-1 h-1 bg-green-400 rounded-full animate-pulse'></div>
 							</div>
 						</div>
 					</div>
-					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
+					<div className='flex gap-2 mb-6 text-xl justify-center md:justify-start'>
 						<Link passHref href={SocialUrls.github} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
 								onClick={() => trackSocialClick('GitHub')}
-								className='p-2 text-white hover:bg-white/10 hover:scale-125 rounded-full transition-all duration-150'
+								className='p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-full transition-all duration-200'
 							>
 								<FaGithub />
 							</a>
@@ -76,7 +73,7 @@ export default function HeroSection() {
 								target='_blank'
 								rel='noopener noreferrer'
 								onClick={() => trackSocialClick('LinkedIn')}
-								className='p-2 text-[#0077b5] hover:bg-[#0077b5]/10 hover:scale-125 rounded-full transition-all duration-150'
+								className='p-2 text-[#0077b5] hover:bg-[#0077b5]/10 rounded-full transition-all duration-200'
 							>
 								<FaLinkedinIn />
 							</a>
@@ -85,7 +82,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 text-[#ea4335] hover:bg-[#ea4335]/10 hover:scale-125 rounded-full transition-all duration-150'
+								className='p-2 text-[#ea4335] hover:bg-[#ea4335]/10 rounded-full transition-all duration-200'
 							>
 								<FaEnvelope />
 							</a>
@@ -94,19 +91,14 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 text-[#2ec866] hover:bg-[#2ec866]/10 hover:scale-125 rounded-full transition-all duration-150'
+								className='p-2 text-[#2ec866] hover:bg-[#2ec866]/10 rounded-full transition-all duration-200'
 							>
 								<FaHackerrank />
 							</a>
 						</Link>
 					</div>
-					<div className='flex gap-2 item-center justify-center sm:justify-start text-sm sm:text-base'>
-						{/* <Button variant='primary' className='whitespace-nowrap'>
-							<Link href=''>
-								View Resume
-							</Link>
-						</Button> */}
-						<Button variant='primary' className='whitespace-nowrap'>
+					<div className='flex gap-2 item-center justify-center md:justify-start text-sm sm:text-base'>
+						<Button variant='primary' className='whitespace-nowrap px-6 py-2.5'>
 							<LinkScroll
 								spy={true}
 								smooth={true}
@@ -120,9 +112,10 @@ export default function HeroSection() {
 					</div>
 				</div>
 				{/* Right */}
-				<div className='relative w-3/4 max-w-lg aspect-square sm:w-fit'>
+				<div className='relative w-[78%] max-w-[460px] aspect-square md:w-[42%]'>
+					<div className='absolute -inset-4 bg-[radial-gradient(circle,_rgba(255,255,255,0.14)_0%,_rgba(255,255,255,0)_70%)] blur-xl'></div>
 					<Image
-						className='rounded-full'
+						className='rounded-full relative'
 						height={1000}
 						width={1000}
 						src={akshay}
@@ -133,10 +126,10 @@ export default function HeroSection() {
 						placeholder='blur'
 						loader={({ src }) => src}
 					/>
-					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-[#00000020] to-black'></div>
+					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-black/25'></div>
 				</div>
 				<LinkScroll
-					className='absolute bottom-4 text-3xl md:text-4xl opacity-40 animate-bounce'
+					className='absolute bottom-4 text-3xl md:text-4xl opacity-30 animate-bounce cursor-pointer'
 					spy={true}
 					smooth={true}
 					offset={-32}
