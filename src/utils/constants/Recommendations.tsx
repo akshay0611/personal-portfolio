@@ -105,4 +105,28 @@ export const recommendations: RecommendationsType[] = [
 		message: 'At Tensorik, working with Akshay has been a hands-on experience in building real frontend systems that go beyond just UI.\n\nAs a frontend developer, I’ve observed his approach to engineering, where he emphasizes structure, performance, and consistency across the application. Whether it’s component architecture, state management, or backend integration, there’s always a strong focus on writing clean and maintainable code.\n\nOne of the most impressive aspects is the speed of execution. Features move from idea to production quickly, with continuous feedback and improvements.\n\nTensorik focuses on delivering robust, user-facing systems that perform at scale, and Akshay ensures those standards are consistently maintained.\n\nIt’s an environment where frontend developers are encouraged to think beyond UI and grow into product engineers.',
 		linkedinUrl: 'https://www.linkedin.com/in/vedika-bisht'
 	},
+	{
+		name: 'Tanisha Jaiswal',
+		designation: 'AI/ML Developer @Tensorik',
+		relation: 'Akshay was senior to Tanisha but didn\'t manage Tanisha directly',
+		date: 'April 30, 2026',
+		message: 'Working with Akshay at Tensorik has been a unique blend of AI implementation and real-world product integration.\n\nHe focuses not just on building models, but on making them usable within scalable systems. There\'s a strong emphasis on how AI fits into actual workflows, APIs, data pipelines, and user-facing features.\n\nWhat I found valuable is his clarity on practical AI, avoiding unnecessary complexity and focusing on solutions that deliver measurable impact.\n\nTensorik is evolving as a space where AI is not isolated but integrated into real products, and that direction comes from Akshay\'s approach to engineering.\n\nIt\'s a strong environment for anyone who wants to work on applied AI rather than just experimental models.',
+		linkedinUrl: 'https://www.linkedin.com/in/tanisha-jaiswal-44a4a228a/'
+	},
+	{
+		name: 'Anish Kumar',
+		designation: 'Full Stack Developer @Tensorik',
+		relation: 'Anish reported to Akshay directly',
+		date: 'April 29, 2026',
+		message: 'Working with Akshay at Tensorik has been a deeply hands-on experience in building frontend systems that are not just visually appealing, but functionally robust.\n\nHe places strong emphasis on writing structured, scalable, and maintainable codewhether it\'s component design, state management, or seamless integration with backend services. There\'s a clear focus on performance and consistency across the application.\n\nWhat stands out is the rapid execution cycle. Ideas quickly translate into working features, with continuous feedback and iteration based on real usage.\n\nAt Tensorik, frontend development goes beyond UI.it\'s about building reliable, user-facing systems that perform at scale. Akshay ensures that developers approach frontend work with a product-oriented mindset.\n\nIt\'s an environment where frontend developers grow into well-rounded engineers who understand both user experience and system design.',
+		linkedinUrl: 'https://www.linkedin.com/in/anish-kumar-90480b294/'
+	},
+	{
+		name: 'Parth Verma',
+		designation: 'AI/ML Developer @Tensorik',
+		relation: 'Parth worked with Akshay on the same team',
+		date: 'April 29, 2026',
+		message: 'Collaborating with Akshay at Tensorik has shown me what it really means to build AI for real use, not just for experimentation.\n\nHis work consistently connects AI with actual products ensuring it fits smoothly into systems people rely on, from backend processes to user interactions.\n\nWhat stands out is the focus on clarity and outcomes, choosing approaches that are efficient and genuinely useful instead of unnecessarily complex.\n\nTensorik reflects this mindset, growing into a place where AI is thoughtfully embedded into everyday applications.\n\nIt\'s an ideal environment for anyone who wants to create AI that\'s not just built but actually used.',
+		linkedinUrl: 'https://www.linkedin.com/in/parth-verma0812/'
+	},
 ];
