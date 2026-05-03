@@ -187,6 +187,23 @@ html {
 		@apply text-blue-400 hover:underline italic;
 	}
 
+	/* Testimonials React Markdown */
+	.testimonial-react-markdown {
+		@apply text-sm md:text-base text-zinc-200 leading-relaxed tracking-wide;
+	}
+
+	.testimonial-react-markdown p {
+		@apply mb-3 last:mb-0;
+	}
+
+	.testimonial-react-markdown strong {
+		@apply text-zinc-100 font-semibold;
+	}
+
+	.testimonial-react-markdown a {
+		@apply text-blue-300 hover:text-blue-200 underline underline-offset-2;
+	}
+
 	/* GitHub Activity Styles */
 	.stat-card {
 		@apply relative bg-[#121212] rounded-xl p-4 border border-[#27272a] overflow-hidden transition-all duration-300;
