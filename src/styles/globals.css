@@ -258,6 +258,95 @@ html {
 		@apply hover:scale-105;
 	}
 
+	/* Blog Feed Tokens */
+	.blog-bg-glow {
+		@apply absolute rounded-full blur-3xl opacity-30;
+		width: 32rem;
+		height: 32rem;
+	}
+
+	.blog-bg-glow-left {
+		@apply -left-24 top-20;
+		background: radial-gradient(circle, rgba(29, 78, 216, 0.12), rgba(0, 0, 0, 0));
+	}
+
+	.blog-bg-glow-right {
+		@apply -right-24 top-40;
+		background: radial-gradient(circle, rgba(14, 116, 144, 0.1), rgba(0, 0, 0, 0));
+	}
+
+	.blog-divider {
+		height: 4px;
+		border-radius: 9999px;
+		background: linear-gradient(90deg, rgba(59, 130, 246, 0.95), rgba(14, 116, 144, 0.65));
+	}
+
+	.blog-nav-btn {
+		@apply p-4 rounded-full border transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black;
+	}
+
+	.blog-nav-btn-active {
+		@apply border-zinc-700 text-white hover:border-blue-500 hover:bg-blue-500/10 active:scale-95;
+	}
+
+	.blog-nav-btn-disabled {
+		@apply border-zinc-800 text-zinc-700 cursor-not-allowed;
+	}
+
+	.blog-card {
+		@apply relative flex flex-col h-full rounded-2xl overflow-hidden transition-all duration-300;
+		@apply border border-zinc-800 bg-zinc-900/45 shadow-[0_8px_30px_rgba(0,0,0,0.28)];
+	}
+
+	.blog-card-primary {
+		@apply opacity-100 scale-100 border-zinc-700;
+	}
+
+	.blog-card-secondary {
+		@apply opacity-80 scale-[0.98];
+	}
+
+	.blog-accent-violet {
+		background-color: #7c3aed;
+	}
+
+	.blog-accent-gold {
+		background-color: #c89d52;
+	}
+
+	.blog-accent-light {
+		background-color: #f4f4f5;
+	}
+
+	.blog-accent-blue {
+		background-color: #3b82f6;
+	}
+
+	.blog-accent-muted {
+		background-color: #71717a;
+	}
+
+	.blog-badge-violet {
+		@apply text-violet-300 bg-violet-300/10;
+	}
+
+	.blog-badge-gold {
+		color: #e7c88a;
+		background: rgba(200, 157, 82, 0.12);
+	}
+
+	.blog-badge-light {
+		@apply text-zinc-200 bg-zinc-100/10;
+	}
+
+	.blog-badge-blue {
+		@apply text-blue-300 bg-blue-500/10;
+	}
+
+	.blog-badge-muted {
+		@apply text-zinc-400 bg-zinc-500/10;
+	}
+
 	.contribution-cell {
 		@apply w-3 h-3 rounded-sm transition-all duration-200;
 		cursor: pointer;
