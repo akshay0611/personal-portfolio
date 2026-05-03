@@ -30,7 +30,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	},
 	openSourceConnect: {
 		fromDate: 'Jan 2026',
-		toDate: 'Present',
+		toDate: 'April 2026',
 		positionHeld: 'State Lead – Bihar',
 		orgName: 'Open Source Connect',
 		orgLocation: 'Remote',

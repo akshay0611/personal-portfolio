@@ -5,8 +5,34 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Experiences() {
+	const monthMap: Record<string, number> = {
+		jan: 0,
+		feb: 1,
+		mar: 2,
+		apr: 3,
+		may: 4,
+		jun: 5,
+		jul: 6,
+		aug: 7,
+		sep: 8,
+		oct: 9,
+		nov: 10,
+		dec: 11,
+	};
+
+	const parseFromDate = (value: string) => {
+		const normalized = value.trim().toLowerCase();
+		const [monthRaw, yearRaw] = normalized.split(/\s+/);
+		const monthKey = monthRaw?.slice(0, 3) || 'jan';
+		const month = monthMap[monthKey] ?? 0;
+		const year = Number.parseInt(yearRaw || '0', 10);
+		return new Date(year, month, 1).getTime();
+	};
+
 	// Filter for featured experiences to show on homepage
-	const featuredExperiences = Object.values(allExperiences).filter(exp => exp.featured);
+	const featuredExperiences = Object.values(allExperiences)
+		.filter(exp => exp.featured)
+		.sort((a, b) => parseFromDate(b.fromDate) - parseFromDate(a.fromDate));
 
 	return (
 		<section className='home-section bg-black relative' id='experience'>
