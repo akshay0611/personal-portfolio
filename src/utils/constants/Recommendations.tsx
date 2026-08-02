@@ -166,4 +166,14 @@ export const recommendations: RecommendationsType[] = [
 			"Collaborating with Akshay at Tensorik has shown me what it really means to build AI for real use, not just for experimentation.\n\nHis work consistently connects AI with actual products ensuring it fits smoothly into systems people rely on, from backend processes to user interactions.\n\nWhat stands out is the focus on clarity and outcomes, choosing approaches that are efficient and genuinely useful instead of unnecessarily complex.\n\nTensorik reflects this mindset, growing into a place where AI is thoughtfully embedded into everyday applications.\n\nIt's an ideal environment for anyone who wants to create AI that's not just built but actually used.",
 		linkedinUrl: 'https://www.linkedin.com/in/parth-verma0812/',
 	},
+	{
+		id: 'tanisha-srivastava-cipla',
+		name: 'Tanisha Srivastava',
+		designation: 'Junior Engineer @Cipla Ltd || VITC’25',
+		relation: 'Worked with Akshay but they were at different companies',
+		date: 'July 19, 2026',
+		message:
+			'It was a pleasure working with you. Your professionalism, positive attitude, and collaborative approach made every interaction a great experience. Wishing you all the very best for your continued success!',
+		linkedinUrl: 'https://www.linkedin.com/in/tanisha-srivastava-7510b2280',
+	},
 ];
