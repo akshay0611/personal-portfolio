@@ -176,4 +176,26 @@ export const recommendations: RecommendationsType[] = [
 			'It was a pleasure working with you. Your professionalism, positive attitude, and collaborative approach made every interaction a great experience. Wishing you all the very best for your continued success!',
 		linkedinUrl: 'https://www.linkedin.com/in/tanisha-srivastava-7510b2280',
 	},
+	{
+		id: 'tarun-v-tensorik',
+		name: 'Tarun V',
+		designation:
+			'Artificial Intelligence & Data Science Student | 2x Best Student Innovator | Machine Learning | Gen AI | AI Security | Adya Agent Hackathon Winner | 4x Hackathon Winner',
+		relation: 'Tarun reported to Akshay directly',
+		date: 'August 29, 2026',
+		message:
+			"I've had the opportunity to work with Akshay at Tensorik, and his technical leadership and problem-solving approach have had a strong impact on the team.\n\nAs CTO, Akshay brings a great balance of deep technical understanding, product thinking, and practical execution. What I particularly appreciate is his ability to break down complex engineering and AI problems into clear, actionable solutions while keeping the bigger picture in mind. He is always willing to get into the details when needed, challenge ideas constructively, and help the team arrive at better technical decisions.\n\nBeyond his technical expertise, Akshay is approachable and supportive, which makes it easy to learn, experiment, and take ownership. His focus on building strong engineering practices and encouraging the team to think beyond just implementing a solution has helped me grow significantly as an engineer.\n\nI'm grateful for the opportunity to work with Akshay and would highly recommend him to anyone looking for a technically strong, thoughtful, and forward-thinking technology leader.",
+		linkedinUrl: 'https://www.linkedin.com/in/tarun-v-sece/',
+	},
+	{
+		id: 'anshika-moudgil-tensorik',
+		name: 'Anshika Moudgil',
+		designation:
+			'B.E. CSE (AI) | AI & ML Enthusiast | Computer Vision | Data Science & Analysis | Driven by Creativity and Innovation',
+		relation: "Akshay was senior to Anshika but didn't manage Anshika directly",
+		date: 'August 28, 2026',
+		message:
+			"I highly recommend Akshay Kumar as a visionary technology leader. I have had the pleasure of working under their leadership, where they successfully scaled our technical infrastructure and aligned our engineering roadmap with the company's long-term business goals. Akshay possesses a rare ability to translate complex business objectives into actionable technical strategies. He leads with clarity, foster a culture of engineering excellence, and consistently make high-impact architectural decisions that position the company for sustainable growth. Any organization looking for a transformative person would be incredibly fortunate to have him.",
+		linkedinUrl: 'https://www.linkedin.com/in/anshikamoudgil/',
+	},
 ];
