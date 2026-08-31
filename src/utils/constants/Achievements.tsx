@@ -2,6 +2,7 @@ import { AchievementProps } from "utils/developerStory";
 import gssocImg from '../../../public/images/experience/gssoc.png';
 import cliniqImg from '../../../public/images/experience/cliniq.png';
 import googleImg from '../../../public/images/experience/google.png';
+import castAiImg from '../../../public/images/experience/castai.png';
 
 export const Achievements: { [key: string]: AchievementProps } = {
     gssocRank: {
@@ -44,6 +45,21 @@ Lead and maintained ClinIQ, an open-source healthcare platform.
         description: `
 Featured for advocating clean, readable, and maintainable code and building impactful community-driven tools.
 `,
-url: 'https://www.linkedin.com/posts/googledevelopers_akshay-kumar-says-readable-and-maintainable-activity-7374638383354187776-_x4n',
+        url: 'https://www.linkedin.com/posts/googledevelopers_akshay-kumar-says-readable-and-maintainable-activity-7374638383354187776-_x4n',
+    },
+    castAiApaHero: {
+        fromDate: 'Nov 2025',
+        toDate: 'Present',
+        featured: true,
+        title: 'APA Hero - Application Performance Automation',
+        orgName: 'CAST AI',
+        imageURL: castAiImg,
+        description: `
+Recognized by CAST AI as an APA Hero for exceptional participation in the Application Performance Automation program.
+- Gained expertise in Kubernetes optimization, cloud efficiency, and autonomous infrastructure.
+- Developed skills at the intersection of AI, Cloud, Kubernetes, and Automation.
+- Contributed to building scalable systems and advancing cloud-native engineering practices.
+`,
+        url: 'https://cast.ai/apa-hero/#modal-akshay-kumar',
     }
 };

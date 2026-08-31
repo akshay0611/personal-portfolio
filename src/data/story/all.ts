@@ -22,6 +22,11 @@ export const fullStory: DeveloperStoryDataProps = [
         data: Achievements.googleRecognition,
     },
     {
+        id: 'ach-castAiApaHero',
+        storyType: 'achievement',
+        data: Achievements.castAiApaHero,
+    },
+    {
         id: 'exp-altq',
         storyType: 'experience',
         data: allExperiences.altq,
