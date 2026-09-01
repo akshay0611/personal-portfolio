@@ -6,6 +6,9 @@ import healwellImg from '../../../public/images/project/healwell.png';
 import imprintwordsImg from '../../../public/images/project/imprintwords.png';
 import tanjoreCoffeeImg from '../../../public/images/project/tanjorecoffee.png';
 import finTrackImg from '../../../public/images/project/fintrack.png';
+import mbtImg from '../../../public/images/project/mbt.png';
+import greenlineImg from '../../../public/images/project/greenline.png';
+import khajaMobilesImg from '../../../public/images/project/khajamobiles.png';
 export const allProjects: { [key: string]: ProjectProps } = {
 
 
@@ -181,6 +184,127 @@ This project showcases ability to build **high-fidelity analytics dashboards**, 
 		repoUrl: 'https://github.com/akshay0611/fintrack',
 		viewUrl: 'https://fintrack-9kbj.vercel.app/',
 		techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_shadcn', 'skill_typescript', 'skill_supabase', 'skill_framer_motion', 'skill_vercel'],
+	},
+
+mbtInstitute: {
+	fromDate: 'Jun 2026',
+	toDate: 'Jun 2026',
+	projectName: 'MBT Mobile Best Training Institute',
+	orgName: 'Tensorik Technologies • Client: Mr. Murthy & Mr. Bujji',
+	imageURL: mbtImg,
+	featured: true,
+	description: `
+Client Project · Tensorik Technologies
+
+Designed and developed the official digital platform for MBT Mobile Best Training Institute, a Vijayawada-based mobile repair training institute specializing in Android and iPhone repair, hardware/software troubleshooting, chip-level diagnostics, IC-level repair, and practical hands-on training.
+
+The platform presents MBT's training programs, course information, student success stories, batch galleries, training facilities, and enquiry/admission workflows through a modern, responsive web experience.
+
+### Key Features:
+- **Course Discovery**: Structured presentation of MBT's fresher and advanced chip-level repair training programs with detailed course information.
+- **Student Success**: Dynamic student testimonials supporting text and video-based reviews with database-driven content management.
+- **Batch Gallery**: Interactive galleries showcasing training batches and institute activities with structured image metadata.
+- **Lead Generation**: WhatsApp integration, consultation booking, and contact workflows designed to streamline student enquiries.
+- **Batch Availability**: Upcoming batch information with countdown and seat availability presentation.
+
+### Architectural Highlights:
+- **Admin Panel**: Role-based administration with Supabase Auth for managing courses, testimonials, gallery content, and enquiries.
+- **Database**: Structured Supabase PostgreSQL schema supporting training programs, profiles, contact submissions, reviews, video testimonials, and gallery content.
+- **Access Control**: Protected administrative routes with authentication and role-based authorization.
+- **Validation**: Zod-based form validation for reliable data handling and input integrity.
+- **Performance & UX**: Responsive architecture with optimized content delivery, animations, and interactive UI components.
+
+This project demonstrates expertise in **client-facing digital product development**, **admin-driven content platforms**, and **secure role-based web architecture**.
+		`,
+	viewUrl: 'https://mbtinstitute.in/',
+		techStack: [
+			'skill_nextjs',
+			'skill_reactjs',
+			'skill_tailwindcss',
+			'skill_typescript',
+			'skill_supabase',
+			'skill_framer_motion'
+		],
+},
+
+	greenlineTravels: {
+	fromDate: 'Jun 2026',
+	toDate: 'Jul 2026',
+	projectName: 'GreenLine Car Travels',
+	orgName: 'Tensorik Technologies • Client: Mr. Nagendra',
+	imageURL: greenlineImg,
+	featured: true,
+	description: `
+Client Project · Tensorik Technologies
+
+Designed and developed the digital platform for GreenLine Car Travels, a transportation and car rental service operating across Andhra Pradesh and Telangana. The platform provides customers with a structured way to explore vehicle categories, review fleet options, discover tour packages, view tariffs, and initiate booking enquiries through a modern, responsive web experience.
+
+### Key Features:
+- **Fleet Discovery**: Structured presentation of multiple vehicle categories with pricing, specifications, and service information.
+- **Tour Packages**: Dedicated travel packages with itineraries, destinations, pricing, and journey details.
+- **Booking Workflow**: Multi-step enquiry flow supporting vehicle selection, pickup/drop locations, travel dates, and customer details.
+- **Travel Content**: CMS-driven travel content and blog experiences for destination information and route guides.
+- **Service Discovery**: Clear presentation of rental services, tariffs, testimonials, and travel offerings to support customer conversion.
+
+### Architectural Highlights:
+- **Backend**: Supabase PostgreSQL powering fleet, packages, bookings, testimonials, and content data.
+- **Content Management**: TipTap-based rich text editing for structured travel and blog content.
+- **Security**: Server-side HTML sanitization for user-generated and CMS-managed content.
+- **Performance**: Next.js server-side capabilities and optimized font loading for improved web performance.
+- **User Experience**: Framer Motion-powered interactions and responsive layouts across desktop and mobile devices.
+
+This project demonstrates expertise in **service-based business platforms**, **booking-oriented workflows**, and **CMS-driven web architecture**.
+		`,
+	viewUrl: 'https://greenlinecartravels.com/',
+		techStack: [
+			'skill_nextjs',
+			'skill_reactjs',
+			'skill_tailwindcss',
+			'skill_typescript',
+			'skill_supabase',
+			'skill_framer_motion'
+		],
+	},
+
+	khajaMobiles: {
+	fromDate: 'Jun 2026',
+	toDate: 'Jul 2026',
+	projectName: 'Khaja Mobiles',
+	orgName: 'Tensorik Technologies • Client: Mr. Khaja',
+	imageURL: khajaMobilesImg,
+	featured: true,
+	description: `
+Client Project · Tensorik Technologies
+
+Designed and developed a B2B e-commerce and service platform for Khaja Mobiles, a Vijayawada-based mobile accessories wholesaler and professional repair service provider. The platform brings wholesale purchasing, product discovery, bulk ordering, repair services, inventory management, and online payments into a unified digital experience.
+
+### Key Features:
+- **Wholesale Commerce**: Tiered pricing and bulk ordering workflows designed for distributor and business customers.
+- **Product Catalog**: Large mobile accessories catalog with brand filtering, product details, pricing, and inventory visibility.
+- **Repair Services**: Structured repair service categories with transparent pricing and warranty information.
+- **Order Management**: Customer ordering workflows with payment integration and order tracking.
+- **Admin Dashboard**: Centralized management for products, orders, inventory, repair services, and operational data.
+- **Authentication**: Secure email/password and Google authentication with role-based access control.
+
+### Architectural Highlights:
+- **Database**: Supabase PostgreSQL with 25+ structured tables, Row Level Security policies, and RPC functions for controlled data access.
+- **Payments**: Razorpay integration supporting secure online payment workflows.
+- **Content Management**: TipTap-based rich text editing for product and service content.
+- **Validation**: Zod schemas for type-safe validation across application workflows.
+- **Design System**: Tailwind CSS with reusable design tokens and responsive components for consistent UI.
+- **Security**: Database-level access control and authenticated workflows designed around customer and administrative roles.
+
+This project demonstrates expertise in **B2B e-commerce architecture**, **payment integration**, **inventory workflows**, and **role-based business platforms**.
+		`,
+	viewUrl: 'https://khajamobiles.com/',
+		techStack: [
+			'skill_nextjs',
+			'skill_reactjs',
+			'skill_tailwindcss',
+			'skill_typescript',
+			'skill_supabase',
+			'skill_framer_motion'
+		],
 	},
 
 

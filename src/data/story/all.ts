@@ -144,6 +144,24 @@ export const fullStory: DeveloperStoryDataProps = [
     },
 
     {
+        id: 'project-mbtInstitute',
+        storyType: 'project',
+        data: allProjects.mbtInstitute,
+    },
+
+    {
+        id: 'project-greenlineTravels',
+        storyType: 'project',
+        data: allProjects.greenlineTravels,
+    },
+
+    {
+        id: 'project-khajaMobiles',
+        storyType: 'project',
+        data: allProjects.khajaMobiles,
+    },
+
+    {
         id: 'cert-microsoftAdvertisingCert',
         storyType: 'certificate',
         data: allCertificates.microsoftAdvertisingCert,
