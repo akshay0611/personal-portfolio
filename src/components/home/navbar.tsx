@@ -73,20 +73,31 @@ export default function Navbar() {
 						<NavbarDropdown />
 					</div>
 				</div>
-				<Link
-					href='https://github.com/akshay0611'
-					passHref
-					legacyBehavior
-				>
-					<a
-						target='_blank'
-						rel='noopener noreferrer'
-						className='hidden md:block'
-						title='Repository URL'
+				<div className='hidden md:flex items-center gap-3'>
+					<button
+						onClick={() => window.dispatchEvent(new CustomEvent('toggle-terminal'))}
+						className='flex items-center gap-1.5 px-2.5 py-1 bg-zinc-800/80 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-zinc-300 hover:text-emerald-400 rounded-md text-xs font-mono transition-all duration-200 cursor-pointer'
+						title='Open Terminal (` or click)'
 					>
-						<FaGithub />
-					</a>
-				</Link>
+						<span className='text-emerald-400 font-bold'>&gt;_</span>
+						<span>CLI</span>
+					</button>
+
+					<Link
+						href='https://github.com/akshay0611'
+						passHref
+						legacyBehavior
+					>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							className='hover:text-yellow-200 transition-colors'
+							title='Repository URL'
+						>
+							<FaGithub className='text-base' />
+						</a>
+					</Link>
+				</div>
 			</div>
 		</nav>
 	);

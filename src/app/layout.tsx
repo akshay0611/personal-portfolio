@@ -3,6 +3,7 @@ import { Montserrat, League_Spartan } from 'next/font/google';
 import Script from 'next/script';
 import ProgressBar from 'components/common/ProgressBar';
 import PageLoader from 'components/common/PageLoader';
+import TerminalModal from 'components/common/TerminalModal';
 import '../styles/globals.css';
 
 const montserrat = Montserrat({
@@ -126,6 +127,7 @@ export default function RootLayout({
 				)}
 				<ProgressBar />
 				<PageLoader />
+				<TerminalModal />
 				{children}
 			</body>
 		</html>

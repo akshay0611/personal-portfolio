@@ -143,6 +143,16 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								</LinkScroll>
 							);
 						})}
+						<button
+							onClick={() => {
+								onClose();
+								window.dispatchEvent(new CustomEvent('open-terminal'));
+							}}
+							className='text-sm px-4 py-3 flex items-center justify-between text-emerald-400 bg-emerald-950/30 border border-emerald-500/20 rounded-lg hover:bg-emerald-900/40 transition-all cursor-pointer w-full font-mono mt-2'
+						>
+							<span>&gt;_ Open CLI</span>
+							<span className='text-xs px-2 py-0.5 bg-emerald-900/50 rounded'>Interactive</span>
+						</button>
 					</nav>
 
 					{/* Social Links Footer */}
