@@ -84,10 +84,8 @@ const TopAchievement = () => {
                             <Image
                                 src={mainAchievement.imageURL}
                                 alt="GSSoC Logo"
-                                layout="fill"
-                                objectFit="contain"
-                                loader={({ src }) => src}
-                                unoptimized={true}
+                                fill
+                                className="object-contain"
                             />
                         </div>
                     )}

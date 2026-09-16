@@ -17,10 +17,7 @@ function SquareLogo({ imageURL }: StorySquareLogoProps) {
 						alt='Logo'
 						height={200}
 						width={200}
-						objectFit='cover'
-						placeholder='blur'
-						loader={({ src }) => src}
-						unoptimized={true}
+						className='object-cover'
 					/>
 				</div>
 			)}

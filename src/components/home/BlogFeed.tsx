@@ -214,8 +214,6 @@ const BlogFeed = () => {
                                                     width={800}
                                                     height={500}
                                                     className="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-[1.02]"
-                                                    unoptimized={true}
-                                                    loader={({ src }: { src: string }) => src}
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-black/0 pointer-events-none" />
                                             </div>

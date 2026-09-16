@@ -4,8 +4,7 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	images: {
-		loader: 'custom',
-		loaderFile: './imageLoader.js',
+		unoptimized: true,
 	},
 	webpack(config) {
 		config.module.rules.push({

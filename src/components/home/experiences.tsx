@@ -72,8 +72,6 @@ export default function Experiences() {
 														width={48} 
 														height={48}
 														className='w-full h-full object-contain'
-														unoptimized={true}
-														loader={({ src }: { src: string }) => src}
 													/>
 												) : (
 													<div className='w-full h-full bg-zinc-700 flex items-center justify-center text-white/20 font-bold uppercase text-xl'>

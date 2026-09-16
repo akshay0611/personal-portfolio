@@ -58,11 +58,8 @@ const CertificationBar = () => {
                                             <Image
                                                 src={cert.imageURL}
                                                 alt={`${cert.orgName} Logo - Akshay Kumar`}
-                                                layout='fill'
-                                                objectFit='contain'
-                                                className='opacity-70 group-hover:opacity-100 transition-opacity'
-                                                loader={({ src }) => src}
-                                                unoptimized={true}
+                                                fill
+                                                className='opacity-70 group-hover:opacity-100 transition-opacity object-contain'
                                             />
                                         )}
                                     </div>

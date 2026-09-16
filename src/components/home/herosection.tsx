@@ -49,8 +49,6 @@ export default function HeroSection() {
 										width={16} 
 										height={16} 
 										className="rounded-sm" 
-										loader={({ src }) => src}
-										unoptimized={true}
 									/>
 								</div>
 								<span className='text-white/85 tracking-wide'>
@@ -124,9 +122,6 @@ export default function HeroSection() {
 						alt='Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products | Google Cloud Innovator'
 						loading='eager'
 						priority={true}
-						unoptimized={true}
-						placeholder='blur'
-						loader={({ src }) => src}
 					/>
 					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-black/25'></div>
 				</div>
