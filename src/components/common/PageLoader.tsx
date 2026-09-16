@@ -1,28 +1,18 @@
+'use client';
+
 import { Transition } from '@headlessui/react';
-import Router from 'next/router';
-import { useState, useEffect } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
+import { useState, useEffect, Suspense } from 'react';
 import { ImSpinner10 } from 'react-icons/im';
 
-export default function PageLoader() {
+function PageLoaderContent() {
 	const [isLoading, setIsLoading] = useState(false);
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
 
 	useEffect(() => {
-		Router.events.on('routeChangeStart', (url, state) => {
-			if (state?.shallow) return;
-			setIsLoading(true);
-		});
-
-		Router.events.on('routeChangeComplete', (url, state) => {
-			if (state?.shallow) return;
-			setIsLoading(false);
-		});
-
-		Router.events.on('routeChangeError', (url, state) => {
-			if (state?.shallow) return;
-			setIsLoading(false);
-		});
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [Router]);
+		setIsLoading(false);
+	}, [pathname, searchParams]);
 
 	return (
 		<>
@@ -44,5 +34,13 @@ export default function PageLoader() {
 				</Transition>
 			}
 		</>
+	);
+}
+
+export default function PageLoader() {
+	return (
+		<Suspense fallback={null}>
+			<PageLoaderContent />
+		</Suspense>
 	);
 }

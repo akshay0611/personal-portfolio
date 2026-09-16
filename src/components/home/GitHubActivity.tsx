@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { FaGithub, FaCodeBranch, FaStar, FaCode } from 'react-icons/fa';
 import { motion } from 'framer-motion';

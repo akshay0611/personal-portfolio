@@ -1,25 +1,29 @@
-import React, { useEffect, useState } from 'react';
+'use client';
+
+import React, { useEffect, useState, Suspense } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { storyTypes } from 'utils/developerStory';
 import {
 	DeveloperStoryDataProps,
 } from 'utils/developerStory';
-import { useRouter } from 'next/router';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 
 interface DeveloperStoryFilterProps {
 	setFilteredStoryData: Function;
 	developerStoryData: DeveloperStoryDataProps;
 }
 
-export const DeveloperStoryFilter = ({
+function DeveloperStoryFilterContent({
 	setFilteredStoryData,
 	developerStoryData,
-}: DeveloperStoryFilterProps) => {
+}: DeveloperStoryFilterProps) {
 	const router = useRouter();
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
 	const [chosenType, setChosenType] = useState('featured');
 
-	const filterData = () => {
-		switch (chosenType) {
+	const filterData = (type: string) => {
+		switch (type) {
 			case 'all':
 				setFilteredStoryData(developerStoryData);
 				break;
@@ -31,7 +35,7 @@ export const DeveloperStoryFilter = ({
 			default:
 				setFilteredStoryData(
 					developerStoryData.filter(
-						(story) => story.storyType === chosenType
+						(story) => story.storyType === type
 					)
 				);
 		}
@@ -39,34 +43,23 @@ export const DeveloperStoryFilter = ({
 
 	const handleChoiceChange = (choice: string) => {
 		setChosenType(choice);
-		router.push(
-			{
-				pathname: '/story',
-				query: { filter: choice },
-			},
-			undefined,
-			{ shallow: true }
-		);
+		filterData(choice);
+		const params = new URLSearchParams(searchParams ? searchParams.toString() : '');
+		params.set('filter', choice);
+		router.push(`${pathname}?${params.toString()}`);
 	};
 
 	useEffect(() => {
-		filterData();
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [chosenType]);
-
-	useEffect(() => {
-		if (!router.isReady) return;
-
-		const {
-			query: { filter },
-		} = router;
-		if (Object.keys(storyTypes).includes(filter as string) || filter === 'all' || filter === 'featured') {
-			handleChoiceChange(filter as string);
+		const filter = searchParams ? searchParams.get('filter') : null;
+		if (filter && (Object.keys(storyTypes).includes(filter) || filter === 'all' || filter === 'featured')) {
+			setChosenType(filter);
+			filterData(filter);
 		} else {
-			handleChoiceChange('featured');
+			setChosenType('featured');
+			filterData('featured');
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [router.isReady]);
+	}, [searchParams]);
 
 	return (
 		<RadioGroup
@@ -145,5 +138,13 @@ export const DeveloperStoryFilter = ({
 				})}
 			</div>
 		</RadioGroup>
+	);
+}
+
+export const DeveloperStoryFilter = (props: DeveloperStoryFilterProps) => {
+	return (
+		<Suspense fallback={null}>
+			<DeveloperStoryFilterContent {...props} />
+		</Suspense>
 	);
 };

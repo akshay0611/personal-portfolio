@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';

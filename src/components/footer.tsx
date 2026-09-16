@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import Lottie from 'components/common/LottieWrapper';

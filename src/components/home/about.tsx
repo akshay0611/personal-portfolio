@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Lottie from 'components/common/LottieWrapper';
 import AboutMeAnimation from 'assets/lottie/about-me.json';

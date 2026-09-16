@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 const StructuredData = () => {
 	const personSchema = {
 		'@context': 'https://schema.org',
@@ -64,7 +62,7 @@ const StructuredData = () => {
 	};
 
 	return (
-		<Head>
+		<>
 			<script
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
@@ -73,7 +71,7 @@ const StructuredData = () => {
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
 			/>
-		</Head>
+		</>
 	);
 };
 

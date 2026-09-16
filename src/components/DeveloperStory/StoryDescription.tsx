@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { MdOutlineExpandLess, MdOutlineExpandMore } from 'react-icons/md';
 import ReactMarkdown from 'react-markdown';

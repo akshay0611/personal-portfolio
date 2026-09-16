@@ -1,3 +1,5 @@
+'use client';
+
 import React, { ReactNode, useRef } from 'react';
 
 interface Props extends React.ComponentPropsWithoutRef<'button'> {

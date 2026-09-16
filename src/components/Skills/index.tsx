@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { curatedSkills, secondarySkills } from 'utils/constants/Skills';
 import SkillBadge from 'components/common/SkillBadge';

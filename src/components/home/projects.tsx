@@ -1,3 +1,5 @@
+'use client';
+
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import React from 'react';
