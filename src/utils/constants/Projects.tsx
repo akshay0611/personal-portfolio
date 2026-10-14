@@ -307,5 +307,38 @@ This project demonstrates expertise in **B2B e-commerce architecture**, **paymen
 		],
 	},
 
+	mbtLearningApp: {
+		fromDate: 'Jul 2026',
+		toDate: 'Oct 2026',
+		projectName: 'MBT Learning App – Full-Stack LMS',
+		orgName: 'Tensorik Technologies • Client: MBT Institute',
+		imageURL: mbtImg,
+		featured: true,
+		description: `
+Client Project · Tensorik Technologies — Shipped to Google Play (com.tensorik.mbt_lms, Education, v1.0.1+2, updated Oct 7, 2026)
+
+Built a production LMS monorepo spanning 3 deployables: Flutter learner app, NestJS API, Next.js admin — serving live classes, recordings, course commerce, certificates, and device-locked content protection.
+
+![](https://play-lh.googleusercontent.com/Jl-Jsqpe9ujxxpGaJG0EZ96QgEPmarfC0HFk1PObvKc5SupQKKol_IHsrG0z0MR1utLflN3-_7FI0iejobwCxQc=w526-h296-rw)
+
+### Key Features:
+- **Live-class pipeline**: Zoom OAuth + scheduled sessions, daily schedule view, deep-linked player, auto-published recordings with chaptered playback (video_player/chewie/youtube_player_iframe).
+- **Commerce engine**: Course store with free previews, cart + grouped checkout, dual Razorpay tracks (Hardware vs Software keys), server-validated coupons scoped per-track to block cross-category exploits, invoices per purchase.
+- **Content protection**: Single-active-device binding via device fingerprint + secure storage, admin-approved transfer requests, no-screenshot flag, verified OTP/Google sessions tied to phone number.
+- **Learner system**: Dashboard, My Learning grid, Continue Watching, expiring-course alerts, global search (courses/recordings/teachers), wishlist, notes, certificates, notification center with per-category preferences.
+- **Admin console**: Course/syllabus/resource/renewal-plan CRUD, live-class scheduling, coupon/payment/billing reconciliation, device-request approvals, support-ticket triage, role-based Supabase Auth + Zod validation.
+
+### Architectural Highlights:
+- **Mobile (Flutter 3.11/Dart)**: go_router navigation, 30 services/providers, Supabase Auth (OTP + Google), Razorpay Flutter + web stub, FCM + flutter_local_notifications, cached_network_image/shimmer for 60fps lists.
+- **Backend (NestJS 11)**: Modular domains for auth, courses, enrollments, payments, coupons, devices, certificates, notifications, search, support; BullMQ + Redis queues for jobs; class-validator DTOs; Jest unit + e2e.
+- **Data (Supabase Postgres + RLS + RPC)**: Profiles, devices + change-requests, courses/sections/lessons, carts, enrollments, payments, coupons, invoices, sessions/recordings, wishlists, notifications, support tickets — row-level isolation per learner.
+- **Media & integrations**: Cloudinary/S3 asset pipeline with signed uploads, AI Hindi/English dubbing hooks, SendGrid/SMS OTP fallback, Firebase Admin push fan-out.
+
+Shipped end-to-end payment integrity, piracy-resistant delivery, and operator tooling for a training institute's entire enrollment → live class → certification loop.
+		`,
+		viewUrl: 'https://play.google.com/store/apps/details?id=com.tensorik.mbt_lms',
+		techStack: ['skill_flutter', 'skill_dart', 'skill_nestjs', 'skill_nextjs', 'skill_typescript', 'skill_supabase', 'skill_firebase', 'skill_razorpay'],
+	},
+
 
 };

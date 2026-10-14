@@ -34,6 +34,9 @@ import {
 	SiNeo4J,
 	SiOracle,
 	SiGooglecloud,
+	SiFlutter,
+	SiDart,
+	SiNestjs,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaSearch, FaChartLine, FaUsers, FaLightbulb, FaShieldAlt, FaCogs, FaCode } from 'react-icons/fa';
@@ -214,6 +217,11 @@ const projectSkills: skillInterface[] = [
 	{ name: 'ShadCN', icon: <FaCode />, bgcolor: '#FFFFFF', id: 'skill_shadcn', link: 'https://ui.shadcn.com' },
 	{ name: 'Framer Motion', icon: <SiFramer />, bgcolor: '#0055FF', id: 'skill_framer_motion', link: 'https://www.framer.com/motion/' },
 	{ name: 'Supabase', icon: <SiSupabase />, bgcolor: '#3ECF8E', id: 'skill_supabase', link: 'https://supabase.com' },
+	{ name: 'Flutter', icon: <SiFlutter />, bgcolor: '#02569B', id: 'skill_flutter', link: 'https://flutter.dev' },
+	{ name: 'Dart', icon: <SiDart />, bgcolor: '#0175C2', id: 'skill_dart', link: 'https://dart.dev' },
+	{ name: 'NestJS', icon: <SiNestjs />, bgcolor: '#E0234E', id: 'skill_nestjs', link: 'https://nestjs.com' },
+	{ name: 'Firebase', icon: <SiFirebase />, bgcolor: '#FFCA28', id: 'skill_firebase', link: 'https://firebase.google.com' },
+	{ name: 'Razorpay', icon: <FaPlug />, bgcolor: '#3395FF', id: 'skill_razorpay', link: 'https://razorpay.com' },
 ];
 
 const certificateSkills: skillInterface[] = [
