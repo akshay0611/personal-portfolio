@@ -162,6 +162,12 @@ export const fullStory: DeveloperStoryDataProps = [
     },
 
     {
+        id: 'project-mbtLearningApp',
+        storyType: 'project',
+        data: allProjects.mbtLearningApp,
+    },
+
+    {
         id: 'cert-microsoftAdvertisingCert',
         storyType: 'certificate',
         data: allCertificates.microsoftAdvertisingCert,
