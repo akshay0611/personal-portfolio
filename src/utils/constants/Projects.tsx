@@ -200,6 +200,8 @@ Designed and developed the official digital platform for MBT Mobile Best Trainin
 
 The platform presents MBT's training programs, course information, student success stories, batch galleries, training facilities, and enquiry/admission workflows through a modern, responsive web experience.
 
+![](/images/project/mbt-showcase.jpeg)
+
 ### Key Features:
 - **Course Discovery**: Structured presentation of MBT's fresher and advanced chip-level repair training programs with detailed course information.
 - **Student Success**: Dynamic student testimonials supporting text and video-based reviews with database-driven content management.
@@ -240,6 +242,8 @@ Client Project · Tensorik Technologies
 
 Designed and developed the digital platform for GreenLine Car Travels, a transportation and car rental service operating across Andhra Pradesh and Telangana. The platform provides customers with a structured way to explore vehicle categories, review fleet options, discover tour packages, view tariffs, and initiate booking enquiries through a modern, responsive web experience.
 
+![](/images/project/greenline-showcase.jpeg)
+
 ### Key Features:
 - **Fleet Discovery**: Structured presentation of multiple vehicle categories with pricing, specifications, and service information.
 - **Tour Packages**: Dedicated travel packages with itineraries, destinations, pricing, and journey details.
@@ -279,6 +283,8 @@ This project demonstrates expertise in **service-based business platforms**, **b
 Client Project · Tensorik Technologies
 
 Designed and developed a B2B e-commerce and service platform for Khaja Mobiles, a Vijayawada-based mobile accessories wholesaler and professional repair service provider. The platform brings wholesale purchasing, product discovery, bulk ordering, repair services, inventory management, and online payments into a unified digital experience.
+
+![](/images/project/khajamobiles-showcase.jpeg)
 
 ### Key Features:
 - **Wholesale Commerce**: Tiered pricing and bulk ordering workflows designed for distributor and business customers.
