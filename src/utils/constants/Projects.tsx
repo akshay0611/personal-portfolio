@@ -233,6 +233,7 @@ This project demonstrates expertise in **client-facing digital product developme
 	projectName: 'GreenLine Car Travels',
 	orgName: 'Tensorik Technologies • Client: Mr. Nagendra',
 	imageURL: greenlineImg,
+	logoFit: 'contain',
 	featured: true,
 	description: `
 Client Project · Tensorik Technologies
@@ -272,6 +273,7 @@ This project demonstrates expertise in **service-based business platforms**, **b
 	projectName: 'Khaja Mobiles',
 	orgName: 'Tensorik Technologies • Client: Mr. Khaja',
 	imageURL: khajaMobilesImg,
+	logoFit: 'contain',
 	featured: true,
 	description: `
 Client Project · Tensorik Technologies

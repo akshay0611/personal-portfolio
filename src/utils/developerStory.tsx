@@ -125,6 +125,7 @@ export interface ProjectProps {
 	projectName: string;
 	orgName: string;
 	imageURL?: StaticImageData;
+	logoFit?: 'cover' | 'contain';
 	description: string;
 	repoUrl?: string;
 	viewUrl?: string;

@@ -9,6 +9,7 @@ export default function Project({
 	projectName = 'No project name',
 	orgName = 'No org name',
 	imageURL,
+	logoFit = 'cover',
 	description,
 	repoUrl,
 	viewUrl,
@@ -19,7 +20,7 @@ export default function Project({
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
-				<StoryComponent.SquareLogo imageURL={imageURL} />
+				<StoryComponent.SquareLogo imageURL={imageURL} fit={logoFit} />
 				<div className='flex flex-col'>
 					<h3 className='w-full font-semibold text-xl'>
 						{projectName}

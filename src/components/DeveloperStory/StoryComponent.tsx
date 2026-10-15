@@ -5,23 +5,34 @@ import Link from 'next/link';
 // Story Square Logo Image
 interface StorySquareLogoProps {
 	imageURL?: StaticImageData;
+	fit?: 'cover' | 'contain';
 }
 
-function SquareLogo({ imageURL }: StorySquareLogoProps) {
+function SquareLogo({ imageURL, fit = 'cover' }: StorySquareLogoProps) {
+	if (!imageURL) return null;
+	if (fit === 'contain') {
+		return (
+			<div className='w-20 h-20 shrink-0 flex items-center justify-center p-2 rounded-[14px] bg-white border border-black/10 overflow-hidden'>
+				<Image
+					src={imageURL}
+					alt='Logo'
+					height={200}
+					width={200}
+					className='w-full h-full object-contain'
+				/>
+			</div>
+		);
+	}
 	return (
-		<>
-			{imageURL && (
-				<div className='w-16 md:w-24 overflow-hidden aspect-squar shrink-0'>
-					<Image
-						src={imageURL}
-						alt='Logo'
-						height={200}
-						width={200}
-						className='object-cover'
-					/>
-				</div>
-			)}
-		</>
+		<div className='w-16 md:w-24 overflow-hidden aspect-squar shrink-0'>
+			<Image
+				src={imageURL}
+				alt='Logo'
+				height={200}
+				width={200}
+				className='object-cover'
+			/>
+		</div>
 	);
 }
 
