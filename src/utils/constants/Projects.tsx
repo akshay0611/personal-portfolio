@@ -7,7 +7,7 @@ import imprintwordsImg from '../../../public/images/project/imprintwords.png';
 import tanjoreCoffeeImg from '../../../public/images/project/tanjorecoffee.png';
 import finTrackImg from '../../../public/images/project/fintrack.png';
 import mbtImg from '../../../public/images/project/mbt.png';
-import greenlineImg from '../../../public/images/project/greenline.png';
+import greenlineImg from '../../../public/images/project/greenline.webp';
 import khajaMobilesImg from '../../../public/images/project/khajamobiles.png';
 export const allProjects: { [key: string]: ProjectProps } = {
 
