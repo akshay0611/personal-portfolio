@@ -8,7 +8,7 @@ import tanjoreCoffeeImg from '../../../public/images/project/tanjorecoffee.png';
 import finTrackImg from '../../../public/images/project/fintrack.png';
 import mbtImg from '../../../public/images/project/mbt.png';
 import greenlineImg from '../../../public/images/project/greenline.webp';
-import khajaMobilesImg from '../../../public/images/project/khajamobiles.png';
+import khajaMobilesImg from '../../../public/images/project/khajamobiles.webp';
 export const allProjects: { [key: string]: ProjectProps } = {
 
 
