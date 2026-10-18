@@ -9,6 +9,7 @@ import finTrackImg from '../../../public/images/project/fintrack.png';
 import mbtImg from '../../../public/images/project/mbt.png';
 import greenlineImg from '../../../public/images/project/greenline.webp';
 import khajaMobilesImg from '../../../public/images/project/khajamobiles.webp';
+import eduLinkUpImg from '../../../public/images/project/edulinkup.png';
 export const allProjects: { [key: string]: ProjectProps } = {
 
 
@@ -347,6 +348,51 @@ Shipped end-to-end payment integrity, piracy-resistant delivery, and operator to
 		viewUrl: 'https://play.google.com/store/apps/details?id=com.tensorik.mbt_lms',
 		techStack: ['skill_flutter', 'skill_dart', 'skill_nestjs', 'skill_nextjs', 'skill_typescript', 'skill_supabase', 'skill_firebase', 'skill_razorpay'],
 	},
+
+
+eduLinkUp: {
+	fromDate: 'Nov 2025',
+	toDate: 'Present',
+	projectName: 'EduLinkUp — Full-Stack Platform Engineering',
+	orgName: 'EduLinkUp • Lead Developer',
+	imageURL: eduLinkUpImg,
+	logoFit: 'contain',
+	featured: true,
+	description: `
+Product Platform · EduLinkUp
+
+Architected and engineered EduLinkUp into a unified education and developer ecosystem, bringing learning, coding practice, open-source contributions, career opportunities, and community-built applications into a single Next.js platform.
+
+### Core Product Systems:
+- **Learning Platform**: Chapter-based courses, progress tracking, test series, assessments, and verifiable certificates with QR-based validation.
+- **ELUCode & Labs**: In-browser coding environment with submission judging, complemented by hands-on Linux and Python labs.
+- **Developer App Store**: Community-driven discovery of developer tools, AI assistants, games, and open-source projects, with bookmarks and store analytics.
+- **ELUSOC**: Open-source contribution program featuring leaderboards, partner tiers, badges, bonus points, and certificates.
+- **Careers & Recruitment**: Internship and job listings, application workflows, offer-letter generation, and role-based administration.
+- **Payments & Entitlements**: Razorpay-powered subscriptions, premium access controls, and referral/rewards workflows with rate limiting and auditability.
+- **Community & Content**: Blogs, events, campus ambassador programs, newsletters, and DSA practice.
+- **Administration**: Centralized management of users, courses, internships, jobs, coupons, and platform analytics.
+
+### Engineering & Architecture:
+- **Application**: Next.js 16 App Router, React 19, TypeScript, Tailwind CSS, and a Radix-based component system.
+- **Data & Security**: Supabase PostgreSQL, authentication, Row Level Security (RLS), storage, and database-backed business logic.
+- **Infrastructure**: Google Cloud Run autoscaling behind Cloudflare, with Sentry monitoring, rate limiting, and SSO integration.
+- **Code Execution**: Monaco-based editor integrated with a pluggable multi-language judging system and sandboxed execution environments.
+- **Integrations & Quality**: Razorpay, transactional email via React Email and Brevo/Resend, PDF and certificate generation, and Playwright end-to-end testing.
+
+Evolved from a learning platform into a broader developer ecosystem, supporting 2,700+ monthly active users across 100+ countries, onboarding 100+ interns, and accommodating 300+ new signups per month.
+	`,
+	viewUrl: 'https://edulinkup.dev',
+	techStack: [
+		'skill_nextjs',
+		'skill_reactjs',
+		'skill_typescript',
+		'skill_tailwindcss',
+		'skill_supabase',
+		'skill_framer_motion',
+		'skill_razorpay',
+	],
+},
 
 
 };

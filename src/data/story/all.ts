@@ -168,6 +168,12 @@ export const fullStory: DeveloperStoryDataProps = [
     },
 
     {
+        id: 'project-eduLinkUp',
+        storyType: 'project',
+        data: allProjects.eduLinkUp,
+    },
+
+    {
         id: 'cert-microsoftAdvertisingCert',
         storyType: 'certificate',
         data: allCertificates.microsoftAdvertisingCert,
