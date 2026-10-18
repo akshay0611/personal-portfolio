@@ -318,7 +318,7 @@ This project demonstrates expertise in **B2B e-commerce architecture**, **paymen
 	mbtLearningApp: {
 		fromDate: 'Jul 2026',
 		toDate: 'Oct 2026',
-		projectName: 'MBT Learning App – Full-Stack LMS',
+		projectName: 'MBT Institute LMS — Mobile Learning Platform',
 		orgName: 'Tensorik Technologies • Client: MBT Institute',
 		imageURL: mbtImg,
 		featured: true,
@@ -327,7 +327,7 @@ Client Project · Tensorik Technologies — Shipped to Google Play (com.tensorik
 
 Built a production LMS monorepo spanning 3 deployables: Flutter learner app, NestJS API, Next.js admin — serving live classes, recordings, course commerce, certificates, and device-locked content protection.
 
-![](https://play-lh.googleusercontent.com/Jl-Jsqpe9ujxxpGaJG0EZ96QgEPmarfC0HFk1PObvKc5SupQKKol_IHsrG0z0MR1utLflN3-_7FI0iejobwCxQc=w526-h296-rw)
+![](/images/project/mbtapp-showcase.jpeg)
 
 ### Key Features:
 - **Live-class pipeline**: Zoom OAuth + scheduled sessions, daily schedule view, deep-linked player, auto-published recordings with chaptered playback (video_player/chewie/youtube_player_iframe).
