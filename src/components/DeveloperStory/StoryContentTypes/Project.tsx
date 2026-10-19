@@ -13,6 +13,7 @@ export default function Project({
 	description,
 	repoUrl,
 	viewUrl,
+	caseStudyUrl,
 	techStack = [],
 	showReadMore = true,
 	...props
@@ -45,6 +46,9 @@ export default function Project({
 			)}
 			<StoryDescription showReadMore={showReadMore}>{description}</StoryDescription>
 			<div className='flex gap-2'>
+				<StoryComponent.Button url={caseStudyUrl} variant='primary'>
+					Case Study
+				</StoryComponent.Button>
 				<StoryComponent.Button url={repoUrl}>
 					Code
 				</StoryComponent.Button>

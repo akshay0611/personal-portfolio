@@ -346,6 +346,7 @@ Built a production LMS monorepo spanning 3 deployables: Flutter learner app, Nes
 Shipped end-to-end payment integrity, piracy-resistant delivery, and operator tooling for a training institute's entire enrollment → live class → certification loop.
 		`,
 		viewUrl: 'https://play.google.com/store/apps/details?id=com.tensorik.mbt_lms',
+		caseStudyUrl: '/case-studies/mbt-learning-lms-piracy-protection',
 		techStack: ['skill_flutter', 'skill_dart', 'skill_nestjs', 'skill_nextjs', 'skill_typescript', 'skill_supabase', 'skill_firebase', 'skill_razorpay'],
 	},
 
@@ -383,6 +384,7 @@ Architected and engineered EduLinkUp into a unified education and developer ecos
 Evolved from a learning platform into a broader developer ecosystem, supporting 2,700+ monthly active users across 100+ countries, onboarding 100+ interns, and accommodating 300+ new signups per month.
 	`,
 	viewUrl: 'https://edulinkup.dev',
+	caseStudyUrl: '/case-studies/edulinkup-learning-platform',
 	techStack: [
 		'skill_nextjs',
 		'skill_reactjs',

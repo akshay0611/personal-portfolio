@@ -129,6 +129,7 @@ export interface ProjectProps {
 	description: string;
 	repoUrl?: string;
 	viewUrl?: string;
+	caseStudyUrl?: string;
 	techStack?: string[];
 }
 

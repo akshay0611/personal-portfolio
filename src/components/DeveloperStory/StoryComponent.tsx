@@ -58,24 +58,36 @@ const EmptySpace = () => <div className='w-full h-full' />;
 // Common Button for all Developer Story Content Types
 interface StoryButtonProps extends React.HTMLAttributes<HTMLAnchorElement> {
 	url?: string;
+	variant?: 'default' | 'primary';
 	children?: React.ReactNode;
 }
 
-const Button = ({ url, children = 'View', ...props }: StoryButtonProps) => {
+const Button = ({
+	url,
+	variant = 'default',
+	children = 'View',
+	...props
+}: StoryButtonProps) => {
+	if (!url) return null;
+
+	const isExternal = /^https?:\/\//.test(url);
+	const baseClasses =
+		'text-sm uppercase transition border-1 px-2 py-0.5 rounded-sm flex-center';
+	const variantClasses =
+		variant === 'primary'
+			? 'bg-blue-800 text-white border-blue-800 hover:bg-blue-900 hover:text-white'
+			: 'bg-white text-black hover:bg-blue-900 hover:text-white';
+
 	return (
-		<>
-			{url && (
-				<Link legacyBehavior passHref href={url}>
-					<a
-						target='_blank'
-						className='text-sm bg-white uppercase hover:bg-blue-900 hover:text-white border-1 transition text-black px-2 py-0.5 rounded-sm flex-center'
-						{...props}
-					>
-						{children}
-					</a>
-				</Link>
-			)}
-		</>
+		<Link
+			href={url}
+			target={isExternal ? '_blank' : undefined}
+			rel={isExternal ? 'noopener noreferrer' : undefined}
+			className={`${baseClasses} ${variantClasses}`}
+			{...props}
+		>
+			{children}
+		</Link>
 	);
 };
 
