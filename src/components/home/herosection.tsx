@@ -41,7 +41,14 @@ export default function HeroSection() {
 							MERN · Next.js · AI integrations · Google Cloud
 						</div>
 						<div className='flex items-center gap-2 mb-7 justify-center md:justify-start'>
-							<div className='flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs border border-white/15 bg-white/[0.03]'>
+							<a
+								href={SocialUrls.googleFeature}
+								target='_blank'
+								rel='noopener noreferrer'
+								onClick={() => trackSocialClick('Google for Developers Feature')}
+								aria-label='See the Google for Developers feature featuring Akshay Kumar on LinkedIn'
+								className='group flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs border border-white/15 bg-white/[0.03] hover:border-white/35 hover:bg-white/[0.07] transition-colors'
+							>
 								<div className='relative shrink-0'>
 									<Image 
 										src={googleImg} 
@@ -51,10 +58,10 @@ export default function HeroSection() {
 										className="rounded-sm" 
 									/>
 								</div>
-								<span className='text-white/85 tracking-wide'>
+								<span className='text-white/85 tracking-wide group-hover:text-white transition-colors'>
 									Featured by Google for Developers
 								</span>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div className='flex gap-2 mb-6 text-xl justify-center md:justify-start'>

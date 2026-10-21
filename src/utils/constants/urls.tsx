@@ -4,6 +4,7 @@ export const SocialUrls = {
 	twitter: 'https://x.com/Aksh0605',
 	email: 'mailto:akshay.allen26200@gmail.com',
 	resume: '',
+	googleFeature: 'https://lnkd.in/p/d6FCZgpu',
 	hackerrank: 'https://www.hackerrank.com/profile/akshay0611',
 	freeCodeCamp: 'https://www.freecodecamp.org/akshay0611',
 	discord: 'https://discordapp.com/users/akshay0605',

@@ -5,7 +5,7 @@ I work across the full lifecycle of an application — from clean, responsive fr
 
 My core stack includes **MERN and Next.js**, with hands-on experience integrating **AI/ML capabilities and automation** into real products. I also work extensively with **Google Cloud**, building cloud-native solutions designed for production environments.
 
-I’ve been featured by **Google for Developers** for advocating clean, readable, and maintainable code — because good software is built for teams, not just machines.
+I’ve been featured by **[Google for Developers](https://lnkd.in/p/d6FCZgpu)** for advocating clean, readable, and maintainable code — because good software is built for teams, not just machines.
 
 Beyond building, I’ve scaled products to serve **5,700+ monthly active users** globally and led a technical team of **39+ developers and interns**, setting high standards for engineering excellence and measurable impact.
 `;
