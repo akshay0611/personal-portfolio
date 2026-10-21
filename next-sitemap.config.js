@@ -2,7 +2,7 @@
 module.exports = {
 	siteUrl: "https://connectwithakshay.netlify.app/",
 	changefreq: 'daily',
-	exclude: ['/api/*'],
+	exclude: ['/api/*', '/writing/rss.xml'],
 	generateRobotsTxt: true,
 	robotsTxtOptions: {
 		policies: [
