@@ -1,8 +1,17 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import Footer from 'components/footer';
+import { Badge } from 'components/ui/badge';
+import AuthorCard from 'components/writing/AuthorCard';
+import CopyLinkButton from 'components/writing/CopyLinkButton';
+import ReadingProgress from 'components/writing/ReadingProgress';
+import TableOfContents from 'components/writing/TableOfContents';
+import WritingBackdrop from 'components/writing/WritingBackdrop';
 import WritingBody from 'components/writing/WritingBody';
+import { extractHeadings } from 'utils/writingHeadings';
 import { formatPostDate, getAllPosts, getPostBySlug } from 'utils/writing';
 
 const BASE_URL =
@@ -56,6 +65,11 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 		notFound();
 	}
 
+	const posts = getAllPosts();
+	const index = posts.findIndex((item) => item.slug === post.slug);
+	const newer = index > 0 ? posts[index - 1] : null;
+	const older = index >= 0 && index < posts.length - 1 ? posts[index + 1] : null;
+	const headings = extractHeadings(post.content);
 	const url = `${BASE_URL}/writing/${post.slug}`;
 
 	const articleSchema = {
@@ -114,45 +128,72 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
 			/>
-			<article className='home-section bg-dark-gray'>
-				<div className='max-section-width flex flex-col gap-8'>
+			<ReadingProgress />
+
+			<article className='home-section relative overflow-hidden bg-dark-gray'>
+				<WritingBackdrop className='h-[560px]' />
+
+				<div className='max-section-width relative flex flex-col gap-8'>
 					<nav
 						aria-label='Breadcrumb'
-						className='text-xs md:text-sm text-gray-400 flex items-center gap-1.5 flex-wrap'
+						className='flex flex-wrap items-center gap-1.5 text-xs text-gray-400 md:text-sm'
 					>
-						<Link href='/' className='hover:text-white transition'>
+						<Link href='/' className='transition-colors hover:text-white'>
 							Home
 						</Link>
 						<span aria-hidden='true'>/</span>
-						<Link href='/writing' className='hover:text-white transition'>
+						<Link
+							href='/writing'
+							className='transition-colors hover:text-white'
+						>
 							Writing
 						</Link>
 						<span aria-hidden='true'>/</span>
-						<span className='text-gray-200'>{post.title}</span>
+						<span className='line-clamp-1 text-gray-200'>{post.title}</span>
 					</nav>
 
-					<header className='flex flex-col gap-3'>
-						<h1 className='text-2xl md:text-3xl lg:text-4xl font-bold leading-tight'>
+					<header className='flex max-w-3xl flex-col gap-4'>
+						{post.tags.length > 0 && (
+							<div className='flex flex-wrap gap-2'>
+								{post.tags.map((tag) => (
+									<Badge key={tag} variant='blue'>
+										{tag}
+									</Badge>
+								))}
+							</div>
+						)}
+
+						<h1 className='text-3xl font-bold leading-[1.1] tracking-tight md:text-4xl lg:text-5xl'>
 							{post.title}
 						</h1>
-						<div className='flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] md:text-xs text-gray-500 uppercase tracking-wide'>
-							<time dateTime={post.date}>{formatPostDate(post.date)}</time>
-							<span aria-hidden='true'>·</span>
-							<span>{post.readTime}</span>
-							{post.tags.length > 0 && (
-								<>
-									<span aria-hidden='true'>·</span>
-									<span className='normal-case text-blue-400/80'>
-										{post.tags.join(' · ')}
-									</span>
-								</>
-							)}
-						</div>
+
 						{post.description && (
-							<p className='text-sm md:text-base text-gray-400 font-light leading-relaxed'>
+							<p className='text-base font-light leading-relaxed text-gray-400 md:text-lg'>
 								{post.description}
 							</p>
 						)}
+
+						<div className='mt-2 flex flex-wrap items-center gap-3 border-t border-white/10 pt-5'>
+							<Image
+								src='/images/akshay1.png'
+								alt='Akshay Kumar'
+								width={40}
+								height={40}
+								className='h-10 w-10 rounded-full object-cover ring-1 ring-white/15'
+							/>
+							<div className='text-xs leading-relaxed'>
+								<p className='font-medium text-gray-200'>Akshay Kumar</p>
+								<p className='text-gray-500'>
+									<time dateTime={post.date}>
+										{formatPostDate(post.date)}
+									</time>
+									<span aria-hidden='true'> · </span>
+									{post.readTime}
+								</p>
+							</div>
+							<CopyLinkButton className='ml-auto' />
+						</div>
+
 						{post.canonical && post.canonical !== url && (
 							<p className='text-xs text-gray-500'>
 								Originally published at{' '}
@@ -160,7 +201,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 									href={post.canonical}
 									target='_blank'
 									rel='noopener noreferrer'
-									className='text-blue-400 hover:text-blue-300 underline underline-offset-2'
+									className='text-blue-400 underline decoration-blue-500/40 underline-offset-2 transition-colors hover:text-blue-300'
 								>
 									the original source
 								</a>
@@ -169,22 +210,65 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 						)}
 					</header>
 
-					<WritingBody content={post.content} />
+					<div className='mt-2 grid gap-10 lg:grid-cols-[minmax(0,1fr)_220px] lg:gap-14'>
+						<div className='min-w-0 max-w-3xl'>
+							<WritingBody content={post.content} />
+						</div>
+						<TableOfContents headings={headings} />
+					</div>
 
-					<footer className='border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4'>
-						<p className='text-sm text-gray-400 font-light'>
+					<AuthorCard />
+
+					{(newer || older) && (
+						<nav
+							aria-label='More posts'
+							className='grid gap-4 border-t border-white/10 pt-6 sm:grid-cols-2'
+						>
+							{older && (
+								<Link
+									href={`/writing/${older.slug}`}
+									className='group rounded-xl border border-white/10 bg-zinc-950/50 p-5 transition-colors hover:border-blue-500/40'
+								>
+									<span className='inline-flex items-center gap-1.5 text-2xs uppercase tracking-[0.2em] text-gray-500'>
+										<FiArrowLeft className='h-3 w-3' aria-hidden='true' />
+										Older
+									</span>
+									<p className='mt-2 text-sm font-medium leading-snug text-gray-200 transition-colors group-hover:text-blue-300'>
+										{older.title}
+									</p>
+								</Link>
+							)}
+							{newer && (
+								<Link
+									href={`/writing/${newer.slug}`}
+									className='group rounded-xl border border-white/10 bg-zinc-950/50 p-5 text-left transition-colors hover:border-blue-500/40 sm:text-right'
+								>
+									<span className='inline-flex items-center gap-1.5 text-2xs uppercase tracking-[0.2em] text-gray-500 sm:justify-end'>
+										Newer
+										<FiArrowRight className='h-3 w-3' aria-hidden='true' />
+									</span>
+									<p className='mt-2 text-sm font-medium leading-snug text-gray-200 transition-colors group-hover:text-blue-300'>
+										{newer.title}
+									</p>
+								</Link>
+							)}
+						</nav>
+					)}
+
+					<footer className='flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6'>
+						<p className='text-sm font-light text-gray-400'>
 							Building something similar? Let&apos;s talk.
 						</p>
 						<div className='flex flex-wrap gap-2'>
 							<Link
 								href='/writing'
-								className='text-sm bg-transparent uppercase hover:bg-blue-900 hover:text-white border-1 border-white/30 transition text-white px-3 py-1 rounded-sm flex-center'
+								className='inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-medium uppercase tracking-wide text-gray-200 transition-colors hover:border-white/40 hover:text-white'
 							>
 								All writing
 							</Link>
 							<Link
 								href='/case-studies'
-								className='text-sm bg-white uppercase hover:bg-blue-900 hover:text-white border-1 transition text-black px-3 py-1 rounded-sm flex-center'
+								className='inline-flex items-center rounded-full bg-white px-4 py-2 text-xs font-medium uppercase tracking-wide text-black transition-colors hover:bg-blue-600 hover:text-white'
 							>
 								Case studies
 							</Link>

@@ -75,7 +75,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 			'@type': 'Person',
 			name: 'Akshay Kumar',
 			url: BASE_URL,
-			jobTitle: 'Full Stack Developer',
+			jobTitle: 'CTO & Lead Full Stack Developer',
 		},
 		publisher: {
 			'@type': 'Person',

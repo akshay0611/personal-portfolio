@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from 'components/footer';
-import { formatPostDate, getAllPosts } from 'utils/writing';
+import { Badge } from 'components/ui/badge';
+import { Card } from 'components/ui/card';
+import PostCard from 'components/writing/PostCard';
+import WritingBackdrop from 'components/writing/WritingBackdrop';
+import { getAllPosts } from 'utils/writing';
 
 const BASE_URL =
 	process.env.BASE_URL || 'https://connectwithakshay.netlify.app';
@@ -42,85 +46,113 @@ export function generateMetadata(): Metadata {
 
 export default function WritingPage() {
 	const posts = getAllPosts();
+	const [featured, ...rest] = posts;
+
+	const listSchema = posts.length
+		? {
+				'@context': 'https://schema.org',
+				'@type': 'ItemList',
+				itemListElement: posts.map((post, index) => ({
+					'@type': 'ListItem',
+					position: index + 1,
+					url: `${BASE_URL}/writing/${post.slug}`,
+					name: post.title,
+				})),
+			}
+		: null;
 
 	return (
 		<>
-			<section className='home-section bg-dark-gray'>
-				<div className='max-section-width flex flex-col gap-8'>
+			{listSchema && (
+				<script
+					type='application/ld+json'
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }}
+				/>
+			)}
+			<section className='home-section relative overflow-hidden bg-dark-gray'>
+				<WritingBackdrop />
+
+				<div className='max-section-width relative flex flex-col gap-12'>
 					<nav
 						aria-label='Breadcrumb'
-						className='text-xs md:text-sm text-gray-400 flex items-center gap-1.5'
+						className='flex items-center gap-1.5 text-xs text-gray-400 md:text-sm'
 					>
-						<Link href='/' className='hover:text-white transition'>
+						<Link href='/' className='transition-colors hover:text-white'>
 							Home
 						</Link>
 						<span aria-hidden='true'>/</span>
 						<span className='text-gray-200'>Writing</span>
 					</nav>
 
-					<header className='flex flex-col gap-2'>
-						<h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>
+					<header className='flex max-w-3xl flex-col gap-5'>
+						<div className='flex items-center gap-2 text-2xs uppercase tracking-[0.25em] text-blue-400'>
+							<span className='h-1.5 w-1.5 rounded-full bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.8)]' />
 							Writing
+						</div>
+
+						<h1 className='text-4xl font-bold leading-[1.05] tracking-tight md:text-5xl lg:text-6xl'>
+							Notes from the{' '}
+							<span className='bg-gradient-to-r from-blue-400 via-sky-300 to-blue-200 bg-clip-text text-transparent'>
+								build
+							</span>
 						</h1>
-						<p className='text-sm md:text-base text-gray-400 font-light max-w-3xl leading-relaxed'>
+
+						<p className='text-sm font-light leading-relaxed text-gray-400 md:text-base'>
 							Long-form notes on architecture decisions, scaling, and the
-							trade-offs behind the systems I build. No tutorials for the sake of
-							tutorials — just what I learned shipping.
+							trade-offs behind the systems I build. No tutorials for the sake
+							of tutorials — just what I learned shipping.
 						</p>
+
+						<div className='flex flex-wrap items-center gap-3 text-xs text-gray-500'>
+							<span>
+								{posts.length} {posts.length === 1 ? 'essay' : 'essays'}
+							</span>
+							{posts.length > 0 && (
+								<span aria-hidden='true' className='h-3 w-px bg-white/10' />
+							)}
+							<a
+								href='/writing/rss.xml'
+								className='inline-flex items-center gap-1.5 transition-colors hover:text-white'
+							>
+								<Badge variant='outline' className='px-2 py-0'>
+									RSS
+								</Badge>
+								Subscribe
+							</a>
+						</div>
 					</header>
 
-					{posts.length === 0 ? (
-						<div className='bg-zinc-900 border border-white/5 rounded-md p-6 md:p-8'>
-							<p className='text-sm md:text-base text-gray-300 font-light'>
-								The first post is in progress. In the meantime, the case studies
-								cover the same systems in depth.
+					{featured ? (
+						<div className='flex flex-col gap-5'>
+							<PostCard post={featured} featured />
+							{rest.length > 0 && (
+								<div className='grid gap-5 sm:grid-cols-2'>
+									{rest.map((post) => (
+										<PostCard key={post.slug} post={post} />
+									))}
+								</div>
+							)}
+						</div>
+					) : (
+						<Card className='p-8 md:p-10'>
+							<p className='text-2xs uppercase tracking-[0.2em] text-blue-400'>
+								In progress
+							</p>
+							<p className='mt-3 text-lg font-semibold text-white md:text-xl'>
+								The first essay is being written.
+							</p>
+							<p className='mt-2 max-w-xl text-sm font-light leading-relaxed text-gray-400'>
+								In the meantime, the case studies cover the same systems in
+								depth — the architecture, the constraints, and the results.
 							</p>
 							<Link
 								href='/case-studies'
-								className='inline-flex mt-4 text-sm bg-white uppercase hover:bg-blue-900 hover:text-white border-1 transition text-black px-3 py-1 rounded-sm'
+								className='mt-6 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-medium uppercase tracking-wide text-black transition-colors hover:bg-blue-600 hover:text-white'
 							>
 								Read the case studies
+								<span aria-hidden='true'>→</span>
 							</Link>
-						</div>
-					) : (
-						<ul className='flex flex-col gap-3'>
-							{posts.map((post) => (
-								<li key={post.slug}>
-									<Link
-										href={`/writing/${post.slug}`}
-										className='group block bg-zinc-900 border border-white/5 hover:border-blue-500/60 transition rounded-md p-4 md:p-5'
-									>
-										<div className='flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] md:text-xs text-gray-500'>
-											<time dateTime={post.date}>
-												{formatPostDate(post.date)}
-											</time>
-											<span aria-hidden='true'>·</span>
-											<span>{post.readTime}</span>
-											{post.tags.length > 0 && (
-												<>
-													<span aria-hidden='true'>·</span>
-													<span className='text-blue-400/80'>
-														{post.tags.join(' · ')}
-													</span>
-												</>
-											)}
-										</div>
-										<h2 className='text-lg md:text-xl font-semibold mt-2 leading-snug group-hover:text-blue-400 transition'>
-											{post.title}
-										</h2>
-										{post.description && (
-											<p className='text-sm font-light text-gray-400 leading-relaxed mt-2'>
-												{post.description}
-											</p>
-										)}
-										<span className='inline-flex items-center gap-1.5 mt-3 text-xs uppercase tracking-wide text-blue-400 group-hover:translate-x-0.5 transition-transform'>
-											Read post
-											<span aria-hidden='true'>→</span>
-										</span>
-									</Link>
-								</li>
-							))}
-						</ul>
+						</Card>
 					)}
 				</div>
 			</section>

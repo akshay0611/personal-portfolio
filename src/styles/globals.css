@@ -383,7 +383,7 @@ html {
 
 	/* Long-form Writing (React Markdown) */
 	.writing-react-markdown {
-		@apply text-sm md:text-base font-light leading-relaxed text-gray-300;
+		@apply text-[15px] md:text-[17px] font-light leading-[1.8] text-gray-300;
 	}
 
 	.writing-react-markdown > *:first-child {
@@ -391,27 +391,27 @@ html {
 	}
 
 	.writing-react-markdown h1 {
-		@apply text-2xl md:text-3xl font-bold text-white mt-10 mb-3;
+		@apply mt-12 mb-4 scroll-mt-28 text-2xl font-bold tracking-tight text-white md:text-3xl;
 	}
 
 	.writing-react-markdown h2 {
-		@apply text-xl md:text-2xl font-bold text-white mt-10 mb-3 pb-2 border-b border-white/10;
+		@apply mt-12 mb-4 scroll-mt-28 border-b border-white/10 pb-3 text-2xl font-bold tracking-tight text-white md:text-[28px];
 	}
 
 	.writing-react-markdown h3 {
-		@apply text-lg md:text-xl font-semibold text-white mt-8 mb-2;
+		@apply mt-9 mb-3 scroll-mt-28 text-xl font-semibold tracking-tight text-white md:text-[22px];
 	}
 
 	.writing-react-markdown h4 {
-		@apply text-base md:text-lg font-semibold text-white mt-6 mb-2;
+		@apply mt-7 mb-2 scroll-mt-28 text-base font-semibold text-white md:text-lg;
 	}
 
 	.writing-react-markdown p {
-		@apply mb-4 leading-relaxed;
+		@apply mb-6 text-pretty leading-[1.8];
 	}
 
 	.writing-react-markdown a {
-		@apply text-blue-400 underline decoration-blue-500/40 underline-offset-2 hover:text-blue-300;
+		@apply text-blue-400 underline decoration-blue-500/40 underline-offset-2 transition-colors hover:text-blue-300;
 	}
 
 	.writing-react-markdown strong {
@@ -423,15 +423,15 @@ html {
 	}
 
 	.writing-react-markdown ul {
-		@apply list-disc pl-5 mb-4 space-y-1.5;
+		@apply mb-6 list-disc space-y-2 pl-6 marker:text-blue-500/60;
 	}
 
 	.writing-react-markdown ol {
-		@apply list-decimal pl-5 mb-4 space-y-1.5;
+		@apply mb-6 list-decimal space-y-2 pl-6 marker:text-gray-500;
 	}
 
 	.writing-react-markdown li {
-		@apply leading-relaxed pl-1;
+		@apply pl-1 leading-[1.7];
 	}
 
 	.writing-react-markdown li > p {
@@ -439,50 +439,50 @@ html {
 	}
 
 	.writing-react-markdown blockquote {
-		@apply border-l-2 border-blue-500/60 pl-4 my-5 italic text-gray-400;
+		@apply my-7 rounded-r-lg border-l-2 border-blue-500/70 bg-blue-500/[0.06] py-1 pl-5 pr-4 italic text-gray-300;
 	}
 
 	.writing-react-markdown code {
-		@apply bg-zinc-800/80 text-blue-200 px-1.5 py-0.5 rounded text-[0.85em] font-mono;
+		@apply rounded border border-white/10 bg-zinc-800/80 px-1.5 py-0.5 font-mono text-[0.85em] text-blue-200;
 	}
 
 	.writing-react-markdown pre {
-		@apply bg-zinc-900 border border-white/10 rounded-md p-4 overflow-x-auto mb-5 text-xs md:text-sm;
+		@apply mb-6 overflow-x-auto rounded-xl border border-white/10 bg-[#0b0b0b] p-5 text-[13px] leading-relaxed md:text-sm;
 	}
 
 	.writing-react-markdown pre code {
-		@apply bg-transparent p-0 text-gray-200;
+		@apply rounded-none border-0 bg-transparent p-0 text-gray-200;
 	}
 
 	.writing-react-markdown img {
-		@apply rounded-md my-3 max-w-full h-auto align-middle;
+		@apply my-4 h-auto max-w-full rounded-lg align-middle;
 	}
 
 	.writing-react-markdown details {
-		@apply bg-zinc-900 border border-white/5 rounded-md p-3 my-3;
+		@apply my-4 rounded-xl border border-white/10 bg-zinc-950/70 p-4;
 	}
 
 	.writing-react-markdown summary {
-		@apply cursor-pointer font-semibold text-gray-100;
+		@apply cursor-pointer text-sm font-medium text-gray-100 md:text-[15px];
 	}
 
 	.writing-react-markdown details[open] summary {
-		@apply mb-2;
+		@apply mb-3;
 	}
 
 	.writing-react-markdown .writing-mermaid {
-		@apply my-6 flex justify-center overflow-x-auto rounded-md border border-white/10 bg-zinc-950/60 p-4;
+		@apply my-8 flex justify-center overflow-x-auto rounded-xl border border-white/10 bg-zinc-950/60 p-5;
 	}
 
 	.writing-react-markdown .writing-mermaid svg {
-		@apply max-w-full h-auto;
+		@apply h-auto max-w-full;
 	}
 
 	.writing-react-markdown .writing-mermaid-placeholder {
-		@apply text-xs text-gray-500 py-8;
+		@apply py-8 text-xs text-gray-500;
 	}
 
 	.writing-react-markdown hr {
-		@apply border-white/10 my-8;
+		@apply my-10 border-white/10;
 	}
 }

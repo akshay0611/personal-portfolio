@@ -332,7 +332,7 @@ Built a production LMS monorepo spanning 3 deployables: Flutter learner app, Nes
 
 ### Key Features:
 - **Live-class pipeline**: Zoom OAuth + scheduled sessions, daily schedule view, deep-linked player, auto-published recordings with chaptered playback (video_player/chewie/youtube_player_iframe).
-- **Commerce engine**: Course store with free previews, cart + grouped checkout, dual Razorpay tracks (Hardware vs Software keys), server-validated coupons scoped per-track to block cross-category exploits, invoices per purchase.
+- **Commerce engine**: Course store with free previews, cart + grouped checkout, dual Razorpay tracks (Hardware vs Software keys), server-validated coupons scoped per-track to help limit cross-category misuse, invoices per purchase.
 - **Content protection**: Single-active-device binding via device fingerprint + secure storage, admin-approved transfer requests, no-screenshot flag, verified OTP/Google sessions tied to phone number.
 - **Learner system**: Dashboard, My Learning grid, Continue Watching, expiring-course alerts, global search (courses/recordings/teachers), wishlist, notes, certificates, notification center with per-category preferences.
 - **Admin console**: Course/syllabus/resource/renewal-plan CRUD, live-class scheduling, coupon/payment/billing reconciliation, device-request approvals, support-ticket triage, role-based Supabase Auth + Zod validation.
@@ -343,7 +343,7 @@ Built a production LMS monorepo spanning 3 deployables: Flutter learner app, Nes
 - **Data (Supabase Postgres + RLS + RPC)**: Profiles, devices + change-requests, courses/sections/lessons, carts, enrollments, payments, coupons, invoices, sessions/recordings, wishlists, notifications, support tickets — row-level isolation per learner.
 - **Media & integrations**: Cloudinary/S3 asset pipeline with signed uploads, AI Hindi/English dubbing hooks, SendGrid/SMS OTP fallback, Firebase Admin push fan-out.
 
-Shipped end-to-end payment integrity, piracy-resistant delivery, and operator tooling for a training institute's entire enrollment → live class → certification loop.
+Shipped payment integrity, content protection and delivery, and operator tooling for a training institute's entire enrolment → live class → certification loop.
 		`,
 		viewUrl: 'https://play.google.com/store/apps/details?id=com.tensorik.mbt_lms',
 		caseStudyUrl: '/case-studies/mbt-learning-lms-piracy-protection',

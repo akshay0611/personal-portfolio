@@ -3,6 +3,7 @@
 import React from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import rehypeRaw from 'rehype-raw';
+import rehypeSlug from 'rehype-slug';
 import MermaidDiagram from './MermaidDiagram';
 
 interface WritingBodyProps {
@@ -13,7 +14,7 @@ export default function WritingBody({ content }: WritingBodyProps) {
 	return (
 		<ReactMarkdown
 			className='writing-react-markdown'
-			rehypePlugins={[rehypeRaw]}
+			rehypePlugins={[rehypeRaw, rehypeSlug]}
 			components={{
 				pre: ({ children }) => {
 					const child = Array.isArray(children) ? children[0] : children;
