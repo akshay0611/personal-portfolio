@@ -179,18 +179,18 @@ export const caseStudies: CaseStudy[] = [
 		projectName: 'MBT Institute LMS — Mobile Learning Platform',
 		org: 'Tensorik Technologies · Client: MBT Institute',
 		tagline:
-			'A production LMS built to protect paid content while serving live classes, recordings and certificates on Android.',
-		role: 'Full Stack Developer',
+			'A production LMS with controls to deter sharing of paid content while serving live classes, recordings and certificates on Android.',
+		role: 'CTO & Lead Full Stack Developer',
 		timeline: 'Jul 2026 – Oct 2026',
 		industry: 'EdTech · Mobile',
 		logo: '/images/project/mbt.png',
 		logoFit: 'cover',
 		liveUrl: 'https://play.google.com/store/apps/details?id=com.tensorik.mbt_lms',
-		metaTitle: 'MBT Learning Case Study: A Piracy-Protected LMS for a Training Institute',
+		metaTitle: 'MBT Learning Case Study: Content Protection and Delivery for a Training Institute',
 		metaDescription:
-			'How I built a production LMS for MBT Institute — single-device content protection, dual Razorpay payment tracks, live Zoom classes and auto-published recordings — shipped to Google Play with Flutter, NestJS and Supabase.',
+			'How I built MBT Institute’s LMS for content protection and delivery, live classes and two payment tracks. Google Play listing captured 27 Oct 2026: 500+ downloads, 5.0 stars and 123 reviews. A separate Play statistics chart showed 264 install events on 21 Oct 2026. As of 27 Oct 2026, the platform had 740+ paid orders across hardware and software tracks.',
 		keywords: [
-			'prevent course piracy LMS',
+			'LMS content protection and delivery',
 			'Flutter LMS app case study',
 			'NestJS LMS backend',
 			'device binding content protection',
@@ -198,12 +198,12 @@ export const caseStudies: CaseStudy[] = [
 			'Supabase LMS platform',
 		],
 		tldr:
-			'MBT Institute sold courses through ad-hoc channels and lost revenue to account sharing and manual payment handling. I built a production LMS — a Flutter learner app, a NestJS API and a Next.js admin console on Supabase — that locks each enrolment to a single active device, splits payments into hardware and software tracks, and delivers live classes and auto-published recordings. Shipped to Google Play as com.tensorik.mbt_lms.',
+			'MBT Institute sold paid courses through WhatsApp groups, shared drives and manual payments, losing revenue to account sharing and reconciliation guesswork. I built and shipped a production LMS — a Flutter Android learner app, a NestJS API and a Next.js admin console on Supabase — that binds each enrolment to a single active device, separates hardware and software payments into distinct Razorpay tracks, and delivers live classes with auto-published recordings. Released on Google Play ahead of its inauguration at the institute’s fifth-anniversary student meet-up in Vijayawada on 24 Oct 2026.',
 		metrics: [
-			{ value: 'Google Play', label: 'Shipped (Education)' },
-			{ value: '1 device', label: 'Active per learner' },
-			{ value: '2 tracks', label: 'Payment models' },
-			{ value: '100%', label: 'Server-validated coupons' },
+			{ value: '500+', label: 'Google Play downloads · 27 Oct 2026 capture' },
+			{ value: '5.0 stars', label: '123 reviews · 27 Oct 2026 capture' },
+			{ value: '740+', label: 'Paid orders · as of 27 Oct 2026' },
+			{ value: '24 Oct 2026', label: 'Launch · Vijayawada' },
 		],
 		sections: [
 			{
@@ -223,6 +223,7 @@ export const caseStudies: CaseStudy[] = [
 					'Downstream operations had to stay cheap — the institute had no DevOps team and no appetite for servers to babysit.',
 					'Payments had to remain flexible: some courses belong to a hardware track, others to software, and their pricing and coupon rules differ.',
 					'Existing content and student records needed to migrate without disrupting a running intake.',
+					'The release carried a fixed external date: the app was to ship to Google Play ahead of its inauguration at the institute’s fifth-anniversary student meet-up in Vijayawada on 24 Oct 2026.',
 				],
 			},
 			{
@@ -233,7 +234,7 @@ export const caseStudies: CaseStudy[] = [
 				],
 				bullets: [
 					'Mobile: a Flutter app using go_router for navigation, dedicated services and providers per domain, Supabase Auth for OTP and Google sign-in, Razorpay for checkout, and Firebase Cloud Messaging plus local notifications for delivery.',
-					'Backend: a modular NestJS API with clear domains for auth, courses, enrollments, payments, coupons, devices, certificates, notifications, search and support, using Redis and BullMQ for background jobs and DTO validation on every input.',
+					'Backend: a modular NestJS/TypeScript API with clear domains for auth, courses, enrollments, payments, coupons, devices, certificates, notifications, search and support, using Redis and BullMQ for asynchronous processing and DTO validation on every input.',
 					'Data: Supabase PostgreSQL with Row Level Security and RPC functions modelling profiles, devices and transfer requests, courses, sections and lessons, carts, enrollments, payments, coupons, invoices, sessions, recordings, wishlists, notifications and support tickets.',
 					'Media: a signed-upload asset pipeline on Cloudinary and object storage, so recordings and resources are served through authorized URLs rather than public links.',
 					'Admin: a Next.js console for course, syllabus and renewal-plan management, live-class scheduling, billing reconciliation, device approvals, support triage and role-based access with Zod validation.',
@@ -241,13 +242,13 @@ export const caseStudies: CaseStudy[] = [
 			},
 			{
 				id: 'protection',
-				heading: 'Piracy-resistant delivery',
+				heading: 'Content protection and delivery',
 				body: [
 					'Content protection was the reason this project existed, so it drove the data model instead of being bolted on. Each enrolment is bound to a single active device using a device fingerprint stored in secure storage, and that binding is verified server-side on every session.',
 				],
 				bullets: [
-					'One active device per learner: signing in on a new phone does not silently grant a second stream of access.',
-					'Controlled transfers: moving to a new device requires an admin-approved transfer request, which keeps legitimate upgrades possible without opening the door to sharing.',
+					'One active device per enrolment: signing in on a new phone does not automatically grant a second stream of access.',
+					'Controlled device transfers: moving to a new device requires an admin-approved transfer request, which keeps legitimate upgrades reviewable and helps deter account sharing.',
 					'Capture deterrence: a no-screenshot flag is set on protected playback surfaces, and video is delivered through authorized, short-lived URLs instead of public buckets.',
 					'Identity anchoring: verified OTP and Google sessions are tied to a phone number, making disposable accounts harder to farm.',
 				],
@@ -260,7 +261,7 @@ export const caseStudies: CaseStudy[] = [
 				],
 				bullets: [
 					'Dual Razorpay tracks: hardware and software enrolments run through distinct payment configuration, so pricing, settlement and reporting stay cleanly separated.',
-					'Server-validated coupons: discount codes are scoped per track and verified on the server, which blocks cross-category coupon exploits where a code meant for one track is applied to another.',
+					'Server-side coupon validation: discount codes are scoped per track and verified on the server before any discount is applied, helping limit cross-category coupon misuse.',
 					'Invoices per purchase: every transaction produces its own invoice, and the admin console reconciles payments and billing against enrolments rather than against spreadsheets.',
 				],
 			},
@@ -273,11 +274,33 @@ export const caseStudies: CaseStudy[] = [
 				],
 			},
 			{
+				id: 'production',
+				heading: 'Production operations',
+				body: [
+					'The app was inaugurated on 24 Oct 2026, after becoming available on Google Play, and the figures below are dated snapshots.',
+					'They come from different systems and reporting windows, are not additive, and do not represent unique active users.',
+				],
+				bullets: [
+					'Google Play listing, captured 27 Oct 2026: 500+ downloads, a 5.0-star rating and 123 reviews. The download total is bucketed and may be delayed.',
+					'Google Play statistics, 21 Oct 2026: 264 install events in the daily chart. This is a single-day figure, separate from the Play listing.',
+					'Supabase API Gateway, 20–27 Oct 2026: 1,974,492 total requests, 13,937 response errors, and a displayed response speed of 223.19 ms.',
+					'Render backend, 7-day window: 219,435 requests.',
+				],
+			},
+			{
+				id: 'launch',
+				heading: 'Launch',
+				body: [
+					'The app shipped to the Google Play Education category as com.tensorik.mbt_lms ahead of its inauguration at MBT Institute’s fifth-anniversary student meet-up in Vijayawada on 24 Oct 2026.',
+				],
+			},
+			{
 				id: 'results',
 				heading: 'Results',
 				body: [
-					'The platform shipped to Google Play as com.tensorik.mbt_lms in the Education category, closing the loop from enrolment through live class to certification inside a single controlled product.',
+					'The platform shipped to Google Play as com.tensorik.mbt_lms in the Education category, closing the loop from enrolment through live class to certification inside a single controlled product — course discovery, enrolments, live classes, recordings, certificates, learner support and notifications all live in one app rather than a set of forwarded links.',
 					'Content access is now tied to a verified, single-device enrolment instead of a shareable login; hardware and software payments settle on separate, auditable tracks; and live-class operations that used to be manual are scheduled and delivered through the app.',
+					'As of 27 Oct 2026 the platform had processed 740+ paid orders across the hardware and software tracks, with hardware contributing roughly three-fifths of revenue.',
 				],
 			},
 			{
@@ -287,6 +310,7 @@ export const caseStudies: CaseStudy[] = [
 					'Scope device-transfer flows earlier — retrofitting an approval workflow onto a live enrolment model is more delicate than designing it in.',
 					'Add structured analytics on playback and drop-off from the first release to inform content decisions, not just access control.',
 					'Centralize notification templates sooner; per-event templates grow quickly across mobile and admin surfaces.',
+					'Set resource alerts and headroom expectations before launch, so capacity signals are visible during planning rather than after launch.',
 				],
 			},
 		],
@@ -302,14 +326,14 @@ export const caseStudies: CaseStudy[] = [
 		],
 		faqs: [
 			{
-				question: 'How do you prevent students from sharing accounts?',
+				question: 'How does the app deter account sharing?',
 				answer:
-					'Each enrolment is bound to a single active device using a device fingerprint held in secure storage, and that binding is verified on the server for every session. Moving to a new device requires an admin-approved transfer request, which keeps legitimate upgrades possible without allowing account sharing.',
+					'Each enrolment is bound to one active device using a device fingerprint held in secure storage, and the binding is verified on the server for every session. Moving to a new device requires an admin-approved transfer request. These controls are intended to deter account sharing; they are not a claim that sharing is impossible.',
 			},
 			{
 				question: 'Why run two separate Razorpay payment tracks?',
 				answer:
-					'The institute sells hardware and software courses under different commercial rules. Running them through distinct payment configuration keeps pricing and settlement separate and lets coupons be scoped to a single track, which prevents discount codes from being applied across categories.',
+					'The institute sells hardware and software courses under different commercial rules. Separate payment tracks keep their pricing and settlement distinct, and coupons are scoped to a single track and checked on the server.',
 			},
 			{
 				question: 'How are live classes and recordings delivered?',
@@ -317,9 +341,24 @@ export const caseStudies: CaseStudy[] = [
 					'Live sessions are created and scheduled through Zoom OAuth in the admin console, then shown to learners in a daily schedule and deep-linked player. After a class, recordings are automatically published back into the course with chaptered playback and served through authorized URLs rather than public links.',
 			},
 			{
-				question: 'How do you stop coupon abuse and cross-category exploits?',
+				question: 'How are coupons scoped across payment tracks?',
 				answer:
-					'Coupons are scoped per payment track and validated entirely on the server before any discount is applied, so a code issued for one track cannot be reused on another. Every purchase also generates its own invoice, which makes reconciliation and abuse detection straightforward.',
+					'Coupons are scoped per payment track and validated on the server before a discount is applied, helping limit cross-category misuse. Every purchase generates its own invoice, which the admin console can use for billing reconciliation.',
+			},
+			{
+				question: 'How many people use the app?',
+				answer:
+					'The Google Play listing for com.tensorik.mbt_lms showed 500+ downloads, a 5.0-star rating and 123 reviews when captured on 27 Oct 2026. The download total is bucketed and may be delayed. Separately, the Play statistics chart showed 264 install events on 21 Oct 2026. As of 27 Oct 2026, the all-time admin dashboard showed 740+ paid orders across hardware and software tracks, with hardware contributing roughly three-fifths of revenue. These figures come from separate systems and do not add up to an active-user count; I do not report a unique active-learner figure.',
+			},
+			{
+				question: 'What do the production metrics actually measure?',
+				answer:
+					'The Google Play listing snapshot is dated 27 Oct 2026: 500+ downloads, a 5.0-star rating and 123 reviews. A separate Play statistics chart showed 264 install events on 21 Oct 2026. Supabase API Gateway reported 1,974,492 requests, 13,937 response errors and a displayed response speed of 223.19 ms for 20–27 Oct 2026; Render reported 219,435 requests over a 7-day window. These figures come from different systems and windows, are not additive, and do not count unique active users.',
+			},
+			{
+				question: 'When was the app inaugurated?',
+				answer:
+					'The app shipped to the Google Play Education category as com.tensorik.mbt_lms ahead of its inauguration at MBT Institute’s fifth-anniversary student meet-up in Vijayawada on 24 Oct 2026.',
 			},
 		],
 	},
