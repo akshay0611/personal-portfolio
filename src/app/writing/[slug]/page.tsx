@@ -49,11 +49,21 @@ export function generateMetadata({ params }: WritingPostPageProps): Metadata {
 			publishedTime: post.date,
 			modifiedTime: post.updated || post.date,
 			authors: ['Akshay Kumar'],
+			images: [
+				{
+					url: '/images/banner.webp',
+					width: 1200,
+					height: 630,
+					alt: post.title,
+					type: 'image/webp',
+				},
+			],
 		},
 		twitter: {
 			card: 'summary_large_image',
 			title: post.title,
 			description: post.description,
+			images: ['/images/banner.webp'],
 		},
 	};
 }
@@ -83,6 +93,14 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 		mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 		author: { '@id': `${BASE_URL}/#person` },
 		publisher: { '@id': `${BASE_URL}/#person` },
+		image: [
+			{
+				'@type': 'ImageObject',
+				url: `${BASE_URL}/images/banner.webp`,
+				width: 1200,
+				height: 630,
+			},
+		],
 		keywords: post.tags.join(', '),
 		wordCount: post.wordCount,
 		inLanguage: 'en',
