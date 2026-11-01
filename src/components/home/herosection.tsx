@@ -132,6 +132,8 @@ export default function HeroSection() {
 					offset={-32}
 					duration={200}
 					to='about'
+					href='#about'
+					aria-label='Scroll to next section'
 				>
 					<AiOutlineDoubleLeft className='-rotate-90' />
 				</LinkScroll>

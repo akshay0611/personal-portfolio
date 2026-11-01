@@ -29,6 +29,7 @@ export default function Navbar() {
 					offset={-32}
 					duration={200}
 					to='herosection'
+					href='#herosection'
 					onSetActive={removeNavbar}
 					onSetInactive={displayNavbar}
 				>
@@ -61,6 +62,7 @@ export default function Navbar() {
 								offset={-32}
 								duration={200}
 								to={e.to}
+								href={`#${e.to}`}
 								key={i}
 							>
 								<span>{e.title}</span>

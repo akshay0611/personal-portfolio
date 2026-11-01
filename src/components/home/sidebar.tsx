@@ -92,6 +92,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							offset={-32}
 							duration={200}
 							to='herosection'
+							href='#herosection'
 							onSetActive={onClose}
 							className='cursor-pointer group'
 						>
@@ -136,6 +137,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 									offset={-32}
 									duration={200}
 									to={e.to}
+									href={`#${e.to}`}
 									key={i}
 									onClick={onClose}
 								>
