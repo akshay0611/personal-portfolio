@@ -11,6 +11,7 @@ export interface WritingPost {
 	date: string;
 	updated?: string;
 	tags: string[];
+	keywords?: string[];
 	draft: boolean;
 	canonical?: string;
 	content: string;
@@ -87,6 +88,12 @@ function readPost(fileName: string): WritingPost | null {
 					.map((tag) => tag.trim())
 					.filter(Boolean)
 			: [],
+		keywords: data.keywords
+			? String(data.keywords)
+					.split(',')
+					.map((keyword) => keyword.trim())
+					.filter(Boolean)
+			: undefined,
 		draft: data.draft === true,
 		canonical: data.canonical ? String(data.canonical) : undefined,
 		content,

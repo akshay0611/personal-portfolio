@@ -37,6 +37,24 @@ export const metadata: Metadata = {
 	},
 };
 
+const profileSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ProfilePage',
+	name: 'Developer Story — Akshay Kumar',
+	url: 'https://connectwithakshay.netlify.app/story',
+	mainEntity: {
+		'@id': 'https://connectwithakshay.netlify.app/#person',
+	},
+};
+
 export default function StoryPage() {
-	return <Story />;
+	return (
+		<>
+			<script
+				type='application/ld+json'
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(profileSchema) }}
+			/>
+			<Story />
+		</>
+	);
 }

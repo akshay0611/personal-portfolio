@@ -8,6 +8,7 @@ const StructuredData = () => {
 		description:
 			'Lead Developer at EduLinkUp and Web Development Lead at Codeunia. Full Stack Developer recognized by Google for Developers, specializing in building scalable AI and production-ready systems.',
 		url: 'https://connectwithakshay.netlify.app',
+		image: 'https://connectwithakshay.netlify.app/images/akshay1.png',
 		sameAs: [
 			'https://codeunia.com/blog/author/akshay-kumar',
 			'https://edulinkup.dev/blog/author/akshay-kumar',
@@ -51,13 +52,13 @@ const StructuredData = () => {
 	const websiteSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'WebSite',
+		'@id': 'https://connectwithakshay.netlify.app/#website',
 		name: 'Akshay Kumar | Full Stack Developer',
 		url: 'https://connectwithakshay.netlify.app',
 		description:
 			"Explore the professional portfolio of Akshay Kumar, a Full Stack Developer specializing in building scalable systems and AI-driven products.",
 		author: {
-			'@type': 'Person',
-			name: 'Akshay Kumar',
+			'@id': 'https://connectwithakshay.netlify.app/#person',
 		},
 	};
 
