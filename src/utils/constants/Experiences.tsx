@@ -2,15 +2,15 @@ import { ExperienceProps } from 'utils/developerStory';
 import prodigyinfotechImg from '../../../public/images/experience/prodigyinfotech.jpeg';
 import octanetImg from '../../../public/images/experience/octanet.jpeg';
 import shadowfoxImg from '../../../public/images/experience/shadowfox.png';
-import aicteImg from '../../../public/images/experience/aicte.png';
+import aicteImg from '../../../public/images/experience/aicte.webp';
 import cliniqImg from '../../../public/images/experience/cliniq.png';
 import gssocImg from '../../../public/images/experience/gssoc.png';
 import codeuniaImg from '../../../public/images/experience/codeunia.png';
 import openSourceConnectImg from '../../../public/images/experience/opensourceconnect.jpeg';
-import edulinkupImg from '../../../public/images/experience/edulinkup.png';
+import edulinkupImg from '../../../public/images/experience/edulinkup.webp';
 import apertreImg from '../../../public/images/experience/apertre.webp';
 
-import altqImg from '../../../public/images/experience/altqlogo.png';
+import altqImg from '../../../public/images/experience/altqlogo.webp';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	altq: {

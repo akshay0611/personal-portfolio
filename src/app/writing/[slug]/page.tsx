@@ -184,7 +184,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 
 						<div className='mt-2 flex flex-wrap items-center gap-3 border-t border-white/10 pt-5'>
 							<Image
-								src='/images/akshay1.png'
+								src='/images/akshay1.webp'
 								alt='Akshay Kumar'
 								width={40}
 								height={40}

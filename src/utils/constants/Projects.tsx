@@ -6,10 +6,10 @@ import healwellImg from '../../../public/images/project/healwell.png';
 import imprintwordsImg from '../../../public/images/project/imprintwords.png';
 import tanjoreCoffeeImg from '../../../public/images/project/tanjorecoffee.png';
 import finTrackImg from '../../../public/images/project/fintrack.png';
-import mbtImg from '../../../public/images/project/mbt.png';
+import mbtImg from '../../../public/images/project/mbt.webp';
 import greenlineImg from '../../../public/images/project/greenline.webp';
 import khajaMobilesImg from '../../../public/images/project/khajamobiles.webp';
-import eduLinkUpImg from '../../../public/images/project/edulinkup.png';
+import eduLinkUpImg from '../../../public/images/project/edulinkup.webp';
 export const allProjects: { [key: string]: ProjectProps } = {
 
 
@@ -47,7 +47,7 @@ This project demonstrates proficiency in **backend integration**, **API lifecycl
 		description: `
 Architected a high-performance personal brand platform using Next.js and Static Site Generation (SSG). Implemented advanced SEO strategies including dynamic metadata generation and semantic HTML structure, resulting in perfect Lighthouse performance scores.
 
-![](https://raw.githubusercontent.com/akshay0611/personal-portfolio/refs/heads/main/public/images/banner.png) 
+![](https://raw.githubusercontent.com/akshay0611/personal-portfolio/refs/heads/main/public/images/banner.webp) 
 
 ### Architectural Highlights:
 - **Performance Engineering**: Leveraged **Next.js** SSG for sub-second page loads and optimal Core Web Vitals.
@@ -201,7 +201,7 @@ Designed and developed the official digital platform for MBT Mobile Best Trainin
 
 The platform presents MBT's training programs, course information, student success stories, batch galleries, training facilities, and enquiry/admission workflows through a modern, responsive web experience.
 
-![](/images/project/mbt-showcase.jpeg)
+![](/images/project/mbt-showcase.webp)
 
 ### Key Features:
 - **Course Discovery**: Structured presentation of MBT's fresher and advanced chip-level repair training programs with detailed course information.
@@ -243,7 +243,7 @@ Client Project · Tensorik Technologies
 
 Designed and developed the digital platform for GreenLine Car Travels, a transportation and car rental service operating across Andhra Pradesh and Telangana. The platform provides customers with a structured way to explore vehicle categories, review fleet options, discover tour packages, view tariffs, and initiate booking enquiries through a modern, responsive web experience.
 
-![](/images/project/greenline-showcase.jpeg)
+![](/images/project/greenline-showcase.webp)
 
 ### Key Features:
 - **Fleet Discovery**: Structured presentation of multiple vehicle categories with pricing, specifications, and service information.
@@ -285,7 +285,7 @@ Client Project · Tensorik Technologies
 
 Designed and developed a B2B e-commerce and service platform for Khaja Mobiles, a Vijayawada-based mobile accessories wholesaler and professional repair service provider. The platform brings wholesale purchasing, product discovery, bulk ordering, repair services, inventory management, and online payments into a unified digital experience.
 
-![](/images/project/khajamobiles-showcase.jpeg)
+![](/images/project/khajamobiles-showcase.webp)
 
 ### Key Features:
 - **Wholesale Commerce**: Tiered pricing and bulk ordering workflows designed for distributor and business customers.
@@ -328,7 +328,7 @@ Client Project · Tensorik Technologies — Shipped to Google Play (com.tensorik
 
 Built a production LMS monorepo spanning 3 deployables: Flutter learner app, NestJS API, Next.js admin — serving live classes, recordings, course commerce, certificates, and device-locked content protection.
 
-![](/images/project/mbtapp-showcase.jpeg)
+![](/images/project/mbtapp-showcase.webp)
 
 ### Key Features:
 - **Live-class pipeline**: Zoom OAuth + scheduled sessions, daily schedule view, deep-linked player, auto-published recordings with chaptered playback (video_player/chewie/youtube_player_iframe).

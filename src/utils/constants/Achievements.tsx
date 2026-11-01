@@ -2,7 +2,7 @@ import { AchievementProps } from "utils/developerStory";
 import gssocImg from '../../../public/images/experience/gssoc.png';
 import cliniqImg from '../../../public/images/experience/cliniq.png';
 import googleImg from '../../../public/images/experience/google.png';
-import castAiImg from '../../../public/images/experience/castai.png';
+import castAiImg from '../../../public/images/experience/castai.webp';
 
 export const Achievements: { [key: string]: AchievementProps } = {
     gssocRank: {
