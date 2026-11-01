@@ -66,9 +66,9 @@ export default function Footer() {
         </div>
         <div className='w-full md:w-1/2'>
           <div className='relative w-fit m-auto md:m-0'>
-            <h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
+            <h2 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
               Say hi!
-            </h1>
+            </h2>
           </div>
           <ul className='flex flex-wrap items-start justify-center md:justify-start mb-5 gap-3'>
             {allSocials.map((skill, index) => (

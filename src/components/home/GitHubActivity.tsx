@@ -52,9 +52,9 @@ export default function GitHubActivity() {
 			<div className='max-section-width relative z-10'>
 				<div className='flex flex-col md:flex-row md:items-end justify-between mb-10 gap-5'>
 					<div className='flex flex-col'>
-						<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
+						<h2 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
 							Open Source Impact
-						</h1>
+						</h2>
 						<p className='text-white/55 text-sm md:text-base -mt-2 font-light max-w-2xl leading-relaxed'>
 							High-volume, sustained open-source delivery across global programs and real repositories. I focus on consistent execution, quality PRs, and measurable outcomes.
 						</p>

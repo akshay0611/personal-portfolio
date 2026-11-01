@@ -12,9 +12,9 @@ export default function Skills() {
 			<div className='max-section-width px-4 w-full flex flex-col lg:flex-row items-center gap-10'>
 				<div className='flex-1 w-full'>
 					<div className='text-center lg:text-left mb-16'>
-						<h1 className='h1 animate-text-bg before:bg-white hover:text-dark-gray inline-block'>
+						<h2 className='h1 animate-text-bg before:bg-white hover:text-dark-gray inline-block'>
 							What I Work With
-						</h1>
+						</h2>
 						<p className='font-light text-sm md:text-base mt-2 text-white/70'>
 							Tools I use to design, build, and ship production-grade systems.
 						</p>

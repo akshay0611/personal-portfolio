@@ -95,9 +95,9 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							onSetActive={onClose}
 							className='cursor-pointer group'
 						>
-							<h1 className='text-2xl font-bold text-white group-hover:text-yellow-300 transition-colors uppercase tracking-tight'>
+							<h2 className='text-2xl font-bold text-white group-hover:text-yellow-300 transition-colors uppercase tracking-tight'>
 								Akshay Kumar
-							</h1>
+							</h2>
 							<div className='h-0.5 w-0 group-hover:w-full bg-yellow-300 transition-all duration-300 mt-1'></div>
 						</LinkScroll>
 					</div>
