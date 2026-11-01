@@ -105,6 +105,22 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${montserrat.variable} ${leagueSpartan.variable}`}>
 			<body className="bg-black text-white antialiased">
+		<script
+				type="speculationrules"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						prefetch: [
+							{ where: { href_matches: '/case-studies/*' }, eagerness: 'moderate' },
+							{ where: { href_matches: '/writing/*' }, eagerness: 'moderate' },
+						],
+						prerender: [
+							{ where: { href_matches: '/case-studies' }, eagerness: 'moderate' },
+							{ where: { href_matches: '/writing' }, eagerness: 'moderate' },
+							{ where: { href_matches: '/story' }, eagerness: 'moderate' },
+						],
+					}),
+				}}
+			/>
 				{GA_TRACKING_ID && (
 					<>
 						<Script
