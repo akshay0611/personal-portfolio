@@ -4,7 +4,6 @@ import Script from 'next/script';
 import ProgressBar from 'components/common/ProgressBar';
 import PageLoader from 'components/common/PageLoader';
 import InitialLoader from 'components/common/InitialLoader';
-import TerminalModal from 'components/common/TerminalModal';
 import '../styles/globals.css';
 
 const montserrat = Montserrat({
@@ -134,7 +133,6 @@ export default function RootLayout({
 				<ProgressBar />
 				<PageLoader />
 				<InitialLoader />
-				<TerminalModal />
 				{children}
 			</body>
 		</html>

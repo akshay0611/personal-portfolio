@@ -44,7 +44,7 @@ const StructuredData = () => {
 			},
 		],
 		award: [
-			'Ranked #2 out of 3,424 global contributors in GSSoC 2025',
+			'Ranked #2 out of 25,000+ global contributors in GSSoC 2025',
 			'Google Cloud Fundamentals Recognition',
 		],
 	};
