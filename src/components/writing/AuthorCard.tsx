@@ -17,7 +17,7 @@ export default function AuthorCard() {
 		>
 			<div className='flex flex-col gap-5 sm:flex-row sm:items-start'>
 				<Image
-					src='/images/akshay1.png'
+					src='/images/akshay1.webp'
 					alt='Akshay Kumar'
 					width={56}
 					height={56}

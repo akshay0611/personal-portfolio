@@ -1,15 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import Lottie from 'components/common/LottieWrapper';
-import ConnectionAnimation from '../assets/lottie/social-media-network.json';
 import { allSocials } from 'utils/constants/Socials';
 import SkillBadge from './common/SkillBadge';
 import { trackContactFormSubmit } from 'utils/analytics';
 
 export default function Footer() {
   const [status, setStatus] = useState<'IDLE' | 'LOADING' | 'SUCCESS' | 'ERROR'>('IDLE');
+  const [ConnectionAnimation, setConnectionAnimation] = useState<any>(null);
+  useEffect(() => {
+    // @ts-ignore
+    import('../assets/lottie/social-media-network.json').then((m: any) => {
+      setConnectionAnimation(m.default ?? m);
+    });
+  }, []);
 
   const submitForm = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -59,10 +65,12 @@ export default function Footer() {
     >
       <div className='max-section-width flex flex-col md:flex-row items-center justify-center gap-2 mb-12'>
         <div className='mr-10 hidden md:block'>
-          <Lottie
-            animationData={ConnectionAnimation}
-            className='max-w-sm'
-          />
+          {ConnectionAnimation ? (
+            <Lottie
+              animationData={ConnectionAnimation}
+              className='max-w-sm'
+            />
+          ) : null}
         </div>
         <div className='w-full md:w-1/2'>
           <div className='relative w-fit m-auto md:m-0'>

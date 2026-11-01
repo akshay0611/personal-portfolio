@@ -8,7 +8,6 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { AiFillLinkedin, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { BsQuote } from 'react-icons/bs';
 import Lottie from 'components/common/LottieWrapper';
-import RecommendationAnimation from '../../assets/lottie/recommendation.json';
 import { recommendations } from 'utils/constants/Recommendations';
 
 const SWIPE_THRESHOLD = 70;
@@ -19,6 +18,7 @@ function Testimonials() {
 	const [isExpanded, setIsExpanded] = useState(false);
 	const [isReducedMotion, setIsReducedMotion] = useState(false);
 	const [showIllustration, setShowIllustration] = useState(false);
+	const [RecommendationAnimation, setRecommendationAnimation] = useState<any>(null);
 	const [isAutoplayEnabled] = useState(true);
 	const [isCarouselPaused, setIsCarouselPaused] = useState(false);
 
@@ -26,6 +26,13 @@ function Testimonials() {
 		() => recommendations[showIndex],
 		[showIndex]
 	);
+
+	useEffect(() => {
+		// @ts-ignore
+		import('../../assets/lottie/recommendation.json').then((m: any) => {
+			setRecommendationAnimation(m.default ?? m);
+		});
+	}, []);
 
 	useEffect(() => {
 		setIsExpanded(false);
@@ -137,13 +144,13 @@ function Testimonials() {
 
 				<div className='w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch'>
 					<div className='hidden lg:block lg:col-span-3'>
-						{showIllustration && (
+						{showIllustration && RecommendationAnimation ? (
 							<Lottie
 								animationData={RecommendationAnimation}
 								className='max-w-sm mx-auto opacity-85'
 								loop={!isReducedMotion}
 							/>
-						)}
+						) : null}
 					</div>
 
 					<div className='lg:col-span-9'>

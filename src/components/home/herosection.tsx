@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
-import akshay from '../../../public/images/akshay1.png';
+import akshay from '../../../public/images/akshay1.webp';
 import googleImg from '../../../public/images/experience/google.png';
 import { AiOutlineDoubleLeft } from 'react-icons/ai';
 import { trackSocialClick } from 'utils/analytics';
