@@ -52,6 +52,7 @@ const StructuredData = () => {
 	const websiteSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'WebSite',
+		'@id': 'https://connectwithakshay.netlify.app/#website',
 		name: 'Akshay Kumar | Full Stack Developer',
 		url: 'https://connectwithakshay.netlify.app',
 		description:
