@@ -3,6 +3,7 @@ title: "GSSoC 2026: How I Ranked #2 of 25,000+ Contributors (Full Breakdown)"
 description: "A complete breakdown of how I ranked #2 of 25,000+ in GSSoC with 2,014 points over 120+ days — the strategy, the projects I focused on, the PR checklist, and what to do before GSSoC 2026."
 date: "2026-10-21"
 tags: "open source, gssoc, career"
+keywords: "open source, gssoc, career, GirlScript Summer of Code, PR checklist, consistency system, open source beyond GSSoC"
 draft: false
 ---
 

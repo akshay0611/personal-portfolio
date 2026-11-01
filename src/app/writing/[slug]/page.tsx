@@ -37,7 +37,7 @@ export function generateMetadata({ params }: WritingPostPageProps): Metadata {
 	return {
 		title: post.title,
 		description: post.description,
-		keywords: post.tags,
+		keywords: post.keywords || post.tags,
 		alternates: {
 			canonical: post.canonical || url,
 		},
@@ -101,7 +101,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
 				height: 630,
 			},
 		],
-		keywords: post.tags.join(', '),
+		keywords: (post.keywords || post.tags).join(', '),
 		wordCount: post.wordCount,
 		inLanguage: 'en',
 		articleSection: 'Engineering',
