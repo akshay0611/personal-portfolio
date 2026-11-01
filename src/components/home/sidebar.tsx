@@ -171,9 +171,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='GitHub profile'
 									className='text-white hover:scale-125 transition-all duration-200'
 								>
-									<FaGithub />
+									<FaGithub aria-hidden='true' />
 								</a>
 							</Link>
 							<Link
@@ -184,9 +185,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='LinkedIn profile'
 									className='text-[#0077b5] hover:scale-125 transition-all duration-200'
 								>
-									<FaLinkedinIn />
+									<FaLinkedinIn aria-hidden='true' />
 								</a>
 							</Link>
 							<Link
@@ -197,9 +199,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='Email me'
 									className='text-[#ea4335] hover:scale-125 transition-all duration-200'
 								>
-									<FaEnvelope />
+									<FaEnvelope aria-hidden='true' />
 								</a>
 							</Link>
 							<Link
@@ -210,9 +213,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='HackerRank profile'
 									className='text-[#2ec866] hover:scale-125 transition-all duration-200'
 								>
-									<FaHackerrank />
+									<FaHackerrank aria-hidden='true' />
 								</a>
 							</Link>
 						</div>

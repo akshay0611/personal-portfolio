@@ -94,9 +94,9 @@ export default function Navbar() {
 							target='_blank'
 							rel='noopener noreferrer'
 							className='hover:text-yellow-200 transition-colors'
-							title='Repository URL'
+							aria-label='GitHub profile'
 						>
-							<FaGithub className='text-base' />
+							<FaGithub className='text-base' aria-hidden='true' />
 						</a>
 					</Link>
 				</div>
