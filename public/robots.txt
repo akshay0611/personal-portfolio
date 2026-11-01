@@ -1,13 +1,10 @@
 # *
 User-agent: *
 Allow: /
-
-# *
-User-agent: *
 Disallow: /api
 
 # Host
-Host: https://connectwithakshay.netlify.app/
+Host: https://connectwithakshay.netlify.app
 
 # Sitemaps
 Sitemap: https://connectwithakshay.netlify.app/sitemap.xml

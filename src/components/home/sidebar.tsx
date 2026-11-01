@@ -92,12 +92,13 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							offset={-32}
 							duration={200}
 							to='herosection'
+							href='#herosection'
 							onSetActive={onClose}
 							className='cursor-pointer group'
 						>
-							<h1 className='text-2xl font-bold text-white group-hover:text-yellow-300 transition-colors uppercase tracking-tight'>
+							<h2 className='text-2xl font-bold text-white group-hover:text-yellow-300 transition-colors uppercase tracking-tight'>
 								Akshay Kumar
-							</h1>
+							</h2>
 							<div className='h-0.5 w-0 group-hover:w-full bg-yellow-300 transition-all duration-300 mt-1'></div>
 						</LinkScroll>
 					</div>
@@ -136,6 +137,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 									offset={-32}
 									duration={200}
 									to={e.to}
+									href={`#${e.to}`}
 									key={i}
 									onClick={onClose}
 								>
@@ -169,9 +171,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='GitHub profile'
 									className='text-white hover:scale-125 transition-all duration-200'
 								>
-									<FaGithub />
+									<FaGithub aria-hidden='true' />
 								</a>
 							</Link>
 							<Link
@@ -182,9 +185,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='LinkedIn profile'
 									className='text-[#0077b5] hover:scale-125 transition-all duration-200'
 								>
-									<FaLinkedinIn />
+									<FaLinkedinIn aria-hidden='true' />
 								</a>
 							</Link>
 							<Link
@@ -195,9 +199,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='Email me'
 									className='text-[#ea4335] hover:scale-125 transition-all duration-200'
 								>
-									<FaEnvelope />
+									<FaEnvelope aria-hidden='true' />
 								</a>
 							</Link>
 							<Link
@@ -208,9 +213,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
+									aria-label='HackerRank profile'
 									className='text-[#2ec866] hover:scale-125 transition-all duration-200'
 								>
-									<FaHackerrank />
+									<FaHackerrank aria-hidden='true' />
 								</a>
 							</Link>
 						</div>

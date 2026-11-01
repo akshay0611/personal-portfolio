@@ -62,38 +62,42 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
+								aria-label='GitHub profile'
 								onClick={() => trackSocialClick('GitHub')}
 								className='p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-full transition-all duration-200'
 							>
-								<FaGithub />
+								<FaGithub aria-hidden='true' />
 							</a>
 						</Link>
 						<Link passHref href={SocialUrls.linkedin} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
+								aria-label='LinkedIn profile'
 								onClick={() => trackSocialClick('LinkedIn')}
 								className='p-2 text-[#0077b5] hover:bg-[#0077b5]/10 rounded-full transition-all duration-200'
 							>
-								<FaLinkedinIn />
+								<FaLinkedinIn aria-hidden='true' />
 							</a>
 						</Link>
 						<Link passHref href={SocialUrls.email} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
+								aria-label='Email me'
 								className='p-2 text-[#ea4335] hover:bg-[#ea4335]/10 rounded-full transition-all duration-200'
 							>
-								<FaEnvelope />
+								<FaEnvelope aria-hidden='true' />
 							</a>
 						</Link>
 						<Link passHref href={SocialUrls.hackerrank} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
+								aria-label='HackerRank profile'
 								className='p-2 text-[#2ec866] hover:bg-[#2ec866]/10 rounded-full transition-all duration-200'
 							>
-								<FaHackerrank />
+								<FaHackerrank aria-hidden='true' />
 							</a>
 						</Link>
 					</div>
@@ -105,6 +109,7 @@ export default function HeroSection() {
 								offset={-32}
 								duration={200}
 								to='contact'
+								href='#contact'
 							>
 								Hire me
 							</LinkScroll>
@@ -132,6 +137,8 @@ export default function HeroSection() {
 					offset={-32}
 					duration={200}
 					to='about'
+					href='#about'
+					aria-label='Scroll to next section'
 				>
 					<AiOutlineDoubleLeft className='-rotate-90' />
 				</LinkScroll>

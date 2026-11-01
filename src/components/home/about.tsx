@@ -18,9 +18,9 @@ export default function About() {
 					/>
 				</div>
 				<div className='lg:w-1/2 text-center lg:text-left'>
-					<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
+					<h2 className='h1 animate-text-bg before:bg-white hover:text-black'>
 						About Me
-					</h1>
+					</h2>
 					<ReactMarkdown
 						allowedElements={['p', 'a', 'b', 'i', 'strong', 'em']}
 						skipHtml

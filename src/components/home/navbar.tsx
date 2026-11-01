@@ -29,6 +29,7 @@ export default function Navbar() {
 					offset={-32}
 					duration={200}
 					to='herosection'
+					href='#herosection'
 					onSetActive={removeNavbar}
 					onSetInactive={displayNavbar}
 				>
@@ -61,6 +62,7 @@ export default function Navbar() {
 								offset={-32}
 								duration={200}
 								to={e.to}
+								href={`#${e.to}`}
 								key={i}
 							>
 								<span>{e.title}</span>
@@ -92,9 +94,9 @@ export default function Navbar() {
 							target='_blank'
 							rel='noopener noreferrer'
 							className='hover:text-yellow-200 transition-colors'
-							title='Repository URL'
+							aria-label='GitHub profile'
 						>
-							<FaGithub className='text-base' />
+							<FaGithub className='text-base' aria-hidden='true' />
 						</a>
 					</Link>
 				</div>

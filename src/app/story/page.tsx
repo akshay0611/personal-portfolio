@@ -20,10 +20,20 @@ export const metadata: Metadata = {
 		canonical: '/story',
 	},
 	openGraph: {
+		type: 'website',
 		title: 'Akshay Kumar Developer Story | 3+ Years Building Production Systems',
 		description:
 			'Follow my journey as Lead Developer at EduLinkUp and Web Development Lead at Codeunia. 3+ years building production systems.',
 		url: 'https://connectwithakshay.netlify.app/story',
+		images: [
+			{
+				url: '/images/banner.webp',
+				width: 1200,
+				height: 630,
+				alt: 'Akshay Kumar Developer Story',
+				type: 'image/webp',
+			},
+		],
 	},
 };
 

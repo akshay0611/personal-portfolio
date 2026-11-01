@@ -36,18 +36,6 @@ export const metadata: Metadata = {
 	},
 	description:
 		'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Full Stack Developer focused on building scalable AI & Cloud-driven products. Recognition by Google for Developers for engineering excellence.',
-	keywords: [
-		'Akshay Kumar',
-		'EduLinkUp Lead Developer',
-		'Codeunia Web Dev Lead',
-		'Full Stack Developer',
-		'ReactJs Developer',
-		'NodeJs Developer',
-		'Python Developer',
-		'AI Developer',
-		'Cloud Developer',
-		'Akshay Kumar Portfolio',
-	],
 	authors: [{ name: 'Akshay Kumar' }],
 	creator: 'Akshay Kumar',
 	alternates: {
@@ -63,10 +51,11 @@ export const metadata: Metadata = {
 		siteName: 'Akshay Kumar Portfolio',
 		images: [
 			{
-				url: '/images/banner.png',
+				url: '/images/banner.webp',
 				width: 1200,
 				height: 630,
 				alt: 'Akshay Kumar Full Stack Developer Portfolio',
+				type: 'image/webp',
 			},
 		],
 	},
@@ -75,7 +64,7 @@ export const metadata: Metadata = {
 		title: 'Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products',
 		description:
 			'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products.',
-		images: ['/images/banner.png'],
+		images: ['/images/banner.webp'],
 		creator: '@Aksh0605',
 	},
 	icons: {
@@ -104,6 +93,22 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${montserrat.variable} ${leagueSpartan.variable}`}>
 			<body className="bg-black text-white antialiased">
+			<script
+				type="speculationrules"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						prefetch: [
+							{ where: { href_matches: '/case-studies/*' }, eagerness: 'moderate' },
+							{ where: { href_matches: '/writing/*' }, eagerness: 'moderate' },
+						],
+						prerender: [
+							{ where: { href_matches: '/case-studies' }, eagerness: 'moderate' },
+							{ where: { href_matches: '/writing' }, eagerness: 'moderate' },
+							{ where: { href_matches: '/story' }, eagerness: 'moderate' },
+						],
+					}),
+				}}
+			/>
 				{GA_TRACKING_ID && (
 					<>
 						<Script

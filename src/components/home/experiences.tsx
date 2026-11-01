@@ -42,9 +42,9 @@ export default function Experiences() {
 				<div className='grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12'>
 					<div className='lg:col-span-4'>
 						<div className='lg:sticky lg:top-28'>
-							<h1 className='text-4xl md:text-5xl font-bold tracking-tight leading-[1.05] text-white'>
+							<h2 className='text-4xl md:text-5xl font-bold tracking-tight leading-[1.05] text-white'>
 								Professional Journey
-							</h1>
+							</h2>
 							<p className='text-white/55 text-sm md:text-base mt-4 font-light max-w-md leading-relaxed'>
 								Building scalable systems and leading technical initiatives across production-grade platforms.
 							</p>

@@ -13,9 +13,9 @@ export default function Projects() {
 			id='developerstory'
 		>
 			<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
-				<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray text-center md:text-left'>
+				<h2 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray text-center md:text-left'>
 					Developer Story
-				</h1>
+				</h2>
 				<p className='text-white/50 text-xs md:text-base -mt-4 mb-10 md:-mt-6 font-light max-w-2xl text-center md:text-left'>
 					A timeline of growth, ownership, and real-world impact.
 				</p>

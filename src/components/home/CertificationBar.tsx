@@ -121,9 +121,10 @@ const CertificationBar = () => {
                                         </Dialog.Title>
                                         <button
                                             onClick={closeModal}
+                                            aria-label='Close certificates dialog'
                                             className="text-zinc-500 hover:text-white transition-colors p-1"
                                         >
-                                            <AiOutlineClose size={24} />
+                                            <AiOutlineClose size={24} aria-hidden='true' />
                                         </button>
                                     </div>
 

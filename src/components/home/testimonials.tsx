@@ -127,9 +127,9 @@ function Testimonials() {
 		>
 			<div className='max-section-width h-full flex flex-col gap-8 items-center justify-center'>
 				<div className='w-full text-center lg:text-left'>
-					<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
+					<h2 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
 						Recommendations
-					</h1>
+					</h2>
 					<p className='text-gray-500 text-2xs md:text-sm -mt-4 mb-3 md:-mt-7'>
 						Success stories from satisfied clients and colleagues
 					</p>
