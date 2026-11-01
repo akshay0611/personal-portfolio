@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import Wave from 'react-wavify';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { AiFillLinkedin, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
@@ -27,12 +26,32 @@ function Testimonials() {
 		[showIndex]
 	);
 
+	const sectionRef = useRef<HTMLElement>(null);
+	const [isVisible, setIsVisible] = useState(false);
+
 	useEffect(() => {
+		const el = sectionRef.current;
+		if (!el) return;
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (entries[0].isIntersecting) {
+					setIsVisible(true);
+					observer.disconnect();
+				}
+			},
+			{ rootMargin: '200px' }
+		);
+		observer.observe(el);
+		return () => observer.disconnect();
+	}, []);
+
+	useEffect(() => {
+		if (!isVisible) return;
 		// @ts-ignore
 		import('../../assets/lottie/recommendation.json').then((m: any) => {
 			setRecommendationAnimation(m.default ?? m);
 		});
-	}, []);
+	}, [isVisible]);
 
 	useEffect(() => {
 		setIsExpanded(false);
@@ -314,17 +333,7 @@ function Testimonials() {
 					</div>
 				</div>
 
-				<Wave
-					fill='#101010'
-					paused={isReducedMotion}
-					options={{
-						height: 20,
-						amplitude: isReducedMotion ? 0 : 20,
-						speed: isReducedMotion ? 0 : 0.2,
-						points: 3,
-					}}
-					className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-black'
-				/>
+				<div className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-black' aria-hidden='true' />
 			</div>
 		</section>
 	);

@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import Lottie from 'components/common/LottieWrapper';
-import Wave from 'react-wavify';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { aboutContent } from 'utils/constants/About';
 
@@ -41,17 +40,7 @@ export default function About() {
 						Keep scrolling!
 					</p>
 				</div>
-				<Wave
-					fill='#101010'
-					paused={false}
-					options={{
-						height: 20,
-						amplitude: 20,
-						speed: 0.2,
-						points: 3,
-					}}
-					className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-black'
-				/>
+				<div className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-black' aria-hidden='true' />
 			</div>
 		</section>
 	);
