@@ -22,10 +22,27 @@ export const metadata: Metadata = {
 		canonical: '/case-studies',
 	},
 	openGraph: {
+		type: 'website',
 		title: 'Case Studies — Production Systems I Architected & Shipped',
 		description:
 			'In-depth case studies covering architecture decisions, constraints, and measurable results.',
 		url: `${BASE_URL}/case-studies`,
+		images: [
+			{
+				url: '/images/banner.webp',
+				width: 1200,
+				height: 630,
+				alt: 'Akshay Kumar — Production system case studies',
+				type: 'image/webp',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Case Studies — Production Systems I Architected & Shipped',
+		description:
+			'In-depth case studies covering architecture decisions, constraints, and measurable results.',
+		images: ['/images/banner.webp'],
 	},
 };
 
