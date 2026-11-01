@@ -28,6 +28,8 @@ export interface CaseStudy {
 	liveUrl?: string;
 	metaTitle: string;
 	metaDescription: string;
+	publishedDate?: string;
+	modifiedDate?: string;
 	keywords: string[];
 	tldr: string;
 	metrics: CaseStudyMetric[];
@@ -52,6 +54,7 @@ export const caseStudies: CaseStudy[] = [
 		metaTitle: 'EduLinkUp Case Study: Scaling an EdTech Platform to 2,700+ MAU',
 		metaDescription:
 			'How I architected EduLinkUp — a Next.js, Supabase and Google Cloud platform serving 2,700+ monthly active users across 100+ countries — spanning courses, coding labs, internships and an app store.',
+		publishedDate: '2026-10-19',
 		keywords: [
 			'edtech platform case study',
 			'Next.js Supabase edtech platform',
@@ -189,6 +192,8 @@ export const caseStudies: CaseStudy[] = [
 		metaTitle: 'MBT Learning Case Study: Content Protection and Delivery for a Training Institute',
 		metaDescription:
 			'How I built MBT Institute’s LMS for content protection and delivery, live classes and two payment tracks. Google Play listing captured 27 Oct 2026: 500+ downloads, 5.0 stars and 123 reviews. A separate Play statistics chart showed 264 install events on 21 Oct 2026. As of 27 Oct 2026, the platform had 740+ paid orders across hardware and software tracks.',
+		publishedDate: '2026-10-19',
+		modifiedDate: '2026-10-27',
 		keywords: [
 			'LMS content protection and delivery',
 			'Flutter LMS app case study',

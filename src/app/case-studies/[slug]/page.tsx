@@ -68,6 +68,8 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 		'@type': 'Article',
 		headline: study.metaTitle,
 		description: study.metaDescription,
+		datePublished: study.publishedDate,
+		dateModified: study.modifiedDate ?? study.publishedDate,
 		image: `${BASE_URL}${study.logo}`,
 		url,
 		mainEntityOfPage: { '@type': 'WebPage', '@id': url },
