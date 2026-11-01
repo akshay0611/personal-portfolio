@@ -36,18 +36,6 @@ export const metadata: Metadata = {
 	},
 	description:
 		'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Full Stack Developer focused on building scalable AI & Cloud-driven products. Recognition by Google for Developers for engineering excellence.',
-	keywords: [
-		'Akshay Kumar',
-		'EduLinkUp Lead Developer',
-		'Codeunia Web Dev Lead',
-		'Full Stack Developer',
-		'ReactJs Developer',
-		'NodeJs Developer',
-		'Python Developer',
-		'AI Developer',
-		'Cloud Developer',
-		'Akshay Kumar Portfolio',
-	],
 	authors: [{ name: 'Akshay Kumar' }],
 	creator: 'Akshay Kumar',
 	alternates: {
@@ -105,7 +93,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${montserrat.variable} ${leagueSpartan.variable}`}>
 			<body className="bg-black text-white antialiased">
-		<script
+			<script
 				type="speculationrules"
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({

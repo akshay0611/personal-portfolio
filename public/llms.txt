@@ -1,0 +1,18 @@
+# Akshay Kumar — Full Stack Developer
+
+> Lead Developer at EduLinkUp, Web Development Lead at Codeunia. Builds AI & cloud-driven products, ranked #2 globally (2,014 points) among 25,000+ contributors in GSSoC 2026.
+
+## Pages
+
+- [Portfolio](https://connectwithakshay.netlify.app/): Home, skills, experience, GitHub activity, recommendations
+- [Case Studies](https://connectwithakshay.netlify.app/case-studies): Production system deep-dives
+  - [EduLinkUp](https://connectwithakshay.netlify.app/case-studies/edulinkup-learning-platform): Next.js + Supabase + Google Cloud learning ecosystem, 2,700+ MAU
+  - [MBT Institute LMS](https://connectwithakshay.netlify.app/case-studies/mbt-learning-lms-piracy-protection): Flutter + NestJS mobile LMS with device-bound content protection
+- [Writing](https://connectwithakshay.netlify.app/writing): Long-form engineering notes
+- [Story](https://connectwithakshay.netlify.app/story): Career journey timeline
+
+## Contact
+
+- Email: akshay.allen26200@gmail.com
+- GitHub: https://github.com/akshay0611
+- LinkedIn: https://www.linkedin.com/in/akshay-kumar-02286b28b/
