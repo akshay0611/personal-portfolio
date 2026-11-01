@@ -63,10 +63,11 @@ export const metadata: Metadata = {
 		siteName: 'Akshay Kumar Portfolio',
 		images: [
 			{
-				url: '/images/banner.png',
+				url: '/images/banner.webp',
 				width: 1200,
 				height: 630,
 				alt: 'Akshay Kumar Full Stack Developer Portfolio',
+				type: 'image/webp',
 			},
 		],
 	},
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
 		title: 'Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products',
 		description:
 			'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products.',
-		images: ['/images/banner.png'],
+		images: ['/images/banner.webp'],
 		creator: '@Aksh0605',
 	},
 	icons: {
