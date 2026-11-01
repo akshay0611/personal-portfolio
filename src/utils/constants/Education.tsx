@@ -1,7 +1,5 @@
 import { EducationProps } from 'utils/developerStory';
 import asianImg from '../../../public/images/education/asian-logo.webp';
-import dpsrkpImg from '../../../public/images/education/dpsrkp-logo.webp';
-import vitImg from '../../../public/images/education/vit-logo.webp';
 import selftaughtImg from '../../../public/images/education/selftaught.jpg';
 
 export const allEducation: { [key: string]: EducationProps } = {
