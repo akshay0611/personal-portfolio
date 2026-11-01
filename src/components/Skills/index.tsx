@@ -7,6 +7,13 @@ import Lottie from 'components/common/LottieWrapper';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
 
 export default function Skills() {
+	const [DevSkillsAnimation, setDevSkillsAnimation] = React.useState<any>(null);
+	React.useEffect(() => {
+		// @ts-ignore
+		import('../../assets/lottie/developer-yoga.json').then((m: any) => {
+			setDevSkillsAnimation(m.default ?? m);
+		});
+	}, []);
 	return (
 		<section className='home-section bg-dark-gray flex-center py-20' id='skills'>
 			<div className='max-section-width px-4 w-full flex flex-col lg:flex-row items-center gap-10'>
@@ -71,10 +78,12 @@ export default function Skills() {
 				</div>
 
 				<div className='lg:w-1/3 hidden lg:block opacity-80 hover:opacity-100 transition-opacity duration-500'>
-					<Lottie
+					{DevSkillsAnimation ? (
+						<Lottie
 						animationData={DevSkillsAnimation}
 						className='max-w-xs md:max-w-sm ml-auto'
 					/>
+					) : null}
 				</div>
 			</div>
 		</section>
