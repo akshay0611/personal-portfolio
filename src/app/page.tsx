@@ -1,16 +1,18 @@
+import dynamic from 'next/dynamic';
 import HeroSection from 'components/home/herosection';
-import ImpactMetrics from 'components/home/ImpactMetrics';
-import CertificationBar from 'components/home/CertificationBar';
 import Navbar from 'components/home/navbar';
-import About from 'components/home/about';
-import Experiences from 'components/home/experiences';
-import GitHubActivity from 'components/home/GitHubActivity';
-import Skills from 'components/Skills';
-import BlogFeed from 'components/home/BlogFeed';
-import Testimonials from 'components/home/testimonials';
-import Footer from 'components/footer';
 import StructuredData from 'components/common/StructuredData';
 import BackToTop from 'components/common/BackToTop';
+
+const ImpactMetrics = dynamic(() => import('components/home/ImpactMetrics'));
+const CertificationBar = dynamic(() => import('components/home/CertificationBar'));
+const About = dynamic(() => import('components/home/about'));
+const Experiences = dynamic(() => import('components/home/experiences'));
+const GitHubActivity = dynamic(() => import('components/home/GitHubActivity'));
+const Skills = dynamic(() => import('components/Skills'));
+const BlogFeed = dynamic(() => import('components/home/BlogFeed'));
+const Testimonials = dynamic(() => import('components/home/testimonials'));
+const Footer = dynamic(() => import('components/footer'));
 
 export default function HomePage() {
 	return (
