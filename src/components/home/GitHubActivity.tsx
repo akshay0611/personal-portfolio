@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaCodeBranch, FaStar, FaCode } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { GitHubCalendar } from 'react-github-calendar';
@@ -46,8 +46,27 @@ export default function GitHubActivity() {
 		code: <FaCode className='text-blue-300' />,
 	};
 
+	const sectionRef = useRef<HTMLElement>(null);
+	const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+		const el = sectionRef.current;
+		if (!el) return;
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (entries[0].isIntersecting) {
+					setIsVisible(true);
+					observer.disconnect();
+				}
+			},
+			{ rootMargin: '200px' }
+		);
+		observer.observe(el);
+		return () => observer.disconnect();
+	}, []);
+
 	return (
-		<section className='home-section relative py-20 bg-dark-gray overflow-hidden' id='github'>
+		<section ref={sectionRef} className='home-section relative py-20 bg-dark-gray overflow-hidden' id='github'>
 			<div className='github-bg-glow' />
 			<div className='max-section-width relative z-10'>
 				<div className='flex flex-col md:flex-row md:items-end justify-between mb-10 gap-5'>
@@ -127,7 +146,8 @@ export default function GitHubActivity() {
 							</a>
 						</div>
 						<div className='overflow-x-auto pb-2 github-calendar-wrap'>
-							<GitHubCalendar
+							{isVisible ? (
+								<GitHubCalendar
 								username='akshay0611'
 								colorScheme='dark'
 								theme={{
@@ -137,6 +157,11 @@ export default function GitHubActivity() {
 								blockSize={13}
 								blockMargin={4}
 							/>
+							) : (
+								<div className='h-[140px] flex items-center justify-center text-white/40 text-sm'>
+									Loading contribution heatmap…
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
