@@ -90,7 +90,7 @@ const TopAchievement = () => {
                         </div>
                     )}
                     <p className="text-zinc-400 text-sm md:text-base font-medium max-w-md text-center md:text-left leading-tight">
-                        Outperformed <span className="text-white font-bold">3,424</span> developers to claim <span className="text-blue-400 font-bold">#2</span> rank worldwide.
+                        Outperformed <span className="text-white font-bold">25,000+</span> developers to claim <span className="text-blue-400 font-bold">#2</span> rank worldwide.
                     </p>
                 </div>
 

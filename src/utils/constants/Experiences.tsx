@@ -100,14 +100,14 @@ Selected as a mentor for an open-source project under Resourcio's Apertre 3.0 pr
 	gssoc: {
 		fromDate: 'July 2025',
 		toDate: 'Oct 2025',
-		positionHeld: 'Ranked #2 among 3,424 contributors (GSSoC 2025)',
+		positionHeld: 'Ranked #2 among 25,000+ contributors (GSSoC 2025)',
 		orgName: 'GirlScript Summer of Code (GSSoC)',
 		orgLocation: 'Open Source Program',
 		url: 'https://gssoc.girlscript.tech/',
 		imageURL: gssocImg,
 		ctaLabel: 'View impact',
 		description: `
-- **Top 0.06% Performance**: Ranked #2 out of 3,424 global contributors.
+- **Top 0.06% Performance**: Ranked #2 out of 25,000+ global contributors.
 - **High-Velocity Delivery**: Merged 238 Pull Requests across diverse tech stacks.
 - **Technical Impact**: Earned 2,014 points through complex bug fixes and feature implementations.
 `,

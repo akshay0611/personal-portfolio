@@ -31,7 +31,7 @@ export const impactMetrics: MetricProps[] = [
         value: 2,
         suffix: "",
         label: "Global Rank",
-        subtext: "GSSoC 2025 (Top 0.05%)",
+        subtext: "GSSoC 2025 (Top 0.06%)",
         icon: FaTrophy,
         color: "#C89D52" // Gold
     },

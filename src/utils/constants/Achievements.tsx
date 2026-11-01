@@ -13,7 +13,7 @@ export const Achievements: { [key: string]: AchievementProps } = {
         orgName: 'GirlScript Summer of Code',
         imageURL: gssocImg,
         description: `
-Recognized as the 2nd highest contributor among 3,424 developers worldwide. 
+Recognized as the 2nd highest contributor among 25,000+ developers worldwide. 
 - Merged 238 Pull Requests across multiple repositories.
 - Accumulated 2,014 points through complex bug fixes and feature implementations.
 - Demonstrated high-velocity delivery and expertise in diverse tech stacks.
