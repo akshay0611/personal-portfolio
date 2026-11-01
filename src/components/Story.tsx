@@ -15,7 +15,7 @@ export default function Story() {
 
 
 	// This feature is not available for Mobile Devices with http protocol
-	const copyUrl = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+	const copyUrl = async (e: React.MouseEvent<HTMLButtonElement>) => {
 		if (navigator['share']) {
 			await navigator.share({
 				title: "Akshay's Developer Story",
@@ -46,15 +46,17 @@ export default function Story() {
 								</p>
 							</a>
 						</Link>
-						<a
+						<button
+							type='button'
 							onClick={copyUrl}
+							aria-label='Share this page URL'
 							className='flex transition items-center gap-1 border-2 border-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm cursor-pointer'
 						>
-							<AiOutlineLink className='text-base md:text-xl' />
+							<AiOutlineLink className='text-base md:text-xl' aria-hidden='true' />
 							<p className='text-sm md:text-base mt-0.5'>
 								Share URL
 							</p>
-						</a>
+						</button>
 					</div>
 					<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
 						Developer Story
