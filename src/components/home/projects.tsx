@@ -3,7 +3,6 @@
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import React from 'react';
-import Wave from 'react-wavify';
 import { featuredStory } from 'data/story/featured';
 
 export default function Projects() {
@@ -39,17 +38,7 @@ export default function Projects() {
 					</Link>
 				</div>
 			</div>
-			<Wave
-				fill='black'
-				paused={false}
-				options={{
-					height: 20,
-					amplitude: 20,
-					speed: 0.2,
-					points: 3,
-				}}
-				className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-dark-gray'
-			/>
+			<div className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-dark-gray' aria-hidden='true' />
 		</section>
 	);
 }
