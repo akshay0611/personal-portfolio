@@ -106,6 +106,11 @@ const BlogFeed = () => {
                     accent: 'blog-accent-blue',
                     badge: 'blog-badge-blue',
                 };
+            case 'Tensorik':
+                return {
+                    accent: 'blog-accent-blue',
+                    badge: 'blog-badge-blue',
+                };
             default:
                 return {
                     accent: 'blog-accent-muted',

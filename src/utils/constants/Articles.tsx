@@ -1,6 +1,6 @@
 export interface ArticleProps {
     title: string;
-    platform: 'Codeunia' | 'EduLinkUp' | 'Dev.to' | 'Personal';
+    platform: 'Codeunia' | 'EduLinkUp' | 'Dev.to' | 'Personal' | 'Tensorik';
     date: string;
     readTime: string;
     url: string;
@@ -9,6 +9,15 @@ export interface ArticleProps {
 }
 
 export const curatedArticles: ArticleProps[] = [
+    {
+        title: "From Shared Course Links to a Production LMS: The Architecture Behind MBT Institute’s Learning Platform",
+        platform: "Tensorik",
+        date: "October 2026",
+        readTime: "12 min read",
+        url: "https://www.tensorik.in/blog/building-piracy-resistant-lms-mbt-institute",
+        description: "A behind-the-scenes look at the Flutter, NestJS, Next.js, and Supabase architecture powering MBT Institute’s LMS—from payment integrity and device-bound access to live classes and course operations.",
+        image: "/images/other/mbt-lms-architecture.png"
+    },
     {
         title: "How I Ranked 2 Out of 25,000+ GSSoC 2025 Contributors: My Open Source Journey",
         platform: "EduLinkUp",
