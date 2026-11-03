@@ -27,6 +27,11 @@ export const fullStory: DeveloperStoryDataProps = [
         data: Achievements.castAiApaHero,
     },
     {
+        id: 'exp-tensorik',
+        storyType: 'experience',
+        data: allExperiences.tensorik,
+    },
+    {
         id: 'exp-altq',
         storyType: 'experience',
         data: allExperiences.altq,

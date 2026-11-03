@@ -11,8 +11,28 @@ import edulinkupImg from '../../../public/images/experience/edulinkup.webp';
 import apertreImg from '../../../public/images/experience/apertre.webp';
 
 import altqImg from '../../../public/images/experience/altqlogo.webp';
+import tensorikImg from '../../../public/images/experience/tensorik.png';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	tensorik: {
+		fromDate: 'Feb 2026',
+		toDate: 'Present',
+		positionHeld: 'Chief Technology Officer',
+		orgName: 'Tensorik Technologies · Full-time',
+		orgLocation: 'India · Hybrid',
+		imageURL: tensorikImg,
+		url: 'https://www.tensoriktechnologies.com/',
+		ctaLabel: 'Visit Corporate Website',
+		description: `
+- **Technology Leadership:** Leading Tensorik's technology strategy, engineering roadmap, and architectural decisions across AI-driven products, cloud-native platforms, and client engagements. Translating business objectives into scalable, production-ready technology solutions.
+- **Product Engineering & Delivery:** Driving end-to-end engineering across web, mobile, and backend products, from system architecture and database design to integrations, deployment, and production releases. Led the engineering delivery of the **MBT Institute LMS ecosystem**, spanning a Flutter mobile application, NestJS backend, and Next.js administration platform, with the mobile application successfully launched on the [Google Play Store](https://play.google.com/store/apps/details?id=com.tensorik.mbt_lms).
+- **Cloud Infrastructure & Reliability:** Architecting and managing production environments, CI/CD pipelines, database migrations, automated backup and recovery systems, and cloud infrastructure. Driving decisions around scalability, application security, performance, availability, and infrastructure cost optimisation.
+- **Engineering Leadership & Operations:** Building and leading cross-functional engineering teams across web and AI initiatives. Establishing engineering standards, code review practices, development workflows, release processes, and clear ownership to improve delivery quality and execution.
+- **AI & Innovation:** Driving practical AI adoption across products and engineering workflows, exploring LLM integrations, intelligent automation, AI agents, and emerging technologies to build differentiated software solutions.
+- **Strategic Execution & Partnerships:** Collaborating with company leadership, clients, and academic institutions to turn business vision into technical roadmaps and measurable outcomes. Leading technical execution for initiatives such as the 8-week Tensorik × Sri Eshwar Top Innovators Programme.
+`,
+		featured: true,
+	},
 	altq: {
 		fromDate: 'Sept 2025',
 		toDate: 'Jan 2026',

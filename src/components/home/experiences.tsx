@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { allExperiences } from 'utils/constants/Experiences';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 export default function Experiences() {
 	const monthMap: Record<string, number> = {
@@ -97,10 +98,31 @@ export default function Experiences() {
 
 									<div className='text-white/70 text-sm md:text-[15px] leading-relaxed mb-5 space-y-2 max-w-none'>
 										{exp.description.split('\n').filter(line => line.trim()).map((line, i) => (
-											<p key={i} className='flex gap-2 items-start'>
-												<span className='text-white/35 mt-1.5 shrink-0'>•</span>
-												{line.replace(/^-\s*/, '').replace(/\*\*(.*?)\*\*/g, '$1')}
-											</p>
+											<ReactMarkdown
+												key={i}
+												allowedElements={['p', 'a', 'strong', 'em']}
+												skipHtml
+												components={{
+													p: ({ children }) => (
+														<p className='flex gap-2 items-start'>
+															<span className='text-white/35 mt-1.5 shrink-0'>•</span>
+															{children}
+														</p>
+													),
+													a: ({ children, href }) => (
+														<a
+															href={href}
+															target='_blank'
+															rel='noopener noreferrer'
+															className='text-blue-300 underline underline-offset-2 hover:text-blue-200'
+														>
+															{children}
+														</a>
+													),
+												}}
+											>
+												{line.replace(/^-\s*/, '')}
+											</ReactMarkdown>
 										))}
 									</div>
 

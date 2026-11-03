@@ -3,6 +3,11 @@ import { singleDeveloperStoryDataProps } from '../../utils/developerStory';
 
 export const featuredStory: singleDeveloperStoryDataProps[] = [
     {
+        id: 'exp-tensorik',
+        storyType: 'experience',
+        data: allExperiences.tensorik,
+    },
+    {
         id: 'exp-altq',
         storyType: 'experience',
         data: allExperiences.altq,
