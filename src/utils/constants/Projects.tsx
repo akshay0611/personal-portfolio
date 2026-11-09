@@ -355,14 +355,14 @@ eduLinkUp: {
 	fromDate: 'Nov 2025',
 	toDate: 'Present',
 	projectName: 'EduLinkUp — Full-Stack Platform Engineering',
-	orgName: 'EduLinkUp • Lead Developer',
+	orgName: 'EduLinkUp • Founding Engineer',
 	imageURL: eduLinkUpImg,
 	logoFit: 'contain',
 	featured: true,
 	description: `
 Product Platform · EduLinkUp
 
-Architected and engineered EduLinkUp into a unified education and developer ecosystem, bringing learning, coding practice, open-source contributions, career opportunities, and community-built applications into a single Next.js platform.
+Began as an open-source community initiative and grew into a unified education and developer ecosystem. Architected and engineered from its earliest stages, bringing learning, coding practice, open-source contributions, career opportunities, and community-built applications into a single Next.js platform.
 
 ### Core Product Systems:
 - **Learning Platform**: Chapter-based courses, progress tracking, test series, assessments, and verifiable certificates with QR-based validation.
@@ -381,7 +381,7 @@ Architected and engineered EduLinkUp into a unified education and developer ecos
 - **Code Execution**: Monaco-based editor integrated with a pluggable multi-language judging system and sandboxed execution environments.
 - **Integrations & Quality**: Razorpay, transactional email via React Email and Brevo/Resend, PDF and certificate generation, and Playwright end-to-end testing.
 
-Evolved from a learning platform into a broader developer ecosystem, supporting 2,700+ monthly active users across 100+ countries, onboarding 100+ interns, and accommodating 300+ new signups per month.
+Evolved from an open-source community initiative into a broader developer ecosystem, supporting 2,700+ monthly active users across 100+ countries, onboarding 100+ interns, and accommodating 300+ new signups per month.
 	`,
 	viewUrl: 'https://edulinkup.dev',
 	caseStudyUrl: '/case-studies/edulinkup-learning-platform',

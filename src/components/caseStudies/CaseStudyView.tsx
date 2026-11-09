@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SkillBadge from 'components/common/SkillBadge';
 import { CaseStudy } from 'data/caseStudies';
 import { findSkill } from 'utils/findSkill';
+import ArchitectureDiagram from 'components/caseStudies/ArchitectureDiagram';
 
 const renderText = (text: string) =>
 	text.split(/(\*\*[^*]+\*\*)/g).map((part, index) =>
@@ -39,6 +40,11 @@ export default function CaseStudyView({ study }: CaseStudyViewProps) {
 				</nav>
 
 				<header className='flex flex-col gap-4'>
+					{study.heroEyebrow && (
+						<p className='text-xs md:text-sm uppercase tracking-wider text-blue-400 font-semibold'>
+							{study.heroEyebrow}
+						</p>
+					)}
 					<div className='flex items-start gap-3 md:gap-4'>
 						{study.logo && (
 							<div className='w-16 h-16 md:w-20 md:h-20 shrink-0 flex items-center justify-center p-2 rounded-[14px] bg-white border border-black/10 overflow-hidden'>
@@ -56,10 +62,10 @@ export default function CaseStudyView({ study }: CaseStudyViewProps) {
 						)}
 						<div className='flex flex-col'>
 							<h1 className='text-2xl md:text-3xl lg:text-4xl font-bold leading-tight'>
-								{study.projectName}
+								{study.heroTitle ?? study.projectName}
 							</h1>
 							<p className='text-sm md:text-base text-gray-400 mt-1'>
-								{study.tagline}
+								{study.heroDescription ?? study.tagline}
 							</p>
 						</div>
 					</div>
@@ -167,6 +173,54 @@ export default function CaseStudyView({ study }: CaseStudyViewProps) {
 								))}
 							</ul>
 						)}
+						{section.diagram && (
+							<ArchitectureDiagram
+								title={section.diagram.title}
+								description={section.diagram.description}
+								nodes={section.diagram.nodes}
+								edges={section.diagram.edges}
+							/>
+						)}
+						{section.cta && section.cta.length > 0 && (
+							<div className='mt-4 flex flex-wrap gap-2'>
+								{section.cta.map((cta) =>
+									cta.href.startsWith('http') ? (
+										<a
+											key={cta.label}
+											href={cta.href}
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-sm bg-white uppercase hover:bg-blue-900 hover:text-white border-1 transition text-black px-3 py-1 rounded-sm flex-center'
+										>
+											{cta.label}
+										</a>
+									) : (
+										<Link
+											key={cta.label}
+											href={cta.href}
+											className='text-sm bg-white uppercase hover:bg-blue-900 hover:text-white border-1 transition text-black px-3 py-1 rounded-sm flex-center'
+										>
+											{cta.label}
+										</Link>
+									),
+								)}
+							</div>
+						)}
+				{section.milestones && section.milestones.length > 0 && (
+					<div className='mt-4 bg-zinc-900 border border-white/5 rounded-md p-3 md:p-4 flex flex-col gap-3'>
+						<div className='flex flex-wrap gap-3 md:gap-4'>
+							{section.milestones.map((metric) => (
+								<div key={metric.label} className='flex flex-col gap-1'>
+									<span className='text-xl md:text-2xl font-bold text-blue-400'>{metric.value}</span>
+									<span className='text-[11px] md:text-xs text-gray-400 leading-snug'>{metric.label}</span>
+								</div>
+							))}
+						</div>
+						{section.milestonesSource && (
+							<p className='text-[11px] md:text-xs text-gray-500'>{section.milestonesSource}</p>
+						)}
+					</div>
+				)}
 					</section>
 				))}
 

@@ -10,7 +10,7 @@ const BASE_URL =
 export const metadata: Metadata = {
 	title: 'Case Studies — Production Systems I Architected & Shipped',
 	description:
-		'In-depth case studies of production systems I designed and shipped as Lead Developer at EduLinkUp and on client work — covering architecture decisions, constraints, and measurable results.',
+		'In-depth case studies of production systems I designed and shipped as Founding Engineer at EduLinkUp and on client work — covering architecture decisions, constraints, and measurable results.',
 	keywords: [
 		'Akshay Kumar case studies',
 		'full stack developer case study',

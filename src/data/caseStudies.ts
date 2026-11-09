@@ -3,11 +3,25 @@ export interface CaseStudyMetric {
 	value: string;
 }
 
+export interface CaseStudyCta {
+	label: string;
+	href: string;
+}
+
 export interface CaseStudySection {
 	id: string;
 	heading: string;
 	body?: string[];
 	bullets?: string[];
+	cta?: CaseStudyCta[];
+	diagram?: {
+		title: string;
+		description?: string;
+		nodes: { id: string; label: string }[];
+		edges: { from: string; to: string; label?: string }[];
+	};
+	milestones?: CaseStudyMetric[];
+	milestonesSource?: string;
 }
 
 export interface CaseStudyFaq {
@@ -20,6 +34,9 @@ export interface CaseStudy {
 	projectName: string;
 	org: string;
 	tagline: string;
+	heroEyebrow?: string;
+	heroTitle?: string;
+	heroDescription?: string;
 	role: string;
 	timeline: string;
 	industry: string;
@@ -33,6 +50,8 @@ export interface CaseStudy {
 	keywords: string[];
 	tldr: string;
 	metrics: CaseStudyMetric[];
+	milestones?: CaseStudyMetric[];
+	milestonesSource?: string;
 	sections: CaseStudySection[];
 	techStack: string[];
 	faqs: CaseStudyFaq[];
@@ -43,28 +62,35 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'edulinkup-learning-platform',
 		projectName: 'EduLinkUp — Learning & Developer Ecosystem Platform',
 		org: 'EduLinkUp',
-		tagline:
-			'Architecting a single Next.js platform that carries learners from their first course to their first job.',
-		role: 'Lead Developer',
+		tagline: 'From open-source roots to a developer ecosystem — architected from day one.',
+		heroEyebrow: 'Founding Engineering · Product Architecture · EdTech',
+		heroTitle: 'From an Open-Source GitHub Organization to a Developer Ecosystem.',
+		heroDescription:
+			'EduLinkUp started as an open-source initiative. I helped turn that community into a production-grade digital ecosystem — establishing its engineering foundation, architecting the platform, and building the systems that evolved it into a multi-product experience for developers and learners.',
+		role: 'Founding Engineer · Technical Architect',
 		timeline: 'Nov 2025 – Present',
 		industry: 'EdTech · Developer Tools',
 		logo: '/images/project/edulinkup.webp',
 		logoFit: 'contain',
 		liveUrl: 'https://edulinkup.dev',
-		metaTitle: 'EduLinkUp Case Study: Scaling an EdTech Platform to 2,700+ MAU',
+		metaTitle: 'EduLinkUp — Building a Developer Ecosystem from Zero',
 		metaDescription:
-			'How I architected EduLinkUp — a Next.js, Supabase and Google Cloud platform serving 2,700+ monthly active users across 100+ countries — spanning courses, coding labs, internships and an app store.',
+			'How I helped take EduLinkUp from an open-source community to a production-grade developer ecosystem — architecting the Next.js, Supabase and Google Cloud platform and building the multi-product engineering capability behind learning, coding, open-source and career experiences.',
 		publishedDate: '2026-10-19',
+		modifiedDate: '2026-11-09',
 		keywords: [
-			'edtech platform case study',
-			'Next.js Supabase edtech platform',
-			'scaling an edtech platform',
+			'founding engineer',
+			'developer ecosystem case study',
+			'edtech platform architecture',
+			'open source edtech',
+			'Next.js Supabase developer platform',
 			'supabase row level security education',
 			'online coding judge platform',
 			'verifiable course certificates',
+			'build product from zero',
 		],
 		tldr:
-			'EduLinkUp had courses but no path after them. I designed and led the rebuild into one Next.js platform that unifies structured learning, in-browser coding practice, open-source programs, internships and a community app store — now serving 2,700+ monthly active users across 100+ countries with 300+ new signups a month.',
+			'EduLinkUp started as an open-source community for students and developers contributing to real projects, and later grew into a digital learning and developer ecosystem. I was involved from its earliest stages — before the platform existed — helping define the technical direction and build the product from zero into a Next.js and Supabase-based ecosystem spanning learning, coding practice, open-source programs, internships and careers — now serving 2,700+ monthly active users across 100+ countries.',
 		metrics: [
 			{ value: '2,700+', label: 'Monthly active users' },
 			{ value: '100+', label: 'Countries served' },
@@ -73,22 +99,57 @@ export const caseStudies: CaseStudy[] = [
 		],
 		sections: [
 			{
-				id: 'problem',
-				heading: 'The problem',
+				id: 'origin',
+				heading: 'The origin — before there was a platform',
 				body: [
-					'Learners on EduLinkUp could finish a course, but the platform offered little momentum after the last lesson. Practice, open-source contribution, career applications and community tooling all lived in different places — or nowhere at all. The result was a leaky funnel: strong course completion, weak retention, and no reason to return once a certificate was downloaded.',
-					'The platform also had to answer a harder product question: what does a learner actually need between "I finished a course" and "I got hired"? We answered that with placement, practice and proof-of-work — and then built the systems to back it up.',
+					'EduLinkUp did not begin as an edtech product with a course catalogue and a website. It began as a GitHub organization — a focused home for open-source software, developer collaboration and contribution opportunities for students and developers.',
+					'The founding premise was simple: give students and early-career developers a structured way to move from learning about open source to contributing to real projects. As the initiative gathered momentum, it became clear that the community needed a more durable digital home — and that is when the product work began.',
+				],
+				bullets: [
+					'Open-source collaboration and real-world contribution practice.',
+					'Student participation in developer communities.',
+					'A growing initiative that needed a structured digital home.',
 				],
 			},
 			{
-				id: 'constraints',
-				heading: 'Constraints that shaped the design',
+				id: 'from-community-to-product',
+				heading: 'From community initiative to product',
+				body: [
+					'As the community grew, the organization moved from GitHub-led collaboration into a dedicated digital platform. I was involved at the point where community intent had to become software: establishing the product foundation, architecting the application, and building the first version that turned community momentum into structured learning, coding practice and contribution experiences.',
+					'The platform was designed as an extensible product foundation rather than a fixed feature list. The early architectural decisions — server-first rendering, a single data layer, authorization enforced at the database — were made to keep the door open for the product evolution that followed.',
+				],
 				bullets: [
-					'One lead architect (me) and a small contributor base — every architectural choice had to be maintainable by a rotating team.',
-					'A live product with existing users, so no big-bang rewrite was acceptable.',
-					'Untrusted code would run on the platform, which rules out naive server-side execution.',
-					'Infrastructure spend had to stay predictable while traffic grew unevenly around launches.',
-					'Every certificate and premium entitlement had to be independently verifiable and abuse-resistant.',
+					'Product foundation and initial platform development.',
+					'Architecture chosen for long-term extensibility.',
+					'Long-term planning for evolving requirements.',
+				],
+			},
+			{
+				id: 'engineering-ownership',
+				heading: 'Engineering ownership',
+				body: [
+					'The story of EduLinkUp is also my story of technical ownership. I personally established the engineering foundation that later product lines were built on, while coordinating execution across a contributor community.',
+					'The work falls cleanly into four areas: product engineering, architecture and infrastructure, platform engineering, and engineering leadership.',
+				],
+				bullets: [
+					'Product engineering — establishing the initial web platform, translating community requirements into working product capabilities, and designing extensible application modules.',
+					'Architecture and infrastructure — choosing the Next.js application architecture, designing the Supabase and PostgreSQL data architecture with Row Level Security, and making infrastructure and deployment decisions.',
+					'Platform engineering — building competitive programming and code judging, open-source program infrastructure, certificate generation and verification, payments and entitlement systems, and careers workflows.',
+					'Engineering leadership — technical direction, contributor coordination, code quality and maintainability, development workflows, and long-term technical decisions.',
+				],
+			},
+			{
+				id: 'evolution',
+				heading: 'Engineering for expansion',
+				body: [
+					'EduLinkUp grew from a learning platform into a multi-product developer ecosystem. The expansion was staged: each product addressed a real gap in the journey of a learner — from finishing a course, to practicing, to contributing, to being discovered and hired.',
+				],
+				bullets: [
+					'**ELUCode** — Bi-weekly competitive programming challenges with an in-browser coding competition experience, leaderboards and recognition. It evolved from a contest series into an ongoing developer engagement initiative.',
+					'**ELUSOC 2026** — Open-source contribution program with participant onboarding and contribution workflows, leaderboards, partner tiers, badges, bonus points and certificates.',
+					'Learning and developer resources — learning resources, developer tools and a community app store, plus practical labs and coding experiences.',
+					'Careers and opportunities — internships, job opportunities, application workflows, recruitment and offer-letter capabilities.',
+					'Community ecosystem — events, campus ambassador initiatives, blogs and newsletters, and developer engagement initiatives.',
 				],
 			},
 			{
@@ -104,34 +165,68 @@ export const caseStudies: CaseStudy[] = [
 					'Code execution: a Monaco-based editor wired to a pluggable multi-language judging system, with untrusted submissions isolated in sandboxed environments.',
 					'Integrations: Razorpay for subscriptions, React Email with Brevo and Resend for transactional mail, and Playwright for end-to-end coverage of critical flows.',
 				],
+				diagram: {
+					title: 'Platform architecture',
+					description:
+						'A simplified view of the deployed runtime flow. Only primary integration paths are shown; not every component communicates directly with every other component.',
+					nodes: [
+						{ id: 'learner', label: 'Learner' },
+						{ id: 'cloudflare', label: 'Cloudflare' },
+						{ id: 'sentry', label: 'Sentry' },
+						{ id: 'cloudrun', label: 'Google Cloud Run' },
+						{ id: 'nextjs', label: 'Next.js App Router' },
+						{ id: 'supabase', label: 'Supabase (PostgreSQL · Auth · RLS)' },
+						{ id: 'judge', label: 'Code Execution · Judging' },
+						{ id: 'razorpay', label: 'Razorpay' },
+						{ id: 'email', label: 'React Email · Brevo / Resend' },
+					],
+					edges: [
+						{ from: 'learner', to: 'cloudflare' },
+						{ from: 'cloudflare', to: 'cloudrun', label: 'autoscale' },
+						{ from: 'cloudrun', to: 'nextjs', label: 'serve' },
+						{ from: 'nextjs', to: 'supabase', label: 'SQL / Auth / RLS' },
+						{ from: 'nextjs', to: 'judge', label: 'submissions' },
+						{ from: 'nextjs', to: 'razorpay', label: 'checkout' },
+						{ from: 'nextjs', to: 'email', label: 'transactional' },
+						{ from: 'nextjs', to: 'sentry', label: 'errors' },
+					],
+				},
 			},
 			{
-				id: 'hard-parts',
-				heading: 'The hard parts',
+				id: 'challenges',
+				heading: 'Engineering challenges and decisions',
 				body: [
-					'Running student code was the highest-risk surface. The judging layer treats every submission as hostile: execution happens in isolated sandboxes, resource use is bounded, and the editor is a front-end convenience rather than a trusted boundary. That separation is what made a public coding judge safe to ship.',
-					'Access control came second. Premium content, internships and admin tooling all need different rules, and enforcing them client-side would have been a permanent leak. Pushing authorization into Row Level Security meant the same rules apply whether a request arrives through the web app, an API route or an admin action.',
-					'Certificates need to survive scrutiny, so each one is generated as a verifiable artifact with QR-based validation rather than a static image — a hiring manager can confirm it against the database instead of trusting a screenshot.',
+					'Running untrusted code was the highest-risk surface the platform ever exposed. **The problem.** Once the platform opened a code judging surface to the public, every submission had to be treated as hostile. **The decision.** The Monaco-based editor was kept as a front-end convenience and every submission routed through a pluggable multi-language judging system executing in isolated sandboxes with bounded resources. **The trade-off.** The judging pipeline carried substantial complexity and latency that could not match a local IDE. **The engineering outcome.** A public coding judge could ship safely, because the application process never became an execution authority.',
+					'Access control could not live only in the interface. **The problem.** Course content, internships and premium access all needed different rules, and client-side enforcement would have been a permanent leak. **The decision.** Authorization was enforced in Supabase PostgreSQL through Row Level Security, so the same rules applied to web requests, API routes and admin actions. **The trade-off.** The cost was upfront effort around authoring and testing database policies. **The engineering outcome.** Authorization became a single source of truth instead of a client-side pattern that could drift.',
+					'Certificates needed to survive scrutiny. **The problem.** Static images could not be independently verified. **The decision.** Verifiable artifacts with QR-based validation were issued instead of static images. **The trade-off.** Verification infrastructure had to be built alongside certificate generation. **The engineering outcome.** Hiring managers could confirm a certificate against the platform rather than trusting a screenshot.',
+					'The platform had to absorb multiple product lines without a rewrite. **The problem.** Later products — coding challenges, open-source programs, careers, community tooling — needed to reuse an already-built foundation. **The decision.** Product modules were treated as the architectural boundary from the earliest releases. **The trade-off.** Some up-front structuring discipline was required. **The engineering outcome.** Later products were built as modules instead of forks of the original codebase.',
+					'The infrastructure had to stay economically predictable while traffic grew unevenly around launches. **The problem.** Autoscaling had to serve real demand without peak-provisioned waste. **The decision.** Google Cloud Run autoscaling behind Cloudflare, server-side rendering with aggressive caching, and rate limiting on sensitive routes were adopted. **The trade-off.** Capacity still had to be planned before launch rather than after. **The engineering outcome.** Predictable spend while capacity tracked real traffic.',
 				],
 			},
 			{
-				id: 'shipped',
-				heading: 'What shipped',
+				id: 'milestones',
+				heading: 'Milestones and product impact',
+				body: [
+					'The journey unfolded in stages, each building on the previous one.',
+				],
+				milestones: [
+					{ value: '3.5K', label: 'Website views' },
+					{ value: '5.4K', label: 'Tracked events' },
+				],
+				milestonesSource: 'Google Analytics · EduLinkUp website · 7 November 2026',
 				bullets: [
-					'Learning platform: chapter-based courses, progress tracking, test series, assessments and verifiable certificates with QR validation.',
-					'ELUCode and Labs: an in-browser coding environment with submission judging, alongside hands-on Linux and Python labs.',
-					'Developer App Store: community-driven discovery of tools, AI assistants, games and open-source projects, with bookmarks and store analytics.',
-					'ELUSOC: an open-source contribution program with leaderboards, partner tiers, badges, bonus points and certificates.',
-					'Careers and recruitment: internship and job listings, application workflows, offer-letter generation and role-based administration.',
-					'Payments and entitlements: Razorpay-powered subscriptions, premium access controls and referral rewards with rate limiting and auditability.',
-					'Community and content: blogs, events, a campus ambassador program, newsletters and DSA practice.',
+					'**Nov 2025 — Founding stage:** The initiative began as an open-source community, and the founding engineering effort started establishing the digital platform.',
+					'**Core platform:** Structured learning, coding labs and verifiable certificates formed the first product foundation.',
+					'**ELUCode Edition 7 — 7 November 2026:** Bi-weekly competitive programming challenges launched and later evolved into an ongoing developer engagement initiative. During the edition, platform activity spiked to approximately 3.5K website views and 5.4K tracked events in a single day — a dated engagement milestone rather than proven attribution of the spike, and kept separate from the platform-wide metrics.',
+					'**ELUSOC 2026:** Open-source contribution program opened with structured onboarding and contribution workflows.',
+					'**Ecosystem expansion:** Learning resources, developer app store, careers and community initiatives were layered onto the platform.',
 				],
 			},
 			{
 				id: 'results',
 				heading: 'Results',
 				body: [
-					'EduLinkUp evolved from a course catalogue into a developer ecosystem. It now supports 2,700+ monthly active users across 100+ countries, absorbs 300+ new signups per month, and powers a hiring pipeline that has onboarded 100+ interns — with an internship acceptance rate of roughly 76% across 150+ applications.',
+					'EduLinkUp grew from the open-source community initiative into a developer ecosystem. It now supports 2,700+ monthly active users across 100+ countries, absorbs 300+ new signups per month, and powers a hiring pipeline that has onboarded 100+ interns — with an internship acceptance rate of roughly 76% across 150+ applications.',
 					'Just as importantly, the platform stayed operable by a small team: server-first rendering, RLS-based authorization and managed infrastructure kept the surface area small enough that new contributors could ship without a long ramp-up.',
 				],
 			},
@@ -142,6 +237,20 @@ export const caseStudies: CaseStudy[] = [
 					'Introduce a shared design token layer earlier — consistent spacing and state styles paid off the moment multiple contributors touched the same views.',
 					'Treat observability as a first-class feature from day one; retrofitting tracing around a judging pipeline is far harder than starting with it.',
 					'Model entitlements as explicit domain objects sooner, so new premium surfaces plug into one rule source instead of re-implementing checks.',
+					'Establish contributor onboarding and engineering processes early so community velocity does not depend on a single person.',
+					'Balance product velocity with long-term maintainability as the platform absorbs new product lines.',
+				],
+			},
+			{
+				id: 'closing',
+				heading: 'From zero to a living ecosystem',
+				body: [
+					'The engineering story of EduLinkUp is the story of building from zero: an idea that began as an open-source community, then became a product through architecture decisions made alongside rapidly evolving requirements.',
+					'The most satisfying stretch of this project was the transition from community initiative to functioning digital ecosystem — not a rebuild of an existing platform, but the founding engineering effort that turned open-source intent into a product people could learn, practice, contribute and get hired through.',
+				],
+				cta: [
+					{ label: 'Visit the live platform', href: 'https://edulinkup.dev' },
+					{ label: 'Explore other case studies', href: '/case-studies' },
 				],
 			},
 		],

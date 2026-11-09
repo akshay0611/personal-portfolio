@@ -84,14 +84,15 @@ Selected as a mentor for an open-source project under Resourcio's Apertre 3.0 pr
 	edulinkup: {
 		fromDate: 'Nov 2025',
 		toDate: 'Present',
-		positionHeld: 'Lead Developer',
+		positionHeld: 'Founding Engineer',
 		orgName: 'EduLinkUp',
 		orgLocation: 'Remote',
 		url: 'https://edulinkup.dev',
 		imageURL: edulinkupImg,
 		ctaLabel: 'Visit platform',
 		description: `
-- **Technical Ownership**: Architected and built the full platform on Next.js and Google Cloud, serving **2,700+ monthly active users** across **100+ countries**.
+- **Technical Ownership**: Architected and built the full platform from its earliest stages on Next.js and Google Cloud, serving **2,700+ monthly active users** across **100+ countries**.
+- **Founding Engineering**: Helped establish the technical direction and product foundation of a platform that began as an open-source community initiative.
 - **Performance at Scale**: Scaled the platform to handle **300+ new signups** in a single month while maintaining production-grade reliability.
 - **Operations & Mentorship**: Built an internship selection system processing **150+ applications** with a **76% acceptance rate**, onboarding **100+ interns**.
 - **System Governance**: Leading deployment and release workflows via Google Cloud Run with auto-scaling infrastructure handling consistent global traffic.

@@ -6,7 +6,7 @@ const StructuredData = () => {
 		name: 'Akshay Kumar',
 		jobTitle: 'Full Stack Developer',
 		description:
-			'Lead Developer at EduLinkUp and Web Development Lead at Codeunia. Full Stack Developer recognized by Google for Developers, specializing in building scalable AI and production-ready systems.',
+			'Founding Engineer at EduLinkUp and Web Development Lead at Codeunia. Full Stack Developer recognized by Google for Developers, specializing in building scalable AI and production-ready systems.',
 		url: 'https://connectwithakshay.netlify.app',
 		image: 'https://connectwithakshay.netlify.app/images/akshay1.webp',
 		sameAs: [

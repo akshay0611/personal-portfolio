@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 		template: '%s | Akshay Kumar',
 	},
 	description:
-		'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Full Stack Developer focused on building scalable AI & Cloud-driven products. Recognition by Google for Developers for engineering excellence.',
+		'Founding Engineer at EduLinkUp & Web Development Lead at Codeunia. Full Stack Developer focused on building scalable AI & Cloud-driven products. Recognition by Google for Developers for engineering excellence.',
 	authors: [{ name: 'Akshay Kumar' }],
 	creator: 'Akshay Kumar',
 	alternates: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 		url: BASE_URL,
 		title: 'Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products',
 		description:
-			'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products.',
+			'Founding Engineer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products.',
 		siteName: 'Akshay Kumar Portfolio',
 		images: [
 			{
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'Akshay Kumar | Full Stack Developer | AI & Cloud-Driven Products',
 		description:
-			'Lead Developer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products.',
+			'Founding Engineer at EduLinkUp & Web Development Lead at Codeunia. Building scalable AI & Cloud-driven products.',
 		images: ['/images/banner.webp'],
 		creator: '@Aksh0605',
 	},
