@@ -4,6 +4,28 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaCodeBranch, FaStar, FaCode } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { GitHubCalendar } from 'react-github-calendar';
+import type { Activity } from 'react-activity-calendar';
+
+// GitHub-style tooltip text: "4 contributions on Wednesday, March 5th"
+function getOrdinalSuffix(day: number): string {
+	if (day >= 11 && day <= 13) return 'th';
+	switch (day % 10) {
+		case 1: return 'st';
+		case 2: return 'nd';
+		case 3: return 'rd';
+		default: return 'th';
+	}
+}
+
+function formatActivityTooltip(activity: Activity): string {
+	const date = new Date(`${activity.date}T00:00:00`);
+	const month = date.toLocaleDateString('en-US', { month: 'long' });
+	const weekday = date.toLocaleDateString('en-US', { weekday: 'long' });
+	const day = date.getDate();
+	return activity.count === 0
+		? `No contributions on ${weekday}, ${month} ${day}${getOrdinalSuffix(day)}`
+		: `${activity.count} contribution${activity.count === 1 ? '' : 's'} on ${weekday}, ${month} ${day}${getOrdinalSuffix(day)}`;
+}
 
 type StatIconKey = 'star' | 'branch' | 'code';
 
@@ -156,6 +178,17 @@ export default function GitHubActivity() {
 								fontSize={12}
 								blockSize={13}
 								blockMargin={4}
+								tooltips={{
+									activity: {
+										text: formatActivityTooltip,
+										placement: 'top',
+									},
+									colorLegend: {
+										text: (level: number) =>
+											level === 0 ? 'No contributions' : `Intensity level ${level}`,
+										placement: 'top',
+									},
+								}}
 							/>
 							) : (
 								<div className='h-[140px] flex items-center justify-center text-white/40 text-sm'>

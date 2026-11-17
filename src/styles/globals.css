@@ -258,6 +258,24 @@ html {
 		@apply hover:scale-105;
 	}
 
+	/* GitHub contribution heatmap tooltips (react-activity-calendar) */
+	.react-activity-calendar__tooltip,
+	.react-activity-calendar__tooltip[data-color-scheme='dark'] {
+		width: max-content;
+		max-width: calc(100vw - 20px);
+		padding: 6px 10px;
+		border-radius: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.12);
+		background-color: #161b22;
+		color: #e6edf3;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.01em;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+		pointer-events: none;
+		z-index: 50;
+	}
+
 	/* Blog Feed Tokens */
 	.blog-bg-glow {
 		@apply absolute rounded-full blur-3xl opacity-30;
